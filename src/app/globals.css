@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+:root {
+  --nds-primary: #00b4d8;
+  --nds-primary-dark: #0077b6;
+  --nds-accent: #10b981;
+  --nds-bg-dark: #0a0a0a;
+  --nds-bg-card: #141414;
+  --nds-bg-elevated: #1a1a1a;
+  --nds-border: rgba(255, 255, 255, 0.1);
+  --nds-glow: rgba(0, 180, 216, 0.3);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  background: var(--nds-bg-dark);
+  color: white;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--nds-bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--nds-primary-dark);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--nds-primary);
+}
+
+/* Selection */
+::selection {
+  background: var(--nds-primary);
+  color: white;
+}
+
+/* Gradient text utility */
+.gradient-text {
+  background: linear-gradient(135deg, #fff 0%, var(--nds-primary) 50%, var(--nds-primary-dark) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glassmorphism */
+.glass {
+  background: rgba(20, 20, 20, 0.8);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--nds-border);
+}
+
+/* Glow effect */
+.glow {
+  box-shadow: 0 0 40px var(--nds-glow);
+}
+
+/* Animated gradient background */
+@keyframes gradient-shift {
+
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animated-gradient {
+  background: linear-gradient(270deg, var(--nds-primary), var(--nds-primary-dark), var(--nds-accent));
+  background-size: 400% 400%;
+  animation: gradient-shift 8s ease infinite;
+}
+
+/* Pulse glow animation */
+@keyframes pulse-glow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 20px var(--nds-glow);
+  }
+
+  50% {
+    box-shadow: 0 0 40px var(--nds-glow), 0 0 60px var(--nds-glow);
+  }
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
