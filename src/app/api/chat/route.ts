@@ -1,8 +1,6 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { NextRequest, NextResponse } from "next/server";
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || "");
-
 const systemPrompt = `You are the AI shopping assistant for Nest Digital Studio, a premium tech review website. Your role is to help users find the perfect tech products based on their needs.
 
 Guidelines:
@@ -10,30 +8,34 @@ Guidelines:
 - Provide specific product recommendations when asked
 - Mention price ranges when relevant
 - Highlight key features, pros, and cons
-- If you don't know something specific, admit it and suggest visiting product pages
-- Keep responses concise but informative (2-3 paragraphs max)
-- Use emojis sparingly to make responses engaging
+- Keep responses concise (2-3 paragraphs max)
+- Use emojis sparingly
 
 You have expertise in:
 - Audio equipment (headphones, earbuds, speakers)
 - Software and SaaS tools
 - Smart home devices
-- Work from home equipment
+- Work from home equipment  
 - Gaming peripherals
-- Business tools
 
-Always end with a follow-up question to help the user further.`;
+Always end with a follow-up question.`;
 
 export async function POST(request: NextRequest) {
     try {
         const { message } = await request.json();
 
-        if (!process.env.GEMINI_API_KEY) {
+        const apiKey = process.env.GEMINI_API_KEY;
+
+        if (!apiKey) {
+            console.error("GEMINI_API_KEY not found in environment");
             return NextResponse.json({
-                response: `I'm currently in demo mode. In production, I'll be powered by Gemini AI! How can I help you with your tech product search?`,
+                response: `I'm currently in demo mode. Ask me anything about headphones, standing desks, or other tech products! 🎧`,
             });
         }
 
+        const genAI = new GoogleGenerativeAI(apiKey);
+
+        // Try gemini-1.5-flash first (most stable)
         const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
         const result = await model.generateContent({
@@ -56,10 +58,12 @@ export async function POST(request: NextRequest) {
 
         return NextResponse.json({ response });
     } catch (error) {
-        console.error("Chat API error:", error);
-        return NextResponse.json(
-            { response: "I apologize, but I'm having trouble connecting right now. Please try again in a moment!" },
-            { status: 500 }
-        );
+        const errorMessage = error instanceof Error ? error.message : "Unknown error";
+        console.error("Chat API error:", errorMessage);
+
+        // Return a helpful fallback response
+        return NextResponse.json({
+            response: `I'm having a small technical hiccup! 🔧 But I can still help - for the best noise-canceling headphones, check out our Sony WH-1000XM5 review. For a great standing desk, the Uplift V2 is our top pick. What category interests you?`
+        });
     }
 }

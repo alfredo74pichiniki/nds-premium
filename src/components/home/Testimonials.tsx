@@ -1,26 +1,23 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Quote } from "lucide-react";
+import { Shield, Zap, Target } from "lucide-react";
 
-const testimonials = [
+const values = [
     {
-        text: "NDS saved me hours of research. Found my perfect headphones in minutes!",
-        author: "Sarah M.",
-        role: "Tech Enthusiast",
-        avatar: "👩‍💻",
+        icon: Shield,
+        title: "Honest Reviews",
+        description: "No paid placements. We only recommend products we'd buy ourselves.",
     },
     {
-        text: "The AI assistant knew exactly what I needed. Better than any store clerk.",
-        author: "James K.",
-        role: "Software Developer",
-        avatar: "👨‍💼",
+        icon: Zap,
+        title: "AI-Powered Research",
+        description: "Our AI analyzes thousands of reviews to find what actually matters.",
     },
     {
-        text: "Finally, honest reviews backed by real data. No sponsored garbage.",
-        author: "Maria L.",
-        role: "Content Creator",
-        avatar: "🎬",
+        icon: Target,
+        title: "Your Best Match",
+        description: "Personalized recommendations based on your needs, not ad budgets.",
     },
 ];
 
@@ -35,34 +32,28 @@ export function Testimonials() {
                     className="text-center mb-16"
                 >
                     <h2 className="text-4xl md:text-5xl font-black mb-4">
-                        Trusted by <span className="gradient-text">Smart Shoppers</span>
+                        Our <span className="gradient-text">Mission</span>
                     </h2>
                     <p className="text-xl text-gray-400">
-                        See what our community says about their experience
+                        Helping you make smarter tech decisions
                     </p>
                 </motion.div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    {testimonials.map((testimonial, index) => (
+                    {values.map((value, index) => (
                         <motion.div
-                            key={testimonial.author}
+                            key={value.title}
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
-                            className="relative p-8 rounded-2xl bg-gradient-to-br from-white/[0.03] to-transparent border border-white/5 hover:border-[var(--nds-primary)]/30 transition-all duration-300"
+                            className="text-center p-8 rounded-2xl bg-gradient-to-br from-white/[0.03] to-transparent border border-white/5 hover:border-[var(--nds-primary)]/30 transition-all duration-300"
                         >
-                            <Quote className="w-8 h-8 text-[var(--nds-primary)]/30 mb-4" />
-                            <p className="text-gray-300 mb-6 leading-relaxed">
-                                &ldquo;{testimonial.text}&rdquo;
-                            </p>
-                            <div className="flex items-center gap-3">
-                                <span className="text-3xl">{testimonial.avatar}</span>
-                                <div>
-                                    <div className="font-semibold">{testimonial.author}</div>
-                                    <div className="text-sm text-gray-500">{testimonial.role}</div>
-                                </div>
+                            <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-br from-[var(--nds-primary)] to-[var(--nds-accent)] mb-6">
+                                <value.icon className="w-7 h-7" />
                             </div>
+                            <h3 className="text-xl font-bold mb-3">{value.title}</h3>
+                            <p className="text-gray-400">{value.description}</p>
                         </motion.div>
                     ))}
                 </div>
@@ -70,3 +61,4 @@ export function Testimonials() {
         </section>
     );
 }
+

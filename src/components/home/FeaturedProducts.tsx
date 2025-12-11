@@ -1,173 +1,157 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
-import { Star, ExternalLink, Award, ThumbsUp, ThumbsDown } from "lucide-react";
+import Link from "next/link";
+import { Star, ArrowRight, TrendingUp } from "lucide-react";
 
-interface Product {
+interface FeaturedItem {
     id: string;
-    name: string;
-    image: string;
+    title: string;
+    category: string;
+    description: string;
     rating: number;
-    reviewCount: number;
-    price: string;
-    badge?: "winner" | "budget" | "premium";
-    pros: string[];
-    cons: string[];
-    amazonLink: string;
+    reviews: number;
+    badge?: string;
+    image: string;
+    link: string;  // Links to article pages, not external
+    products: string[];
 }
 
-const sampleProducts: Product[] = [
+// Featured content links to EXISTING article pages only
+const featuredContent: FeaturedItem[] = [
     {
-        id: "1",
-        name: "Sony WH-1000XM5",
-        image: "/images/products/sony-xm5.jpg",
+        id: "headphones-2025",
+        title: "Best Noise-Canceling Headphones 2025",
+        category: "Audio",
+        description: "Sony XM5, AirPods Max, Bose QC Ultra compared",
         rating: 4.8,
-        reviewCount: 12500,
-        price: "$349",
-        badge: "winner",
-        pros: ["Best-in-class ANC", "30hr battery", "Premium comfort"],
-        cons: ["High price", "No waterproofing"],
-        amazonLink: "#",
+        reviews: 15420,
+        badge: "Top Pick",
+        image: "🎧",
+        link: "/reviews/best-noise-canceling-headphones",
+        products: ["Sony WH-1000XM5", "Bose QC Ultra", "AirPods Max"],
     },
     {
-        id: "2",
-        name: "Apple AirPods Max",
-        image: "/images/products/airpods-max.jpg",
-        rating: 4.6,
-        reviewCount: 8900,
-        price: "$549",
-        badge: "premium",
-        pros: ["Exceptional sound", "Apple ecosystem", "Premium build"],
-        cons: ["Very expensive", "Heavy"],
-        amazonLink: "#",
-    },
-    {
-        id: "3",
-        name: "Soundcore Space One",
-        image: "/images/products/soundcore.jpg",
-        rating: 4.5,
-        reviewCount: 5600,
-        price: "$99",
-        badge: "budget",
-        pros: ["Great value", "Good ANC", "Long battery"],
-        cons: ["Plastic build", "Basic app"],
-        amazonLink: "#",
+        id: "standing-desks-2025",
+        title: "Best Standing Desks 2025",
+        category: "Home Office",
+        description: "Uplift V2, FlexiSpot, Secretlab compared",
+        rating: 4.9,
+        reviews: 12300,
+        badge: "Editor's Choice",
+        image: "🪑",
+        link: "/reviews/best-standing-desks",
+        products: ["Uplift V2", "FlexiSpot E7", "Secretlab Magnus"],
     },
 ];
 
-function ProductCard3D({ product, index }: { product: Product; index: number }) {
-    return (
-        <motion.div
-            initial={{ opacity: 0, y: 50, rotateX: 10 }}
-            whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: index * 0.15 }}
-            whileHover={{
-                y: -10,
-                rotateY: 5,
-                transition: { duration: 0.3 }
-            }}
-            className="group relative bg-gradient-to-br from-[var(--nds-bg-card)] to-[var(--nds-bg-elevated)] rounded-3xl p-6 border border-white/5 hover:border-[var(--nds-primary)]/30 transition-all duration-500 hover:shadow-[0_30px_60px_rgba(0,180,216,0.15)]"
-            style={{ transformStyle: "preserve-3d" }}
-        >
-            {/* Badge */}
-            {product.badge && (
-                <div className={`absolute -top-3 -right-3 px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1 ${product.badge === "winner"
-                        ? "bg-gradient-to-r from-amber-500 to-orange-500 text-black"
-                        : product.badge === "premium"
-                            ? "bg-gradient-to-r from-purple-500 to-pink-500 text-white"
-                            : "bg-gradient-to-r from-emerald-500 to-green-500 text-white"
-                    }`}>
-                    <Award className="w-3 h-3" />
-                    {product.badge === "winner" ? "Editor's Choice" : product.badge === "premium" ? "Premium" : "Best Value"}
-                </div>
-            )}
-
-            {/* Product image placeholder */}
-            <div className="relative h-48 mb-6 rounded-2xl bg-gradient-to-br from-white/5 to-white/[0.02] overflow-hidden group-hover:scale-105 transition-transform duration-500">
-                <div className="absolute inset-0 flex items-center justify-center text-6xl opacity-50">
-                    🎧
-                </div>
-                {/* Shine effect */}
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
-            </div>
-
-            {/* Content */}
-            <h3 className="text-xl font-bold mb-2 group-hover:text-[var(--nds-primary)] transition-colors">
-                {product.name}
-            </h3>
-
-            {/* Rating */}
-            <div className="flex items-center gap-2 mb-4">
-                <div className="flex">
-                    {[...Array(5)].map((_, i) => (
-                        <Star
-                            key={i}
-                            className={`w-4 h-4 ${i < Math.floor(product.rating) ? "fill-amber-400 text-amber-400" : "text-gray-600"}`}
-                        />
-                    ))}
-                </div>
-                <span className="text-sm text-gray-400">
-                    {product.rating} ({product.reviewCount.toLocaleString()} reviews)
-                </span>
-            </div>
-
-            {/* Pros/Cons */}
-            <div className="space-y-2 mb-4">
-                {product.pros.slice(0, 2).map((pro, i) => (
-                    <div key={i} className="flex items-center gap-2 text-sm text-gray-400">
-                        <ThumbsUp className="w-3 h-3 text-emerald-500" />
-                        {pro}
-                    </div>
-                ))}
-                {product.cons.slice(0, 1).map((con, i) => (
-                    <div key={i} className="flex items-center gap-2 text-sm text-gray-400">
-                        <ThumbsDown className="w-3 h-3 text-red-400" />
-                        {con}
-                    </div>
-                ))}
-            </div>
-
-            {/* Price and CTA */}
-            <div className="flex items-center justify-between mt-auto pt-4 border-t border-white/5">
-                <span className="text-2xl font-bold text-[var(--nds-primary)]">
-                    {product.price}
-                </span>
-                <button className="flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-[var(--nds-primary)] to-[var(--nds-primary-dark)] text-sm font-medium hover:shadow-[0_0_20px_rgba(0,180,216,0.4)] transition-all duration-300 hover:scale-105">
-                    View on Amazon
-                    <ExternalLink className="w-4 h-4" />
-                </button>
-            </div>
-        </motion.div>
-    );
-}
+// Coming soon items - show as cards but not clickable
+const comingSoon = [
+    { title: "Best Laptops 2025", category: "Laptops", image: "💻" },
+    { title: "Best AI Tools 2025", category: "AI Tools", image: "🤖" },
+    { title: "Best Gaming Keyboards", category: "Gaming", image: "⌨️" },
+    { title: "Best Wireless Mice", category: "Peripherals", image: "🖱️" },
+];
 
 export function FeaturedProducts() {
     return (
-        <section className="py-24 px-6">
+        <section className="py-24 px-6 bg-gradient-to-b from-transparent via-[var(--nds-primary)]/5 to-transparent">
             <div className="max-w-7xl mx-auto">
+                {/* Header */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="text-center mb-16"
+                    className="flex items-center justify-between mb-12"
                 >
-                    <span className="inline-block px-4 py-1.5 rounded-full bg-[var(--nds-primary)]/10 text-[var(--nds-primary)] text-sm font-medium mb-4">
-                        ⭐ Top Rated
-                    </span>
-                    <h2 className="text-4xl md:text-5xl font-black mb-4">
-                        Featured <span className="gradient-text">Recommendations</span>
-                    </h2>
-                    <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-                        Our top picks based on 50,000+ verified user reviews
-                    </p>
+                    <div>
+                        <h2 className="text-4xl font-black mb-2">
+                            <span className="gradient-text">Featured</span> Reviews
+                        </h2>
+                        <p className="text-gray-400">
+                            In-depth buying guides across all categories
+                        </p>
+                    </div>
+                    <Link
+                        href="/reviews"
+                        className="hidden md:flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 hover:border-[var(--nds-primary)] transition-colors"
+                    >
+                        <TrendingUp className="w-4 h-4" />
+                        All Reviews
+                    </Link>
                 </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {sampleProducts.map((product, index) => (
-                        <ProductCard3D key={product.id} product={product} index={index} />
+                {/* Featured Articles */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+                    {featuredContent.map((item, index) => (
+                        <motion.div
+                            key={item.id}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: index * 0.1 }}
+                        >
+                            <Link
+                                href={item.link}
+                                className="group flex items-center gap-6 p-6 bg-white/[0.02] border border-white/5 rounded-2xl hover:border-[var(--nds-primary)]/30 transition-all h-full"
+                            >
+                                <div className="text-6xl flex-shrink-0">
+                                    {item.image}
+                                </div>
+                                <div className="flex-1">
+                                    <div className="flex items-center gap-2 mb-2">
+                                        <span className="text-xs px-2 py-1 rounded-full bg-[var(--nds-primary)]/10 text-[var(--nds-primary)]">
+                                            {item.category}
+                                        </span>
+                                        {item.badge && (
+                                            <span className="text-xs px-2 py-1 rounded-full bg-amber-500/10 text-amber-400">
+                                                {item.badge}
+                                            </span>
+                                        )}
+                                    </div>
+                                    <h3 className="text-xl font-bold mb-2 group-hover:text-[var(--nds-primary)] transition-colors">
+                                        {item.title}
+                                    </h3>
+                                    <p className="text-gray-400 text-sm mb-3">
+                                        {item.description}
+                                    </p>
+                                    <div className="flex items-center gap-4">
+                                        <div className="flex items-center gap-1">
+                                            <Star className="w-4 h-4 fill-amber-400 text-amber-400" />
+                                            <span className="text-sm">{item.rating}</span>
+                                        </div>
+                                        <span className="text-xs text-gray-500">
+                                            {item.reviews.toLocaleString()} reviews analyzed
+                                        </span>
+                                    </div>
+                                </div>
+                                <ArrowRight className="w-6 h-6 text-gray-500 group-hover:text-[var(--nds-primary)] group-hover:translate-x-1 transition-all flex-shrink-0" />
+                            </Link>
+                        </motion.div>
                     ))}
+                </div>
+
+                {/* Coming Soon Grid */}
+                <div>
+                    <h3 className="text-lg font-semibold text-gray-500 mb-4">Coming Soon</h3>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        {comingSoon.map((item, index) => (
+                            <motion.div
+                                key={item.title}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: index * 0.05 }}
+                                className="p-4 bg-white/[0.01] border border-white/5 rounded-xl opacity-60"
+                            >
+                                <div className="text-3xl mb-2">{item.image}</div>
+                                <span className="text-xs text-gray-600">{item.category}</span>
+                                <h4 className="text-sm font-medium text-gray-400 mt-1">
+                                    {item.title}
+                                </h4>
+                            </motion.div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>
