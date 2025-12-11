@@ -41,20 +41,28 @@ export function Navbar() {
             >
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="flex items-center justify-between h-20">
-                        {/* Logo */}
+                        {/* Logo - Official NDS Logo */}
                         <Link href="/" className="flex items-center gap-3 group">
-                            <div className="w-12 h-12 rounded-xl overflow-hidden group-hover:scale-110 transition-transform">
+                            <motion.div
+                                className="relative w-12 h-12 rounded-xl overflow-hidden"
+                                whileHover={{ scale: 1.1 }}
+                                transition={{ duration: 0.3 }}
+                            >
+                                <div className="absolute inset-0 bg-gradient-to-r from-[var(--nds-primary)] to-[var(--nds-accent)] opacity-0 group-hover:opacity-50 blur-xl transition-opacity duration-300" />
                                 <Image
-                                    src="/logo-nds.png"
+                                    src="/logo-nds-official.png"
                                     alt="Nest Digital Studio"
                                     width={48}
                                     height={48}
-                                    className="w-full h-full object-contain"
+                                    className="w-full h-full object-contain relative z-10"
                                 />
-                            </div>
-                            <div>
-                                <span className="hidden sm:inline text-gray-400 text-sm">
-                                    Nest Digital Studio
+                            </motion.div>
+                            <div className="hidden sm:flex flex-col">
+                                <span className="text-white font-bold text-sm tracking-tight">
+                                    Nest Digital
+                                </span>
+                                <span className="text-[var(--nds-primary)] text-xs font-medium">
+                                    Studio
                                 </span>
                             </div>
                         </Link>

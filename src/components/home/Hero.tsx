@@ -1,17 +1,89 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { Sparkles } from "lucide-react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { Sparkles, ChevronDown, Star, ArrowRight } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+
+// Floating product showcases
+const floatingProducts = [
+    { src: "/products/headphones.png", x: -300, y: -100, delay: 0, size: 120 },
+    { src: "/products/laptop.png", x: 280, y: -50, delay: 0.2, size: 140 },
+    { src: "/products/gaming.png", x: -250, y: 150, delay: 0.4, size: 100 },
+    { src: "/products/software.png", x: 320, y: 180, delay: 0.6, size: 110 },
+];
+
+function FloatingProduct({ src, x, y, delay, size }: { src: string; x: number; y: number; delay: number; size: number }) {
+    return (
+        <motion.div
+            className="absolute hidden lg:block pointer-events-none"
+            initial={{ opacity: 0, scale: 0.5, x: x * 0.5, y: y * 0.5 }}
+            animate={{
+                opacity: [0, 0.8, 0.8],
+                scale: 1,
+                x: x,
+                y: y
+            }}
+            transition={{
+                duration: 1.5,
+                delay: delay + 0.5,
+                ease: "easeOut"
+            }}
+            style={{
+                left: "50%",
+                top: "50%",
+                width: size,
+                height: size
+            }}
+        >
+            <motion.div
+                animate={{
+                    y: [0, -15, 0],
+                    rotateZ: [0, 3, 0, -3, 0]
+                }}
+                transition={{
+                    duration: 6 + delay * 2,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                }}
+                className="relative w-full h-full"
+            >
+                {/* Glow effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-[var(--nds-primary)] to-[var(--nds-accent)] rounded-full blur-2xl opacity-30" />
+                <Image
+                    src={src}
+                    alt="Product"
+                    fill
+                    className="object-contain drop-shadow-2xl"
+                    sizes={`${size}px`}
+                />
+            </motion.div>
+        </motion.div>
+    );
+}
 
 export function Hero() {
+    const { scrollY } = useScroll();
+    const y1 = useTransform(scrollY, [0, 500], [0, 150]);
+    const y2 = useTransform(scrollY, [0, 500], [0, -100]);
+    const opacity = useTransform(scrollY, [0, 300], [1, 0]);
+
     return (
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-            {/* Animated background */}
+        <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+            {/* Multi-layer animated background */}
             <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-[#0d1117] to-[#0a0a0a]" />
 
-            {/* Glowing orbs */}
+            {/* Animated gradient mesh */}
+            <div className="absolute inset-0 opacity-30">
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(0,180,216,0.15),transparent_50%)]" />
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(114,9,183,0.15),transparent_50%)]" />
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(0,180,216,0.1),transparent_70%)]" />
+            </div>
+
+            {/* Animated orbs with parallax */}
             <motion.div
-                className="absolute top-1/4 left-1/4 w-96 h-96 bg-[var(--nds-primary)] rounded-full blur-[150px] opacity-20"
+                className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-[var(--nds-primary)] rounded-full blur-[180px] opacity-20"
+                style={{ y: y1 }}
                 animate={{
                     scale: [1, 1.2, 1],
                     opacity: [0.2, 0.3, 0.2],
@@ -23,7 +95,8 @@ export function Hero() {
                 }}
             />
             <motion.div
-                className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-[var(--nds-accent)] rounded-full blur-[120px] opacity-15"
+                className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-[var(--nds-accent)] rounded-full blur-[150px] opacity-15"
+                style={{ y: y2 }}
                 animate={{
                     scale: [1, 1.3, 1],
                     opacity: [0.15, 0.25, 0.15],
@@ -36,106 +109,174 @@ export function Hero() {
                 }}
             />
 
+            {/* Floating Products */}
+            {floatingProducts.map((product, index) => (
+                <FloatingProduct key={index} {...product} />
+            ))}
+
             {/* Content */}
-            <div className="relative z-10 text-center max-w-5xl mx-auto px-6">
-                {/* Logo badge */}
+            <motion.div
+                className="relative z-10 text-center max-w-5xl mx-auto px-6"
+                style={{ opacity }}
+            >
+                {/* Premium badge */}
                 <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
+                    initial={{ opacity: 0, y: 20, scale: 0.9 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
                     transition={{ duration: 0.6 }}
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-8"
+                    className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-white/10 to-white/5 border border-white/20 backdrop-blur-xl mb-10"
                 >
-                    <Sparkles className="w-4 h-4 text-[var(--nds-primary)]" />
-                    <span className="text-sm font-medium text-[var(--nds-primary)] tracking-wider uppercase">
+                    <motion.div
+                        animate={{ rotate: 360 }}
+                        transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                    >
+                        <Sparkles className="w-5 h-5 text-[var(--nds-primary)]" />
+                    </motion.div>
+                    <span className="text-sm font-bold tracking-wider uppercase bg-gradient-to-r from-[var(--nds-primary)] to-[var(--nds-accent)] bg-clip-text text-transparent">
                         AI-Powered Tech Reviews
                     </span>
+                    <div className="flex items-center gap-1 text-yellow-400">
+                        {[...Array(5)].map((_, i) => (
+                            <Star key={i} className="w-3 h-3 fill-current" />
+                        ))}
+                    </div>
                 </motion.div>
 
-                {/* Main headline */}
+                {/* Main headline with animated gradient */}
                 <motion.h1
-                    initial={{ opacity: 0, y: 30 }}
+                    initial={{ opacity: 0, y: 40 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="text-5xl md:text-7xl lg:text-8xl font-black leading-tight mb-6"
+                    className="text-6xl md:text-8xl lg:text-9xl font-black leading-[0.9] mb-8"
                 >
-                    <span className="gradient-text">Nest Digital</span>
-                    <br />
-                    <span className="text-white">Studio</span>
+                    <span className="block bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent">
+                        Nest Digital
+                    </span>
+                    <motion.span
+                        className="block mt-2"
+                        animate={{
+                            backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"]
+                        }}
+                        transition={{ duration: 5, repeat: Infinity }}
+                        style={{
+                            backgroundSize: "200% auto",
+                            backgroundImage: "linear-gradient(90deg, var(--nds-primary), var(--nds-accent), var(--nds-primary))",
+                            WebkitBackgroundClip: "text",
+                            WebkitTextFillColor: "transparent"
+                        }}
+                    >
+                        Studio
+                    </motion.span>
                 </motion.h1>
 
-                {/* Subtitle */}
+                {/* Subtitle with emphasized text */}
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
-                    className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto mb-12 leading-relaxed"
+                    className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto mb-14 leading-relaxed"
                 >
                     Expert technology reviews powered by AI. We analyze{" "}
-                    <span className="text-[var(--nds-primary)] font-semibold">50,000+ verified reviews</span>{" "}
+                    <span className="text-white font-bold relative">
+                        50,000+ verified reviews
+                        <motion.span
+                            className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-[var(--nds-primary)] to-[var(--nds-accent)]"
+                            initial={{ scaleX: 0 }}
+                            animate={{ scaleX: 1 }}
+                            transition={{ delay: 1, duration: 0.8 }}
+                        />
+                    </span>{" "}
                     to bring you unbiased, data-driven recommendations.
                 </motion.p>
 
-                {/* Trust badges */}
+                {/* Trust badges - Premium stats */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.6 }}
-                    className="flex flex-wrap justify-center gap-8 md:gap-12"
+                    className="flex flex-wrap justify-center gap-8 md:gap-16 mb-14"
                 >
                     {[
-                        { value: "50K+", label: "Reviews Analyzed" },
-                        { value: "5", label: "Data Sources" },
-                        { value: "E-E-A-T", label: "Compliant" },
-                        { value: "AI", label: "Powered" },
+                        { value: "50K+", label: "Reviews Analyzed", icon: "📊" },
+                        { value: "5", label: "Data Sources", icon: "🔗" },
+                        { value: "E-E-A-T", label: "Compliant", icon: "✓" },
+                        { value: "AI", label: "Powered", icon: "🤖" },
                     ].map((badge, i) => (
                         <motion.div
                             key={badge.label}
-                            initial={{ opacity: 0, scale: 0.8 }}
-                            animate={{ opacity: 1, scale: 1 }}
+                            initial={{ opacity: 0, scale: 0.5, y: 20 }}
+                            animate={{ opacity: 1, scale: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.8 + i * 0.1 }}
-                            className="text-center"
+                            whileHover={{ scale: 1.1, y: -5 }}
+                            className="text-center group cursor-default"
                         >
-                            <div className="text-3xl md:text-4xl font-black bg-gradient-to-r from-[var(--nds-primary)] to-[var(--nds-accent)] bg-clip-text text-transparent">
+                            <motion.div
+                                className="text-4xl md:text-5xl font-black bg-gradient-to-r from-[var(--nds-primary)] to-[var(--nds-accent)] bg-clip-text text-transparent"
+                                whileHover={{ scale: 1.1 }}
+                            >
                                 {badge.value}
-                            </div>
-                            <div className="text-xs md:text-sm text-gray-500 uppercase tracking-wider mt-1">
+                            </motion.div>
+                            <div className="text-xs md:text-sm text-gray-500 uppercase tracking-wider mt-2 font-medium group-hover:text-gray-400 transition-colors">
                                 {badge.label}
                             </div>
                         </motion.div>
                     ))}
                 </motion.div>
 
-                {/* CTA Button */}
+                {/* CTA Buttons */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 1 }}
-                    className="mt-12"
+                    className="flex flex-col sm:flex-row items-center justify-center gap-4"
                 >
-                    <button className="group relative px-8 py-4 bg-gradient-to-r from-[var(--nds-primary)] to-[var(--nds-primary-dark)] rounded-full font-semibold text-lg overflow-hidden transition-all duration-300 hover:shadow-[0_0_40px_rgba(0,180,216,0.4)] hover:scale-105">
-                        <span className="relative z-10">Ask AI for Recommendations</span>
-                        <div className="absolute inset-0 bg-gradient-to-r from-[var(--nds-accent)] to-[var(--nds-primary)] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    </button>
+                    <Link href="/compare">
+                        <motion.button
+                            className="group relative px-10 py-5 bg-gradient-to-r from-[var(--nds-primary)] to-[var(--nds-primary-dark)] rounded-full font-bold text-lg overflow-hidden transition-all duration-300"
+                            whileHover={{
+                                scale: 1.05,
+                                boxShadow: "0 0 50px rgba(0,180,216,0.4)"
+                            }}
+                            whileTap={{ scale: 0.98 }}
+                        >
+                            <span className="relative z-10 flex items-center gap-2">
+                                Explore Best Products
+                                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                            </span>
+                            <motion.div
+                                className="absolute inset-0 bg-gradient-to-r from-[var(--nds-accent)] to-[var(--nds-primary)]"
+                                initial={{ x: "-100%" }}
+                                whileHover={{ x: 0 }}
+                                transition={{ duration: 0.3 }}
+                            />
+                        </motion.button>
+                    </Link>
+
+                    <motion.button
+                        className="px-10 py-5 rounded-full font-semibold text-lg border border-white/20 text-white hover:bg-white/5 transition-all flex items-center gap-2"
+                        whileHover={{ scale: 1.05, borderColor: "rgba(255,255,255,0.4)" }}
+                        whileTap={{ scale: 0.98 }}
+                    >
+                        <Sparkles className="w-5 h-5 text-[var(--nds-primary)]" />
+                        Ask AI Assistant
+                    </motion.button>
                 </motion.div>
-            </div>
+            </motion.div>
 
             {/* Scroll indicator */}
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 1.5 }}
-                className="absolute bottom-8 left-1/2 -translate-x-1/2"
+                transition={{ delay: 2 }}
+                className="absolute bottom-10 left-1/2 -translate-x-1/2"
             >
                 <motion.div
-                    animate={{ y: [0, 10, 0] }}
+                    animate={{ y: [0, 12, 0] }}
                     transition={{ duration: 2, repeat: Infinity }}
-                    className="w-6 h-10 border-2 border-white/20 rounded-full flex justify-center"
+                    className="flex flex-col items-center gap-2 text-gray-500"
                 >
-                    <motion.div
-                        animate={{ y: [0, 12, 0] }}
-                        transition={{ duration: 2, repeat: Infinity }}
-                        className="w-1.5 h-3 bg-[var(--nds-primary)] rounded-full mt-2"
-                    />
+                    <span className="text-xs uppercase tracking-widest">Scroll to explore</span>
+                    <ChevronDown className="w-5 h-5" />
                 </motion.div>
             </motion.div>
         </section>
