@@ -52,28 +52,28 @@ export default function GamingMonitorsPage() {
                                 <span className="text-3xl">🏆</span>
                                 <div className="flex-1">
                                     <h3 className="font-bold text-white">Best Overall</h3>
-                                    <p className="text-green-400 font-semibold">LG 27GR95QE-B OLED</p>
-                                    <p className="text-xs text-gray-400">1440p 240Hz, 0.03ms, perfect blacks</p>
+                                    <p className="text-green-400 font-semibold">LG 27GL850-B UltraGear</p>
+                                    <p className="text-xs text-gray-400">1440p 144Hz, 1ms, Nano IPS</p>
                                 </div>
-                                <a href="https://amazon.com/dp/B0BVWJ79XQ?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-green-500 text-white text-sm font-semibold hover:bg-green-600 transition-colors">Check Price</a>
+                                <a href="https://amazon.com/dp/B07TD94TQF?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-green-500 text-white text-sm font-semibold hover:bg-green-600 transition-colors">Check Price</a>
                             </div>
                             <div className="p-4 rounded-xl bg-white/5 flex items-center gap-4">
                                 <span className="text-3xl">💰</span>
                                 <div className="flex-1">
                                     <h3 className="font-bold text-white">Best Value</h3>
-                                    <p className="text-blue-400 font-semibold">ASUS TUF Gaming VG27AQ</p>
-                                    <p className="text-xs text-gray-400">1440p 165Hz, IPS, $269</p>
+                                    <p className="text-blue-400 font-semibold">ASUS VG27AQ</p>
+                                    <p className="text-xs text-gray-400">1440p 165Hz, IPS, G-SYNC</p>
                                 </div>
-                                <a href="https://amazon.com/dp/B09FP5T8GS?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-blue-500 text-white text-sm font-semibold hover:bg-blue-600 transition-colors">Check Price</a>
+                                <a href="https://amazon.com/dp/B07ZZL29J7?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-blue-500 text-white text-sm font-semibold hover:bg-blue-600 transition-colors">Check Price</a>
                             </div>
                             <div className="p-4 rounded-xl bg-white/5 flex items-center gap-4">
                                 <span className="text-3xl">⚡</span>
                                 <div className="flex-1">
                                     <h3 className="font-bold text-white">Best for Esports</h3>
-                                    <p className="text-purple-400 font-semibold">BenQ Zowie XL2566K</p>
-                                    <p className="text-xs text-gray-400">1080p 360Hz, DyAc+, pro choice</p>
+                                    <p className="text-purple-400 font-semibold">BenQ ZOWIE XL2411P</p>
+                                    <p className="text-xs text-gray-400">1080p 144Hz, 1ms, esports</p>
                                 </div>
-                                <a href="https://amazon.com/dp/B0BJY6R93V?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-purple-500 text-white text-sm font-semibold hover:bg-purple-600 transition-colors">Check Price</a>
+                                <a href="https://amazon.com/dp/B073KPX54N?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-purple-500 text-white text-sm font-semibold hover:bg-purple-600 transition-colors">Check Price</a>
                             </div>
                             <div className="p-4 rounded-xl bg-white/5 flex items-center gap-4">
                                 <span className="text-3xl">🎬</span>

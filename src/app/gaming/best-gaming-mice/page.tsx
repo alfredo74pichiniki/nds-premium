@@ -61,10 +61,10 @@ export default function GamingMicePage() {
                             <div className="p-4 rounded-xl bg-white/5 flex items-center justify-between flex-wrap gap-4">
                                 <div>
                                     <h3 className="font-bold text-purple-400">Best Ergonomic</h3>
-                                    <p className="text-white font-semibold">Razer DeathAdder V3 Pro</p>
-                                    <p className="text-xs text-gray-400">63g, palm grip perfection</p>
+                                    <p className="text-white font-semibold">Razer DeathAdder Essential</p>
+                                    <p className="text-xs text-gray-400">6400 DPI, classic shape</p>
                                 </div>
-                                <a href="https://www.amazon.com/dp/B0B6MFWHFX?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-purple-500 text-white text-sm font-semibold">$149</a>
+                                <a href="https://www.amazon.com/dp/B07D136KSY?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-purple-500 text-white text-sm font-semibold">$29</a>
                             </div>
                         </div>
                     </section>
