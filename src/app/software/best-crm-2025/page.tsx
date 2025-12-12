@@ -141,7 +141,7 @@ export default function CRMComparisonPage() {
                                         <li>✓ Content marketing is core strategy</li>
                                         <li>✓ You need marketing + sales unified</li>
                                     </ul>
-                                    <a href="https://hubspot.com/?ref=nds" target="_blank" rel="nofollow sponsored" className="inline-flex items-center gap-2 mt-4 px-5 py-2 rounded-full bg-orange-500 text-white text-sm font-semibold hover:bg-orange-600 transition-colors">
+                                    <a href="https://www.hubspot.com/pricing/crm" target="_blank" rel="nofollow sponsored" className="inline-flex items-center gap-2 mt-4 px-5 py-2 rounded-full bg-orange-500 text-white text-sm font-semibold hover:bg-orange-600 transition-colors">
                                         Start Free with HubSpot →
                                     </a>
                                 </div>
@@ -153,7 +153,7 @@ export default function CRMComparisonPage() {
                                         <li>✓ You have budget for implementation</li>
                                         <li>✓ Custom integrations are critical</li>
                                     </ul>
-                                    <a href="https://salesforce.com/?ref=nds" target="_blank" rel="nofollow sponsored" className="inline-flex items-center gap-2 mt-4 px-5 py-2 rounded-full bg-blue-500 text-white text-sm font-semibold hover:bg-blue-600 transition-colors">
+                                    <a href="https://www.salesforce.com/editions-pricing/sales-cloud" target="_blank" rel="nofollow sponsored" className="inline-flex items-center gap-2 mt-4 px-5 py-2 rounded-full bg-blue-500 text-white text-sm font-semibold hover:bg-blue-600 transition-colors">
                                         Try Salesforce Free Trial →
                                     </a>
                                 </div>
@@ -165,7 +165,7 @@ export default function CRMComparisonPage() {
                                         <li>✓ Budget is a concern</li>
                                         <li>✓ Your team hates complex software</li>
                                     </ul>
-                                    <a href="https://pipedrive.com/?ref=nds" target="_blank" rel="nofollow sponsored" className="inline-flex items-center gap-2 mt-4 px-5 py-2 rounded-full bg-green-500 text-white text-sm font-semibold hover:bg-green-600 transition-colors">
+                                    <a href="https://www.pipedrive.com/pricing" target="_blank" rel="nofollow sponsored" className="inline-flex items-center gap-2 mt-4 px-5 py-2 rounded-full bg-green-500 text-white text-sm font-semibold hover:bg-green-600 transition-colors">
                                         Try Pipedrive 14 Days Free →
                                     </a>
                                 </div>

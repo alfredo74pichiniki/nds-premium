@@ -176,21 +176,21 @@ export default function EmailMarketingPage() {
                                 <div className="p-4 rounded-xl bg-yellow-500/10 border border-yellow-500/30">
                                     <h4 className="font-bold text-yellow-400 mb-2">For Content Creators</h4>
                                     <p className="text-gray-300 text-sm mb-3">ConvertKit is purpose-built for you. The visual automations and tagging system are perfect for building relationships.</p>
-                                    <a href="https://convertkit.com/?ref=nds" target="_blank" rel="nofollow sponsored" className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-yellow-500 text-black text-sm font-semibold hover:bg-yellow-400 transition-colors">
+                                    <a href="https://convertkit.com/pricing" target="_blank" rel="nofollow sponsored" className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-yellow-500 text-black text-sm font-semibold hover:bg-yellow-400 transition-colors">
                                         Try ConvertKit Free →
                                     </a>
                                 </div>
                                 <div className="p-4 rounded-xl bg-green-500/10 border border-green-500/30">
                                     <h4 className="font-bold text-green-400 mb-2">For Newsletter Businesses</h4>
                                     <p className="text-gray-300 text-sm mb-3">Beehiiv is unbeatable. Best pricing, built-in monetization, and it's what serious newsletter operators use.</p>
-                                    <a href="https://beehiiv.com/?ref=nds" target="_blank" rel="nofollow sponsored" className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-green-500 text-white text-sm font-semibold hover:bg-green-600 transition-colors">
+                                    <a href="https://www.beehiiv.com/pricing" target="_blank" rel="nofollow sponsored" className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-green-500 text-white text-sm font-semibold hover:bg-green-600 transition-colors">
                                         Start Free with Beehiiv →
                                     </a>
                                 </div>
                                 <div className="p-4 rounded-xl bg-blue-500/10 border border-blue-500/30">
                                     <h4 className="font-bold text-blue-400 mb-2">For E-commerce Stores</h4>
                                     <p className="text-gray-300 text-sm mb-3">Klaviyo pays for itself with abandoned cart flows alone. The Shopify integration is seamless.</p>
-                                    <a href="https://klaviyo.com/?ref=nds" target="_blank" rel="nofollow sponsored" className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-blue-500 text-white text-sm font-semibold hover:bg-blue-600 transition-colors">
+                                    <a href="https://www.klaviyo.com/pricing" target="_blank" rel="nofollow sponsored" className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-blue-500 text-white text-sm font-semibold hover:bg-blue-600 transition-colors">
                                         Get Klaviyo Free Trial →
                                     </a>
                                 </div>

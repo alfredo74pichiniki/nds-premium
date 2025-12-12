@@ -168,7 +168,7 @@ export default function HostingComparisonPage() {
                                 <p className="text-gray-400">E-commerce sites, high-traffic blogs, WooCommerce stores, businesses that can't afford downtime.</p>
                             </div>
                             <a
-                                href="https://kinsta.com/?ref=PENDING"
+                                href="https://kinsta.com/plans/"
                                 target="_blank"
                                 rel="nofollow sponsored noopener"
                                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-[var(--nds-primary)] to-[var(--nds-accent)] text-white font-semibold hover:shadow-lg hover:shadow-[var(--nds-primary)]/20 transition-all"
@@ -199,7 +199,7 @@ export default function HostingComparisonPage() {
                                 <p className="text-gray-400">Agencies managing multiple client sites, enterprises needing compliance, developers building headless applications.</p>
                             </div>
                             <a
-                                href="https://wpengine.com/?ref=PENDING"
+                                href="https://wpengine.com/plans/"
                                 target="_blank"
                                 rel="nofollow sponsored noopener"
                                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold hover:shadow-lg hover:shadow-purple-500/20 transition-all"
@@ -230,7 +230,7 @@ export default function HostingComparisonPage() {
                                 <p className="text-gray-400">Small businesses, bloggers who've outgrown shared hosting, anyone who wants "good enough" at a fair price.</p>
                             </div>
                             <a
-                                href="https://siteground.com/?ref=PENDING"
+                                href="https://www.siteground.com/wordpress-hosting.htm"
                                 target="_blank"
                                 rel="nofollow sponsored noopener"
                                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-green-500 to-emerald-500 text-white font-semibold hover:shadow-lg hover:shadow-green-500/20 transition-all"

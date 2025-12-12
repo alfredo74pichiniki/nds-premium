@@ -131,7 +131,7 @@ export default function AIToolsPage() {
                                 The integration is seamless. It's not a separate app—it's built into the pages you already use.
                             </p>
                             <a
-                                href="https://notion.so/?ref=PENDING"
+                                href="https://www.notion.so/product/ai"
                                 target="_blank"
                                 rel="nofollow sponsored noopener"
                                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-black font-semibold hover:bg-gray-100 transition-all"
@@ -166,7 +166,7 @@ export default function AIToolsPage() {
                                 The ROI math: If a content writer costs $60/hour and Jasper saves 6 hours weekly, that's $1,440/month in labor savings vs $49 subscription.
                             </p>
                             <a
-                                href="https://jasper.ai/?ref=PENDING"
+                                href="https://www.jasper.ai/pricing"
                                 target="_blank"
                                 rel="nofollow sponsored noopener"
                                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold hover:shadow-lg transition-all"
@@ -201,7 +201,7 @@ export default function AIToolsPage() {
                                 The setup takes time. But once configured, these automations run silently, saving hours daily.
                             </p>
                             <a
-                                href="https://zapier.com/?ref=PENDING"
+                                href="https://zapier.com/pricing"
                                 target="_blank"
                                 rel="nofollow sponsored noopener"
                                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold hover:shadow-lg transition-all"
@@ -236,7 +236,7 @@ export default function AIToolsPage() {
                                 For teams already in HubSpot, this is a no-brainer. It's free and genuinely useful.
                             </p>
                             <a
-                                href="https://hubspot.com/?ref=PENDING"
+                                href="https://www.hubspot.com/pricing/crm"
                                 target="_blank"
                                 rel="nofollow sponsored noopener"
                                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-orange-400 to-orange-600 text-white font-semibold hover:shadow-lg transition-all"
@@ -271,7 +271,7 @@ export default function AIToolsPage() {
                                 $30/month is steep for email. But if email is a significant part of your job and you value time, it pays for itself.
                             </p>
                             <a
-                                href="https://superhuman.com/?ref=PENDING"
+                                href="https://superhuman.com/pricing"
                                 target="_blank"
                                 rel="nofollow sponsored noopener"
                                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold hover:shadow-lg transition-all"

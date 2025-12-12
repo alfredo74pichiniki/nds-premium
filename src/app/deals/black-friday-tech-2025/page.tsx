@@ -92,7 +92,7 @@ export default function BlackFridayDealsPage() {
                                     <div className="text-right">
                                         <p className="text-gray-500 line-through text-sm">$10/mo</p>
                                         <p className="text-3xl font-black text-purple-400">$5/mo</p>
-                                        <a href="https://notion.so/?ref=PENDING" target="_blank" rel="nofollow sponsored" className="inline-block mt-2 px-6 py-2 rounded-full bg-purple-500 text-white font-semibold hover:bg-purple-600 transition-colors">View Deal</a>
+                                        <a href="https://www.notion.so/product" target="_blank" rel="nofollow sponsored" className="inline-block mt-2 px-6 py-2 rounded-full bg-purple-500 text-white font-semibold hover:bg-purple-600 transition-colors">View Deal</a>
                                     </div>
                                 </div>
                             </div>

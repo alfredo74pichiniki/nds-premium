@@ -26,7 +26,7 @@ const deals = [
         originalPrice: "$10/mo",
         salePrice: "$5/mo",
         discount: "50% OFF",
-        href: "https://notion.so/?ref=nds",
+        href: "https://www.notion.so/product",
         category: "Software",
     },
 ];
