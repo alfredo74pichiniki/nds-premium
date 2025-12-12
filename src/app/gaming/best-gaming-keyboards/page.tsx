@@ -69,7 +69,7 @@ export default function GamingKeyboardsPage() {
                                         <h3 className="font-bold text-white">Best Mainstream: Razer Huntsman V3 Pro</h3>
                                         <p className="text-xs text-gray-400">Optical, adjustable actuation, Snap Tap</p>
                                     </div>
-                                    <a href="https://amazon.com/dp/B0CGXQ5GQK?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-green-500 text-white text-sm font-semibold">$249</a>
+                                    <a href="https://amazon.com/dp/B0CM85ZNW1?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-green-500 text-white text-sm font-semibold">$249</a>
                                 </div>
                             </div>
                         </div>

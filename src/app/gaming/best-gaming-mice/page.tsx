@@ -48,7 +48,7 @@ export default function GamingMicePage() {
                                     <p className="text-white font-semibold">Logitech G Pro X Superlight 2</p>
                                     <p className="text-xs text-gray-400">60g, HERO 2 sensor, pro favorite</p>
                                 </div>
-                                <a href="https://www.amazon.com/dp/B0CKJ49J3B?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-blue-500 text-white text-sm font-semibold">$159</a>
+                                <a href="https://www.amazon.com/dp/B09NBWL8J5?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-blue-500 text-white text-sm font-semibold">$159</a>
                             </div>
                             <div className="p-4 rounded-xl bg-white/5 flex items-center justify-between flex-wrap gap-4">
                                 <div>
@@ -56,7 +56,7 @@ export default function GamingMicePage() {
                                     <p className="text-white font-semibold">Pulsar X2</p>
                                     <p className="text-xs text-gray-400">52g, great shape, $99</p>
                                 </div>
-                                <a href="https://www.amazon.com/dp/B0BXRG3NZN?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-green-500 text-white text-sm font-semibold">$99</a>
+                                <a href="https://www.amazon.com/dp/B0CH9Z62J3?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-green-500 text-white text-sm font-semibold">$99</a>
                             </div>
                             <div className="p-4 rounded-xl bg-white/5 flex items-center justify-between flex-wrap gap-4">
                                 <div>

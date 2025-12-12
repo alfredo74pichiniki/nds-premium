@@ -55,16 +55,16 @@ export default function GamingMonitorsPage() {
                                     <p className="text-green-400 font-semibold">LG 27GR95QE-B OLED</p>
                                     <p className="text-xs text-gray-400">1440p 240Hz, 0.03ms, perfect blacks</p>
                                 </div>
-                                <a href="https://amazon.com/dp/B0BCQHRWWL?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-green-500 text-white text-sm font-semibold hover:bg-green-600 transition-colors">Check Price</a>
+                                <a href="https://amazon.com/dp/B0BVWJ79XQ?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-green-500 text-white text-sm font-semibold hover:bg-green-600 transition-colors">Check Price</a>
                             </div>
                             <div className="p-4 rounded-xl bg-white/5 flex items-center gap-4">
                                 <span className="text-3xl">💰</span>
                                 <div className="flex-1">
                                     <h3 className="font-bold text-white">Best Value</h3>
-                                    <p className="text-blue-400 font-semibold">ASUS VG27AQ1A</p>
-                                    <p className="text-xs text-gray-400">1440p 170Hz, IPS, $300</p>
+                                    <p className="text-blue-400 font-semibold">ASUS TUF Gaming VG27AQ</p>
+                                    <p className="text-xs text-gray-400">1440p 165Hz, IPS, $269</p>
                                 </div>
-                                <a href="https://amazon.com/dp/B08LCVTMZF?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-blue-500 text-white text-sm font-semibold hover:bg-blue-600 transition-colors">Check Price</a>
+                                <a href="https://amazon.com/dp/B09FP5T8GS?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-blue-500 text-white text-sm font-semibold hover:bg-blue-600 transition-colors">Check Price</a>
                             </div>
                             <div className="p-4 rounded-xl bg-white/5 flex items-center gap-4">
                                 <span className="text-3xl">⚡</span>
@@ -73,7 +73,7 @@ export default function GamingMonitorsPage() {
                                     <p className="text-purple-400 font-semibold">BenQ Zowie XL2566K</p>
                                     <p className="text-xs text-gray-400">1080p 360Hz, DyAc+, pro choice</p>
                                 </div>
-                                <a href="https://amazon.com/dp/B0BF3ZD7PK?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-purple-500 text-white text-sm font-semibold hover:bg-purple-600 transition-colors">Check Price</a>
+                                <a href="https://amazon.com/dp/B0BJY6R93V?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-purple-500 text-white text-sm font-semibold hover:bg-purple-600 transition-colors">Check Price</a>
                             </div>
                             <div className="p-4 rounded-xl bg-white/5 flex items-center gap-4">
                                 <span className="text-3xl">🎬</span>
@@ -153,7 +153,7 @@ export default function GamingMonitorsPage() {
                                 For most gamers, the <strong className="text-green-400">LG 27GR95QE-B OLED</strong> is the best monitor money can buy—perfect blacks, 0.03ms response, and 240Hz smoothness in one package.
                             </p>
                             <p className="text-gray-300 leading-relaxed">
-                                On a budget? The <strong className="text-blue-400">ASUS VG27AQ1A</strong> delivers 90% of the experience at half the price.
+                                On a budget? The <strong className="text-blue-400">ASUS TUF Gaming VG27AQ</strong> delivers 90% of the experience at half the price.
                             </p>
                         </section>
                     </div>
