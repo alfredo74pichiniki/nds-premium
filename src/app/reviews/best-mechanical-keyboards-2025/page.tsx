@@ -64,7 +64,7 @@ export default function MechanicalKeyboardsPage() {
                                     <p className="text-white font-semibold">RK Royal Kludge RK84</p>
                                     <p className="text-xs text-gray-400">75%, hot-swap, RGB, under $70</p>
                                 </div>
-                                <a href="https://www.amazon.com/dp/B0BG8T7RP6?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-blue-500 text-white text-sm font-semibold hover:bg-blue-600">Check Price</a>
+                                <a href="https://www.amazon.com/dp/B0BGPXRFQP?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-blue-500 text-white text-sm font-semibold hover:bg-blue-600">Check Price</a>
                             </div>
                             <div className="p-4 rounded-xl bg-white/5 flex items-center justify-between flex-wrap gap-4">
                                 <div>

@@ -45,10 +45,10 @@ export default function WebcamsPage() {
                             <div className="p-4 rounded-xl bg-white/5 flex items-center justify-between flex-wrap gap-4">
                                 <div>
                                     <h3 className="font-bold text-purple-400">Best Overall</h3>
-                                    <p className="text-white font-semibold">Elgato Facecam Pro</p>
-                                    <p className="text-xs text-gray-400">4K, best autofocus, pro features</p>
+                                    <p className="text-white font-semibold">Elgato Facecam</p>
+                                    <p className="text-xs text-gray-400">1080p60, best autofocus, pro features</p>
                                 </div>
-                                <a href="https://www.amazon.com/dp/B0BQJ5P53K?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-purple-500 text-white text-sm font-semibold">$299</a>
+                                <a href="https://www.amazon.com/dp/B0957W759M?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-purple-500 text-white text-sm font-semibold">$149</a>
                             </div>
                             <div className="p-4 rounded-xl bg-white/5 flex items-center justify-between flex-wrap gap-4">
                                 <div>
@@ -56,7 +56,7 @@ export default function WebcamsPage() {
                                     <p className="text-white font-semibold">Logitech Brio 4K</p>
                                     <p className="text-xs text-gray-400">4K, Windows Hello, $149</p>
                                 </div>
-                                <a href="https://www.amazon.com/dp/B01N5UOYC4?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-blue-500 text-white text-sm font-semibold">$149</a>
+                                <a href="https://www.amazon.com/dp/B08H8NZ5TN?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-blue-500 text-white text-sm font-semibold">$149</a>
                             </div>
                             <div className="p-4 rounded-xl bg-white/5 flex items-center justify-between flex-wrap gap-4">
                                 <div>
@@ -93,10 +93,10 @@ export default function WebcamsPage() {
                                 </thead>
                                 <tbody className="text-gray-300">
                                     <tr className="border-b border-white/5">
-                                        <td className="py-3 font-semibold text-purple-400">Elgato Facecam Pro</td>
-                                        <td className="text-center py-3">4K 60fps</td>
+                                        <td className="py-3 font-semibold text-purple-400">Elgato Facecam</td>
+                                        <td className="text-center py-3">1080p 60fps</td>
                                         <td className="text-center py-3 text-green-400">★★★★★</td>
-                                        <td className="text-center py-3">$299</td>
+                                        <td className="text-center py-3">$149</td>
                                     </tr>
                                     <tr className="border-b border-white/5">
                                         <td className="py-3 font-semibold text-blue-400">Logitech Brio 4K</td>
@@ -123,7 +123,7 @@ export default function WebcamsPage() {
                         <section className="p-6 rounded-2xl bg-white/5 border border-white/10">
                             <h2 className="text-xl font-bold text-white mb-4">🎯 Bottom Line</h2>
                             <p className="text-gray-300">
-                                <strong className="text-blue-400">Logitech Brio 4K</strong> for most people—great quality at $149. <strong className="text-green-400">C920s</strong> if budget is tight. <strong className="text-purple-400">Elgato Facecam Pro</strong> for streamers.
+                                <strong className="text-blue-400">Logitech Brio 4K</strong> for most people—great quality at $149. <strong className="text-green-400">C920s</strong> if budget is tight. <strong className="text-purple-400">Elgato Facecam</strong> for streamers.
                             </p>
                         </section>
                     </div>

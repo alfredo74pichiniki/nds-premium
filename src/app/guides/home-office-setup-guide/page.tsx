@@ -72,7 +72,7 @@ export default function HomeOfficeGuidePage() {
                                 <div className="space-y-3">
                                     <div className="flex justify-between items-center">
                                         <span className="text-gray-300">Monitor - Dell S2722QC 27" 4K</span>
-                                        <a href="https://www.amazon.com/dp/B09DTDRJWP?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="text-green-400 hover:underline">$299</a>
+                                        <a href="https://www.amazon.com/dp/B09CGY99X5?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="text-green-400 hover:underline">$299</a>
                                     </div>
                                     <div className="flex justify-between items-center">
                                         <span className="text-gray-300">Webcam - Logitech C920s</span>
@@ -106,7 +106,7 @@ export default function HomeOfficeGuidePage() {
                                     </div>
                                     <div className="flex justify-between items-center">
                                         <span className="text-gray-300">Webcam - Elgato Facecam</span>
-                                        <a href="https://www.amazon.com/dp/B0973DV11N?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="text-blue-400 hover:underline">$149</a>
+                                        <a href="https://www.amazon.com/dp/B0957W759M?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="text-blue-400 hover:underline">$149</a>
                                     </div>
                                     <div className="flex justify-between items-center">
                                         <span className="text-gray-300">Light - BenQ ScreenBar</span>
@@ -122,7 +122,7 @@ export default function HomeOfficeGuidePage() {
                                     </div>
                                     <div className="flex justify-between items-center">
                                         <span className="text-gray-300">Microphone - Shure MV7</span>
-                                        <a href="https://www.amazon.com/dp/B08G7RG9ML?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="text-blue-400 hover:underline">$249</a>
+                                        <a href="https://www.amazon.com/dp/B08L6C2Q5F?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="text-blue-400 hover:underline">$249</a>
                                     </div>
                                     <div className="flex justify-between items-center">
                                         <span className="text-gray-300">USB-C Hub - Anker 555</span>
