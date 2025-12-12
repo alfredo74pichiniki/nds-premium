@@ -51,7 +51,7 @@ export default function GamingKeyboardsPage() {
                                         <h3 className="font-bold text-white">Best Overall: Wooting 60HE</h3>
                                         <p className="text-xs text-gray-400">Hall Effect, Rapid Trigger, analog input</p>
                                     </div>
-                                    <a href="https://wooting.io/wooting-60he" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-pink-500 text-white text-sm font-semibold">$175</a>
+                                    <a href="https://wooting.io/wooting-60he" target="_blank" rel="noopener" className="px-4 py-2 rounded-full bg-pink-500 text-white text-sm font-semibold">$175</a>
                                 </div>
                             </div>
                             <div className="p-4 rounded-xl bg-white/5">

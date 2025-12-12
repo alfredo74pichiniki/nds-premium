@@ -170,7 +170,7 @@ export default function HostingComparisonPage() {
                             <a
                                 href="https://kinsta.com/plans/"
                                 target="_blank"
-                                rel="nofollow sponsored noopener"
+                                rel="noopener"
                                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-[var(--nds-primary)] to-[var(--nds-accent)] text-white font-semibold hover:shadow-lg hover:shadow-[var(--nds-primary)]/20 transition-all"
                             >
                                 Try Kinsta Free for 30 Days →
@@ -201,7 +201,7 @@ export default function HostingComparisonPage() {
                             <a
                                 href="https://wpengine.com/plans/"
                                 target="_blank"
-                                rel="nofollow sponsored noopener"
+                                rel="noopener"
                                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold hover:shadow-lg hover:shadow-purple-500/20 transition-all"
                             >
                                 Get 4 Months Free on Annual Plans →
@@ -232,7 +232,7 @@ export default function HostingComparisonPage() {
                             <a
                                 href="https://www.siteground.com/wordpress-hosting.htm"
                                 target="_blank"
-                                rel="nofollow sponsored noopener"
+                                rel="noopener"
                                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-green-500 to-emerald-500 text-white font-semibold hover:shadow-lg hover:shadow-green-500/20 transition-all"
                             >
                                 Get 73% Off SiteGround →

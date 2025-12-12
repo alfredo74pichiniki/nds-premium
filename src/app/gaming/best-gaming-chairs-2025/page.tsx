@@ -48,7 +48,7 @@ export default function GamingChairsPage() {
                                     <p className="text-white font-semibold">Secretlab Titan Evo 2025</p>
                                     <p className="text-xs text-gray-400">Best balance of gaming + ergonomics</p>
                                 </div>
-                                <a href="https://secretlab.co/collections/titan-series" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-purple-500 text-white text-sm font-semibold">$519</a>
+                                <a href="https://secretlab.co/collections/titan-series" target="_blank" rel="noopener" className="px-4 py-2 rounded-full bg-purple-500 text-white text-sm font-semibold">$519</a>
                             </div>
                             <div className="p-4 rounded-xl bg-white/5 flex items-center justify-between flex-wrap gap-4">
                                 <div>
@@ -56,7 +56,7 @@ export default function GamingChairsPage() {
                                     <p className="text-white font-semibold">Herman Miller Aeron</p>
                                     <p className="text-xs text-gray-400">Gold standard, 12-year warranty</p>
                                 </div>
-                                <a href="https://www.hermanmiller.com/products/seating/office-chairs/aeron-chairs/" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-green-500 text-white text-sm font-semibold">$1,395</a>
+                                <a href="https://www.hermanmiller.com/products/seating/office-chairs/aeron-chairs/" target="_blank" rel="noopener" className="px-4 py-2 rounded-full bg-green-500 text-white text-sm font-semibold">$1,395</a>
                             </div>
                             <div className="p-4 rounded-xl bg-white/5 flex items-center justify-between flex-wrap gap-4">
                                 <div>
@@ -64,7 +64,7 @@ export default function GamingChairsPage() {
                                     <p className="text-white font-semibold">Autonomous ErgoChair Pro</p>
                                     <p className="text-xs text-gray-400">80% of Herman Miller at 30% price</p>
                                 </div>
-                                <a href="https://www.autonomous.ai/office-chairs/ergonomic-chair" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-blue-500 text-white text-sm font-semibold">$449</a>
+                                <a href="https://www.autonomous.ai/office-chairs/ergonomic-chair" target="_blank" rel="noopener" className="px-4 py-2 rounded-full bg-blue-500 text-white text-sm font-semibold">$449</a>
                             </div>
                         </div>
                     </section>

@@ -48,7 +48,7 @@ export default function PasswordManagersPage() {
                                     <p className="text-white font-semibold">1Password</p>
                                     <p className="text-xs text-gray-400">Best UX, travel mode, family sharing</p>
                                 </div>
-                                <a href="https://1password.com/sign-up/" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-blue-500 text-white text-sm font-semibold">$2.99/mo</a>
+                                <a href="https://1password.com/sign-up/" target="_blank" rel="noopener" className="px-4 py-2 rounded-full bg-blue-500 text-white text-sm font-semibold">$2.99/mo</a>
                             </div>
                             <div className="p-4 rounded-xl bg-white/5 flex items-center justify-between flex-wrap gap-4">
                                 <div>
@@ -56,7 +56,7 @@ export default function PasswordManagersPage() {
                                     <p className="text-white font-semibold">Bitwarden</p>
                                     <p className="text-xs text-gray-400">Open source, unlimited free tier</p>
                                 </div>
-                                <a href="https://bitwarden.com/pricing/" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-green-500 text-white text-sm font-semibold">Free / $10/yr</a>
+                                <a href="https://bitwarden.com/pricing/" target="_blank" rel="noopener" className="px-4 py-2 rounded-full bg-green-500 text-white text-sm font-semibold">Free / $10/yr</a>
                             </div>
                             <div className="p-4 rounded-xl bg-white/5 flex items-center justify-between flex-wrap gap-4">
                                 <div>
@@ -64,7 +64,7 @@ export default function PasswordManagersPage() {
                                     <p className="text-white font-semibold">Dashlane</p>
                                     <p className="text-xs text-gray-400">Built-in VPN, dark web monitoring</p>
                                 </div>
-                                <a href="https://www.dashlane.com/pricing" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-purple-500 text-white text-sm font-semibold">$4.99/mo</a>
+                                <a href="https://www.dashlane.com/pricing" target="_blank" rel="noopener" className="px-4 py-2 rounded-full bg-purple-500 text-white text-sm font-semibold">$4.99/mo</a>
                             </div>
                         </div>
                     </section>

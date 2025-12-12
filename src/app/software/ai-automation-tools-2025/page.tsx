@@ -133,7 +133,7 @@ export default function AIToolsPage() {
                             <a
                                 href="https://www.notion.so/product/ai"
                                 target="_blank"
-                                rel="nofollow sponsored noopener"
+                                rel="noopener"
                                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-black font-semibold hover:bg-gray-100 transition-all"
                             >
                                 Try Notion AI Free →
@@ -168,7 +168,7 @@ export default function AIToolsPage() {
                             <a
                                 href="https://www.jasper.ai/pricing"
                                 target="_blank"
-                                rel="nofollow sponsored noopener"
+                                rel="noopener"
                                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold hover:shadow-lg transition-all"
                             >
                                 Get 7-Day Free Trial →
@@ -203,7 +203,7 @@ export default function AIToolsPage() {
                             <a
                                 href="https://zapier.com/pricing"
                                 target="_blank"
-                                rel="nofollow sponsored noopener"
+                                rel="noopener"
                                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold hover:shadow-lg transition-all"
                             >
                                 Start Free with Zapier →
@@ -238,7 +238,7 @@ export default function AIToolsPage() {
                             <a
                                 href="https://www.hubspot.com/pricing/crm"
                                 target="_blank"
-                                rel="nofollow sponsored noopener"
+                                rel="noopener"
                                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-orange-400 to-orange-600 text-white font-semibold hover:shadow-lg transition-all"
                             >
                                 Try HubSpot Free →
@@ -273,7 +273,7 @@ export default function AIToolsPage() {
                             <a
                                 href="https://superhuman.com/pricing"
                                 target="_blank"
-                                rel="nofollow sponsored noopener"
+                                rel="noopener"
                                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold hover:shadow-lg transition-all"
                             >
                                 Request Superhuman Access →

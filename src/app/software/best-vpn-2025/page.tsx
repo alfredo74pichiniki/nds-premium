@@ -16,9 +16,8 @@ export default function VPNComparisonPage() {
 
             <article className="pt-32 pb-24 px-6">
                 <div className="max-w-4xl mx-auto">
-                    <div className="mb-8 p-4 rounded-xl bg-amber-500/10 border border-amber-500/20 text-sm text-amber-300">
-                        <strong>📋 Disclosure:</strong> This article contains affiliate links.{" "}
-                        <Link href="/disclosure" className="underline hover:text-amber-200">Learn more</Link>
+                    <div className="mb-8 p-4 rounded-xl bg-blue-500/10 border border-blue-500/20 text-sm text-blue-300">
+                        <strong>ℹ️ Note:</strong> Links below go directly to official product websites. We may add affiliate partnerships in the future.
                     </div>
 
                     <header className="mb-12">
@@ -161,7 +160,7 @@ export default function VPNComparisonPage() {
                                     <h3 className="font-bold text-blue-400 mb-2">NordVPN</h3>
                                     <p className="text-2xl font-black text-white">$3.69/mo</p>
                                     <p className="text-xs text-gray-400 mb-3">+ 3 months free</p>
-                                    <a href="https://nordvpn.com/pricing/" target="_blank" rel="nofollow sponsored" className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500 text-white text-sm font-semibold hover:bg-blue-600">
+                                    <a href="https://nordvpn.com/pricing/" target="_blank" rel="noopener" className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500 text-white text-sm font-semibold hover:bg-blue-600">
                                         Get NordVPN →
                                     </a>
                                 </div>
@@ -169,7 +168,7 @@ export default function VPNComparisonPage() {
                                     <h3 className="font-bold text-green-400 mb-2">Surfshark</h3>
                                     <p className="text-2xl font-black text-white">$2.49/mo</p>
                                     <p className="text-xs text-gray-400 mb-3">Unlimited devices</p>
-                                    <a href="https://surfshark.com/pricing" target="_blank" rel="nofollow sponsored" className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500 text-white text-sm font-semibold hover:bg-green-600">
+                                    <a href="https://surfshark.com/pricing" target="_blank" rel="noopener" className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500 text-white text-sm font-semibold hover:bg-green-600">
                                         Get Surfshark →
                                     </a>
                                 </div>
@@ -177,7 +176,7 @@ export default function VPNComparisonPage() {
                                     <h3 className="font-bold text-orange-400 mb-2">ExpressVPN</h3>
                                     <p className="text-2xl font-black text-white">$6.67/mo</p>
                                     <p className="text-xs text-gray-400 mb-3">Premium option</p>
-                                    <a href="https://www.expressvpn.com/order" target="_blank" rel="nofollow sponsored" className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500 text-white text-sm font-semibold hover:bg-orange-600">
+                                    <a href="https://www.expressvpn.com/order" target="_blank" rel="noopener" className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500 text-white text-sm font-semibold hover:bg-orange-600">
                                         Get ExpressVPN →
                                     </a>
                                 </div>
@@ -185,7 +184,7 @@ export default function VPNComparisonPage() {
                                     <h3 className="font-bold text-red-400 mb-2">ProtonVPN</h3>
                                     <p className="text-2xl font-black text-white">$4.99/mo</p>
                                     <p className="text-xs text-gray-400 mb-3">Swiss privacy</p>
-                                    <a href="https://protonvpn.com/pricing" target="_blank" rel="nofollow sponsored" className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-500 text-white text-sm font-semibold hover:bg-red-600">
+                                    <a href="https://protonvpn.com/pricing" target="_blank" rel="noopener" className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-500 text-white text-sm font-semibold hover:bg-red-600">
                                         Get ProtonVPN →
                                     </a>
                                 </div>

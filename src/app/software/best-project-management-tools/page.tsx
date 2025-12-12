@@ -16,9 +16,8 @@ export default function ProjectManagementPage() {
 
             <article className="pt-32 pb-24 px-6">
                 <div className="max-w-4xl mx-auto">
-                    <div className="mb-8 p-4 rounded-xl bg-amber-500/10 border border-amber-500/20 text-sm text-amber-300">
-                        <strong>📋 Disclosure:</strong> This article contains affiliate links.{" "}
-                        <Link href="/disclosure" className="underline hover:text-amber-200">Learn more</Link>
+                    <div className="mb-8 p-4 rounded-xl bg-blue-500/10 border border-blue-500/20 text-sm text-blue-300">
+                        <strong>ℹ️ Note:</strong> Links below go directly to official product websites. We may add affiliate partnerships in the future.
                     </div>
 
                     <header className="mb-12">
@@ -119,7 +118,7 @@ export default function ProjectManagementPage() {
                                 <li>✅ Cycles & roadmaps built-in</li>
                                 <li>❌ Not great for non-dev workflows</li>
                             </ul>
-                            <a href="https://linear.app/pricing" target="_blank" rel="nofollow sponsored" className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-purple-500 text-white text-sm font-semibold hover:bg-purple-600 transition-colors">
+                            <a href="https://linear.app/pricing" target="_blank" rel="noopener" className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-purple-500 text-white text-sm font-semibold hover:bg-purple-600 transition-colors">
                                 Try Linear Free →
                             </a>
 
@@ -133,7 +132,7 @@ export default function ProjectManagementPage() {
                                 <li>✅ Portfolio/goals for leadership</li>
                                 <li>❌ Can feel bloated for small teams</li>
                             </ul>
-                            <a href="https://asana.com/pricing" target="_blank" rel="nofollow sponsored" className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-orange-500 text-white text-sm font-semibold hover:bg-orange-600 transition-colors">
+                            <a href="https://asana.com/pricing" target="_blank" rel="noopener" className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-orange-500 text-white text-sm font-semibold hover:bg-orange-600 transition-colors">
                                 Try Asana Free →
                             </a>
 
@@ -147,7 +146,7 @@ export default function ProjectManagementPage() {
                                 <li>✅ Dashboards are beautiful</li>
                                 <li>❌ Pricing adds up with automations</li>
                             </ul>
-                            <a href="https://monday.com/pricing" target="_blank" rel="nofollow sponsored" className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-pink-500 text-white text-sm font-semibold hover:bg-pink-600 transition-colors">
+                            <a href="https://monday.com/pricing" target="_blank" rel="noopener" className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-pink-500 text-white text-sm font-semibold hover:bg-pink-600 transition-colors">
                                 Try Monday Free →
                             </a>
 
@@ -161,7 +160,7 @@ export default function ProjectManagementPage() {
                                 <li>✅ AI features included</li>
                                 <li>❌ PM features less mature</li>
                             </ul>
-                            <a href="https://www.notion.so/product" target="_blank" rel="nofollow sponsored" className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-green-500 text-white text-sm font-semibold hover:bg-green-600 transition-colors">
+                            <a href="https://www.notion.so/product" target="_blank" rel="noopener" className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-green-500 text-white text-sm font-semibold hover:bg-green-600 transition-colors">
                                 Try Notion Free →
                             </a>
                         </section>
