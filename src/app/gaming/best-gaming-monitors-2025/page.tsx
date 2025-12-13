@@ -55,7 +55,7 @@ export default function GamingMonitorsPage() {
                                     <p className="text-green-400 font-semibold">LG 27GL850-B UltraGear</p>
                                     <p className="text-xs text-gray-400">1440p 144Hz, 1ms, Nano IPS</p>
                                 </div>
-                                <a href="https://www.amazon.com/s?k=LG+27GL850+gaming+monitor&tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-green-500 text-white text-sm font-semibold hover:bg-green-600 transition-colors">Check Price</a>
+                                <a href="https://www.amazon.com/dp/B0C63HDHPR?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-green-500 text-white text-sm font-semibold hover:bg-green-600 transition-colors">Check Price</a>
                             </div>
                             <div className="p-4 rounded-xl bg-white/5 flex items-center gap-4">
                                 <span className="text-3xl">💰</span>
@@ -64,7 +64,7 @@ export default function GamingMonitorsPage() {
                                     <p className="text-blue-400 font-semibold">ASUS VG27AQ</p>
                                     <p className="text-xs text-gray-400">1440p 165Hz, IPS, G-SYNC</p>
                                 </div>
-                                <a href="https://www.amazon.com/s?k=ASUS+VG27AQ+gaming+monitor&tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-blue-500 text-white text-sm font-semibold hover:bg-blue-600 transition-colors">Check Price</a>
+                                <a href="https://www.amazon.com/dp/B07WQ4FXY9?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-blue-500 text-white text-sm font-semibold hover:bg-blue-600 transition-colors">Check Price</a>
                             </div>
                             <div className="p-4 rounded-xl bg-white/5 flex items-center gap-4">
                                 <span className="text-3xl">⚡</span>
@@ -73,7 +73,7 @@ export default function GamingMonitorsPage() {
                                     <p className="text-purple-400 font-semibold">BenQ ZOWIE XL2411P</p>
                                     <p className="text-xs text-gray-400">1080p 144Hz, 1ms, esports</p>
                                 </div>
-                                <a href="https://www.amazon.com/s?k=BenQ+ZOWIE+XL2411+gaming+monitor&tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-purple-500 text-white text-sm font-semibold hover:bg-purple-600 transition-colors">Check Price</a>
+                                <a href="https://www.amazon.com/dp/B0B8PXQLCD?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-purple-500 text-white text-sm font-semibold hover:bg-purple-600 transition-colors">Check Price</a>
                             </div>
                             <div className="p-4 rounded-xl bg-white/5 flex items-center gap-4">
                                 <span className="text-3xl">🎬</span>
@@ -82,7 +82,7 @@ export default function GamingMonitorsPage() {
                                     <p className="text-orange-400 font-semibold">Samsung Odyssey Neo G8</p>
                                     <p className="text-xs text-gray-400">4K 240Hz, Mini LED, HDR 2000</p>
                                 </div>
-                                <a href="https://www.amazon.com/s?k=Samsung+Odyssey+Neo+G8+gaming+monitor&tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-orange-500 text-white text-sm font-semibold hover:bg-orange-600 transition-colors">Check Price</a>
+                                <a href="https://www.amazon.com/dp/B09ZH3WM47?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-orange-500 text-white text-sm font-semibold hover:bg-orange-600 transition-colors">Check Price</a>
                             </div>
                         </div>
                     </section>
