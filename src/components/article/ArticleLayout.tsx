@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Navbar } from "@/components/ui/Navbar";
 import { Footer } from "@/components/home/Footer";
 import { AIChat } from "@/components/chat/AIChat";
+import { AffiliateDisclosure } from "@/components/ui/AffiliateDisclosure";
 import {
     Calendar,
     Clock,
@@ -94,6 +95,13 @@ export function ArticleLayout({
                             </div>
                         </div>
                     </motion.div>
+                </div>
+            </section>
+
+            {/* Affiliate Disclosure - ABOVE THE FOLD */}
+            <section className="pb-6 px-6">
+                <div className="max-w-4xl mx-auto">
+                    <AffiliateDisclosure variant="banner" />
                 </div>
             </section>
 
