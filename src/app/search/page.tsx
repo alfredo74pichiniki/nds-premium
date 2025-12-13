@@ -34,18 +34,18 @@ const allContent = [
     },
     {
         type: "article",
-        slug: "/reviews/best-wireless-earbuds",
-        title: "Best Wireless Earbuds Under $100",
-        excerpt: "Premium sound quality doesn't have to break the bank.",
+        slug: "/reviews/best-microphones-podcasting",
+        title: "Best Microphones for Podcasting & Streaming",
+        excerpt: "Crystal clear audio for your podcast or stream.",
         category: "Audio",
-        tags: ["earbuds", "wireless", "budget", "tws", "bluetooth"],
-        date: "Dec 2025",
-        readTime: "8 min",
-        image: "🎵",
+        tags: ["microphone", "podcasting", "streaming", "usb", "xlr"],
+        date: "Nov 2025",
+        readTime: "10 min",
+        image: "🎙️",
     },
     {
         type: "article",
-        slug: "/reviews/best-mechanical-keyboards",
+        slug: "/reviews/best-mechanical-keyboards-2025",
         title: "Best Mechanical Keyboards for Typing & Gaming",
         excerpt: "From tactile switches to linear, we tested 20 keyboards.",
         category: "Peripherals",
@@ -169,8 +169,8 @@ export default function SearchPage() {
                                 key={filter}
                                 onClick={() => setActiveFilter(filter)}
                                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${activeFilter === filter
-                                        ? "bg-[var(--nds-primary)] text-white"
-                                        : "bg-white/5 text-gray-400 hover:bg-white/10"
+                                    ? "bg-[var(--nds-primary)] text-white"
+                                    : "bg-white/5 text-gray-400 hover:bg-white/10"
                                     }`}
                             >
                                 {filter.charAt(0).toUpperCase() + filter.slice(1)}

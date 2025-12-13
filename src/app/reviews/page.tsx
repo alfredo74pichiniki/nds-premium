@@ -7,6 +7,7 @@ import { Footer } from "@/components/home/Footer";
 import { AIChat } from "@/components/chat/AIChat";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
 
+// ONLY articles that have actual pages
 const articles = [
     {
         slug: "best-noise-canceling-headphones",
@@ -29,17 +30,7 @@ const articles = [
         featured: true,
     },
     {
-        slug: "best-wireless-earbuds",
-        title: "Best Wireless Earbuds Under $100",
-        excerpt: "Premium sound quality doesn't have to break the bank. Here are the best budget-friendly earbuds.",
-        category: "Audio",
-        date: "Dec 2025",
-        readTime: "8 min",
-        image: "🎵",
-        featured: false,
-    },
-    {
-        slug: "best-mechanical-keyboards",
+        slug: "best-mechanical-keyboards-2025",
         title: "Best Mechanical Keyboards for Typing & Gaming",
         excerpt: "From tactile switches to linear, we tested 20 keyboards to find the best for every use case.",
         category: "Peripherals",
@@ -49,7 +40,7 @@ const articles = [
         featured: false,
     },
     {
-        slug: "best-webcams",
+        slug: "best-webcams-2025",
         title: "Best Webcams for Video Calls & Streaming",
         excerpt: "Look professional on Zoom calls with our picks for the best 1080p and 4K webcams.",
         category: "Work From Home",
@@ -59,13 +50,33 @@ const articles = [
         featured: false,
     },
     {
-        slug: "best-smart-home-hubs",
-        title: "Best Smart Home Hubs: Alexa vs Google vs HomeKit",
-        excerpt: "Which ecosystem is right for you? We compare all major smart home platforms.",
-        category: "Smart Home",
+        slug: "best-desk-lamps-2025",
+        title: "Best Desk Lamps for Home Office 2025",
+        excerpt: "Proper lighting reduces eye strain and boosts productivity. Here are our top picks.",
+        category: "Work From Home",
         date: "Nov 2025",
-        readTime: "11 min",
-        image: "🏠",
+        readTime: "7 min",
+        image: "💡",
+        featured: false,
+    },
+    {
+        slug: "best-usb-c-hubs-2025",
+        title: "Best USB-C Hubs & Docking Stations 2025",
+        excerpt: "Expand your laptop's connectivity with these top-rated USB-C hubs.",
+        category: "Accessories",
+        date: "Nov 2025",
+        readTime: "8 min",
+        image: "🔌",
+        featured: false,
+    },
+    {
+        slug: "best-microphones-podcasting",
+        title: "Best Microphones for Podcasting & Streaming",
+        excerpt: "Crystal clear audio for your podcast or stream with these professional mics.",
+        category: "Audio",
+        date: "Nov 2025",
+        readTime: "10 min",
+        image: "🎙️",
         featured: false,
     },
 ];
