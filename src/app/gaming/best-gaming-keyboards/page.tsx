@@ -60,7 +60,7 @@ export default function GamingKeyboardsPage() {
                                         <h3 className="font-bold text-white">Best Budget: Keychron K2</h3>
                                         <p className="text-xs text-gray-400">Wireless, hot-swap, RGB</p>
                                     </div>
-                                    <a href="https://amazon.com/dp/B07Y9Y69N7?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-blue-500 text-white text-sm font-semibold">$89</a>
+                                    <a href="https://www.amazon.com/s?k=Keychron+K2+wireless+mechanical+keyboard&tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-blue-500 text-white text-sm font-semibold">$89</a>
                                 </div>
                             </div>
                             <div className="p-4 rounded-xl bg-white/5">
@@ -69,7 +69,7 @@ export default function GamingKeyboardsPage() {
                                         <h3 className="font-bold text-white">Best Mainstream: Razer BlackWidow V3 Pro</h3>
                                         <p className="text-xs text-gray-400">Wireless, RGB, premium build</p>
                                     </div>
-                                    <a href="https://amazon.com/dp/B08GCS5VKG?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-green-500 text-white text-sm font-semibold">$179</a>
+                                    <a href="https://www.amazon.com/s?k=Razer+BlackWidow+V3+mechanical+keyboard&tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-green-500 text-white text-sm font-semibold">$179</a>
                                 </div>
                             </div>
                         </div>

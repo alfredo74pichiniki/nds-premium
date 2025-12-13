@@ -48,7 +48,7 @@ export default function GamingHeadsetsPage() {
                                     <p className="text-white font-semibold">SteelSeries Arctis Nova Pro</p>
                                     <p className="text-xs text-gray-400">Best sound, ANC, hot-swap battery</p>
                                 </div>
-                                <a href="https://www.amazon.com/dp/B09ZWCYQTX?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-orange-500 text-white text-sm font-semibold">$349</a>
+                                <a href="https://www.amazon.com/s?k=SteelSeries+Arctis+Nova+Pro+wireless+headset&tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-orange-500 text-white text-sm font-semibold">$349</a>
                             </div>
                             <div className="p-4 rounded-xl bg-white/5 flex items-center justify-between flex-wrap gap-4">
                                 <div>
@@ -56,7 +56,7 @@ export default function GamingHeadsetsPage() {
                                     <p className="text-white font-semibold">HyperX Cloud III</p>
                                     <p className="text-xs text-gray-400">Amazing comfort, great mic, $99</p>
                                 </div>
-                                <a href="https://www.amazon.com/dp/B0C56VQ7J1?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-red-500 text-white text-sm font-semibold">$99</a>
+                                <a href="https://www.amazon.com/s?k=HyperX+Cloud+III+gaming+headset&tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-red-500 text-white text-sm font-semibold">$99</a>
                             </div>
                             <div className="p-4 rounded-xl bg-white/5 flex items-center justify-between flex-wrap gap-4">
                                 <div>
@@ -64,7 +64,7 @@ export default function GamingHeadsetsPage() {
                                     <p className="text-white font-semibold">Logitech G Pro X 2</p>
                                     <p className="text-xs text-gray-400">50hr battery, pro-level audio</p>
                                 </div>
-                                <a href="https://www.amazon.com/dp/B0C81D39MP?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-blue-500 text-white text-sm font-semibold">$249</a>
+                                <a href="https://www.amazon.com/s?k=Logitech+G+Pro+X+2+gaming+headset&tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-blue-500 text-white text-sm font-semibold">$249</a>
                             </div>
                         </div>
                     </section>
