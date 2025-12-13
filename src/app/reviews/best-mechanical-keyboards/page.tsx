@@ -27,7 +27,7 @@ export default function MechanicalKeyboardsPage() {
                         "No wrist rest included"
                     ],
                     verdict: "The most versatile mechanical keyboard - perfect for both work and gaming.",
-                    amazonLink: "https://www.amazon.com/dp/B0B16SPHB5?tag=nestdigital-20",
+                    amazonLink: "https://www.amazon.com/dp/B0BQJB5Q5N?tag=nestdigital-20",
                 },
                 {
                     name: "Logitech G Pro X",
@@ -65,7 +65,7 @@ export default function MechanicalKeyboardsPage() {
                         "Software could be better"
                     ],
                     verdict: "Incredible value - premium features at a budget price point.",
-                    amazonLink: "https://www.amazon.com/dp/B08JLWTQ4Q?tag=nestdigital-20",
+                    amazonLink: "https://www.amazon.com/dp/B09X54C11J?tag=nestdigital-20",
                 },
                 {
                     name: "Das Keyboard 4 Professional",

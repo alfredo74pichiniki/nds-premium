@@ -30,42 +30,42 @@ export default function SmartHomeHubsPage() {
                     amazonLink: "https://www.amazon.com/dp/B0BLS3Y632?tag=nestdigital-20",
                 },
                 {
-                    name: "Google Nest Hub (2nd Gen)",
-                    image: "🔊",
+                    name: "Amazon Echo Show 5 (3rd Gen)",
+                    image: "📱",
                     rating: 4.5,
-                    reviewCount: 18000,
-                    price: "$99",
-                    badge: "Best Google Hub",
+                    reviewCount: 22000,
+                    price: "$89",
+                    badge: "Best Compact",
                     pros: [
-                        "7\" smart display",
-                        "Sleep tracking built-in",
-                        "Google Photos frame mode",
-                        "Great sound quality"
+                        "5.5\" smart display",
+                        "Built-in camera for video calls",
+                        "Rotating screen option",
+                        "Great for bedside"
                     ],
                     cons: [
-                        "No camera for video calls"
+                        "Smaller display"
                     ],
-                    verdict: "The perfect nightstand companion that doubles as your smart home controller.",
-                    amazonLink: "https://www.amazon.com/dp/B08XMQZ5FR?tag=nestdigital-20",
+                    verdict: "The perfect compact smart display for smaller spaces and nightstands.",
+                    amazonLink: "https://www.amazon.com/dp/B09B2SBHQK?tag=nestdigital-20",
                 },
                 {
-                    name: "Apple HomePod mini",
-                    image: "🍎",
-                    rating: 4.4,
-                    reviewCount: 12000,
-                    price: "$99",
-                    badge: "Best for Apple Users",
+                    name: "Amazon Echo Pop",
+                    image: "🟣",
+                    rating: 4.5,
+                    reviewCount: 28000,
+                    price: "$39",
+                    badge: "Best Ultra Budget",
                     pros: [
-                        "Excellent sound for size",
-                        "Deep Apple ecosystem integration",
-                        "HomeKit secure home hub",
-                        "Intercom feature"
+                        "Compact semi-sphere design",
+                        "Full Alexa capabilities",
+                        "Great audio for size",
+                        "Multiple colors"
                     ],
                     cons: [
-                        "Limited to Apple ecosystem"
+                        "No display or clock"
                     ],
-                    verdict: "If you're all-in on Apple, the HomePod mini is the perfect smart home hub.",
-                    amazonLink: "https://www.amazon.com/dp/B08J2LS3ZM?tag=nestdigital-20",
+                    verdict: "The most affordable way to start your smart home journey.",
+                    amazonLink: "https://www.amazon.com/dp/B09WNK39JN?tag=nestdigital-20",
                 },
                 {
                     name: "Echo Dot (5th Gen) with Clock",

@@ -30,23 +30,23 @@ export default function WebcamsPage() {
                     amazonLink: "https://www.amazon.com/dp/B085TFF7M1?tag=nestdigital-20",
                 },
                 {
-                    name: "Razer Kiyo Pro Ultra",
+                    name: "Logitech Brio 4K",
                     image: "🎮",
-                    rating: 4.4,
-                    reviewCount: 3500,
-                    price: "$299",
+                    rating: 4.5,
+                    reviewCount: 12000,
+                    price: "$199",
                     badge: "Best Premium",
                     pros: [
-                        "4K at 30fps, 1080p at 60fps",
-                        "Large 1/1.2\" sensor",
-                        "Exceptional low-light performance",
-                        "HDR support"
+                        "True 4K Ultra HD",
+                        "HDR with RightLight 3",
+                        "5x digital zoom",
+                        "Windows Hello support"
                     ],
                     cons: [
                         "Expensive"
                     ],
-                    verdict: "The best webcam money can buy - DSLR-like quality for streamers and content creators.",
-                    amazonLink: "https://www.amazon.com/dp/B0BZJV7GXQ?tag=nestdigital-20",
+                    verdict: "The best 4K webcam for professionals who need crystal-clear video quality.",
+                    amazonLink: "https://www.amazon.com/dp/B01N5UOYC4?tag=nestdigital-20",
                 },
                 {
                     name: "Anker PowerConf C200",
