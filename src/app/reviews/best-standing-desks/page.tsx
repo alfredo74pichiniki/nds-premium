@@ -84,7 +84,7 @@ export default function StandingDesksPage() {
                         "Higher price point"
                     ],
                     verdict: "Premium standing desk for power users who need maximum workspace and advanced features.",
-                    amazonLink: "https://www.amazon.com/dp/B0B8HVTLQX?tag=nestdigital-20",
+                    amazonLink: "https://www.amazon.com/dp/B08XJC4H3C?tag=nestdigital-20",
                 }
             ]}
         />

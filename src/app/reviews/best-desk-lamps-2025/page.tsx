@@ -64,7 +64,7 @@ export default function DeskLampsPage() {
                                     <p className="text-white font-semibold">TaoTronics LED Desk Lamp</p>
                                     <p className="text-xs text-gray-400">5 color temps, USB charging, foldable</p>
                                 </div>
-                                <a href="https://www.amazon.com/dp/B00APAQSP6?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-blue-500 text-white text-sm font-semibold hover:bg-blue-600">$45</a>
+                                <a href="https://www.amazon.com/dp/B0178HLTXO?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-blue-500 text-white text-sm font-semibold hover:bg-blue-600">$129</a>
                             </div>
                             <div className="p-4 rounded-xl bg-white/5 flex items-center justify-between flex-wrap gap-4">
                                 <div>
