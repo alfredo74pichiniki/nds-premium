@@ -64,7 +64,7 @@ export default function USBCHubsPage() {
                                     <p className="text-white font-semibold">CalDigit TS4 Thunderbolt 4</p>
                                     <p className="text-xs text-gray-400">18 ports, 98W PD, 2.5Gb Ethernet, best-in-class</p>
                                 </div>
-                                <a href="https://www.amazon.com/dp/B09FY2J5W9?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-purple-500 text-white text-sm font-semibold hover:bg-purple-600">$399</a>
+                                <a href="https://www.amazon.com/dp/B0BNZ5TCG8?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-purple-500 text-white text-sm font-semibold hover:bg-purple-600">$399</a>
                             </div>
                             <div className="p-4 rounded-xl bg-white/5 flex items-center justify-between flex-wrap gap-4">
                                 <div>
@@ -72,7 +72,7 @@ export default function USBCHubsPage() {
                                     <p className="text-white font-semibold">Satechi Dual Dock Stand</p>
                                     <p className="text-xs text-gray-400">M1/M2 Mac compatible, dual display, NVMe slot</p>
                                 </div>
-                                <a href="https://www.amazon.com/dp/B0BKPZ42RJ?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-orange-500 text-white text-sm font-semibold hover:bg-orange-600">$199</a>
+                                <a href="https://www.amazon.com/dp/B0BNZ5TCG8?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-orange-500 text-white text-sm font-semibold hover:bg-orange-600">$199</a>
                             </div>
                         </div>
                     </section>

@@ -27,7 +27,7 @@ export default function WirelessEarbudsPage() {
                         "No wireless charging on case"
                     ],
                     verdict: "The best overall wireless earbuds under $100 with premium features typically found in $200+ earbuds.",
-                    amazonLink: "https://www.amazon.com/dp/B0CD942P7Z?tag=nestdigital-20",
+                    amazonLink: "https://www.amazon.com/dp/B0CF7GYNW2?tag=nestdigital-20",
                 },
                 {
                     name: "Soundcore Liberty 4 NC",
@@ -46,7 +46,7 @@ export default function WirelessEarbudsPage() {
                         "Bulkier case"
                     ],
                     verdict: "Incredible noise cancellation at an unbeatable price. Best value in the budget earbuds market.",
-                    amazonLink: "https://www.amazon.com/dp/B0BZ7KY3DL?tag=nestdigital-20",
+                    amazonLink: "https://www.amazon.com/dp/B0BZV4QFP8?tag=nestdigital-20",
                 },
                 {
                     name: "JBL Tune Buds",
@@ -65,7 +65,7 @@ export default function WirelessEarbudsPage() {
                         "ANC not as strong as competitors"
                     ],
                     verdict: "Great entry-level option from a trusted audio brand with solid bass response.",
-                    amazonLink: "https://www.amazon.com/dp/B0CGYRK4HL?tag=nestdigital-20",
+                    amazonLink: "https://www.amazon.com/dp/B0C1QWWZR4?tag=nestdigital-20",
                 },
                 {
                     name: "Anker Soundcore Space A40",

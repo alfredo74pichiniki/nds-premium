@@ -48,7 +48,7 @@ export default function WebcamsPage() {
                                     <p className="text-white font-semibold">Elgato Facecam</p>
                                     <p className="text-xs text-gray-400">1080p60, best autofocus, pro features</p>
                                 </div>
-                                <a href="https://www.amazon.com/dp/B0957W759M?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-purple-500 text-white text-sm font-semibold">$149</a>
+                                <a href="https://www.amazon.com/dp/B0CW1S7XP5?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-purple-500 text-white text-sm font-semibold">$149</a>
                             </div>
                             <div className="p-4 rounded-xl bg-white/5 flex items-center justify-between flex-wrap gap-4">
                                 <div>
@@ -56,7 +56,7 @@ export default function WebcamsPage() {
                                     <p className="text-white font-semibold">Logitech Brio 4K</p>
                                     <p className="text-xs text-gray-400">4K, Windows Hello, $149</p>
                                 </div>
-                                <a href="https://www.amazon.com/dp/B08H8NZ5TN?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-blue-500 text-white text-sm font-semibold">$149</a>
+                                <a href="https://www.amazon.com/dp/B01N5UOYC4?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-blue-500 text-white text-sm font-semibold">$149</a>
                             </div>
                             <div className="p-4 rounded-xl bg-white/5 flex items-center justify-between flex-wrap gap-4">
                                 <div>

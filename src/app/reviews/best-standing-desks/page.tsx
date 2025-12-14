@@ -27,7 +27,7 @@ export default function StandingDesksPage() {
                         "Assembly takes 30-45 minutes"
                     ],
                     verdict: "Best overall standing desk with excellent stability and smooth height adjustment. Great value for the features.",
-                    amazonLink: "https://www.amazon.com/dp/B08PL2JF3F?tag=nestdigital-20",
+                    amazonLink: "https://www.amazon.com/dp/B0B41Z34M7?tag=nestdigital-20",
                 },
                 {
                     name: "ErGear Height Adjustable Electric Desk",
