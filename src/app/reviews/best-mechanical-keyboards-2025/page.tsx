@@ -48,7 +48,7 @@ export default function MechanicalKeyboardsPage() {
                                     <p className="text-white font-semibold">Keychron Q1 Pro</p>
                                     <p className="text-xs text-gray-400">Gasket mount, QMK/VIA, wireless</p>
                                 </div>
-                                <a href="https://www.amazon.com/dp/B0BXRPWHG2?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-purple-500 text-white text-sm font-semibold hover:bg-purple-600">Check Price</a>
+                                <a href="https://www.amazon.com/dp/B0BLZ1ZN3H?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-purple-500 text-white text-sm font-semibold hover:bg-purple-600">Check Price</a>
                             </div>
                             <div className="p-4 rounded-xl bg-white/5 flex items-center justify-between flex-wrap gap-4">
                                 <div>
@@ -56,7 +56,7 @@ export default function MechanicalKeyboardsPage() {
                                     <p className="text-white font-semibold">Keychron K8 Pro</p>
                                     <p className="text-xs text-gray-400">TKL, hot-swap, Bluetooth</p>
                                 </div>
-                                <a href="https://www.amazon.com/dp/B0B16JCKMV?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-green-500 text-white text-sm font-semibold hover:bg-green-600">Check Price</a>
+                                <a href="https://www.amazon.com/dp/B0FKVBZ2PD?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-green-500 text-white text-sm font-semibold hover:bg-green-600">Check Price</a>
                             </div>
                             <div className="p-4 rounded-xl bg-white/5 flex items-center justify-between flex-wrap gap-4">
                                 <div>
@@ -72,7 +72,7 @@ export default function MechanicalKeyboardsPage() {
                                     <p className="text-white font-semibold">GMMK Pro</p>
                                     <p className="text-xs text-gray-400">Aluminum, rotary encoder, modular</p>
                                 </div>
-                                <a href="https://www.amazon.com/dp/B09FYC2PQL?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-orange-500 text-white text-sm font-semibold hover:bg-orange-600">Check Price</a>
+                                <a href="https://www.amazon.com/dp/B0BGPXRFQP?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-orange-500 text-white text-sm font-semibold hover:bg-orange-600">Check Price</a>
                             </div>
                         </div>
                     </section>

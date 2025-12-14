@@ -56,7 +56,7 @@ export default function MicrophonesPage() {
                                     <p className="text-white font-semibold">Shure MV7</p>
                                     <p className="text-xs text-gray-400">USB + XLR, SM7B sound for less</p>
                                 </div>
-                                <a href="https://www.amazon.com/dp/B08L6C2Q5F?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-red-500 text-white text-sm font-semibold">$249</a>
+                                <a href="https://www.amazon.com/dp/B0CTJ8BSWN?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-red-500 text-white text-sm font-semibold">$249</a>
                             </div>
                             <div className="p-4 rounded-xl bg-white/5 flex items-center justify-between flex-wrap gap-4">
                                 <div>
@@ -64,7 +64,7 @@ export default function MicrophonesPage() {
                                     <p className="text-white font-semibold">Rode PodMic USB</p>
                                     <p className="text-xs text-gray-400">Dynamic USB, broadcast-ready, $99</p>
                                 </div>
-                                <a href="https://www.amazon.com/dp/B0C84S7K5V?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-green-500 text-white text-sm font-semibold">$99</a>
+                                <a href="https://www.amazon.com/dp/B0D9LXG8LH?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-green-500 text-white text-sm font-semibold">$99</a>
                             </div>
                         </div>
                     </section>

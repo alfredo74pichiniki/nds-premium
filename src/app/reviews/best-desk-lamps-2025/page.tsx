@@ -72,7 +72,7 @@ export default function DeskLampsPage() {
                                     <p className="text-white font-semibold">BenQ e-Reading Desk Lamp</p>
                                     <p className="text-xs text-gray-400">Wide beam, auto-dimming, curved head</p>
                                 </div>
-                                <a href="https://www.amazon.com/dp/B07GC5FK1N?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-purple-500 text-white text-sm font-semibold hover:bg-purple-600">$229</a>
+                                <a href="https://www.amazon.com/dp/B08DKQ3JG1?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="px-4 py-2 rounded-full bg-purple-500 text-white text-sm font-semibold hover:bg-purple-600">$229</a>
                             </div>
                         </div>
                     </section>

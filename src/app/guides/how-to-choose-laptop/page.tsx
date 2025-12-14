@@ -102,17 +102,17 @@ export default function LaptopGuidePage() {
                                 <div className="p-4 rounded-xl bg-white/5 border border-white/10">
                                     <h4 className="font-bold text-white">Best Overall: MacBook Air M3</h4>
                                     <p className="text-gray-400 text-sm">Silent, all-day battery, excellent display. $1,099</p>
-                                    <a href="https://amazon.com/dp/B0CX23GFMJ?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="text-[var(--nds-primary)] text-sm hover:underline">Check Price →</a>
+                                    <a href="https://www.amazon.com/s?k=MacBook+Air+M3&tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="text-[var(--nds-primary)] text-sm hover:underline">Check Price →</a>
                                 </div>
                                 <div className="p-4 rounded-xl bg-white/5 border border-white/10">
                                     <h4 className="font-bold text-white">Best Windows: Lenovo ThinkPad X1 Carbon</h4>
                                     <p className="text-gray-400 text-sm">Business-class build, legendary keyboard. $1,399</p>
-                                    <a href="https://amazon.com/dp/B0CS3M4YP8?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="text-[var(--nds-primary)] text-sm hover:underline">Check Price →</a>
+                                    <a href="https://www.amazon.com/s?k=Lenovo+ThinkPad+X1+Carbon&tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="text-[var(--nds-primary)] text-sm hover:underline">Check Price →</a>
                                 </div>
                                 <div className="p-4 rounded-xl bg-white/5 border border-white/10">
                                     <h4 className="font-bold text-white">Best Budget: ASUS Zenbook 14</h4>
                                     <p className="text-gray-400 text-sm">Premium feel, OLED option, great value. $699</p>
-                                    <a href="https://amazon.com/dp/B0C2Q4QJ3S?tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="text-[var(--nds-primary)] text-sm hover:underline">Check Price →</a>
+                                    <a href="https://www.amazon.com/s?k=ASUS+Zenbook+14+OLED&tag=nestdigital-20" target="_blank" rel="nofollow sponsored" className="text-[var(--nds-primary)] text-sm hover:underline">Check Price →</a>
                                 </div>
                             </div>
                         </section>
