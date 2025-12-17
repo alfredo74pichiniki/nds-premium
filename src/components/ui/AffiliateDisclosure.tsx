@@ -4,7 +4,7 @@ import { Info } from "lucide-react";
 import Link from "next/link";
 
 interface AffiliateDisclosureProps {
-    variant?: "banner" | "inline";
+    variant?: "banner" | "inline" | "prominent";
 }
 
 /**
@@ -13,7 +13,7 @@ interface AffiliateDisclosureProps {
  * COMPLIANCE: Must be displayed "above the fold" (visible without scrolling)
  * on any page containing affiliate links per FTC and platform requirements.
  * 
- * - Rakuten: Requires visible, clear disclosure
+ * - Awin/Impact: Requires visible, clear disclosure
  * - Amazon Associates: Requires affiliate disclosure
  * - FTC: Requires material connection disclosure
  */
@@ -30,7 +30,41 @@ export function AffiliateDisclosure({ variant = "banner" }: AffiliateDisclosureP
         );
     }
 
-    // Banner variant - above the fold, highly visible
+    if (variant === "prominent") {
+        return (
+            <div className="bg-gradient-to-r from-amber-900/30 to-orange-900/30 border border-amber-500/30 rounded-2xl p-5 mb-8">
+                <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-xl bg-amber-500/20 flex items-center justify-center text-2xl shrink-0">
+                        📋
+                    </div>
+                    <div>
+                        <h4 className="font-bold text-amber-300 mb-2">Affiliate Disclosure</h4>
+                        <p className="text-sm text-gray-200 leading-relaxed">
+                            Our reviews are <strong className="text-white">independent and unbiased</strong>.
+                            If you make a purchase through our links, we may earn a commission at no extra cost to you.
+                            This helps fund our research and allows us to keep our content free.
+                        </p>
+                        <div className="mt-3 flex flex-wrap gap-3 text-xs">
+                            <Link
+                                href="/disclosure"
+                                className="px-3 py-1.5 rounded-full bg-amber-500/20 text-amber-300 hover:bg-amber-500/30 transition-colors"
+                            >
+                                Full Disclosure →
+                            </Link>
+                            <Link
+                                href="/methodology"
+                                className="px-3 py-1.5 rounded-full bg-white/10 text-gray-300 hover:bg-white/20 transition-colors"
+                            >
+                                Our Methodology →
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+
+    // Banner variant (default) - above the fold, visible
     return (
         <div className="bg-gradient-to-r from-blue-900/30 to-purple-900/30 border border-blue-500/20 rounded-lg p-4 mb-6">
             <div className="flex items-start gap-3">
@@ -42,14 +76,23 @@ export function AffiliateDisclosure({ variant = "banner" }: AffiliateDisclosureP
                         we may earn a small commission at no additional cost to you. This helps support our research
                         and allows us to continue providing in-depth, unbiased reviews.
                     </p>
-                    <Link
-                        href="/disclosure"
-                        className="text-xs text-blue-400 hover:text-blue-300 hover:underline mt-2 inline-block"
-                    >
-                        Read our full Advertiser Disclosure →
-                    </Link>
+                    <div className="flex gap-4 mt-2">
+                        <Link
+                            href="/disclosure"
+                            className="text-xs text-blue-400 hover:text-blue-300 hover:underline"
+                        >
+                            Full Disclosure →
+                        </Link>
+                        <Link
+                            href="/methodology"
+                            className="text-xs text-gray-400 hover:text-gray-300 hover:underline"
+                        >
+                            Our Methodology →
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>
     );
 }
+
