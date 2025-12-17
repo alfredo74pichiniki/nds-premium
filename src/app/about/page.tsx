@@ -140,6 +140,91 @@ export default function AboutPage() {
                             </div>
                         </section>
 
+                        {/* Editorial Team */}
+                        <section className="mb-16">
+                            <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                                <span className="w-10 h-1 bg-gradient-to-r from-[var(--nds-primary)] to-[var(--nds-accent)] rounded-full" />
+                                Our Editorial Team
+                            </h2>
+                            <p className="text-gray-300 mb-6">
+                                Every article at Nest Digital Studio is researched, written, and verified by our experienced team of technology professionals.
+                            </p>
+                            <div className="grid md:grid-cols-2 gap-6">
+                                <div className="p-6 rounded-2xl bg-white/5 border border-white/10">
+                                    <div className="flex items-center gap-4 mb-4">
+                                        <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[var(--nds-primary)] to-[var(--nds-accent)] flex items-center justify-center text-2xl font-bold text-white">
+                                            AF
+                                        </div>
+                                        <div>
+                                            <h4 className="text-lg font-bold text-white">Alfredo F.</h4>
+                                            <p className="text-sm text-[var(--nds-primary)]">Founder & Editor-in-Chief</p>
+                                        </div>
+                                    </div>
+                                    <p className="text-gray-400 text-sm mb-3">
+                                        10+ years in digital marketing and technology. Former CMO with hands-on experience in SaaS platforms, e-commerce optimization, and consumer electronics.
+                                    </p>
+                                    <div className="flex flex-wrap gap-2 text-xs">
+                                        <span className="px-2 py-1 rounded bg-blue-500/20 text-blue-400">Digital Marketing</span>
+                                        <span className="px-2 py-1 rounded bg-green-500/20 text-green-400">SaaS</span>
+                                        <span className="px-2 py-1 rounded bg-purple-500/20 text-purple-400">E-commerce</span>
+                                    </div>
+                                </div>
+                                <div className="p-6 rounded-2xl bg-white/5 border border-white/10">
+                                    <div className="flex items-center gap-4 mb-4">
+                                        <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center text-2xl font-bold text-white">
+                                            🤖
+                                        </div>
+                                        <div>
+                                            <h4 className="text-lg font-bold text-white">AI Research Team</h4>
+                                            <p className="text-sm text-blue-400">Data Analysis & Verification</p>
+                                        </div>
+                                    </div>
+                                    <p className="text-gray-400 text-sm mb-3">
+                                        Our proprietary AI systems analyze 50,000+ user reviews from Amazon, Reddit, YouTube, and specialized forums to identify patterns, common issues, and verified performance data.
+                                    </p>
+                                    <div className="flex flex-wrap gap-2 text-xs">
+                                        <span className="px-2 py-1 rounded bg-cyan-500/20 text-cyan-400">Review Analysis</span>
+                                        <span className="px-2 py-1 rounded bg-orange-500/20 text-orange-400">Pattern Detection</span>
+                                        <span className="px-2 py-1 rounded bg-pink-500/20 text-pink-400">Verification</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        {/* Business Information */}
+                        <section className="mb-16">
+                            <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                                <span className="w-10 h-1 bg-gradient-to-r from-[var(--nds-primary)] to-[var(--nds-accent)] rounded-full" />
+                                Business Information
+                            </h2>
+                            <div className="p-6 rounded-2xl bg-white/5 border border-white/10">
+                                <div className="grid md:grid-cols-2 gap-6">
+                                    <div>
+                                        <h4 className="font-semibold text-white mb-2">Company Details</h4>
+                                        <ul className="space-y-2 text-gray-400 text-sm">
+                                            <li><strong className="text-gray-300">Name:</strong> Nest Digital Studio</li>
+                                            <li><strong className="text-gray-300">Type:</strong> Digital Media & Affiliate Marketing</li>
+                                            <li><strong className="text-gray-300">Founded:</strong> 2024</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 className="font-semibold text-white mb-2">Affiliate Partnerships</h4>
+                                        <ul className="space-y-2 text-gray-400 text-sm">
+                                            <li>✅ Amazon Associates Program</li>
+                                            <li>⏳ Awin (Application in Progress)</li>
+                                            <li>⏳ Impact (Application in Progress)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div className="mt-4 pt-4 border-t border-white/10">
+                                    <p className="text-xs text-gray-500">
+                                        We are committed to full transparency. All affiliate relationships are clearly disclosed on relevant pages.
+                                        See our <a href="/disclosure" className="text-[var(--nds-primary)] hover:underline">Affiliate Disclosure</a> for complete details.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+
                         {/* Contact */}
                         <section>
                             <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
