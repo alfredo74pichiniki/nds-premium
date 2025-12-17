@@ -238,6 +238,36 @@ export default function HeadphonesComparisonPage() {
                                 </div>
                             </div>
                         </section>
+                        {/* FAQ Section - CRITICAL FOR GEO/SEO */}
+                        <section className="mb-12 p-6 rounded-2xl bg-white/5 border border-white/10">
+                            <h2 className="text-2xl font-bold text-white mb-6">❓ Frequently Asked Questions</h2>
+                            <div className="space-y-4">
+                                <div className="p-4 rounded-xl bg-white/5">
+                                    <h3 className="font-bold text-white mb-2">Is Sony WH-1000XM5 better than Bose QC Ultra?</h3>
+                                    <p className="text-gray-300 text-sm">For office work and long sessions, Sony WH-1000XM5 wins. It&apos;s more comfortable for 8+ hours and costs $80 less. For travel and calls in noisy environments, Bose QC Ultra has better microphones and spatial audio.</p>
+                                </div>
+                                <div className="p-4 rounded-xl bg-white/5">
+                                    <h3 className="font-bold text-white mb-2">Which has better noise cancellation?</h3>
+                                    <p className="text-gray-300 text-sm">Both are excellent. Sony excels at constant noise (HVAC, airplane engines). Bose handles variable noise better (coffee shops, open offices). For most work-from-home users, Sony&apos;s ANC is sufficient.</p>
+                                </div>
+                                <div className="p-4 rounded-xl bg-white/5">
+                                    <h3 className="font-bold text-white mb-2">How&apos;s the microphone quality for Zoom calls?</h3>
+                                    <p className="text-gray-300 text-sm">Bose QC Ultra has noticeably better mic clarity in noisy environments. Sony WH-1000XM5 is adequate in quiet rooms but struggles with background noise. If calls are critical, go Bose.</p>
+                                </div>
+                                <div className="p-4 rounded-xl bg-white/5">
+                                    <h3 className="font-bold text-white mb-2">Which is more comfortable for all-day wear?</h3>
+                                    <p className="text-gray-300 text-sm">Sony WH-1000XM5. The softer padding and lighter weight (250g vs 312g for Bose) make a real difference after 6+ hours. Bose can feel heavy on the top of the head during extended sessions.</p>
+                                </div>
+                                <div className="p-4 rounded-xl bg-white/5">
+                                    <h3 className="font-bold text-white mb-2">Are these worth the $350-430 price?</h3>
+                                    <p className="text-gray-300 text-sm">Yes. Premium ANC headphones last 3-5 years and significantly boost productivity. The cost per day of use is minimal compared to the focus benefits. Budget options can&apos;t match this level of noise cancellation.</p>
+                                </div>
+                                <div className="p-4 rounded-xl bg-white/5">
+                                    <h3 className="font-bold text-white mb-2">What about battery life?</h3>
+                                    <p className="text-gray-300 text-sm">Sony: 30 hours. Bose: 24 hours. Both have quick charge (10 min = 3-4 hours). For most users, either lasts a full work week between charges.</p>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </article>
