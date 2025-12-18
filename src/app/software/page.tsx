@@ -7,6 +7,14 @@ import Image from "next/image";
 
 const featuredArticles = [
     {
+        title: "Best Project Management Software 2025: Complete Guide & Honest Comparison",
+        description: "Monday.com vs Asana vs Trello vs Notion vs ClickUp. G2 ratings, real pricing, and honest recommendations.",
+        href: "/software/best-project-management-tools-2025",
+        badge: "Project Management",
+        icon: Briefcase,
+        gradient: "from-teal-500 to-cyan-500",
+    },
+    {
         title: "Kinsta vs WP Engine vs SiteGround: The Definitive Hosting Comparison 2025",
         description: "We migrated 5 sites to each platform. Real TTFB data, support response times, and migration pain points.",
         href: "/software/hosting-comparison-2025",
@@ -39,6 +47,7 @@ const featuredArticles = [
         gradient: "from-green-500 to-emerald-500",
     },
 ];
+
 
 const quickPicksData = [
     { category: "Project Management", pick: "Linear", reason: "Best for dev teams", price: "$10/user" },
