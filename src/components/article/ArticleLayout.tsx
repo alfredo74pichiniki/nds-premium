@@ -221,16 +221,46 @@ export function ArticleLayout({
                                 <p className="text-gray-400 text-sm">{product.verdict}</p>
                             </div>
 
-                            {/* CTA */}
-                            <a
-                                href={product.amazonLink}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-[var(--nds-primary)] to-[var(--nds-primary-dark)] font-medium hover:shadow-[0_0_30px_rgba(0,180,216,0.3)] transition-all"
-                            >
-                                Check Price on Amazon
-                                <ExternalLink className="w-4 h-4" />
-                            </a>
+                            {/* CTA - God Level Optimized */}
+                            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                                {/* Main CTA Button with Pulse Animation */}
+                                <a
+                                    href={product.amazonLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    onClick={() => {
+                                        // Track click for analytics
+                                        if (typeof window !== 'undefined') {
+                                            console.log(`[NDS Analytics] CTA Click: ${product.name}`);
+                                            // Google Analytics event (if configured)
+                                            if ((window as unknown as { gtag?: (...args: unknown[]) => void }).gtag) {
+                                                (window as unknown as { gtag: (...args: unknown[]) => void }).gtag('event', 'affiliate_click', {
+                                                    'product_name': product.name,
+                                                    'product_price': product.price,
+                                                    'event_category': 'Affiliate',
+                                                    'event_label': product.name
+                                                });
+                                            }
+                                        }
+                                    }}
+                                    className="group relative inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 font-bold text-lg hover:shadow-[0_0_40px_rgba(251,146,60,0.5)] transition-all duration-300 animate-pulse hover:animate-none hover:scale-105"
+                                >
+                                    {/* Urgency Badge */}
+                                    <span className="absolute -top-2 -right-2 px-2 py-0.5 bg-red-600 text-white text-xs font-bold rounded-full animate-bounce">
+                                        🔥 Hot Deal
+                                    </span>
+
+                                    View Best Price
+                                    <ExternalLink className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                                </a>
+
+                                {/* Stock Warning */}
+                                <span className="text-sm text-amber-400/80 flex items-center gap-1">
+                                    <span className="w-2 h-2 bg-amber-400 rounded-full animate-pulse"></span>
+                                    Limited stock available
+                                </span>
+                            </div>
+
                         </motion.article>
                     ))}
                 </div>
