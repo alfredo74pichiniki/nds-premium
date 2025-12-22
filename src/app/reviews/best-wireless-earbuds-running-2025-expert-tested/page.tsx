@@ -5,8 +5,11 @@ export default function WirelessEarbudsRunningPage() {
         <ArticleLayout
             title="Best Wireless Earbuds for Running 2025"
             subtitle="Analyzed 500+ verified reviews to find the earbuds that actually stay put during intense workouts"
-            hook="After analyzing over 500 verified user reviews and comparing specifications from 12 leading models, we've identified which wireless earbuds consistently earn the highest ratings from runners. Our research focused on real-world performance data, not manufacturer claims—examining sweat resistance, secure fit, and sound quality based on thousands of actual runner experiences."
-            methodology="Research Team"
+            author="NDS Research Team"
+            date="December 22, 2025"
+            readTime="8 min read"
+            intro="After analyzing over 500 verified user reviews and comparing specifications from 12 leading models, we've identified which wireless earbuds consistently earn the highest ratings from runners. Our research focused on real-world performance data, not manufacturer claims—examining sweat resistance, secure fit, and sound quality based on thousands of actual runner experiences."
+            methodology="Our research methodology involves analyzing verified Amazon reviews, expert reviews from RTINGS, Wirecutter, and SoundGuys, plus specifications from manufacturer documentation. We focus on real user experiences rather than lab testing."
             products={[
                 {
                     name: "Beats Powerbeats Pro 2",
@@ -109,7 +112,11 @@ export default function WirelessEarbudsRunningPage() {
                     amazonLink: "https://www.amazon.com/dp/B0BM7GQKKV?tag=nestdigital-20",
                 }
             ]}
-            conclusion="Based on analysis of verified reviews, the Beats Powerbeats Pro 2 earn top marks for runners wanting premium performance. For budget options, the JBL Endurance Peak 3 delivers excellent value. Road runners focused on safety should consider the Shokz OpenRun Pro for its open-ear design."
+            faq={[
+                { question: "Are these earbuds waterproof enough for rain running?", answer: "Yes, all our picks are at least IPX4 rated, meaning they can handle rain and sweat. The Jabra Elite 8 Active and JBL Endurance Peak 3 have IP68 ratings for full waterproofing." },
+                { question: "Do bone conduction headphones sound as good as in-ear?", answer: "No, bone conduction prioritizes situational awareness over sound quality. They're ideal for safety-conscious runners but audiophiles may prefer traditional in-ear options." },
+                { question: "How long do running earbuds batteries typically last?", answer: "Most quality running earbuds offer 6-10 hours of playback, which is sufficient for marathon training. All our picks include charging cases that extend total battery life significantly." }
+            ]}
         />
     );
 }
