@@ -8,20 +8,32 @@ import { CTASection } from "@/components/home/CTASection";
 import { Newsletter } from "@/components/home/Newsletter";
 import { Footer } from "@/components/home/Footer";
 import { AIChat } from "@/components/chat/AIChat";
+import { FunZone } from "@/components/home/FunZone";
+
+import { PageSEO } from "@/components/seo/PageSEO";
 
 export default function Home() {
   return (
-    <main className="min-h-screen relative">
-      <ParticleBackground />
-      <Navbar />
-      <Hero />
-      <Categories />
-      <Methodology />
-      <Testimonials />
-      <CTASection />
-      <Newsletter />
-      <Footer />
-      <AIChat />
-    </main>
+    <>
+      <PageSEO
+        title="Page Title"
+        description="Page description"
+        category=""
+        slug=""
+      />
+      <main className="min-h-screen relative">
+        <ParticleBackground />
+        <Navbar />
+        <Hero />
+        <Categories />
+        <Methodology />
+        <Testimonials />
+        <FunZone />
+        <CTASection />
+        <Newsletter />
+        <Footer />
+        <AIChat />
+      </main>
+    </>
   );
 }

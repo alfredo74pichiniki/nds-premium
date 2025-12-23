@@ -70,14 +70,45 @@ export function Hero() {
 
     return (
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-            {/* Multi-layer animated background */}
+            {/* Multi-layer animated background - EXPLOSIVE VERSION */}
             <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-[#0d1117] to-[#0a0a0a]" />
 
-            {/* Animated gradient mesh */}
-            <div className="absolute inset-0 opacity-30">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(0,180,216,0.15),transparent_50%)]" />
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(114,9,183,0.15),transparent_50%)]" />
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(0,180,216,0.1),transparent_70%)]" />
+            {/* AURORA EFFECT - Animated color waves */}
+            <div className="absolute inset-0 overflow-hidden">
+                <motion.div
+                    className="absolute -top-1/2 -left-1/2 w-[200%] h-[200%]"
+                    animate={{
+                        rotate: [0, 360],
+                    }}
+                    transition={{
+                        duration: 60,
+                        repeat: Infinity,
+                        ease: "linear",
+                    }}
+                >
+                    <div className="absolute top-1/4 left-1/4 w-1/2 h-1/2 bg-gradient-radial from-cyan-500/30 via-transparent to-transparent blur-3xl" />
+                    <div className="absolute top-1/2 right-1/4 w-1/3 h-1/3 bg-gradient-radial from-purple-600/40 via-transparent to-transparent blur-3xl" />
+                    <div className="absolute bottom-1/4 left-1/3 w-1/2 h-1/3 bg-gradient-radial from-blue-500/30 via-transparent to-transparent blur-3xl" />
+                </motion.div>
+            </div>
+
+            {/* Animated gradient mesh - MORE VIBRANT */}
+            <div className="absolute inset-0 opacity-50">
+                <motion.div
+                    className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(0,255,255,0.2),transparent_50%)]"
+                    animate={{ opacity: [0.3, 0.6, 0.3] }}
+                    transition={{ duration: 4, repeat: Infinity }}
+                />
+                <motion.div
+                    className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(147,51,234,0.25),transparent_50%)]"
+                    animate={{ opacity: [0.4, 0.7, 0.4] }}
+                    transition={{ duration: 5, repeat: Infinity, delay: 1 }}
+                />
+                <motion.div
+                    className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(0,180,216,0.15),transparent_70%)]"
+                    animate={{ scale: [1, 1.2, 1] }}
+                    transition={{ duration: 6, repeat: Infinity }}
+                />
             </div>
 
             {/* Animated orbs with parallax */}
@@ -143,11 +174,36 @@ export function Hero() {
                 </motion.div>
 
                 {/* Main headline with animated gradient */}
+                {/* LOGO - MUCHO MÁS GRANDE Y VISIBLE */}
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 1, delay: 0.1, type: "spring" }}
+                    className="mb-6"
+                >
+                    <motion.div
+                        className="relative inline-block"
+                        animate={{
+                            filter: ["drop-shadow(0 0 20px rgba(0,180,216,0.5))", "drop-shadow(0 0 40px rgba(0,180,216,0.8))", "drop-shadow(0 0 20px rgba(0,180,216,0.5))"]
+                        }}
+                        transition={{ duration: 2, repeat: Infinity }}
+                    >
+                        <Image
+                            src="/logo.png"
+                            alt="Nest Digital Studio"
+                            width={200}
+                            height={200}
+                            className="w-32 h-32 md:w-48 md:h-48 lg:w-56 lg:h-56 mx-auto"
+                            priority
+                        />
+                    </motion.div>
+                </motion.div>
+
                 <motion.h1
                     initial={{ opacity: 0, y: 40 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="text-6xl md:text-8xl lg:text-9xl font-black leading-[0.9] mb-8"
+                    className="text-5xl md:text-7xl lg:text-8xl font-black leading-[0.9] mb-8"
                 >
                     <span className="block bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent">
                         Nest Digital
