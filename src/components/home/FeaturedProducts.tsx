@@ -93,7 +93,7 @@ export function FeaturedProducts() {
                         >
                             <Link
                                 href={item.link}
-                                className="group flex items-center gap-6 p-6 bg-white/[0.02] border border-white/5 rounded-2xl hover:border-[var(--nds-primary)]/30 transition-all h-full"
+                                className="group flex items-center gap-6 p-6 glass-premium card-hover-lift rounded-2xl h-full"
                             >
                                 <div className="text-6xl flex-shrink-0">
                                     {item.image}
