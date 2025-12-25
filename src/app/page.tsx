@@ -28,7 +28,8 @@ export default function Home() {
         <Categories />
         <Methodology />
         <Testimonials />
-        <FunZone />
+        {/* TODO: Descomentar cuando se creen las páginas de juegos /fun/* */}
+        {/* <FunZone /> */}
         <CTASection />
         <Newsletter />
         <Footer />
