@@ -42,7 +42,7 @@ const games = [
     {
         id: "spinner",
         title: "Lucky Spin",
-        description: "Win discount codes",
+        description: "Try your luck",
         icon: Sparkles,
         color: "from-yellow-500 to-orange-500",
         href: "/fun/spinner",
@@ -80,7 +80,7 @@ export function FunZone() {
                     </h2>
                     <p className="text-xl text-gray-400 max-w-2xl mx-auto">
                         Play fun games while you discover the best tech deals.
-                        Win discount codes and have fun!
+                        Challenge yourself and have fun!
                     </p>
                 </motion.div>
 
@@ -147,7 +147,7 @@ export function FunZone() {
                     className="text-center mt-12"
                 >
                     <p className="text-gray-500 mb-4">
-                        🎮 All games are free. Win real discount codes!
+                        🎮 All games are free. Challenge your tech knowledge!
                     </p>
                     <Link href="/fun">
                         <motion.button

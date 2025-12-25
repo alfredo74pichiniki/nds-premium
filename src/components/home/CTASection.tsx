@@ -46,13 +46,13 @@ export function CTASection() {
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <button className="group px-8 py-4 rounded-full bg-gradient-to-r from-[var(--nds-primary)] to-[var(--nds-primary-dark)] font-semibold text-lg flex items-center justify-center gap-2 hover:shadow-[0_0_40px_rgba(0,180,216,0.4)] transition-all duration-300 hover:scale-105">
+                                <a href="/reviews" className="group px-8 py-4 rounded-full bg-gradient-to-r from-[var(--nds-primary)] to-[var(--nds-primary-dark)] font-semibold text-lg flex items-center justify-center gap-2 hover:shadow-[0_0_40px_rgba(0,180,216,0.4)] transition-all duration-300 hover:scale-105">
                                     Start Exploring
                                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                                </button>
-                                <button className="px-8 py-4 rounded-full border border-white/20 font-semibold text-lg hover:bg-white/5 transition-colors">
-                                    Ask AI Assistant
-                                </button>
+                                </a>
+                                <a href="/tools" className="px-8 py-4 rounded-full border border-white/20 font-semibold text-lg hover:bg-white/5 transition-colors text-center">
+                                    View AI Tools
+                                </a>
                             </div>
                         </motion.div>
                     </div>
