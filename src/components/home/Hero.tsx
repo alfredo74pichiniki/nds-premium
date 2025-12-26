@@ -123,6 +123,76 @@ export function Hero() {
                 <FloatingProduct key={index} {...product} />
             ))}
 
+            {/* Floating Stats Cards - Glassmorphism Premium */}
+            <motion.div
+                initial={{ opacity: 0, x: -100 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1, delay: 1.5 }}
+                className="absolute top-32 left-8 xl:left-20 z-40 hidden lg:block"
+            >
+                <motion.div
+                    animate={{ y: [0, -15, 0] }}
+                    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                    className="p-5 rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_rgba(0,180,216,0.15)]"
+                >
+                    <div className="flex items-center gap-4">
+                        <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-500 to-cyan-600 flex items-center justify-center">
+                            <Star className="w-6 h-6 text-white" />
+                        </div>
+                        <div>
+                            <p className="text-2xl font-black text-white">200+</p>
+                            <p className="text-xs text-gray-400 uppercase tracking-wider">Expert Reviews</p>
+                        </div>
+                    </div>
+                </motion.div>
+            </motion.div>
+
+            <motion.div
+                initial={{ opacity: 0, x: 100 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1, delay: 1.8 }}
+                className="absolute top-48 right-8 xl:right-20 z-40 hidden lg:block"
+            >
+                <motion.div
+                    animate={{ y: [0, 15, 0] }}
+                    transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+                    className="p-5 rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_rgba(139,92,246,0.15)]"
+                >
+                    <div className="flex items-center gap-4">
+                        <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center">
+                            <Zap className="w-6 h-6 text-white" />
+                        </div>
+                        <div>
+                            <p className="text-2xl font-black text-white">4.9</p>
+                            <p className="text-xs text-gray-400 uppercase tracking-wider">Avg Rating</p>
+                        </div>
+                    </div>
+                </motion.div>
+            </motion.div>
+
+            <motion.div
+                initial={{ opacity: 0, y: 100 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 2.1 }}
+                className="absolute bottom-32 left-12 xl:left-32 z-40 hidden lg:block"
+            >
+                <motion.div
+                    animate={{ y: [0, -10, 0], x: [0, 5, 0] }}
+                    transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+                    className="p-5 rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_rgba(16,185,129,0.15)]"
+                >
+                    <div className="flex items-center gap-4">
+                        <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center">
+                            <Sparkles className="w-6 h-6 text-white" />
+                        </div>
+                        <div>
+                            <p className="text-2xl font-black text-white">10K+</p>
+                            <p className="text-xs text-gray-400 uppercase tracking-wider">Happy Readers</p>
+                        </div>
+                    </div>
+                </motion.div>
+            </motion.div>
+
             {/* Contenido principal */}
             <motion.div
                 className="relative z-30 text-center max-w-4xl mx-auto px-6"
