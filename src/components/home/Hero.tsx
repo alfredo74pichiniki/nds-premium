@@ -5,7 +5,7 @@ import { Sparkles, ChevronDown, Star, ArrowRight, Zap } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Spotlight } from "@/components/ui/aceternity/spotlight";
-import CosmicBackground from "@/components/effects/CosmicBackground";
+import SolarSystemBackground from "@/components/effects/SolarSystemBackground";
 
 /**
  * HERO - NIVEL AWWWARDS
@@ -83,8 +83,8 @@ export function Hero() {
 
     return (
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-            {/* ===== COSMIC BACKGROUND - NIVEL DIOS ===== */}
-            <CosmicBackground />
+            {/* ===== SOLAR SYSTEM BACKGROUND - NIVEL DIOS PREMIUM ===== */}
+            <SolarSystemBackground />
 
             {/* Spotlight Effect - sigue al cursor */}
             <Spotlight
