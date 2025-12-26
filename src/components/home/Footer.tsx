@@ -7,8 +7,12 @@ import { Twitter, Mail, Linkedin } from "lucide-react";
 
 export function Footer() {
     return (
-        <footer className="border-t border-white/5 py-12 px-6">
-            <div className="max-w-7xl mx-auto">
+        <footer className="relative border-t border-white/5 py-16 px-6 overflow-hidden">
+            {/* Background gradient */}
+            <div className="absolute inset-0 bg-gradient-to-t from-cyan-500/5 via-transparent to-transparent pointer-events-none" />
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-gradient-to-r from-cyan-500/10 via-purple-500/10 to-cyan-500/10 blur-[120px] opacity-50" />
+
+            <div className="max-w-7xl mx-auto relative z-10">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
                     {/* Brand */}
                     <div className="md:col-span-1">
@@ -39,23 +43,23 @@ export function Footer() {
                                 href="https://twitter.com/nestdigital"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="w-10 h-10 rounded-full bg-white/5 hover:bg-[var(--nds-primary)]/20 flex items-center justify-center transition-colors"
+                                className="group w-10 h-10 rounded-full bg-white/5 hover:bg-gradient-to-br hover:from-cyan-500 hover:to-cyan-600 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-[0_0_20px_rgba(0,180,216,0.4)]"
                             >
-                                <Twitter className="w-5 h-5" />
+                                <Twitter className="w-5 h-5 group-hover:text-white transition-colors" />
                             </a>
                             <a
                                 href="https://linkedin.com/company/nestdigitalstudio"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="w-10 h-10 rounded-full bg-white/5 hover:bg-[var(--nds-primary)]/20 flex items-center justify-center transition-colors"
+                                className="group w-10 h-10 rounded-full bg-white/5 hover:bg-gradient-to-br hover:from-blue-500 hover:to-blue-600 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-[0_0_20px_rgba(59,130,246,0.4)]"
                             >
-                                <Linkedin className="w-5 h-5" />
+                                <Linkedin className="w-5 h-5 group-hover:text-white transition-colors" />
                             </a>
                             <a
                                 href="mailto:contact@nestdigitalstudio.com"
-                                className="w-10 h-10 rounded-full bg-white/5 hover:bg-[var(--nds-primary)]/20 flex items-center justify-center transition-colors"
+                                className="group w-10 h-10 rounded-full bg-white/5 hover:bg-gradient-to-br hover:from-purple-500 hover:to-purple-600 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-[0_0_20px_rgba(139,92,246,0.4)]"
                             >
-                                <Mail className="w-5 h-5" />
+                                <Mail className="w-5 h-5 group-hover:text-white transition-colors" />
                             </a>
                         </div>
                     </div>
