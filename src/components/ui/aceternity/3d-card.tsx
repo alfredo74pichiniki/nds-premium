@@ -121,8 +121,9 @@ export const CardItem = ({
     rotateZ?: number | string;
     [key: string]: unknown;
 }) => {
+    const Component = Tag as React.ElementType;
     return (
-        <Tag
+        <Component
             className={cn("w-fit transition duration-200 ease-linear", className)}
             style={{
                 transform: `translateX(${translateX}px) translateY(${translateY}px) translateZ(${translateZ}px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) rotateZ(${rotateZ}deg)`,
@@ -130,6 +131,6 @@ export const CardItem = ({
             {...rest}
         >
             {children}
-        </Tag>
+        </Component>
     );
 };
