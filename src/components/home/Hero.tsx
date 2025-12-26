@@ -5,6 +5,7 @@ import { Sparkles, ChevronDown, Star, ArrowRight, Zap } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Spotlight } from "@/components/ui/aceternity/spotlight";
+import CosmicBackground from "@/components/effects/CosmicBackground";
 
 /**
  * HERO - NIVEL AWWWARDS
@@ -82,40 +83,13 @@ export function Hero() {
 
     return (
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-            {/* Background base */}
-            <div className="absolute inset-0 bg-gradient-to-b from-[#030309] via-[#0a0a1a] to-[#030309]" />
+            {/* ===== COSMIC BACKGROUND - NIVEL DIOS ===== */}
+            <CosmicBackground />
 
             {/* Spotlight Effect - sigue al cursor */}
             <Spotlight
                 className="-top-40 left-0 md:left-60 md:-top-20"
                 fill="rgba(0, 180, 216, 0.15)"
-            />
-
-            {/* Aurora animada */}
-            <div className="absolute inset-0 overflow-hidden">
-                <motion.div
-                    className="absolute -top-1/2 -left-1/2 w-[200%] h-[200%]"
-                    animate={{ rotate: [0, 360] }}
-                    transition={{ duration: 120, repeat: Infinity, ease: "linear" }}
-                >
-                    <div className="absolute top-1/4 left-1/4 w-1/2 h-1/2 bg-gradient-radial from-cyan-500/20 via-transparent to-transparent blur-3xl" />
-                    <div className="absolute top-1/2 right-1/4 w-1/3 h-1/3 bg-gradient-radial from-purple-600/30 via-transparent to-transparent blur-3xl" />
-                    <div className="absolute bottom-1/4 left-1/3 w-1/2 h-1/3 bg-gradient-radial from-blue-500/20 via-transparent to-transparent blur-3xl" />
-                </motion.div>
-            </div>
-
-            {/* Orbes con parallax */}
-            <motion.div
-                className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-cyan-500 rounded-full blur-[200px] opacity-15"
-                style={{ y: y1 }}
-                animate={{ scale: [1, 1.3, 1], opacity: [0.15, 0.25, 0.15] }}
-                transition={{ duration: 10, repeat: Infinity }}
-            />
-            <motion.div
-                className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-purple-600 rounded-full blur-[180px] opacity-20"
-                style={{ y: y2 }}
-                animate={{ scale: [1, 1.4, 1], opacity: [0.2, 0.3, 0.2] }}
-                transition={{ duration: 12, repeat: Infinity, delay: 2 }}
             />
 
             {/* Imágenes flotantes GRANDES en los BORDES */}
