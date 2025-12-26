@@ -78,6 +78,27 @@ export default function DynamicArticlePage() {
 
     const readTime = Math.ceil(article.wordCount / 200);
 
+    // Clean content: remove frontmatter and markdown code block wrappers
+    const cleanContent = (content: string): string => {
+        let cleaned = content;
+
+        // Remove ```markdown wrapper at start
+        cleaned = cleaned.replace(/^```markdown\s*/i, '');
+
+        // Remove closing ``` at end
+        cleaned = cleaned.replace(/```\s*$/i, '');
+
+        // Remove YAML frontmatter (---\n...\n---)
+        cleaned = cleaned.replace(/^---\s*\n[\s\S]*?\n---\s*\n?/m, '');
+
+        // Trim whitespace
+        cleaned = cleaned.trim();
+
+        return cleaned;
+    };
+
+    const articleContent = cleanContent(article.content);
+
     return (
         <main className="min-h-screen bg-[#0a0a0a]">
             <Navbar />
@@ -153,7 +174,7 @@ export default function DynamicArticlePage() {
                             prose-blockquote:border-l-4 prose-blockquote:border-cyan-500 prose-blockquote:bg-cyan-500/5 prose-blockquote:py-2 prose-blockquote:px-4"
                     >
                         <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                            {article.content}
+                            {articleContent}
                         </ReactMarkdown>
                     </motion.div>
 
