@@ -5,7 +5,13 @@ import { Sparkles, ChevronDown, Star, ArrowRight, Zap } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Spotlight } from "@/components/ui/aceternity/spotlight";
-import SolarSystemBackground from "@/components/effects/SolarSystemBackground";
+import dynamic from "next/dynamic";
+
+// Dynamic import to avoid SSR issues with Three.js
+const SolarSystem3D = dynamic(() => import("@/components/effects/SolarSystem3D"), {
+    ssr: false,
+    loading: () => <div className="absolute inset-0 bg-black" />
+});
 
 /**
  * HERO - NIVEL AWWWARDS
@@ -83,8 +89,8 @@ export function Hero() {
 
     return (
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-            {/* ===== SOLAR SYSTEM BACKGROUND - NIVEL DIOS PREMIUM ===== */}
-            <SolarSystemBackground />
+            {/* ===== 3D SOLAR SYSTEM - WEBGL PREMIUM ===== */}
+            <SolarSystem3D />
 
             {/* Spotlight Effect - sigue al cursor */}
             <Spotlight
