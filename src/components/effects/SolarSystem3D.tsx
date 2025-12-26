@@ -12,7 +12,7 @@
  */
 
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import { Stars, OrbitControls, Sphere, Ring } from "@react-three/drei";
+import { Stars, OrbitControls, Sphere, Ring, Line } from "@react-three/drei";
 import { useRef, useMemo, Suspense } from "react";
 import * as THREE from "three";
 
@@ -150,27 +150,26 @@ function Planet({
 // ============ ORBIT LINES ============
 function OrbitLine({ radius, tilt }: { radius: number; tilt: number }) {
     const points = useMemo(() => {
-        const pts = [];
+        const pts: [number, number, number][] = [];
         for (let i = 0; i <= 64; i++) {
             const angle = (i / 64) * Math.PI * 2;
-            pts.push(new THREE.Vector3(
+            pts.push([
                 Math.cos(angle) * radius,
                 Math.sin(angle * 2) * tilt * 3,
                 Math.sin(angle) * radius
-            ));
+            ]);
         }
         return pts;
     }, [radius, tilt]);
 
-    const lineGeometry = useMemo(() => {
-        const geometry = new THREE.BufferGeometry().setFromPoints(points);
-        return geometry;
-    }, [points]);
-
     return (
-        <line geometry={lineGeometry}>
-            <lineBasicMaterial color="#ffffff" opacity={0.1} transparent />
-        </line>
+        <Line
+            points={points}
+            color="#ffffff"
+            lineWidth={0.5}
+            transparent
+            opacity={0.15}
+        />
     );
 }
 
