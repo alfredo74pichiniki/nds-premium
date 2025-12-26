@@ -5,9 +5,7 @@ import { ArrowRight, Zap } from "lucide-react";
 
 export function CTASection() {
     return (
-        <section className="py-24 px-6 relative overflow-hidden">
-            {/* Background gradient */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[var(--nds-primary)]/20 via-transparent to-[var(--nds-accent)]/20" />
+        <section className="relative z-10 py-24 px-6 overflow-hidden bg-transparent">
 
             <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}

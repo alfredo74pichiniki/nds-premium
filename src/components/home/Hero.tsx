@@ -5,7 +5,7 @@ import { Sparkles, ChevronDown, Star, ArrowRight, Zap } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Spotlight } from "@/components/ui/aceternity/spotlight";
-import SpaceWarpBackground from "@/components/effects/DeepSpaceBackground";
+// Background now global - no local import needed
 
 /**
  * HERO - NIVEL AWWWARDS
@@ -82,9 +82,7 @@ export function Hero() {
     const opacity = useTransform(scrollY, [0, 300], [1, 0]);
 
     return (
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-            {/* ===== INTERGALACTIC WARP SPEED - CSS PREMIUM ===== */}
-            <SpaceWarpBackground />
+        <section className="relative z-10 min-h-screen flex items-center justify-center overflow-hidden pt-20 bg-transparent">
 
             {/* Spotlight Effect - sigue al cursor */}
             <Spotlight
