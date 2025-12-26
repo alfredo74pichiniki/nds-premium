@@ -140,8 +140,8 @@ export function Hero() {
                             <Star className="w-6 h-6 text-white" />
                         </div>
                         <div>
-                            <p className="text-2xl font-black text-white">200+</p>
-                            <p className="text-xs text-gray-400 uppercase tracking-wider">Expert Reviews</p>
+                            <p className="text-2xl font-black text-white">50+</p>
+                            <p className="text-xs text-gray-400 uppercase tracking-wider">Articles Published</p>
                         </div>
                     </div>
                 </motion.div>
@@ -163,8 +163,8 @@ export function Hero() {
                             <Zap className="w-6 h-6 text-white" />
                         </div>
                         <div>
-                            <p className="text-2xl font-black text-white">4.9</p>
-                            <p className="text-xs text-gray-400 uppercase tracking-wider">Avg Rating</p>
+                            <p className="text-2xl font-black text-white">AI</p>
+                            <p className="text-xs text-gray-400 uppercase tracking-wider">Research Tools</p>
                         </div>
                     </div>
                 </motion.div>
@@ -186,8 +186,8 @@ export function Hero() {
                             <Sparkles className="w-6 h-6 text-white" />
                         </div>
                         <div>
-                            <p className="text-2xl font-black text-white">10K+</p>
-                            <p className="text-xs text-gray-400 uppercase tracking-wider">Happy Readers</p>
+                            <p className="text-2xl font-black text-white">2024</p>
+                            <p className="text-xs text-gray-400 uppercase tracking-wider">Data Updated</p>
                         </div>
                     </div>
                 </motion.div>
@@ -206,7 +206,7 @@ export function Hero() {
                     className="mb-8"
                 >
                     <motion.div
-                        className="relative inline-block"
+                        className="relative inline-block rounded-full overflow-hidden bg-[#030309] p-2"
                         animate={{
                             filter: [
                                 "drop-shadow(0 0 30px rgba(0,180,216,0.6))",
@@ -221,7 +221,7 @@ export function Hero() {
                             alt="Nest Digital Studio"
                             width={280}
                             height={280}
-                            className="w-40 h-40 md:w-56 md:h-56 lg:w-72 lg:h-72 mx-auto"
+                            className="w-40 h-40 md:w-56 md:h-56 lg:w-72 lg:h-72 mx-auto rounded-full"
                             priority
                         />
                         {/* Ring animado alrededor del logo */}
@@ -296,9 +296,9 @@ export function Hero() {
                     className="flex flex-wrap justify-center gap-10 md:gap-16 mb-12"
                 >
                     {[
-                        { value: "50K+", label: "Reviews Analyzed" },
-                        { value: "5", label: "Data Sources" },
-                        { value: "AI", label: "Powered" },
+                        { value: "50+", label: "Products Analyzed" },
+                        { value: "500+", label: "Reviews Sourced" },
+                        { value: "AI", label: "Research Powered" },
                     ].map((stat, i) => (
                         <motion.div
                             key={stat.label}
