@@ -21,6 +21,13 @@ export function AIChat() {
     const [isLoading, setIsLoading] = useState(false);
     const messagesEndRef = useRef<HTMLDivElement>(null);
 
+    // Listen for external "open chat" events (from Navbar Ask AI button)
+    useEffect(() => {
+        const handleOpenChat = () => setIsOpen(true);
+        window.addEventListener('openAIChat', handleOpenChat);
+        return () => window.removeEventListener('openAIChat', handleOpenChat);
+    }, []);
+
     useEffect(() => {
         messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
     }, [messages]);
@@ -105,8 +112,8 @@ export function AIChat() {
                                 >
                                     <div
                                         className={`max-w-[80%] p-3 rounded-2xl ${message.role === "user"
-                                                ? "bg-[var(--nds-primary)] text-white rounded-br-md"
-                                                : "bg-white/5 text-gray-200 rounded-bl-md"
+                                            ? "bg-[var(--nds-primary)] text-white rounded-br-md"
+                                            : "bg-white/5 text-gray-200 rounded-bl-md"
                                             }`}
                                     >
                                         <p className="text-sm leading-relaxed">{message.content}</p>
