@@ -5,7 +5,7 @@ import { Sparkles, ChevronDown, Star, ArrowRight, Zap } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Spotlight } from "@/components/ui/aceternity/spotlight";
-import SpaceWarpBackground from "@/components/effects/SpaceWarpBackground";
+import SpaceWarpBackground from "@/components/effects/DeepSpaceBackground";
 
 /**
  * HERO - NIVEL AWWWARDS
