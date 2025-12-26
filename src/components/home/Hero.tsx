@@ -5,13 +5,7 @@ import { Sparkles, ChevronDown, Star, ArrowRight, Zap } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Spotlight } from "@/components/ui/aceternity/spotlight";
-import dynamic from "next/dynamic";
-
-// Dynamic import to avoid SSR issues with Three.js
-const SolarSystem3D = dynamic(() => import("@/components/effects/SolarSystem3D"), {
-    ssr: false,
-    loading: () => <div className="absolute inset-0 bg-black" />
-});
+import SpaceWarpBackground from "@/components/effects/SpaceWarpBackground";
 
 /**
  * HERO - NIVEL AWWWARDS
@@ -89,8 +83,8 @@ export function Hero() {
 
     return (
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-            {/* ===== 3D SOLAR SYSTEM - WEBGL PREMIUM ===== */}
-            <SolarSystem3D />
+            {/* ===== INTERGALACTIC WARP SPEED - CSS PREMIUM ===== */}
+            <SpaceWarpBackground />
 
             {/* Spotlight Effect - sigue al cursor */}
             <Spotlight
