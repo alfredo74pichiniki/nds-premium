@@ -17,12 +17,12 @@ import { Spotlight } from "@/components/ui/aceternity/spotlight";
  * - Presencia de marca notoria
  */
 
-// Imágenes flotantes GRANDES posicionadas en los BORDES (no bloquean texto)
+// Imágenes flotantes GRANDES posicionadas en los BORDES (alejadas del texto central)
 const floatingProducts = [
-    { src: "/products/headphones.png", x: -420, y: -80, delay: 0, size: 200 },       // Izquierda arriba
-    { src: "/products/laptop.png", x: 380, y: -120, delay: 0.2, size: 220 },         // Derecha arriba
-    { src: "/products/gaming.png", x: -400, y: 200, delay: 0.4, size: 180 },         // Izquierda abajo
-    { src: "/products/software.png", x: 420, y: 220, delay: 0.6, size: 190 },        // Derecha abajo
+    { src: "/products/headphones.png", x: -580, y: -60, delay: 0, size: 180 },       // Izquierda arriba - MÁS AFUERA
+    { src: "/products/laptop.png", x: 550, y: -100, delay: 0.2, size: 200 },         // Derecha arriba - MÁS AFUERA
+    { src: "/products/gaming.png", x: -560, y: 220, delay: 0.4, size: 160 },         // Izquierda abajo - MÁS AFUERA
+    { src: "/products/software.png", x: 580, y: 240, delay: 0.6, size: 170 },        // Derecha abajo - MÁS AFUERA
 ];
 
 function FloatingProduct({ src, x, y, delay, size }: { src: string; x: number; y: number; delay: number; size: number }) {
