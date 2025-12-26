@@ -256,13 +256,13 @@ export function Hero() {
                     initial={{ opacity: 0, y: 40 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.5 }}
-                    className="text-5xl md:text-7xl lg:text-8xl font-black leading-[0.9] mb-6"
+                    className="text-5xl md:text-7xl lg:text-8xl font-black leading-[1.1] mb-6"
                 >
                     <span className="block bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent">
                         Nest Digital
                     </span>
                     <motion.span
-                        className="block mt-2 text-6xl md:text-8xl lg:text-9xl"
+                        className="block mt-4 text-6xl md:text-8xl lg:text-9xl"
                         animate={{ backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"] }}
                         transition={{ duration: 5, repeat: Infinity }}
                         style={{
