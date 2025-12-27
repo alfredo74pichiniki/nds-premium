@@ -1,3 +1,98 @@
-{
-    "articles": []
-}
+[
+  {
+    "slug": "best-laptops-for-video-editing-2025",
+    "title": "Best Laptops for Video Editing 2025",
+    "description": "",
+    "category": "amazon_tech",
+    "articleType": "best_list",
+    "date": "December 27, 2025",
+    "featured": true,
+    "wordCount": 1917,
+    "score": 90,
+    "href": "/blog/best-laptops-for-video-editing-2025"
+  },
+  {
+    "slug": "best-vpn-routers-for-privacy-2025",
+    "title": "Best Vpn Routers for Privacy 2025",
+    "description": "",
+    "category": "amazon_tech",
+    "articleType": "best_list",
+    "date": "December 27, 2025",
+    "featured": true,
+    "wordCount": 1790,
+    "score": 90,
+    "href": "/blog/best-vpn-routers-for-privacy-2025"
+  },
+  {
+    "slug": "best-ultrawide-gaming-monitors-for-productivity",
+    "title": "Best Ultrawide Gaming Monitors for Productivity",
+    "description": "",
+    "category": "amazon_tech",
+    "articleType": "best_list",
+    "date": "December 27, 2025",
+    "featured": true,
+    "wordCount": 2342,
+    "score": 90,
+    "href": "/blog/best-ultrawide-gaming-monitors-for-productivity"
+  },
+  {
+    "slug": "ring-video-doorbell-pro-2-vs-nest-doorbell-battery-smart-sec",
+    "title": "Ring Video Doorbell Pro 2 vs Nest Doorbell Battery: Smart Security",
+    "description": "",
+    "category": "amazon_tech",
+    "articleType": "comparison",
+    "date": "December 27, 2025",
+    "featured": true,
+    "wordCount": 1638,
+    "score": 90,
+    "href": "/blog/ring-video-doorbell-pro-2-vs-nest-doorbell-battery-smart-sec"
+  },
+  {
+    "slug": "gopro-hero-12-black-vs-dji-osmo-action-4-stabilization-test",
+    "title": "GoPro Hero 12 Black vs DJI Osmo Action 4: Stabilization Test",
+    "description": "",
+    "category": "amazon_tech",
+    "articleType": "comparison",
+    "date": "December 27, 2025",
+    "featured": true,
+    "wordCount": 2523,
+    "score": 90,
+    "href": "/blog/gopro-hero-12-black-vs-dji-osmo-action-4-stabilization-test"
+  },
+  {
+    "slug": "best-gaming-mice-for-fps-games-2025",
+    "title": "Best Gaming Mice for FPS Games 2025",
+    "description": "",
+    "category": "amazon_tech",
+    "articleType": "best_list",
+    "date": "December 27, 2025",
+    "featured": true,
+    "wordCount": 2226,
+    "score": 90,
+    "href": "/blog/best-gaming-mice-for-fps-games-2025"
+  },
+  {
+    "slug": "best-portable-power-stations-for-camping-2025",
+    "title": "Best Portable Power Stations for Camping 2025",
+    "description": "",
+    "category": "amazon_tech",
+    "articleType": "best_list",
+    "date": "December 27, 2025",
+    "featured": true,
+    "wordCount": 2210,
+    "score": 90,
+    "href": "/blog/best-portable-power-stations-for-camping-2025"
+  },
+  {
+    "slug": "best-software-tools-2025",
+    "title": "Best Software Tools 2025",
+    "description": "",
+    "category": "software",
+    "articleType": "comparison",
+    "date": "December 26, 2025",
+    "featured": true,
+    "wordCount": 1578,
+    "score": 90,
+    "href": "/blog/best-software-tools-2025"
+  }
+]
