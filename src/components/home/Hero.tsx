@@ -5,6 +5,7 @@ import { Sparkles, ChevronDown, Star, ArrowRight, Zap } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Spotlight } from "@/components/ui/aceternity/spotlight";
+// Background now global - no local import needed
 
 /**
  * HERO - NIVEL AWWWARDS
@@ -17,12 +18,12 @@ import { Spotlight } from "@/components/ui/aceternity/spotlight";
  * - Presencia de marca notoria
  */
 
-// Imágenes flotantes GRANDES posicionadas en los BORDES (no bloquean texto)
+// Imágenes flotantes GRANDES posicionadas en los BORDES (alejadas del texto central)
 const floatingProducts = [
-    { src: "/products/headphones.png", x: -420, y: -80, delay: 0, size: 200 },       // Izquierda arriba
-    { src: "/products/laptop.png", x: 380, y: -120, delay: 0.2, size: 220 },         // Derecha arriba
-    { src: "/products/gaming.png", x: -400, y: 200, delay: 0.4, size: 180 },         // Izquierda abajo
-    { src: "/products/software.png", x: 420, y: 220, delay: 0.6, size: 190 },        // Derecha abajo
+    { src: "/products/headphones.png", x: -580, y: -60, delay: 0, size: 180 },       // Izquierda arriba - MÁS AFUERA
+    { src: "/products/laptop.png", x: 550, y: -100, delay: 0.2, size: 200 },         // Derecha arriba - MÁS AFUERA
+    { src: "/products/gaming.png", x: -560, y: 220, delay: 0.4, size: 160 },         // Izquierda abajo - MÁS AFUERA
+    { src: "/products/software.png", x: 580, y: 240, delay: 0.6, size: 170 },        // Derecha abajo - MÁS AFUERA
 ];
 
 function FloatingProduct({ src, x, y, delay, size }: { src: string; x: number; y: number; delay: number; size: number }) {
@@ -81,41 +82,12 @@ export function Hero() {
     const opacity = useTransform(scrollY, [0, 300], [1, 0]);
 
     return (
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-            {/* Background base */}
-            <div className="absolute inset-0 bg-gradient-to-b from-[#030309] via-[#0a0a1a] to-[#030309]" />
+        <section className="relative z-10 min-h-screen flex items-center justify-center overflow-hidden pt-20 bg-transparent">
 
             {/* Spotlight Effect - sigue al cursor */}
             <Spotlight
                 className="-top-40 left-0 md:left-60 md:-top-20"
                 fill="rgba(0, 180, 216, 0.15)"
-            />
-
-            {/* Aurora animada */}
-            <div className="absolute inset-0 overflow-hidden">
-                <motion.div
-                    className="absolute -top-1/2 -left-1/2 w-[200%] h-[200%]"
-                    animate={{ rotate: [0, 360] }}
-                    transition={{ duration: 120, repeat: Infinity, ease: "linear" }}
-                >
-                    <div className="absolute top-1/4 left-1/4 w-1/2 h-1/2 bg-gradient-radial from-cyan-500/20 via-transparent to-transparent blur-3xl" />
-                    <div className="absolute top-1/2 right-1/4 w-1/3 h-1/3 bg-gradient-radial from-purple-600/30 via-transparent to-transparent blur-3xl" />
-                    <div className="absolute bottom-1/4 left-1/3 w-1/2 h-1/3 bg-gradient-radial from-blue-500/20 via-transparent to-transparent blur-3xl" />
-                </motion.div>
-            </div>
-
-            {/* Orbes con parallax */}
-            <motion.div
-                className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-cyan-500 rounded-full blur-[200px] opacity-15"
-                style={{ y: y1 }}
-                animate={{ scale: [1, 1.3, 1], opacity: [0.15, 0.25, 0.15] }}
-                transition={{ duration: 10, repeat: Infinity }}
-            />
-            <motion.div
-                className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-purple-600 rounded-full blur-[180px] opacity-20"
-                style={{ y: y2 }}
-                animate={{ scale: [1, 1.4, 1], opacity: [0.2, 0.3, 0.2] }}
-                transition={{ duration: 12, repeat: Infinity, delay: 2 }}
             />
 
             {/* Imágenes flotantes GRANDES en los BORDES */}
@@ -140,8 +112,8 @@ export function Hero() {
                             <Star className="w-6 h-6 text-white" />
                         </div>
                         <div>
-                            <p className="text-2xl font-black text-white">200+</p>
-                            <p className="text-xs text-gray-400 uppercase tracking-wider">Expert Reviews</p>
+                            <p className="text-2xl font-black text-white">50+</p>
+                            <p className="text-xs text-gray-400 uppercase tracking-wider">Articles Published</p>
                         </div>
                     </div>
                 </motion.div>
@@ -163,8 +135,8 @@ export function Hero() {
                             <Zap className="w-6 h-6 text-white" />
                         </div>
                         <div>
-                            <p className="text-2xl font-black text-white">4.9</p>
-                            <p className="text-xs text-gray-400 uppercase tracking-wider">Avg Rating</p>
+                            <p className="text-2xl font-black text-white">AI</p>
+                            <p className="text-xs text-gray-400 uppercase tracking-wider">Research Tools</p>
                         </div>
                     </div>
                 </motion.div>
@@ -186,8 +158,8 @@ export function Hero() {
                             <Sparkles className="w-6 h-6 text-white" />
                         </div>
                         <div>
-                            <p className="text-2xl font-black text-white">10K+</p>
-                            <p className="text-xs text-gray-400 uppercase tracking-wider">Happy Readers</p>
+                            <p className="text-2xl font-black text-white">2024</p>
+                            <p className="text-xs text-gray-400 uppercase tracking-wider">Data Updated</p>
                         </div>
                     </div>
                 </motion.div>
@@ -206,7 +178,7 @@ export function Hero() {
                     className="mb-8"
                 >
                     <motion.div
-                        className="relative inline-block"
+                        className="relative inline-block rounded-full overflow-hidden bg-[#030309] p-2"
                         animate={{
                             filter: [
                                 "drop-shadow(0 0 30px rgba(0,180,216,0.6))",
@@ -221,7 +193,7 @@ export function Hero() {
                             alt="Nest Digital Studio"
                             width={280}
                             height={280}
-                            className="w-40 h-40 md:w-56 md:h-56 lg:w-72 lg:h-72 mx-auto"
+                            className="w-40 h-40 md:w-56 md:h-56 lg:w-72 lg:h-72 mx-auto rounded-full"
                             priority
                         />
                         {/* Ring animado alrededor del logo */}
@@ -256,13 +228,13 @@ export function Hero() {
                     initial={{ opacity: 0, y: 40 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.5 }}
-                    className="text-5xl md:text-7xl lg:text-8xl font-black leading-[0.9] mb-6"
+                    className="text-5xl md:text-7xl lg:text-8xl font-black leading-[1.1] mb-6"
                 >
                     <span className="block bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent">
                         Nest Digital
                     </span>
                     <motion.span
-                        className="block mt-2 text-6xl md:text-8xl lg:text-9xl"
+                        className="block mt-4 text-6xl md:text-8xl lg:text-9xl"
                         animate={{ backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"] }}
                         transition={{ duration: 5, repeat: Infinity }}
                         style={{
@@ -296,9 +268,9 @@ export function Hero() {
                     className="flex flex-wrap justify-center gap-10 md:gap-16 mb-12"
                 >
                     {[
-                        { value: "50K+", label: "Reviews Analyzed" },
-                        { value: "5", label: "Data Sources" },
-                        { value: "AI", label: "Powered" },
+                        { value: "50+", label: "Products Analyzed" },
+                        { value: "500+", label: "Reviews Sourced" },
+                        { value: "AI", label: "Research Powered" },
                     ].map((stat, i) => (
                         <motion.div
                             key={stat.label}

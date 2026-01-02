@@ -7,10 +7,7 @@ import { Twitter, Mail, Linkedin } from "lucide-react";
 
 export function Footer() {
     return (
-        <footer className="relative border-t border-white/5 py-16 px-6 overflow-hidden">
-            {/* Background gradient */}
-            <div className="absolute inset-0 bg-gradient-to-t from-cyan-500/5 via-transparent to-transparent pointer-events-none" />
-            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-gradient-to-r from-cyan-500/10 via-purple-500/10 to-cyan-500/10 blur-[120px] opacity-50" />
+        <footer className="relative z-10 border-t border-white/5 py-16 px-6 overflow-hidden bg-transparent">
 
             <div className="max-w-7xl mx-auto relative z-10">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">

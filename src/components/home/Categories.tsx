@@ -263,12 +263,7 @@ function Category3DCard({ category, index }: { category: typeof categories[0]; i
 
 export function Categories() {
     return (
-        <section className="py-32 px-6 relative overflow-hidden">
-            {/* Animated background elements */}
-            <div className="absolute inset-0 pointer-events-none">
-                <div className="absolute top-1/4 left-0 w-[600px] h-[600px] bg-[var(--nds-primary)] rounded-full blur-[200px] opacity-10" />
-                <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-[var(--nds-accent)] rounded-full blur-[200px] opacity-10" />
-            </div>
+        <section className="relative z-10 py-32 px-6 overflow-hidden bg-transparent">
 
             <div className="max-w-7xl mx-auto relative z-10">
                 {/* Section Header */}

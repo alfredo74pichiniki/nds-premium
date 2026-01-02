@@ -1,5 +1,5 @@
 import { Navbar } from "@/components/ui/Navbar";
-import { ParticleBackground } from "@/components/ui/ParticleBackground";
+import DeepSpaceBackground from "@/components/effects/DeepSpaceBackground";
 import { Hero } from "@/components/home/Hero";
 import { Categories } from "@/components/home/Categories";
 import { Methodology } from "@/components/home/Methodology";
@@ -21,8 +21,11 @@ export default function Home() {
         category=""
         slug=""
       />
-      <main className="min-h-screen relative">
-        <ParticleBackground />
+      <main className="min-h-screen relative bg-transparent">
+        {/* Global Deep Space Background - Fixed for all sections */}
+        <div className="fixed inset-0 z-0">
+          <DeepSpaceBackground />
+        </div>
         <Navbar />
         <Hero />
         <Categories />

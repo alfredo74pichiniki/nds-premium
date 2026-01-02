@@ -9,6 +9,7 @@ import { ArrowLeft, Calendar, User, Clock, Star } from "lucide-react";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import { premiumComponents } from "@/components/article/ArticleComponents";
 
 interface Article {
     slug: string;
@@ -154,26 +155,17 @@ export default function DynamicArticlePage() {
                         </div>
                     </motion.header>
 
-                    {/* Content */}
+                    {/* Content - Premium Styled */}
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.2 }}
-                        className="prose prose-invert prose-lg max-w-none
-                            prose-headings:text-white prose-headings:font-bold
-                            prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4
-                            prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
-                            prose-p:text-gray-300 prose-p:leading-relaxed
-                            prose-a:text-cyan-400 prose-a:no-underline hover:prose-a:underline
-                            prose-strong:text-white
-                            prose-ul:text-gray-300 prose-ol:text-gray-300
-                            prose-li:mb-2
-                            prose-table:w-full prose-th:text-left prose-th:text-white prose-th:bg-white/5 prose-th:p-3
-                            prose-td:p-3 prose-td:border-t prose-td:border-white/10
-                            prose-img:rounded-xl prose-img:shadow-lg
-                            prose-blockquote:border-l-4 prose-blockquote:border-cyan-500 prose-blockquote:bg-cyan-500/5 prose-blockquote:py-2 prose-blockquote:px-4"
+                        className="article-content"
                     >
-                        <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                        <ReactMarkdown
+                            remarkPlugins={[remarkGfm]}
+                            components={premiumComponents}
+                        >
                             {articleContent}
                         </ReactMarkdown>
                     </motion.div>

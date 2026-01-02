@@ -90,8 +90,11 @@ export function Navbar() {
                                 Search
                             </Link>
 
-                            {/* AI Button */}
-                            <button className="ml-3 px-5 py-2.5 rounded-full bg-gradient-to-r from-[var(--nds-primary)] to-[var(--nds-primary-dark)] font-medium text-sm hover:shadow-[0_0_30px_rgba(0,180,216,0.3)] transition-all duration-300 hover:scale-105">
+                            {/* AI Button - Opens chat */}
+                            <button
+                                onClick={() => window.dispatchEvent(new Event('openAIChat'))}
+                                className="ml-3 px-5 py-2.5 rounded-full bg-gradient-to-r from-[var(--nds-primary)] to-[var(--nds-primary-dark)] font-medium text-sm hover:shadow-[0_0_30px_rgba(0,180,216,0.3)] transition-all duration-300 hover:scale-105"
+                            >
                                 Ask AI
                             </button>
                         </div>
@@ -135,7 +138,13 @@ export function Navbar() {
                             >
                                 Search
                             </Link>
-                            <button className="mt-4 px-8 py-3 rounded-full bg-gradient-to-r from-[var(--nds-primary)] to-[var(--nds-primary-dark)] font-medium">
+                            <button
+                                onClick={() => {
+                                    setMobileOpen(false);
+                                    window.dispatchEvent(new Event('openAIChat'));
+                                }}
+                                className="mt-4 px-8 py-3 rounded-full bg-gradient-to-r from-[var(--nds-primary)] to-[var(--nds-primary-dark)] font-medium"
+                            >
                                 Ask AI
                             </button>
                         </div>

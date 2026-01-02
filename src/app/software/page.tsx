@@ -1,163 +1,120 @@
 import { Navbar } from "@/components/ui/Navbar";
 import { Footer } from "@/components/home/Footer";
 import { AIChat } from "@/components/chat/AIChat";
-import { Briefcase, TrendingUp, Zap, Server, Bot, DollarSign } from "lucide-react";
+import { Code, Calendar, Clock, ArrowRight, Cloud, Shield, Cog } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
+import { getArticlesByCategory } from "@/lib/articles";
 
-const featuredArticles = [
-    {
-        title: "Best Project Management Software 2025: Complete Guide & Honest Comparison",
-        description: "Monday.com vs Asana vs Trello vs Notion vs ClickUp. G2 ratings, real pricing, and honest recommendations.",
-        href: "/software/best-project-management-tools-2025",
-        badge: "Project Management",
-        icon: Briefcase,
-        gradient: "from-teal-500 to-cyan-500",
-    },
-    {
-        title: "Kinsta vs WP Engine vs SiteGround: The Definitive Hosting Comparison 2025",
-        description: "We migrated 5 sites to each platform. Real TTFB data, support response times, and migration pain points.",
-        href: "/software/hosting-comparison-2025",
-        badge: "Hosting",
-        icon: Server,
-        gradient: "from-orange-500 to-red-500",
-    },
-    {
-        title: "5 AI Tools That Actually Automate Your Workflow (No Hype)",
-        description: "We tested 20+ tools. Most are gimmicks. These 5 delivered measurable ROI.",
-        href: "/software/ai-automation-tools-2025",
-        badge: "AI Tools",
-        icon: Bot,
-        gradient: "from-purple-500 to-pink-500",
-    },
-    {
-        title: "Best CRM Software 2025: HubSpot vs Salesforce vs Pipedrive",
-        description: "Pricing that actually makes sense, features you'll use, and the hidden costs nobody mentions.",
-        href: "/software/best-crm-2025",
-        badge: "CRM",
-        icon: TrendingUp,
-        gradient: "from-blue-500 to-cyan-500",
-    },
-    {
-        title: "Best Email Marketing Platforms: Honest Pricing & Feature Breakdown",
-        description: "Mailchimp, ConvertKit, Beehiiv, and Klaviyo compared for different business sizes.",
-        href: "/software/email-marketing-comparison",
-        badge: "Email",
-        icon: Zap,
-        gradient: "from-green-500 to-emerald-500",
-    },
-];
+function getEmoji(title: string): string {
+    const titleLower = title.toLowerCase();
+    if (titleLower.includes("seo")) return "🔍";
+    if (titleLower.includes("hosting") || titleLower.includes("cloud")) return "☁️";
+    if (titleLower.includes("vpn") || titleLower.includes("security") || titleLower.includes("password")) return "🔐";
+    if (titleLower.includes("crm") || titleLower.includes("sales")) return "📊";
+    if (titleLower.includes("project") || titleLower.includes("management")) return "📋";
+    if (titleLower.includes("email") || titleLower.includes("marketing")) return "📧";
+    if (titleLower.includes("video") || titleLower.includes("editing")) return "🎬";
+    if (titleLower.includes("website") || titleLower.includes("builder")) return "🌐";
+    if (titleLower.includes("ai") || titleLower.includes("automation")) return "🤖";
+    return "💻";
+}
 
-
-const quickPicksData = [
-    { category: "Project Management", pick: "Linear", reason: "Best for dev teams", price: "$10/user" },
-    { category: "Design", pick: "Figma", reason: "Unmatched collaboration", price: "Free-$15/user" },
-    { category: "Notes", pick: "Notion", reason: "Most versatile", price: "$10/user" },
-    { category: "Email", pick: "Superhuman", reason: "Fastest inbox", price: "$30/user" },
-    { category: "Analytics", pick: "Plausible", reason: "Privacy-first", price: "$9/mo" },
-];
+function getCategoryBadge(articleType: string): string {
+    switch (articleType) {
+        case "listicle": return "Best Picks";
+        case "comparison": return "Comparison";
+        case "review": return "Deep Review";
+        case "guide": return "Guide";
+        case "comprehensive": return "Ultimate Guide";
+        default: return "Software";
+    }
+}
 
 export default function SoftwarePage() {
+    // Leer artículos dinámicamente desde articles.json
+    const articles = getArticlesByCategory("software");
+
+    // Separar featured y regulares
+    const featuredArticles = articles.filter(a => a.featured).slice(0, 2);
+    const regularArticles = articles.filter(a => !a.featured || !featuredArticles.includes(a));
+
     return (
         <main className="min-h-screen bg-[#0a0a0a]">
             <Navbar />
             <section className="pt-32 pb-24 px-6">
-                <div className="max-w-5xl mx-auto">
+                <div className="max-w-4xl mx-auto">
                     {/* Header */}
-                    <div className="text-center mb-16">
-                        <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-teal-500 to-cyan-500 mb-6">
-                            <Briefcase className="w-10 h-10" />
+                    <div className="text-center mb-12">
+                        <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 mb-6">
+                            <Code className="w-10 h-10" />
                         </div>
-                        <h1 className="text-4xl md:text-6xl font-black mb-4">
-                            Software & <span className="gradient-text">SaaS</span>
+                        <h1 className="text-4xl md:text-5xl font-black mb-4">
+                            Software & <span className="gradient-text">SaaS Tools</span>
                         </h1>
-                        <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-                            In-depth reviews, pricing breakdowns, and honest comparisons of the tools that run modern businesses.
+                        <p className="text-xl text-gray-400">
+                            {articles.length} expert reviews of the best software, cloud services, and SaaS platforms.
                         </p>
                     </div>
 
-                    {/* Featured Articles */}
-                    <div className="mb-16">
-                        <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
-                            <span className="w-2 h-2 rounded-full bg-[var(--nds-primary)]"></span>
-                            Featured Comparisons
-                        </h2>
-                        <div className="grid md:grid-cols-2 gap-6">
+                    {/* Featured Grid */}
+                    {featuredArticles.length > 0 && (
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
                             {featuredArticles.map(article => (
                                 <Link
                                     key={article.href}
                                     href={article.href}
-                                    className="group block p-6 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-teal-500/30 transition-all"
+                                    className="group block p-6 rounded-2xl bg-gradient-to-br from-blue-500/10 to-cyan-500/5 border border-blue-500/20 hover:border-blue-500/50 transition-all"
                                 >
-                                    <div className="flex items-start gap-4">
-                                        <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${article.gradient} flex items-center justify-center flex-shrink-0`}>
-                                            <article.icon className="w-7 h-7 text-white" />
-                                        </div>
-                                        <div className="flex-1">
-                                            <span className="inline-block px-2 py-1 rounded-full bg-teal-500/20 text-teal-400 text-xs font-semibold mb-2">
-                                                {article.badge}
-                                            </span>
-                                            <h3 className="text-lg font-bold text-white group-hover:text-teal-400 transition-colors mb-2 line-clamp-2">
-                                                {article.title}
-                                            </h3>
-                                            <p className="text-gray-400 text-sm line-clamp-2">{article.description}</p>
-                                        </div>
+                                    <div className="text-5xl mb-4">{getEmoji(article.title)}</div>
+                                    <span className="inline-block px-2 py-1 rounded-full bg-blue-500/20 text-blue-400 text-xs font-semibold mb-2">
+                                        {getCategoryBadge(article.articleType)}
+                                    </span>
+                                    <h2 className="text-xl font-bold text-white group-hover:text-blue-400 transition-colors mb-2">
+                                        {article.title}
+                                    </h2>
+                                    <p className="text-gray-400 text-sm">{article.description}</p>
+                                </Link>
+                            ))}
+                        </div>
+                    )}
+
+                    {/* All Articles */}
+                    <h2 className="text-2xl font-bold mb-6">All Software Reviews ({regularArticles.length})</h2>
+                    <div className="space-y-4">
+                        {regularArticles.map(article => (
+                            <Link
+                                key={article.href}
+                                href={article.href}
+                                className="group block p-5 rounded-xl bg-white/[0.02] border border-white/5 hover:border-blue-500/30 transition-all"
+                            >
+                                <div className="flex items-center gap-5">
+                                    <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-500/20 to-cyan-500/10 flex-shrink-0 flex items-center justify-center text-2xl">
+                                        {getEmoji(article.title)}
                                     </div>
-                                </Link>
-                            ))}
-                        </div>
+                                    <div className="flex-1 min-w-0">
+                                        <span className="inline-block px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-400 text-xs font-semibold mb-1">
+                                            {getCategoryBadge(article.articleType)}
+                                        </span>
+                                        <h3 className="text-lg font-semibold text-white group-hover:text-blue-400 transition-colors truncate">
+                                            {article.title}
+                                        </h3>
+                                        <p className="text-gray-500 text-sm truncate">{article.description}</p>
+                                    </div>
+                                    <div className="hidden md:flex items-center gap-3 text-sm text-gray-500">
+                                        <span>{new Date(article.date).toLocaleDateString("en-US", { month: "short", year: "numeric" })}</span>
+                                        <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                    </div>
+                                </div>
+                            </Link>
+                        ))}
                     </div>
 
-                    {/* Quick Picks */}
-                    <div className="mb-16 p-8 rounded-2xl bg-gradient-to-br from-teal-500/10 to-cyan-500/5 border border-teal-500/20">
-                        <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
-                            <DollarSign className="w-6 h-6 text-teal-400" />
-                            Quick Picks by Category
-                        </h2>
-                        <div className="overflow-x-auto">
-                            <table className="w-full text-sm">
-                                <thead>
-                                    <tr className="border-b border-white/10">
-                                        <th className="text-left py-3 text-gray-400 font-medium">Category</th>
-                                        <th className="text-left py-3 text-gray-400 font-medium">Our Pick</th>
-                                        <th className="text-left py-3 text-gray-400 font-medium">Why</th>
-                                        <th className="text-right py-3 text-gray-400 font-medium">Starting Price</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {quickPicksData.map((row, i) => (
-                                        <tr key={i} className="border-b border-white/5">
-                                            <td className="py-4 text-white font-medium">{row.category}</td>
-                                            <td className="py-4 text-teal-400 font-semibold">{row.pick}</td>
-                                            <td className="py-4 text-gray-400">{row.reason}</td>
-                                            <td className="py-4 text-right text-white">{row.price}</td>
-                                        </tr>
-                                    ))}
-                                </tbody>
-                            </table>
+                    {articles.length === 0 && (
+                        <div className="text-center py-12 text-gray-500">
+                            <Code className="w-16 h-16 mx-auto mb-4 opacity-30" />
+                            <p>No software articles found yet. Check back soon!</p>
                         </div>
-                    </div>
-
-                    {/* Categories */}
-                    <div>
-                        <h2 className="text-2xl font-bold text-white mb-6">Browse by Category</h2>
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                            {[
-                                { name: "Hosting", href: "/software/hosting-comparison-2025" },
-                                { name: "AI Tools", href: "/software/ai-automation-tools-2025" },
-                                { name: "CRM", href: "/software/best-crm-2025" },
-                                { name: "Email Marketing", href: "/software/email-marketing-comparison" },
-                            ].map(cat => (
-                                <Link
-                                    key={cat.name}
-                                    href={cat.href}
-                                    className="p-4 rounded-xl bg-white/5 border border-white/10 hover:border-teal-500/50 transition-colors text-center"
-                                >
-                                    <span className="text-white font-semibold">{cat.name}</span>
-                                </Link>
-                            ))}
-                        </div>
-                    </div>
+                    )}
                 </div>
             </section>
             <Footer />

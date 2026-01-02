@@ -99,7 +99,6 @@ export const CardBody = ({
 };
 
 export const CardItem = ({
-    as: Tag = "div",
     children,
     className,
     translateX = 0,
@@ -110,7 +109,6 @@ export const CardItem = ({
     rotateZ = 0,
     ...rest
 }: {
-    as?: React.ElementType;
     children: React.ReactNode;
     className?: string;
     translateX?: number | string;
@@ -122,14 +120,14 @@ export const CardItem = ({
     [key: string]: unknown;
 }) => {
     return (
-        <Tag
+        <div
             className={cn("w-fit transition duration-200 ease-linear", className)}
             style={{
                 transform: `translateX(${translateX}px) translateY(${translateY}px) translateZ(${translateZ}px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) rotateZ(${rotateZ}deg)`,
             }}
-            {...rest}
+            {...(rest as React.HTMLAttributes<HTMLDivElement>)}
         >
             {children}
-        </Tag>
+        </div>
     );
 };
