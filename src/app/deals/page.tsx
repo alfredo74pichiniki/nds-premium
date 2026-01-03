@@ -3,7 +3,7 @@ import { Footer } from "@/components/home/Footer";
 import { AIChat } from "@/components/chat/AIChat";
 import { Tag, Calendar, Percent, ArrowRight, Sparkles } from "lucide-react";
 import Link from "next/link";
-import { getArticlesByCategory } from "@/lib/articles";
+import { getArticlesByCategoryAsync } from "@/lib/articles";
 
 function getEmoji(title: string): string {
     const titleLower = title.toLowerCase();
@@ -15,9 +15,12 @@ function getEmoji(title: string): string {
     return "🏷️";
 }
 
-export default function DealsPage() {
-    // Leer artículos dinámicamente desde articles.json
-    const articles = getArticlesByCategory("deals");
+// ISR: Revalidar cada 60 segundos para obtener nuevos artículos
+export const revalidate = 60;
+
+export default async function DealsPage() {
+    // Leer artículos con ISR (revalidación automática cada 60s)
+    const articles = await getArticlesByCategoryAsync("deals");
 
     return (
         <main className="min-h-screen bg-[#0a0a0a]">

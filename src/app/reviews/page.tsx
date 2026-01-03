@@ -3,7 +3,7 @@ import { Footer } from "@/components/home/Footer";
 import { AIChat } from "@/components/chat/AIChat";
 import { Calendar, Clock, ArrowRight, Star } from "lucide-react";
 import Link from "next/link";
-import { getArticlesByCategory } from "@/lib/articles";
+import { getArticlesByCategoryAsync, Article } from "@/lib/articles";
 
 // Emoji mapping para categorías de artículos
 const categoryEmojis: Record<string, string> = {
@@ -50,9 +50,12 @@ function getCategoryBadge(articleType: string): string {
     }
 }
 
-export default function ReviewsPage() {
-    // Leer artículos dinámicamente desde articles.json
-    const allArticles = getArticlesByCategory("reviews");
+// ISR: Revalidar cada 60 segundos para obtener nuevos artículos
+export const revalidate = 60;
+
+export default async function ReviewsPage() {
+    // Leer artículos con ISR (revalidación automática cada 60s)
+    const allArticles = await getArticlesByCategoryAsync("reviews");
 
     // Separar featured (artículos con más de 2000 palabras) y regulares
     const featuredArticles = allArticles.filter(a => a.featured).slice(0, 2);

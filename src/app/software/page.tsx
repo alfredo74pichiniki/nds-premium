@@ -3,7 +3,7 @@ import { Footer } from "@/components/home/Footer";
 import { AIChat } from "@/components/chat/AIChat";
 import { Code, Calendar, Clock, ArrowRight, Cloud, Shield, Cog } from "lucide-react";
 import Link from "next/link";
-import { getArticlesByCategory } from "@/lib/articles";
+import { getArticlesByCategoryAsync } from "@/lib/articles";
 
 function getEmoji(title: string): string {
     const titleLower = title.toLowerCase();
@@ -30,9 +30,12 @@ function getCategoryBadge(articleType: string): string {
     }
 }
 
-export default function SoftwarePage() {
-    // Leer artículos dinámicamente desde articles.json
-    const articles = getArticlesByCategory("software");
+// ISR: Revalidar cada 60 segundos para obtener nuevos artículos
+export const revalidate = 60;
+
+export default async function SoftwarePage() {
+    // Leer artículos con ISR (revalidación automática cada 60s)
+    const articles = await getArticlesByCategoryAsync("software");
 
     // Separar featured y regulares
     const featuredArticles = articles.filter(a => a.featured).slice(0, 2);
