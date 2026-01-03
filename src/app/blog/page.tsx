@@ -3,18 +3,44 @@ import { Footer } from "@/components/home/Footer";
 import { AIChat } from "@/components/chat/AIChat";
 import { Newspaper } from "lucide-react";
 import Link from "next/link";
+import fs from "fs";
+import path from "path";
 
-const posts = [
-    {
-        title: "State of Remote Work 2025: The New Normal Has Evolved",
-        description: "Five years after the remote work explosion, here's what actually stuck—and what's coming next.",
-        href: "/blog/state-of-remote-work-2025",
-        date: "December 2025",
-        badge: "Industry Report",
-    },
-];
+// Article type
+interface Article {
+    slug: string;
+    title: string;
+    description?: string;
+    category: string;
+    articleType: string;
+    date: string;
+    wordCount: number;
+    href?: string;
+}
 
-export default function BlogPage() {
+// Load articles from JSON at build time
+async function getArticles(): Promise<Article[]> {
+    const articlesPath = path.join(process.cwd(), "public", "data", "articles.json");
+
+    try {
+        const data = fs.readFileSync(articlesPath, "utf-8");
+        const articles: Article[] = JSON.parse(data);
+
+        // Filter only articles with real content (>100 words)
+        // and sort by date (newest first)
+        return articles
+            .filter(a => a.wordCount > 100)
+            .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+            .slice(0, 20); // Show max 20 articles
+    } catch (error) {
+        console.error("Error loading articles:", error);
+        return [];
+    }
+}
+
+export default async function BlogPage() {
+    const articles = await getArticles();
+
     return (
         <main className="min-h-screen bg-[#0a0a0a]">
             <Navbar />
@@ -29,28 +55,74 @@ export default function BlogPage() {
                             NDS <span className="gradient-text">Blog</span>
                         </h1>
                         <p className="text-xl text-gray-400">
-                            Industry insights, trend analysis, and tech news.
+                            Industry insights, product reviews, and tech guides.
+                        </p>
+                        <p className="text-sm text-gray-500 mt-2">
+                            {articles.length} articles available
                         </p>
                     </div>
 
-                    {/* Posts */}
+                    {/* Articles Grid */}
                     <div className="space-y-6">
-                        {posts.map(post => (
+                        {articles.length === 0 ? (
+                            <div className="text-center py-12">
+                                <p className="text-gray-400">No articles available yet.</p>
+                            </div>
+                        ) : (
+                            articles.map(article => {
+                                // Determine the correct href based on category
+                                const href = article.href || `/${article.category}/${article.slug}`;
+
+                                return (
+                                    <Link
+                                        key={article.slug}
+                                        href={href}
+                                        className="group block p-6 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-violet-500/30 transition-all"
+                                    >
+                                        <div className="flex items-center gap-3 mb-3">
+                                            <span className="inline-block px-2 py-1 rounded-full bg-violet-500/20 text-violet-400 text-xs font-semibold capitalize">
+                                                {article.category}
+                                            </span>
+                                            <span className="inline-block px-2 py-1 rounded-full bg-cyan-500/20 text-cyan-400 text-xs font-semibold capitalize">
+                                                {article.articleType}
+                                            </span>
+                                            <span className="text-gray-500 text-sm">{article.date}</span>
+                                            {article.wordCount > 1500 && (
+                                                <span className="inline-block px-2 py-1 rounded-full bg-yellow-500/20 text-yellow-400 text-xs font-semibold">
+                                                    ⭐ Featured
+                                                </span>
+                                            )}
+                                        </div>
+                                        <h2 className="text-xl font-bold text-white group-hover:text-violet-400 transition-colors mb-2">
+                                            {article.title}
+                                        </h2>
+                                        <p className="text-gray-400 text-sm">
+                                            {article.description || `Expert ${article.articleType} about ${article.title.toLowerCase()}`}
+                                        </p>
+                                        <div className="mt-3 text-xs text-gray-500">
+                                            {Math.ceil(article.wordCount / 200)} min read • {article.wordCount.toLocaleString()} words
+                                        </div>
+                                    </Link>
+                                );
+                            })
+                        )}
+                    </div>
+
+                    {/* Category Links */}
+                    <div className="mt-12 grid grid-cols-2 md:grid-cols-5 gap-4">
+                        {[
+                            { name: "Reviews", href: "/reviews", color: "cyan" },
+                            { name: "Gaming", href: "/gaming", color: "purple" },
+                            { name: "Software", href: "/software", color: "green" },
+                            { name: "Guides", href: "/guides", color: "orange" },
+                            { name: "Deals", href: "/deals", color: "red" },
+                        ].map(cat => (
                             <Link
-                                key={post.href}
-                                href={post.href}
-                                className="group block p-6 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-violet-500/30 transition-all"
+                                key={cat.href}
+                                href={cat.href}
+                                className={`p-4 rounded-xl bg-${cat.color}-500/10 border border-${cat.color}-500/20 text-center hover:bg-${cat.color}-500/20 transition-colors`}
                             >
-                                <div className="flex items-center gap-3 mb-3">
-                                    <span className="inline-block px-2 py-1 rounded-full bg-violet-500/20 text-violet-400 text-xs font-semibold">
-                                        {post.badge}
-                                    </span>
-                                    <span className="text-gray-500 text-sm">{post.date}</span>
-                                </div>
-                                <h2 className="text-xl font-bold text-white group-hover:text-violet-400 transition-colors mb-2">
-                                    {post.title}
-                                </h2>
-                                <p className="text-gray-400 text-sm">{post.description}</p>
+                                <span className={`text-${cat.color}-400 font-semibold`}>{cat.name}</span>
                             </Link>
                         ))}
                     </div>
