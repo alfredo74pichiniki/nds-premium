@@ -132,30 +132,64 @@ def scan_category(category: str) -> list:
 
 def main():
     print("=" * 60)
-    print("📚 POBLANDO articles.json")
+    print("📚 POBLANDO articles.json (MERGE MODE - preserva existentes)")
     print("=" * 60)
     
-    all_articles = []
+    # STEP 1: Load EXISTING articles first (PRESERVE THEM)
+    existing_articles = []
+    if OUTPUT_FILE.exists():
+        try:
+            with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
+                existing_articles = json.load(f)
+                if not isinstance(existing_articles, list):
+                    existing_articles = []
+            print(f"📂 Loaded {len(existing_articles)} existing articles")
+        except Exception as e:
+            print(f"⚠️ Could not load existing: {e}")
+            existing_articles = []
+    
+    # Create lookup by slug
+    existing_by_slug = {a.get("slug"): a for a in existing_articles}
+    print(f"   Existing slugs: {len(existing_by_slug)}")
+    
+    # STEP 2: Scan TSX directories for new articles
+    new_count = 0
+    updated_count = 0
     
     for category in WEB_CATEGORIES:
         print(f"\n📁 Escaneando /{category}...")
         articles = scan_category(category)
-        all_articles.extend(articles)
-        print(f"   Encontrados: {len(articles)} artículos")
+        
+        for article in articles:
+            slug = article["slug"]
+            # Only add/update if has real content (more than 10 words)
+            if article.get("wordCount", 0) > 10:
+                if slug not in existing_by_slug:
+                    new_count += 1
+                    print(f"   ✨ NEW: {slug}")
+                else:
+                    updated_count += 1
+                existing_by_slug[slug] = article
+            else:
+                # Skip empty stubs - preserve existing if any
+                if slug not in existing_by_slug:
+                    print(f"   ⏭️ SKIP (empty): {slug}")
     
-    # Ordenar por fecha descendente
+    # STEP 3: Convert to list and sort
+    all_articles = list(existing_by_slug.values())
     all_articles.sort(key=lambda x: x["date"], reverse=True)
     
-    # Guardar
-    output_data = all_articles  # Lista directa, no objeto con "articles"
-    
+    # STEP 4: Save with UTF-8
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        json.dump(output_data, f, indent=2, ensure_ascii=False)
+        json.dump(all_articles, f, indent=2, ensure_ascii=False)
     
     print("\n" + "=" * 60)
     print(f"✅ Guardado: {OUTPUT_FILE}")
     print(f"📊 Total artículos: {len(all_articles)}")
+    print(f"   ✨ Nuevos: {new_count}")
+    print(f"   🔄 Actualizados: {updated_count}")
+    print(f"   📂 Preservados: {len(all_articles) - new_count - updated_count}")
     print("=" * 60)
     
     # Mostrar resumen por categoría
