@@ -14,37 +14,51 @@ export interface Article {
     score?: number;
 }
 
-// URL pública del JSON de artículos - usar para ISR
-const ARTICLES_URL = "https://nestdigitalstudio.com/data/articles.json";
+// URLs para ISR - GitHub raw está siempre disponible durante build
+const GITHUB_RAW_URL = "https://raw.githubusercontent.com/alfredo74pichiniki/nds-premium/main/public/data/articles.json";
+const PRODUCTION_URL = "https://nestdigitalstudio.com/data/articles.json";
 
 /**
  * Carga artículos usando fetch con ISR (Incremental Static Regeneration)
+ * Primero intenta GitHub raw (siempre actualizado), luego producción, luego fallback local
  * Revalida cada 60 segundos para obtener datos actualizados
  */
 export async function getArticlesAsync(): Promise<Article[]> {
+    // Intentar primero con GitHub raw (siempre disponible)
     try {
-        const response = await fetch(ARTICLES_URL, {
-            next: { revalidate: 60 } // Revalidar cada 60 segundos
+        const response = await fetch(GITHUB_RAW_URL, {
+            next: { revalidate: 60 }, // Revalidar cada 60 segundos
+            cache: 'no-store' // No cachear para obtener datos frescos
         });
 
-        if (!response.ok) {
-            console.error("[Articles] Fetch failed:", response.status);
-            return getArticlesFallback();
+        if (response.ok) {
+            const parsed = await response.json();
+            console.log("[Articles] Fetched from GitHub:", Array.isArray(parsed) ? parsed.length : 0, "articles");
+            if (Array.isArray(parsed)) return parsed;
+            if (parsed.articles && Array.isArray(parsed.articles)) return parsed.articles;
         }
-
-        const parsed = await response.json();
-        console.log("[Articles] Fetched", Array.isArray(parsed) ? parsed.length : (parsed.articles?.length || 0), "articles via ISR");
-
-        if (Array.isArray(parsed)) {
-            return parsed;
-        } else if (parsed.articles && Array.isArray(parsed.articles)) {
-            return parsed.articles;
-        }
-        return [];
-    } catch (error) {
-        console.error("[Articles] Fetch error, using fallback:", error);
-        return getArticlesFallback();
+    } catch (e) {
+        console.log("[Articles] GitHub fetch failed, trying production...");
     }
+
+    // Fallback a producción
+    try {
+        const response = await fetch(PRODUCTION_URL, {
+            next: { revalidate: 60 }
+        });
+
+        if (response.ok) {
+            const parsed = await response.json();
+            console.log("[Articles] Fetched from production:", Array.isArray(parsed) ? parsed.length : 0, "articles");
+            if (Array.isArray(parsed)) return parsed;
+            if (parsed.articles && Array.isArray(parsed.articles)) return parsed.articles;
+        }
+    } catch (e) {
+        console.log("[Articles] Production fetch failed, using local fallback...");
+    }
+
+    // Fallback final: filesystem local
+    return getArticlesFallback();
 }
 
 /**
