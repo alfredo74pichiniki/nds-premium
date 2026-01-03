@@ -20,8 +20,10 @@ export interface Article {
 export function getArticles(): Article[] {
     try {
         const filePath = path.join(process.cwd(), "public", "data", "articles.json");
+        console.log("[Articles] Loading from:", filePath);
         const fileContents = fs.readFileSync(filePath, "utf8");
         const parsed = JSON.parse(fileContents);
+        console.log("[Articles] Loaded", Array.isArray(parsed) ? parsed.length : (parsed.articles?.length || 0), "articles");
         // Handle both array format and object with "articles" property
         if (Array.isArray(parsed)) {
             return parsed;
