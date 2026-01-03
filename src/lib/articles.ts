@@ -5,7 +5,7 @@ export interface Article {
     slug: string;
     title: string;
     description: string;
-    category: string;  // UNA sola categoría por artículo
+    category: string;
     articleType: string;
     date: string;
     featured: boolean;
@@ -14,135 +14,55 @@ export interface Article {
     score?: number;
 }
 
-// URLs para ISR - GitHub raw está siempre disponible durante build
-const GITHUB_RAW_URL = "https://raw.githubusercontent.com/alfredo74pichiniki/nds-premium/main/public/data/articles.json";
-const PRODUCTION_URL = "https://nestdigitalstudio.com/data/articles.json";
-
 /**
- * Carga artículos usando fetch con ISR (Incremental Static Regeneration)
- * Primero intenta GitHub raw (siempre actualizado), luego producción, luego fallback local
- * Revalida cada 60 segundos para obtener datos actualizados
- */
-export async function getArticlesAsync(): Promise<Article[]> {
-    // Intentar primero con GitHub raw (siempre disponible)
-    try {
-        const response = await fetch(GITHUB_RAW_URL, {
-            next: { revalidate: 60 }, // Revalidar cada 60 segundos
-            cache: 'no-store' // No cachear para obtener datos frescos
-        });
-
-        if (response.ok) {
-            const parsed = await response.json();
-            console.log("[Articles] Fetched from GitHub:", Array.isArray(parsed) ? parsed.length : 0, "articles");
-            if (Array.isArray(parsed)) return parsed;
-            if (parsed.articles && Array.isArray(parsed.articles)) return parsed.articles;
-        }
-    } catch (e) {
-        console.log("[Articles] GitHub fetch failed, trying production...");
-    }
-
-    // Fallback a producción
-    try {
-        const response = await fetch(PRODUCTION_URL, {
-            next: { revalidate: 60 }
-        });
-
-        if (response.ok) {
-            const parsed = await response.json();
-            console.log("[Articles] Fetched from production:", Array.isArray(parsed) ? parsed.length : 0, "articles");
-            if (Array.isArray(parsed)) return parsed;
-            if (parsed.articles && Array.isArray(parsed.articles)) return parsed.articles;
-        }
-    } catch (e) {
-        console.log("[Articles] Production fetch failed, using local fallback...");
-    }
-
-    // Fallback final: filesystem local
-    return getArticlesFallback();
-}
-
-/**
- * Fallback: Lee del filesystem local (solo funciona durante build o desarrollo)
- */
-function getArticlesFallback(): Article[] {
-    try {
-        const filePath = path.join(process.cwd(), "public", "data", "articles.json");
-        const fileContents = fs.readFileSync(filePath, "utf8");
-        const parsed = JSON.parse(fileContents);
-        console.log("[Articles] Fallback loaded", Array.isArray(parsed) ? parsed.length : 0, "articles from filesystem");
-        if (Array.isArray(parsed)) {
-            return parsed;
-        } else if (parsed.articles && Array.isArray(parsed.articles)) {
-            return parsed.articles;
-        }
-        return [];
-    } catch (error) {
-        console.error("[Articles] Fallback error:", error);
-        return [];
-    }
-}
-
-/**
- * Carga todos los artículos desde articles.json (versión síncrona legacy)
- * @deprecated Usar getArticlesAsync para soporte ISR
+ * Carga artículos directamente del filesystem
+ * Simple y rápido - funciona perfectamente durante build de Vercel
  */
 export function getArticles(): Article[] {
     try {
         const filePath = path.join(process.cwd(), "public", "data", "articles.json");
         const fileContents = fs.readFileSync(filePath, "utf8");
         const parsed = JSON.parse(fileContents);
+
         if (Array.isArray(parsed)) {
+            console.log("[Articles] Loaded", parsed.length, "articles");
             return parsed;
         } else if (parsed.articles && Array.isArray(parsed.articles)) {
+            console.log("[Articles] Loaded", parsed.articles.length, "articles");
             return parsed.articles;
         }
         return [];
     } catch (error) {
-        console.error("Error loading articles:", error);
+        console.error("[Articles] Error loading:", error);
         return [];
     }
 }
 
 /**
- * Obtiene artículos por categoría EXACTA (versión async con ISR)
+ * Versión async que también lee del filesystem (para compatibilidad)
  */
-export async function getArticlesByCategoryAsync(category: string): Promise<Article[]> {
-    const articles = await getArticlesAsync();
-    const categoryLower = category.toLowerCase();
-    return articles.filter(a => {
-        const articleCategory = (a.category || "").toLowerCase();
-        return articleCategory === categoryLower;
-    });
+export async function getArticlesAsync(): Promise<Article[]> {
+    return getArticles();
 }
 
 /**
- * Obtiene artículos por categoría EXACTA (versión legacy síncrona)
+ * Obtiene artículos por categoría
  */
 export function getArticlesByCategory(category: string): Article[] {
     const articles = getArticles();
     const categoryLower = category.toLowerCase();
-    return articles.filter(a => {
-        const articleCategory = (a.category || "").toLowerCase();
-        return articleCategory === categoryLower;
-    });
+    return articles.filter(a => (a.category || "").toLowerCase() === categoryLower);
 }
 
 /**
- * Obtiene los últimos N artículos (ordenados por fecha) - async con ISR
+ * Versión async de getArticlesByCategory
  */
-export async function getLatestArticlesAsync(count: number = 10): Promise<Article[]> {
-    const articles = await getArticlesAsync();
-    return articles
-        .sort((a, b) => {
-            const dateA = new Date(a.date || "1970-01-01");
-            const dateB = new Date(b.date || "1970-01-01");
-            return dateB.getTime() - dateA.getTime();
-        })
-        .slice(0, count);
+export async function getArticlesByCategoryAsync(category: string): Promise<Article[]> {
+    return getArticlesByCategory(category);
 }
 
 /**
- * Obtiene los últimos N artículos (ordenados por fecha) - legacy
+ * Obtiene los últimos N artículos ordenados por fecha
  */
 export function getLatestArticles(count: number = 10): Article[] {
     const articles = getArticles();
@@ -155,36 +75,23 @@ export function getLatestArticles(count: number = 10): Article[] {
         .slice(0, count);
 }
 
-/**
- * Obtiene artículos destacados - async con ISR
- */
-export async function getFeaturedArticlesAsync(): Promise<Article[]> {
-    const articles = await getArticlesAsync();
-    return articles.filter(a => a.featured === true);
+export async function getLatestArticlesAsync(count: number = 10): Promise<Article[]> {
+    return getLatestArticles(count);
 }
 
 /**
- * Obtiene artículos destacados - legacy
+ * Obtiene artículos destacados
  */
 export function getFeaturedArticles(): Article[] {
     return getArticles().filter(a => a.featured === true);
 }
 
-/**
- * Obtiene estadísticas de artículos por categoría - async con ISR
- */
-export async function getCategoryStatsAsync(): Promise<Record<string, number>> {
-    const articles = await getArticlesAsync();
-    const stats: Record<string, number> = {};
-    for (const article of articles) {
-        const cat = (article.category || "uncategorized").toLowerCase();
-        stats[cat] = (stats[cat] || 0) + 1;
-    }
-    return stats;
+export async function getFeaturedArticlesAsync(): Promise<Article[]> {
+    return getFeaturedArticles();
 }
 
 /**
- * Obtiene estadísticas de artículos por categoría - legacy
+ * Obtiene estadísticas por categoría
  */
 export function getCategoryStats(): Record<string, number> {
     const articles = getArticles();
@@ -194,4 +101,8 @@ export function getCategoryStats(): Record<string, number> {
         stats[cat] = (stats[cat] || 0) + 1;
     }
     return stats;
+}
+
+export async function getCategoryStatsAsync(): Promise<Record<string, number>> {
+    return getCategoryStats();
 }
