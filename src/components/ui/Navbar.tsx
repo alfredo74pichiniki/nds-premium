@@ -6,16 +6,16 @@ import Link from "next/link";
 import Image from "next/image";
 import { Menu, X, ChevronDown } from "lucide-react";
 
-// 8 categories - MUST match homepage Categories.tsx exactly
+// 10 categories - includes Audio and Outdoor
 const navCategories = [
-    { name: "Best Of", href: "/compare" },
     { name: "Reviews", href: "/reviews" },
-    { name: "Blog", href: "/blog" },
+    { name: "Gaming", href: "/gaming" },
+    { name: "Software", href: "/software" },
+    { name: "Audio", href: "/audio", badge: "🎧" },
+    { name: "Outdoor", href: "/outdoor", badge: "🏕️" },
     { name: "Deals", href: "/deals", badge: "🔥" },
     { name: "Guides", href: "/guides" },
-    { name: "Tools", href: "/tools" },
-    { name: "Software", href: "/software" },
-    { name: "Gaming", href: "/gaming" },
+    { name: "Blog", href: "/blog" },
 ];
 
 export function Navbar() {
