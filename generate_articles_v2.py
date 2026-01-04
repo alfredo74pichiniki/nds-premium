@@ -316,81 +316,74 @@ Yes, we may earn a commission on purchases at no additional cost to you. This su
 
 
 # ============================================
-# OUTDOOR ARTICLES TO RECREATE
+# AUDIO ARTICLES TO RECREATE
 # ============================================
 
-OUTDOOR_ARTICLES = [
+AUDIO_ARTICLES = [
     {
-        "slug": "best-portable-solar-panels-camping-2026",
-        "title": "Best Portable Solar Panels for Camping 2026: Tested & Reviewed",
-        "category": "outdoor",
-        "query": "portable solar panel camping 100w",
-        "intro": "Keep your devices charged in the wilderness with these top-rated portable solar panels. We've analyzed Amazon's bestsellers, customer reviews, and real-world performance data to find the panels that actually deliver on their wattage claims."
+        "slug": "best-studio-monitors-home-2026",
+        "title": "Best Studio Monitors for Home Studios 2026: Producer's Guide",
+        "category": "audio",
+        "query": "studio monitors home near field PreSonus Edifier",
+        "intro": "Get accurate, professional sound for mixing and mastering in your home studio. We've analyzed the top-rated studio monitors from PreSonus, Edifier, and other trusted brands."
     },
     {
-        "slug": "best-hiking-gps-devices-2026",
-        "title": "Best Hiking GPS Devices 2026: Navigate with Confidence",
-        "category": "outdoor",
-        "query": "garmin hiking GPS handheld",
-        "intro": "Never get lost on the trail again. These GPS devices offer reliable navigation, detailed topographic maps, and long battery life for serious outdoor adventures. We've reviewed the top options from Garmin and other trusted brands."
+        "slug": "best-dac-amp-combos-2026",
+        "title": "Best DAC/Amp Combos Under $500 in 2026: Audiophile Picks",
+        "category": "audio",
+        "query": "DAC AMP combo FiiO Fosi Audio headphone amplifier",
+        "intro": "Upgrade your headphone listening experience with a quality DAC/Amp combo. These top-rated options under $500 deliver audiophile-grade sound."
     },
     {
-        "slug": "best-outdoor-bluetooth-speakers-2026",
-        "title": "Best Outdoor Bluetooth Speakers 2026: Waterproof & Rugged",
-        "category": "outdoor",
-        "query": "JBL waterproof bluetooth speaker outdoor",
-        "intro": "From beach days to camping trips, these waterproof Bluetooth speakers deliver excellent sound while handling sand, water, and rough conditions. We've tested durability and audio quality to find the best options."
+        "slug": "best-open-back-headphones-2026",
+        "title": "Best Open-Back Headphones 2026: Sennheiser vs Audio-Technica",
+        "category": "audio",
+        "query": "Sennheiser HD 600 open back headphones audiophile",
+        "intro": "Experience the widest soundstage and most natural audio with these premium open-back headphones. Featuring top picks from Sennheiser and Audio-Technica."
     },
     {
-        "slug": "best-camping-lanterns-2026",
-        "title": "Best Camping Lanterns 2026: LED & Solar Options Tested",
-        "category": "outdoor",
-        "query": "camping lantern LED rechargeable 1000 lumens",
-        "intro": "Good lighting transforms your campsite experience. These LED and solar camping lanterns offer bright illumination, long battery life, and reliable performance in any weather conditions."
+        "slug": "best-portable-bluetooth-speakers-2026",
+        "title": "Best Portable Bluetooth Speakers 2026: JBL vs Bose vs Sony",
+        "category": "audio",
+        "query": "JBL Flip portable bluetooth speaker Bose Sony",
+        "intro": "Take your music anywhere with these top portable Bluetooth speakers. We compare JBL, Bose, Sony, and other leading brands for sound quality and durability."
     },
     {
-        "slug": "best-action-cameras-adventure-2026",
-        "title": "Best Action Cameras 2026: GoPro vs DJI vs Budget Options",
-        "category": "outdoor",
-        "query": "GoPro hero action camera 4K waterproof",
-        "intro": "Capture your adventures in stunning detail with these top action cameras. From the latest GoPro to budget-friendly alternatives, we've compared stabilization, video quality, and durability."
+        "slug": "best-soundbars-tv-2026",
+        "title": "Best Soundbars Under $300 in 2026: Dolby Atmos Options",
+        "category": "audio",
+        "query": "soundbar TV Dolby Atmos Samsung Bose LG",
+        "intro": "Upgrade your TV audio without breaking the bank. These soundbars under $300 deliver immersive Dolby Atmos sound for movies and music."
     },
     {
-        "slug": "best-portable-water-filters-2026",
-        "title": "Best Portable Water Filters 2026: Safe Drinking Anywhere",
-        "category": "outdoor",
-        "query": "Sawyer LifeStraw portable water filter hiking",
-        "intro": "Clean water is essential for any outdoor adventure. These portable filters and purifiers remove bacteria, viruses, and contaminants—allowing you to drink safely from streams, lakes, and questionable water sources."
+        "slug": "best-turntables-vinyl-2026",
+        "title": "Best Turntables for Vinyl Beginners 2026: Audio-Technica & More",
+        "category": "audio",
+        "query": "turntable vinyl record player Audio-Technica AT-LP",
+        "intro": "Start your vinyl journey right with these beginner-friendly turntables. Featuring top picks from Audio-Technica and other trusted brands."
     },
     {
-        "slug": "best-outdoor-drones-2026",
-        "title": "Best Drones for Outdoor Photography 2026: Aerial Views",
-        "category": "outdoor",
-        "query": "DJI mini drone 4K camera",
-        "intro": "Capture breathtaking aerial footage of landscapes and adventures with these top-rated drones. From beginner-friendly options to professional aircraft, we've found the best for outdoor photography."
+        "slug": "best-usb-microphones-streaming-2026",
+        "title": "Best USB Microphones for Streaming 2026: Blue Yeti vs Shure",
+        "category": "audio",
+        "query": "Blue Yeti Shure USB microphone streaming podcast",
+        "intro": "Sound professional on streams and podcasts with these top USB microphones. We compare Blue Yeti, Shure, and other popular options."
     },
     {
-        "slug": "best-emergency-weather-radios-2026",
-        "title": "Best Emergency Weather Radios 2026: NOAA Certified",
-        "category": "outdoor",
-        "query": "emergency weather radio NOAA hand crank solar",
-        "intro": "Stay informed during severe weather with these NOAA-certified emergency radios. Featuring solar charging, hand cranks, and multiple power options, these radios work when you need them most."
-    },
-    {
-        "slug": "best-trail-cameras-wildlife-2026",
-        "title": "Best Trail Cameras 2026: Wildlife & Security Monitoring",
-        "category": "outdoor",
-        "query": "trail camera wildlife hunting 4K night vision",
-        "intro": "Monitor wildlife activity or secure your property with these top trail cameras. Featuring night vision, motion detection, and weatherproof construction, these cameras capture crisp images day and night."
+        "slug": "best-bone-conduction-headphones-2026",
+        "title": "Best Bone Conduction Headphones 2026: SHOKZ OpenRun & Alternatives",
+        "category": "audio",
+        "query": "SHOKZ OpenRun bone conduction headphones running",
+        "intro": "Stay aware of your surroundings while enjoying music on runs and rides. These bone conduction headphones feature SHOKZ and top alternatives."
     }
 ]
 
 
 def main():
-    """Regenerate OUTDOOR articles with proper format and REAL ASINs."""
+    """Regenerate AUDIO articles with proper format and REAL ASINs."""
     
     print("\n" + "="*70)
-    print("🏕️ REGENERATING OUTDOOR ARTICLES - NIVEL DIOS+++++")
+    print("🎧 REGENERATING AUDIO ARTICLES - NIVEL DIOS+++++")
     print("   Using model format from january-2026-best-tech-deals.json")
     print("   Getting REAL ASINs and prices from ScraperAPI")
     print("="*70 + "\n")
@@ -398,7 +391,7 @@ def main():
     created = []
     failed = []
     
-    for article_def in OUTDOOR_ARTICLES:
+    for article_def in AUDIO_ARTICLES:
         article = generate_product_article(
             slug=article_def['slug'],
             title=article_def['title'],
@@ -444,7 +437,7 @@ def main():
             json.dump(index, f, indent=2, ensure_ascii=False)
     
     print("\n" + "="*70)
-    print(f"✅ COMPLETED: {len(created)}/{len(OUTDOOR_ARTICLES)} articles")
+    print(f"✅ COMPLETED: {len(created)}/{len(AUDIO_ARTICLES)} articles")
     if failed:
         print(f"❌ FAILED: {failed}")
     print("="*70 + "\n")
