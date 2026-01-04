@@ -24,6 +24,7 @@ export { TableOfContents } from "./TableOfContents";
 export { ReadingProgress } from "./ReadingProgress";
 export { RelatedArticles } from "./RelatedArticles";
 export { PremiumArticlePage } from "./PremiumArticlePage";
+export { CategoryListingPage } from "./CategoryListingPage";
 
 // Rich Content Components
 export { YouTubeEmbed } from "./YouTubeEmbed";
