@@ -1,12 +1,19 @@
 "use client";
 
+/**
+ * PremiumArticlePage - Reusable Premium Article Layout
+ * FASE 6: Integration Component
+ * 
+ * This component provides a standardized premium layout for all article pages
+ * with Schema markup, AuthorBio, Breadcrumbs, and related articles.
+ */
+
 import { useState, useEffect } from "react";
-import { useParams } from "next/navigation";
 import { Navbar } from "@/components/ui/Navbar";
 import { Footer } from "@/components/home/Footer";
 import { AIChat } from "@/components/chat/AIChat";
 import { motion } from "framer-motion";
-import { Headphones, Star } from "lucide-react";
+import { Star } from "lucide-react";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
@@ -23,6 +30,10 @@ import {
     SchemaMarkup
 } from "@/components/article";
 import { getDefaultAuthorForCategory } from "@/data/authors";
+
+// ═══════════════════════════════════════════════════════════════
+// TYPES
+// ═══════════════════════════════════════════════════════════════
 
 interface Article {
     slug: string;
@@ -46,9 +57,41 @@ interface ArticleListItem {
     href?: string;
 }
 
-export default function DynamicAudioPage() {
-    const params = useParams();
-    const slug = params.slug as string;
+interface CategoryConfig {
+    name: string;
+    color: string;
+    icon: React.ReactNode;
+    backLink: string;
+    backLabel: string;
+    ctaTitle: string;
+    ctaDescription: string;
+    ctaButtonText: string;
+}
+
+interface PremiumArticlePageProps {
+    slug: string;
+    category: string;
+    config: CategoryConfig;
+}
+
+// ═══════════════════════════════════════════════════════════════
+// HELPER FUNCTIONS
+// ═══════════════════════════════════════════════════════════════
+
+function cleanContent(content: string): string {
+    let cleaned = content;
+    cleaned = cleaned.replace(/^```markdown\s*/i, '');
+    cleaned = cleaned.replace(/```\s*$/i, '');
+    cleaned = cleaned.replace(/^---\s*\n[\s\S]*?\n---\s*\n?/m, '');
+    cleaned = cleaned.trim();
+    return cleaned;
+}
+
+// ═══════════════════════════════════════════════════════════════
+// MAIN COMPONENT
+// ═══════════════════════════════════════════════════════════════
+
+export function PremiumArticlePage({ slug, category, config }: PremiumArticlePageProps) {
     const [article, setArticle] = useState<Article | null>(null);
     const [relatedArticles, setRelatedArticles] = useState<ArticleListItem[]>([]);
     const [loading, setLoading] = useState(true);
@@ -66,12 +109,12 @@ export default function DynamicAudioPage() {
                     setError("Article not found");
                 }
 
-                // Load related articles from articles.json
+                // Load related articles
                 const listRes = await fetch("/data/articles.json");
                 if (listRes.ok) {
                     const allArticles = await listRes.json();
                     const related = allArticles
-                        .filter((a: ArticleListItem) => a.slug !== slug && (a.category === "audio" || a.category === "reviews"))
+                        .filter((a: ArticleListItem) => a.slug !== slug && a.category === category)
                         .slice(0, 3);
                     setRelatedArticles(related);
                 }
@@ -82,29 +125,31 @@ export default function DynamicAudioPage() {
             }
         }
         loadArticle();
-    }, [slug]);
+    }, [slug, category]);
 
+    // Loading state
     if (loading) {
         return (
             <main className="min-h-screen bg-[#0a0a0a] flex items-center justify-center">
                 <motion.div
                     animate={{ rotate: 360 }}
                     transition={{ duration: 1, repeat: Infinity }}
-                    className="w-8 h-8 border-2 border-pink-500 border-t-transparent rounded-full"
+                    className={`w-8 h-8 border-2 border-${config.color}-500 border-t-transparent rounded-full`}
                 />
             </main>
         );
     }
 
+    // Error state
     if (error || !article) {
         return (
             <main className="min-h-screen bg-[#0a0a0a]">
                 <Navbar />
                 <div className="pt-32 pb-24 px-6 text-center">
-                    <h1 className="text-4xl font-bold text-white mb-4">Audio Article Not Found</h1>
-                    <p className="text-gray-400 mb-8">The audio review you&apos;re looking for doesn&apos;t exist.</p>
-                    <Link href="/reviews" className="text-pink-400 hover:underline">
-                        ← Back to Reviews
+                    <h1 className="text-4xl font-bold text-white mb-4">{config.name} Article Not Found</h1>
+                    <p className="text-gray-400 mb-8">The article you&apos;re looking for doesn&apos;t exist.</p>
+                    <Link href={config.backLink} className={`text-${config.color}-400 hover:underline`}>
+                        ← {config.backLabel}
                     </Link>
                 </div>
                 <Footer />
@@ -113,17 +158,7 @@ export default function DynamicAudioPage() {
     }
 
     const readTime = Math.ceil(article.wordCount / 200);
-    const author = getDefaultAuthorForCategory("audio");
-
-    const cleanContent = (content: string): string => {
-        let cleaned = content;
-        cleaned = cleaned.replace(/^```markdown\s*/i, '');
-        cleaned = cleaned.replace(/```\s*$/i, '');
-        cleaned = cleaned.replace(/^---\s*\n[\s\S]*?\n---\s*\n?/m, '');
-        cleaned = cleaned.trim();
-        return cleaned;
-    };
-
+    const author = getDefaultAuthorForCategory(category);
     const articleContent = cleanContent(article.content);
 
     return (
@@ -145,7 +180,7 @@ export default function DynamicAudioPage() {
                     faqs: [],
                     relatedArticles: [],
                 }}
-                url={`https://nestdigitalstudio.com/audio/${slug}`}
+                url={`https://nestdigitalstudio.com/${category}/${slug}`}
             />
 
             {/* Reading Progress Bar */}
@@ -158,7 +193,7 @@ export default function DynamicAudioPage() {
                     <div className="max-w-4xl mx-auto">
                         {/* Breadcrumbs */}
                         <Breadcrumbs
-                            items={generateBreadcrumbs("audio", article.title, slug)}
+                            items={generateBreadcrumbs(category, article.title, slug)}
                             className="mb-8"
                         />
 
@@ -169,8 +204,8 @@ export default function DynamicAudioPage() {
                         >
                             {/* Category Badges */}
                             <div className="flex flex-wrap gap-2 mb-4">
-                                <span className="px-3 py-1 rounded-full bg-pink-500/20 text-pink-400 text-xs font-semibold flex items-center gap-1">
-                                    <Headphones className="w-3 h-3" /> Audio
+                                <span className={`px-3 py-1 rounded-full bg-${config.color}-500/20 text-${config.color}-400 text-xs font-semibold flex items-center gap-1`}>
+                                    {config.icon} {config.name}
                                 </span>
                                 <span className="px-3 py-1 rounded-full bg-cyan-500/20 text-cyan-400 text-xs font-semibold capitalize">
                                     {article.articleType.replace(/_/g, " ")}
@@ -230,16 +265,14 @@ export default function DynamicAudioPage() {
                         </div>
 
                         {/* CTA Box */}
-                        <div className="mt-12 p-6 rounded-2xl bg-gradient-to-br from-pink-500/10 to-purple-500/10 border border-pink-500/20">
-                            <h3 className="text-lg font-bold text-white mb-2">🎧 Want more audio reviews?</h3>
-                            <p className="text-gray-400 mb-4">
-                                Explore our complete collection of headphones, earbuds, and audio gear reviews.
-                            </p>
+                        <div className={`mt-12 p-6 rounded-2xl bg-gradient-to-br from-${config.color}-500/10 to-purple-500/10 border border-${config.color}-500/20`}>
+                            <h3 className="text-lg font-bold text-white mb-2">{config.ctaTitle}</h3>
+                            <p className="text-gray-400 mb-4">{config.ctaDescription}</p>
                             <Link
-                                href="/reviews"
-                                className="inline-flex items-center gap-2 px-6 py-3 bg-pink-500 hover:bg-pink-600 text-white font-semibold rounded-full transition-colors"
+                                href={config.backLink}
+                                className={`inline-flex items-center gap-2 px-6 py-3 bg-${config.color}-500 hover:bg-${config.color}-600 text-white font-semibold rounded-full transition-colors`}
                             >
-                                View All Reviews
+                                {config.ctaButtonText}
                             </Link>
                         </div>
 
@@ -267,3 +300,5 @@ export default function DynamicAudioPage() {
         </>
     );
 }
+
+export default PremiumArticlePage;

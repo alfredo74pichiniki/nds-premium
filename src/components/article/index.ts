@@ -23,8 +23,16 @@ export {
 export { TableOfContents } from "./TableOfContents";
 export { ReadingProgress } from "./ReadingProgress";
 export { RelatedArticles } from "./RelatedArticles";
+export { PremiumArticlePage } from "./PremiumArticlePage";
 
 // Rich Content Components
 export { YouTubeEmbed } from "./YouTubeEmbed";
 export { PriceAlertBox } from "./PriceAlertBox";
 export { ExpertQuote, CalloutBox } from "./ExpertQuote";
+
+// SEO Components (re-export from /seo)
+export { SchemaMarkup, ProductSchemaOnly, FAQSchemaOnly } from "../seo/SchemaMarkup";
+
+// UI Components (re-export from /ui)
+export { Breadcrumbs, generateBreadcrumbs } from "../ui/Breadcrumbs";
+
