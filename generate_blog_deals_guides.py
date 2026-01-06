@@ -1,11 +1,15 @@
 """
 BLOG, DEALS, GUIDES ARTICLES GENERATOR
 21 remaining articles with high-quality content
+
+IMPORTANTE: Este generador usa ASINs REALES verificados de Amazon.
+Los enlaces apuntan directamente a productos, no a búsquedas genéricas.
 """
 
 import json
 import os
 from datetime import datetime
+from amazon_asin_lookup import get_amazon_product_link, get_product_info
 
 ARTICLES_DIR = "public/data/articles"
 INDEX_FILE = "public/data/articles.json"
@@ -111,6 +115,11 @@ def create_deals_article(slug, title, intro, deals):
 
 """
     for deal in deals:
+        # Obtener enlace REAL con ASIN verificado
+        product_info = get_product_info(deal['name'])
+        amazon_url = product_info['url']
+        link_note = "✅" if product_info['verified'] else "🔍"
+        
         content += f"""### {deal['name']}
 
 **Original Price:** {deal.get('original', 'MSRP')}  
@@ -119,7 +128,7 @@ def create_deals_article(slug, title, intro, deals):
 
 {deal['description']}
 
-[👉 Check Deal on Amazon](https://www.amazon.com/s?k={deal['query'].replace(' ', '+')}&tag=nestdigital-20)
+[👉 Check Deal on Amazon]({amazon_url})
 
 ---
 
