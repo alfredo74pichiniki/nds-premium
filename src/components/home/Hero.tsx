@@ -158,7 +158,7 @@ export function Hero() {
                             <Sparkles className="w-6 h-6 text-white" />
                         </div>
                         <div>
-                            <p className="text-2xl font-black text-white">2024</p>
+                            <p className="text-2xl font-black text-white">2026</p>
                             <p className="text-xs text-gray-400 uppercase tracking-wider">Data Updated</p>
                         </div>
                     </div>
