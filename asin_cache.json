@@ -1,0 +1,27 @@
+{
+  "logitech mx master 3s mouse": {
+    "asin": "B0FB21526X",
+    "timestamp": 1767712364.1536982,
+    "product_name": "Logitech MX Master 3S mouse"
+  },
+  "razer blackwidow keyboard": {
+    "asin": "B0FBR4Y11Y",
+    "timestamp": 1767712367.3690794,
+    "product_name": "Razer BlackWidow keyboard"
+  },
+  "samsung t7 ssd 1tb": {
+    "asin": "B09VLJB2DC",
+    "timestamp": 1767712370.308554,
+    "product_name": "Samsung T7 SSD 1TB"
+  },
+  "anker powercore 10000": {
+    "asin": "B07Z5ZB3MN",
+    "timestamp": 1767712373.1010747,
+    "product_name": "Anker PowerCore 10000"
+  },
+  "jbl flip 6 speaker": {
+    "asin": "B0CJ9321P4",
+    "timestamp": 1767712375.849283,
+    "product_name": "JBL Flip 6 speaker"
+  }
+}
