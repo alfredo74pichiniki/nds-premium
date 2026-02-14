@@ -8,6 +8,7 @@ import { Menu, X, ChevronDown } from "lucide-react";
 
 // 10 categories - includes Audio and Outdoor
 const navCategories = [
+    { name: "Products", href: "/products", badge: "✨", highlight: true },
     { name: "Reviews", href: "/reviews" },
     { name: "Gaming", href: "/gaming" },
     { name: "Software", href: "/software" },
