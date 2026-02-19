@@ -12,6 +12,7 @@ export interface Article {
     href: string;
     wordCount?: number;
     score?: number;
+    noindex?: boolean;
 }
 
 /**
@@ -24,14 +25,16 @@ export function getArticles(): Article[] {
         const fileContents = fs.readFileSync(filePath, "utf8");
         const parsed = JSON.parse(fileContents);
 
+        let articles: Article[] = [];
         if (Array.isArray(parsed)) {
-            console.log("[Articles] Loaded", parsed.length, "articles");
-            return parsed;
+            articles = parsed;
         } else if (parsed.articles && Array.isArray(parsed.articles)) {
-            console.log("[Articles] Loaded", parsed.articles.length, "articles");
-            return parsed.articles;
+            articles = parsed.articles;
         }
-        return [];
+        // Filter out noindex articles from listings (they still exist for direct URL access)
+        const visible = articles.filter(a => !a.noindex);
+        console.log("[Articles] Loaded", visible.length, "articles (", articles.length - visible.length, "noindex filtered)");
+        return visible;
     } catch (error) {
         console.error("[Articles] Error loading:", error);
         return [];
@@ -88,6 +91,27 @@ export function getFeaturedArticles(): Article[] {
 
 export async function getFeaturedArticlesAsync(): Promise<Article[]> {
     return getFeaturedArticles();
+}
+
+/**
+ * Get a single article by slug (includes noindex articles for direct URL access)
+ */
+export function getArticleBySlug(slug: string): (Article & { content?: string }) | null {
+    try {
+        // Try individual JSON first
+        const articlePath = path.join(process.cwd(), "public", "data", "articles", `${slug}.json`);
+        if (fs.existsSync(articlePath)) {
+            const data = JSON.parse(fs.readFileSync(articlePath, "utf8"));
+            return data;
+        }
+        // Fallback to index
+        const filePath = path.join(process.cwd(), "public", "data", "articles.json");
+        const parsed = JSON.parse(fs.readFileSync(filePath, "utf8"));
+        const articles = Array.isArray(parsed) ? parsed : (parsed.articles || []);
+        return articles.find((a: Article) => a.slug === slug) || null;
+    } catch {
+        return null;
+    }
 }
 
 /**

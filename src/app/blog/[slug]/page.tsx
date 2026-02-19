@@ -1,27 +1,28 @@
-"use client";
+import type { Metadata } from "next";
+import { getArticleBySlug } from "@/lib/articles";
+import BlogArticleClient from "./client";
 
-import { useParams } from "next/navigation";
-import { PremiumArticlePage } from "@/components/article/PremiumArticlePage";
-import { Newspaper } from "lucide-react";
+interface PageProps {
+    params: Promise<{ slug: string }>;
+}
 
-export default function DynamicBlogPage() {
-    const params = useParams();
-    const slug = params.slug as string;
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+    const { slug } = await params;
+    const article = getArticleBySlug(slug);
 
-    return (
-        <PremiumArticlePage
-            slug={slug}
-            category="blog"
-            config={{
-                name: "Blog",
-                color: "cyan",
-                icon: <Newspaper className="w-3 h-3" />,
-                backLink: "/blog",
-                backLabel: "Back to Blog",
-                ctaTitle: "📚 Enjoyed this article?",
-                ctaDescription: "Explore more expert reviews and comparisons on Nest Digital Studio.",
-                ctaButtonText: "View All Articles"
-            }}
-        />
-    );
+    if (article?.noindex) {
+        return {
+            title: article.title || slug,
+            robots: { index: false, follow: false },
+        };
+    }
+
+    return {
+        title: article?.title || slug,
+    };
+}
+
+export default async function DynamicBlogPage({ params }: PageProps) {
+    const { slug } = await params;
+    return <BlogArticleClient slug={slug} />;
 }

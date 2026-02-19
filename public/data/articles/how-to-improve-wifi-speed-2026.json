@@ -9,5 +9,6 @@
   "wordCount": 376,
   "author": "NDS Guides Team",
   "featured": false,
-  "products": []
+  "products": [],
+  "noindex": true
 }

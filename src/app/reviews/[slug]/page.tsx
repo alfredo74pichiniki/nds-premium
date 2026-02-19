@@ -1,27 +1,28 @@
-"use client";
+import type { Metadata } from "next";
+import { getArticleBySlug } from "@/lib/articles";
+import ReviewsArticleClient from "./client";
 
-import { useParams } from "next/navigation";
-import { PremiumArticlePage } from "@/components/article/PremiumArticlePage";
-import { Star } from "lucide-react";
+interface PageProps {
+    params: Promise<{ slug: string }>;
+}
 
-export default function DynamicReviewPage() {
-    const params = useParams();
-    const slug = params.slug as string;
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+    const { slug } = await params;
+    const article = getArticleBySlug(slug);
 
-    return (
-        <PremiumArticlePage
-            slug={slug}
-            category="reviews"
-            config={{
-                name: "Reviews",
-                color: "cyan",
-                icon: <Star className="w-3 h-3" />,
-                backLink: "/reviews",
-                backLabel: "Back to Reviews",
-                ctaTitle: "📚 Enjoyed this review?",
-                ctaDescription: "Explore more expert reviews and comparisons on Nest Digital Studio.",
-                ctaButtonText: "View All Reviews"
-            }}
-        />
-    );
+    if (article?.noindex) {
+        return {
+            title: article.title || slug,
+            robots: { index: false, follow: false },
+        };
+    }
+
+    return {
+        title: article?.title || slug,
+    };
+}
+
+export default async function DynamicReviewPage({ params }: PageProps) {
+    const { slug } = await params;
+    return <ReviewsArticleClient slug={slug} />;
 }

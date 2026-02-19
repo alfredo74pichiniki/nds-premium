@@ -25,5 +25,6 @@
     {
       "name": "Private Internet Access (PIA)"
     }
-  ]
+  ],
+  "noindex": true
 }

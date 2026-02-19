@@ -25,5 +25,6 @@
     {
       "name": "Echo Dot (5th Gen) with Clock"
     }
-  ]
+  ],
+  "noindex": true
 }

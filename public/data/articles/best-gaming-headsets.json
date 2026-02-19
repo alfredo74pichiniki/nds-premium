@@ -12,5 +12,6 @@
   "authorBio": "Our research team tests and reviews products hands-on.",
   "authorCredentials": "Verified Expert Reviewers",
   "featured": false,
-  "products": []
+  "products": [],
+  "noindex": true
 }

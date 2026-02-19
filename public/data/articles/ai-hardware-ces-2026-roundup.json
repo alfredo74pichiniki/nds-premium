@@ -9,5 +9,6 @@
   "wordCount": 297,
   "author": "NDS Research Team",
   "featured": false,
-  "products": []
+  "products": [],
+  "noindex": true
 }

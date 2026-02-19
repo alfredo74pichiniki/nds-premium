@@ -9,5 +9,6 @@
   "wordCount": 253,
   "author": "NDS Deals Team",
   "featured": false,
-  "products": []
+  "products": [],
+  "noindex": true
 }

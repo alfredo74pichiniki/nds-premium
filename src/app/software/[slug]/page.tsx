@@ -1,27 +1,28 @@
-"use client";
+import type { Metadata } from "next";
+import { getArticleBySlug } from "@/lib/articles";
+import SoftwareArticleClient from "./client";
 
-import { useParams } from "next/navigation";
-import { PremiumArticlePage } from "@/components/article/PremiumArticlePage";
-import { Code } from "lucide-react";
+interface PageProps {
+    params: Promise<{ slug: string }>;
+}
 
-export default function DynamicSoftwarePage() {
-    const params = useParams();
-    const slug = params.slug as string;
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+    const { slug } = await params;
+    const article = getArticleBySlug(slug);
 
-    return (
-        <PremiumArticlePage
-            slug={slug}
-            category="software"
-            config={{
-                name: "Software",
-                color: "green",
-                icon: <Code className="w-3 h-3" />,
-                backLink: "/software",
-                backLabel: "Back to Software",
-                ctaTitle: "💻 Looking for more software reviews?",
-                ctaDescription: "Discover our comprehensive software guides and tool comparisons.",
-                ctaButtonText: "View All Software Reviews"
-            }}
-        />
-    );
+    if (article?.noindex) {
+        return {
+            title: article.title || slug,
+            robots: { index: false, follow: false },
+        };
+    }
+
+    return {
+        title: article?.title || slug,
+    };
+}
+
+export default async function DynamicSoftwarePage({ params }: PageProps) {
+    const { slug } = await params;
+    return <SoftwareArticleClient slug={slug} />;
 }

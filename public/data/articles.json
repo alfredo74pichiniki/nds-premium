@@ -9,7 +9,8 @@
     "featured": false,
     "wordCount": 332,
     "score": 0,
-    "href": "/blog/apple-vision-pro-2-rumors-2026"
+    "href": "/blog/apple-vision-pro-2-rumors-2026",
+    "noindex": true
   },
   {
     "slug": "ai-hardware-ces-2026-roundup",
@@ -21,7 +22,8 @@
     "featured": false,
     "wordCount": 297,
     "score": 0,
-    "href": "/blog/ai-hardware-ces-2026-roundup"
+    "href": "/blog/ai-hardware-ces-2026-roundup",
+    "noindex": true
   },
   {
     "slug": "remote-work-statistics-2026",
@@ -33,7 +35,8 @@
     "featured": false,
     "wordCount": 306,
     "score": 0,
-    "href": "/blog/remote-work-statistics-2026"
+    "href": "/blog/remote-work-statistics-2026",
+    "noindex": true
   },
   {
     "slug": "right-to-repair-laws-2026",
@@ -45,7 +48,8 @@
     "featured": false,
     "wordCount": 307,
     "score": 0,
-    "href": "/blog/right-to-repair-laws-2026"
+    "href": "/blog/right-to-repair-laws-2026",
+    "noindex": true
   },
   {
     "slug": "sustainable-tech-trends-2026",
@@ -57,7 +61,8 @@
     "featured": false,
     "wordCount": 295,
     "score": 0,
-    "href": "/blog/sustainable-tech-trends-2026"
+    "href": "/blog/sustainable-tech-trends-2026",
+    "noindex": true
   },
   {
     "slug": "foldable-phones-market-2026",
@@ -69,7 +74,8 @@
     "featured": false,
     "wordCount": 288,
     "score": 0,
-    "href": "/blog/foldable-phones-market-2026"
+    "href": "/blog/foldable-phones-market-2026",
+    "noindex": true
   },
   {
     "slug": "wifi-7-rollout-what-to-know",
@@ -81,7 +87,8 @@
     "featured": false,
     "wordCount": 312,
     "score": 0,
-    "href": "/blog/wifi-7-rollout-what-to-know"
+    "href": "/blog/wifi-7-rollout-what-to-know",
+    "noindex": true
   },
   {
     "slug": "smart-home-security-threats-2026",
@@ -93,7 +100,8 @@
     "featured": false,
     "wordCount": 306,
     "score": 0,
-    "href": "/blog/smart-home-security-threats-2026"
+    "href": "/blog/smart-home-security-threats-2026",
+    "noindex": true
   },
   {
     "slug": "amazon-winter-sale-2026-best-deals",
@@ -105,7 +113,8 @@
     "featured": false,
     "wordCount": 285,
     "score": 0,
-    "href": "/deals/amazon-winter-sale-2026-best-deals"
+    "href": "/deals/amazon-winter-sale-2026-best-deals",
+    "noindex": true
   },
   {
     "slug": "refurbished-laptops-best-deals-2026",
@@ -117,7 +126,8 @@
     "featured": false,
     "wordCount": 253,
     "score": 0,
-    "href": "/deals/refurbished-laptops-best-deals-2026"
+    "href": "/deals/refurbished-laptops-best-deals-2026",
+    "noindex": true
   },
   {
     "slug": "gaming-monitor-deals-january-2026",
@@ -129,7 +139,8 @@
     "featured": false,
     "wordCount": 258,
     "score": 0,
-    "href": "/deals/gaming-monitor-deals-january-2026"
+    "href": "/deals/gaming-monitor-deals-january-2026",
+    "noindex": true
   },
   {
     "slug": "headphone-deals-under-100-2026",
@@ -141,7 +152,8 @@
     "featured": false,
     "wordCount": 248,
     "score": 0,
-    "href": "/deals/headphone-deals-under-100-2026"
+    "href": "/deals/headphone-deals-under-100-2026",
+    "noindex": true
   },
   {
     "slug": "smart-home-bundle-deals-2026",
@@ -153,7 +165,8 @@
     "featured": false,
     "wordCount": 251,
     "score": 0,
-    "href": "/deals/smart-home-bundle-deals-2026"
+    "href": "/deals/smart-home-bundle-deals-2026",
+    "noindex": true
   },
   {
     "slug": "storage-deals-ssd-hdd-2026",
@@ -165,7 +178,8 @@
     "featured": false,
     "wordCount": 253,
     "score": 0,
-    "href": "/deals/storage-deals-ssd-hdd-2026"
+    "href": "/deals/storage-deals-ssd-hdd-2026",
+    "noindex": true
   },
   {
     "slug": "software-subscription-deals-2026",
@@ -177,7 +191,8 @@
     "featured": false,
     "wordCount": 252,
     "score": 0,
-    "href": "/deals/software-subscription-deals-2026"
+    "href": "/deals/software-subscription-deals-2026",
+    "noindex": true
   },
   {
     "slug": "open-box-electronics-deals-2026",
@@ -189,7 +204,8 @@
     "featured": false,
     "wordCount": 264,
     "score": 0,
-    "href": "/deals/open-box-electronics-deals-2026"
+    "href": "/deals/open-box-electronics-deals-2026",
+    "noindex": true
   },
   {
     "slug": "how-to-build-streaming-setup-2026",
@@ -213,7 +229,8 @@
     "featured": false,
     "wordCount": 368,
     "score": 0,
-    "href": "/guides/complete-smart-home-guide-beginners"
+    "href": "/guides/complete-smart-home-guide-beginners",
+    "noindex": true
   },
   {
     "slug": "how-to-set-up-nas-home-2026",
@@ -225,7 +242,8 @@
     "featured": false,
     "wordCount": 385,
     "score": 0,
-    "href": "/guides/how-to-set-up-nas-home-2026"
+    "href": "/guides/how-to-set-up-nas-home-2026",
+    "noindex": true
   },
   {
     "slug": "ergonomic-workspace-guide-2026",
@@ -237,7 +255,8 @@
     "featured": false,
     "wordCount": 347,
     "score": 0,
-    "href": "/guides/ergonomic-workspace-guide-2026"
+    "href": "/guides/ergonomic-workspace-guide-2026",
+    "noindex": true
   },
   {
     "slug": "how-to-improve-wifi-speed-2026",
@@ -249,7 +268,8 @@
     "featured": false,
     "wordCount": 376,
     "score": 0,
-    "href": "/guides/how-to-improve-wifi-speed-2026"
+    "href": "/guides/how-to-improve-wifi-speed-2026",
+    "noindex": true
   },
   {
     "slug": "best-portable-solar-panels-camping-2026",
@@ -597,7 +617,8 @@
     "featured": false,
     "wordCount": 74,
     "score": 85,
-    "href": "/reviews/best-desk-lamps-2025"
+    "href": "/reviews/best-desk-lamps-2025",
+    "noindex": true
   },
   {
     "slug": "best-mechanical-keyboards-2025",
@@ -609,7 +630,8 @@
     "featured": false,
     "wordCount": 57,
     "score": 85,
-    "href": "/reviews/best-mechanical-keyboards-2025"
+    "href": "/reviews/best-mechanical-keyboards-2025",
+    "noindex": true
   },
   {
     "slug": "best-microphones-podcasting",
@@ -621,7 +643,8 @@
     "featured": false,
     "wordCount": 77,
     "score": 85,
-    "href": "/reviews/best-microphones-podcasting"
+    "href": "/reviews/best-microphones-podcasting",
+    "noindex": true
   },
   {
     "slug": "best-noise-canceling-headphones",
@@ -633,7 +656,8 @@
     "featured": false,
     "wordCount": 92,
     "score": 85,
-    "href": "/reviews/best-noise-canceling-headphones"
+    "href": "/reviews/best-noise-canceling-headphones",
+    "noindex": true
   },
   {
     "slug": "best-usb-c-hubs-2025",
@@ -645,7 +669,8 @@
     "featured": false,
     "wordCount": 76,
     "score": 85,
-    "href": "/reviews/best-usb-c-hubs-2025"
+    "href": "/reviews/best-usb-c-hubs-2025",
+    "noindex": true
   },
   {
     "slug": "best-webcams-2025",
@@ -657,7 +682,8 @@
     "featured": false,
     "wordCount": 65,
     "score": 85,
-    "href": "/reviews/best-webcams-2025"
+    "href": "/reviews/best-webcams-2025",
+    "noindex": true
   },
   {
     "slug": "best-gaming-chairs-2025",
@@ -669,7 +695,8 @@
     "featured": false,
     "wordCount": 76,
     "score": 85,
-    "href": "/gaming/best-gaming-chairs-2025"
+    "href": "/gaming/best-gaming-chairs-2025",
+    "noindex": true
   },
   {
     "slug": "best-gaming-headsets",
@@ -681,7 +708,8 @@
     "featured": false,
     "wordCount": 68,
     "score": 85,
-    "href": "/gaming/best-gaming-headsets"
+    "href": "/gaming/best-gaming-headsets",
+    "noindex": true
   },
   {
     "slug": "best-gaming-keyboards",
@@ -693,7 +721,8 @@
     "featured": false,
     "wordCount": 96,
     "score": 85,
-    "href": "/gaming/best-gaming-keyboards"
+    "href": "/gaming/best-gaming-keyboards",
+    "noindex": true
   },
   {
     "slug": "best-gaming-mice",
@@ -705,7 +734,8 @@
     "featured": false,
     "wordCount": 77,
     "score": 85,
-    "href": "/gaming/best-gaming-mice"
+    "href": "/gaming/best-gaming-mice",
+    "noindex": true
   },
   {
     "slug": "best-gaming-monitors-2025",
@@ -717,7 +747,8 @@
     "featured": false,
     "wordCount": 81,
     "score": 85,
-    "href": "/gaming/best-gaming-monitors-2025"
+    "href": "/gaming/best-gaming-monitors-2025",
+    "noindex": true
   },
   {
     "slug": "ai-automation-tools-2025",
@@ -729,7 +760,8 @@
     "featured": false,
     "wordCount": 131,
     "score": 85,
-    "href": "/software/ai-automation-tools-2025"
+    "href": "/software/ai-automation-tools-2025",
+    "noindex": true
   },
   {
     "slug": "best-crm-2025",
@@ -741,7 +773,8 @@
     "featured": false,
     "wordCount": 90,
     "score": 85,
-    "href": "/software/best-crm-2025"
+    "href": "/software/best-crm-2025",
+    "noindex": true
   },
   {
     "slug": "best-password-managers",
@@ -753,7 +786,8 @@
     "featured": false,
     "wordCount": 71,
     "score": 85,
-    "href": "/software/best-password-managers"
+    "href": "/software/best-password-managers",
+    "noindex": true
   },
   {
     "slug": "best-project-management-tools",
@@ -765,7 +799,8 @@
     "featured": false,
     "wordCount": 64,
     "score": 85,
-    "href": "/software/best-project-management-tools"
+    "href": "/software/best-project-management-tools",
+    "noindex": true
   },
   {
     "slug": "best-project-management-tools-2025",
@@ -777,7 +812,8 @@
     "featured": false,
     "wordCount": 101,
     "score": 85,
-    "href": "/software/best-project-management-tools-2025"
+    "href": "/software/best-project-management-tools-2025",
+    "noindex": true
   },
   {
     "slug": "best-seo-tools",
@@ -789,7 +825,8 @@
     "featured": false,
     "wordCount": 68,
     "score": 85,
-    "href": "/software/best-seo-tools"
+    "href": "/software/best-seo-tools",
+    "noindex": true
   },
   {
     "slug": "best-vpn-2025",
@@ -801,7 +838,8 @@
     "featured": false,
     "wordCount": 71,
     "score": 85,
-    "href": "/software/best-vpn-2025"
+    "href": "/software/best-vpn-2025",
+    "noindex": true
   },
   {
     "slug": "best-web-hosting",
@@ -813,7 +851,8 @@
     "featured": false,
     "wordCount": 63,
     "score": 85,
-    "href": "/software/best-web-hosting"
+    "href": "/software/best-web-hosting",
+    "noindex": true
   },
   {
     "slug": "email-marketing-comparison",
@@ -825,7 +864,8 @@
     "featured": false,
     "wordCount": 71,
     "score": 85,
-    "href": "/software/email-marketing-comparison"
+    "href": "/software/email-marketing-comparison",
+    "noindex": true
   },
   {
     "slug": "hosting-comparison-2025",
@@ -837,7 +877,8 @@
     "featured": false,
     "wordCount": 83,
     "score": 85,
-    "href": "/software/hosting-comparison-2025"
+    "href": "/software/hosting-comparison-2025",
+    "noindex": true
   },
   {
     "slug": "best-ergonomic-setup",
@@ -849,7 +890,8 @@
     "featured": false,
     "wordCount": 62,
     "score": 85,
-    "href": "/guides/best-ergonomic-setup"
+    "href": "/guides/best-ergonomic-setup",
+    "noindex": true
   },
   {
     "slug": "complete-remote-work-setup",
@@ -861,7 +903,8 @@
     "featured": false,
     "wordCount": 135,
     "score": 85,
-    "href": "/guides/complete-remote-work-setup"
+    "href": "/guides/complete-remote-work-setup",
+    "noindex": true
   },
   {
     "slug": "home-office-setup-guide",
@@ -873,7 +916,8 @@
     "featured": false,
     "wordCount": 49,
     "score": 85,
-    "href": "/guides/home-office-setup-guide"
+    "href": "/guides/home-office-setup-guide",
+    "noindex": true
   },
   {
     "slug": "how-to-choose-laptop",
@@ -885,7 +929,8 @@
     "featured": false,
     "wordCount": 88,
     "score": 85,
-    "href": "/guides/how-to-choose-laptop"
+    "href": "/guides/how-to-choose-laptop",
+    "noindex": true
   },
   {
     "slug": "black-friday-tech-2025",
@@ -897,7 +942,8 @@
     "featured": false,
     "wordCount": 55,
     "score": 85,
-    "href": "/deals/black-friday-tech-2025"
+    "href": "/deals/black-friday-tech-2025",
+    "noindex": true
   },
   {
     "slug": "best-desk-heaters-winter-2025",
@@ -909,7 +955,8 @@
     "featured": false,
     "wordCount": 163,
     "score": 85,
-    "href": "/reviews/best-desk-heaters-winter-2025"
+    "href": "/reviews/best-desk-heaters-winter-2025",
+    "noindex": true
   },
   {
     "slug": "best-desk-organizers-productivity-2025",
@@ -921,7 +968,8 @@
     "featured": false,
     "wordCount": 140,
     "score": 85,
-    "href": "/reviews/best-desk-organizers-productivity-2025"
+    "href": "/reviews/best-desk-organizers-productivity-2025",
+    "noindex": true
   },
   {
     "slug": "best-document-scanners-home-office-2025",
@@ -933,7 +981,8 @@
     "featured": false,
     "wordCount": 151,
     "score": 85,
-    "href": "/reviews/best-document-scanners-home-office-2025"
+    "href": "/reviews/best-document-scanners-home-office-2025",
+    "noindex": true
   },
   {
     "slug": "best-monitor-risers-with-storage-2025",
@@ -945,7 +994,8 @@
     "featured": false,
     "wordCount": 167,
     "score": 85,
-    "href": "/reviews/best-monitor-risers-with-storage-2025"
+    "href": "/reviews/best-monitor-risers-with-storage-2025",
+    "noindex": true
   },
   {
     "slug": "best-noise-machines-for-focus-2025",
@@ -957,7 +1007,8 @@
     "featured": false,
     "wordCount": 169,
     "score": 85,
-    "href": "/reviews/best-noise-machines-for-focus-2025"
+    "href": "/reviews/best-noise-machines-for-focus-2025",
+    "noindex": true
   },
   {
     "slug": "best-office-chairs-under-300-2025",
@@ -969,7 +1020,8 @@
     "featured": false,
     "wordCount": 122,
     "score": 85,
-    "href": "/reviews/best-office-chairs-under-300-2025"
+    "href": "/reviews/best-office-chairs-under-300-2025",
+    "noindex": true
   },
   {
     "slug": "best-smart-plugs-home-automation-2025",
@@ -981,7 +1033,8 @@
     "featured": false,
     "wordCount": 157,
     "score": 85,
-    "href": "/reviews/best-smart-plugs-home-automation-2025"
+    "href": "/reviews/best-smart-plugs-home-automation-2025",
+    "noindex": true
   },
   {
     "slug": "best-wireless-phone-chargers-desk-2025",
@@ -993,7 +1046,8 @@
     "featured": false,
     "wordCount": 168,
     "score": 85,
-    "href": "/reviews/best-wireless-phone-chargers-desk-2025"
+    "href": "/reviews/best-wireless-phone-chargers-desk-2025",
+    "noindex": true
   },
   {
     "slug": "best-gaming-earbuds-mobile-2025-pro-level-audio",
@@ -1005,7 +1059,8 @@
     "featured": false,
     "wordCount": 142,
     "score": 85,
-    "href": "/gaming/best-gaming-earbuds-mobile-2025-pro-level-audio"
+    "href": "/gaming/best-gaming-earbuds-mobile-2025-pro-level-audio",
+    "noindex": true
   },
   {
     "slug": "best-gaming-routers-low-latency-2025",
@@ -1017,7 +1072,8 @@
     "featured": false,
     "wordCount": 142,
     "score": 85,
-    "href": "/gaming/best-gaming-routers-low-latency-2025"
+    "href": "/gaming/best-gaming-routers-low-latency-2025",
+    "noindex": true
   },
   {
     "slug": "best-rgb-lighting-strips-gaming-setup-2025",
@@ -1029,7 +1085,8 @@
     "featured": false,
     "wordCount": 174,
     "score": 85,
-    "href": "/gaming/best-rgb-lighting-strips-gaming-setup-2025"
+    "href": "/gaming/best-rgb-lighting-strips-gaming-setup-2025",
+    "noindex": true
   },
   {
     "slug": "best-blue-light-blocking-glasses-2025-protect-eyes-digital-strain",
@@ -1041,7 +1098,8 @@
     "featured": false,
     "wordCount": 150,
     "score": 85,
-    "href": "/reviews/best-blue-light-blocking-glasses-2025-protect-eyes-digital-strain"
+    "href": "/reviews/best-blue-light-blocking-glasses-2025-protect-eyes-digital-strain",
+    "noindex": true
   },
   {
     "slug": "best-ergonomic-mouse-pads-2025-wrist-pain-relief",
@@ -1053,7 +1111,8 @@
     "featured": false,
     "wordCount": 163,
     "score": 85,
-    "href": "/reviews/best-ergonomic-mouse-pads-2025-wrist-pain-relief"
+    "href": "/reviews/best-ergonomic-mouse-pads-2025-wrist-pain-relief",
+    "noindex": true
   },
   {
     "slug": "best-laptop-cooling-pads-2025-reviews",
@@ -1065,7 +1124,8 @@
     "featured": false,
     "wordCount": 146,
     "score": 85,
-    "href": "/reviews/best-laptop-cooling-pads-2025-reviews"
+    "href": "/reviews/best-laptop-cooling-pads-2025-reviews",
+    "noindex": true
   },
   {
     "slug": "best-mechanical-keyboards",
@@ -1077,7 +1137,8 @@
     "featured": false,
     "wordCount": 135,
     "score": 85,
-    "href": "/reviews/best-mechanical-keyboards"
+    "href": "/reviews/best-mechanical-keyboards",
+    "noindex": true
   },
   {
     "slug": "best-mechanical-keyboards-2025-ultimate-typing-experience",
@@ -1089,7 +1150,8 @@
     "featured": false,
     "wordCount": 150,
     "score": 85,
-    "href": "/reviews/best-mechanical-keyboards-2025-ultimate-typing-experience"
+    "href": "/reviews/best-mechanical-keyboards-2025-ultimate-typing-experience",
+    "noindex": true
   },
   {
     "slug": "best-noise-canceling-headphones-2025-ultimate-guide",
@@ -1101,7 +1163,8 @@
     "featured": false,
     "wordCount": 144,
     "score": 85,
-    "href": "/reviews/best-noise-canceling-headphones-2025-ultimate-guide"
+    "href": "/reviews/best-noise-canceling-headphones-2025-ultimate-guide",
+    "noindex": true
   },
   {
     "slug": "best-portable-chargers-power-banks-2025",
@@ -1113,7 +1176,8 @@
     "featured": false,
     "wordCount": 152,
     "score": 85,
-    "href": "/reviews/best-portable-chargers-power-banks-2025"
+    "href": "/reviews/best-portable-chargers-power-banks-2025",
+    "noindex": true
   },
   {
     "slug": "best-smart-home-hubs",
@@ -1125,7 +1189,8 @@
     "featured": false,
     "wordCount": 152,
     "score": 85,
-    "href": "/reviews/best-smart-home-hubs"
+    "href": "/reviews/best-smart-home-hubs",
+    "noindex": true
   },
   {
     "slug": "best-standing-desks",
@@ -1137,7 +1202,8 @@
     "featured": false,
     "wordCount": 119,
     "score": 85,
-    "href": "/reviews/best-standing-desks"
+    "href": "/reviews/best-standing-desks",
+    "noindex": true
   },
   {
     "slug": "best-standing-desks-2025-workspace-health-guide",
@@ -1149,7 +1215,8 @@
     "featured": false,
     "wordCount": 157,
     "score": 85,
-    "href": "/reviews/best-standing-desks-2025-workspace-health-guide"
+    "href": "/reviews/best-standing-desks-2025-workspace-health-guide",
+    "noindex": true
   },
   {
     "slug": "best-webcams",
@@ -1161,7 +1228,8 @@
     "featured": false,
     "wordCount": 110,
     "score": 85,
-    "href": "/reviews/best-webcams"
+    "href": "/reviews/best-webcams",
+    "noindex": true
   },
   {
     "slug": "best-webcams-remote-work-2025",
@@ -1173,7 +1241,8 @@
     "featured": false,
     "wordCount": 163,
     "score": 85,
-    "href": "/reviews/best-webcams-remote-work-2025"
+    "href": "/reviews/best-webcams-remote-work-2025",
+    "noindex": true
   },
   {
     "slug": "best-wireless-earbuds",
@@ -1185,7 +1254,8 @@
     "featured": false,
     "wordCount": 105,
     "score": 85,
-    "href": "/reviews/best-wireless-earbuds"
+    "href": "/reviews/best-wireless-earbuds",
+    "noindex": true
   },
   {
     "slug": "best-wireless-earbuds-2025-top-picks",
@@ -1197,7 +1267,8 @@
     "featured": false,
     "wordCount": 135,
     "score": 85,
-    "href": "/reviews/best-wireless-earbuds-2025-top-picks"
+    "href": "/reviews/best-wireless-earbuds-2025-top-picks",
+    "noindex": true
   },
   {
     "slug": "ultimate-cable-management-solutions-2025-workspace-organization",
@@ -1209,7 +1280,8 @@
     "featured": false,
     "wordCount": 163,
     "score": 85,
-    "href": "/reviews/ultimate-cable-management-solutions-2025-workspace-organization"
+    "href": "/reviews/ultimate-cable-management-solutions-2025-workspace-organization",
+    "noindex": true
   },
   {
     "slug": "ultimate-usb-c-hub-guide-2025-laptop-connectivity",
@@ -1221,7 +1293,8 @@
     "featured": false,
     "wordCount": 149,
     "score": 85,
-    "href": "/reviews/ultimate-usb-c-hub-guide-2025-laptop-connectivity"
+    "href": "/reviews/ultimate-usb-c-hub-guide-2025-laptop-connectivity",
+    "noindex": true
   },
   {
     "slug": "best-gaming-keyboards-2025-mechanical-competitive",
@@ -1233,7 +1306,8 @@
     "featured": false,
     "wordCount": 150,
     "score": 85,
-    "href": "/gaming/best-gaming-keyboards-2025-mechanical-competitive"
+    "href": "/gaming/best-gaming-keyboards-2025-mechanical-competitive",
+    "noindex": true
   },
   {
     "slug": "best-gaming-mice-2025-precision-competitive",
@@ -1245,7 +1319,8 @@
     "featured": false,
     "wordCount": 141,
     "score": 85,
-    "href": "/gaming/best-gaming-mice-2025-precision-competitive"
+    "href": "/gaming/best-gaming-mice-2025-precision-competitive",
+    "noindex": true
   },
   {
     "slug": "best-gaming-monitors-2025-ultimate-display-guide",
@@ -1257,7 +1332,8 @@
     "featured": false,
     "wordCount": 126,
     "score": 85,
-    "href": "/gaming/best-gaming-monitors-2025-ultimate-display-guide"
+    "href": "/gaming/best-gaming-monitors-2025-ultimate-display-guide",
+    "noindex": true
   },
   {
     "slug": "best-cloud-hosting-providers-2025-scalable-performance",
@@ -1269,7 +1345,8 @@
     "featured": false,
     "wordCount": 386,
     "score": 85,
-    "href": "/software/best-cloud-hosting-providers-2025-scalable-performance"
+    "href": "/software/best-cloud-hosting-providers-2025-scalable-performance",
+    "noindex": true
   },
   {
     "slug": "best-seo-tools-2025-expert-tested-solutions",
@@ -1281,7 +1358,8 @@
     "featured": false,
     "wordCount": 132,
     "score": 85,
-    "href": "/software/best-seo-tools-2025-expert-tested-solutions"
+    "href": "/software/best-seo-tools-2025-expert-tested-solutions",
+    "noindex": true
   },
   {
     "slug": "best-video-editing-software-2025-professional-tools",
@@ -1293,7 +1371,8 @@
     "featured": false,
     "wordCount": 148,
     "score": 85,
-    "href": "/software/best-video-editing-software-2025-professional-tools"
+    "href": "/software/best-video-editing-software-2025-professional-tools",
+    "noindex": true
   },
   {
     "slug": "best-vpn-services-2025-privacy-protection-guide",
@@ -1305,7 +1384,8 @@
     "featured": false,
     "wordCount": 146,
     "score": 85,
-    "href": "/software/best-vpn-services-2025-privacy-protection-guide"
+    "href": "/software/best-vpn-services-2025-privacy-protection-guide",
+    "noindex": true
   },
   {
     "slug": "best-website-builders-2025-no-coding-required",
@@ -1317,6 +1397,7 @@
     "featured": false,
     "wordCount": 133,
     "score": 85,
-    "href": "/software/best-website-builders-2025-no-coding-required"
+    "href": "/software/best-website-builders-2025-no-coding-required",
+    "noindex": true
   }
 ]

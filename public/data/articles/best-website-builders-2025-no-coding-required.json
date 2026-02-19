@@ -25,5 +25,6 @@
     {
       "name": "Weebly"
     }
-  ]
+  ],
+  "noindex": true
 }

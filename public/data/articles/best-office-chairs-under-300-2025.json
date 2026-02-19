@@ -25,5 +25,6 @@
     {
       "name": "Autonomous ErgoChair Core"
     }
-  ]
+  ],
+  "noindex": true
 }

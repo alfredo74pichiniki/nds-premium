@@ -1,27 +1,28 @@
-"use client";
+import type { Metadata } from "next";
+import { getArticleBySlug } from "@/lib/articles";
+import GuidesArticleClient from "./client";
 
-import { useParams } from "next/navigation";
-import { PremiumArticlePage } from "@/components/article/PremiumArticlePage";
-import { BookOpen } from "lucide-react";
+interface PageProps {
+    params: Promise<{ slug: string }>;
+}
 
-export default function DynamicGuidePage() {
-    const params = useParams();
-    const slug = params.slug as string;
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+    const { slug } = await params;
+    const article = getArticleBySlug(slug);
 
-    return (
-        <PremiumArticlePage
-            slug={slug}
-            category="guides"
-            config={{
-                name: "Guides",
-                color: "orange",
-                icon: <BookOpen className="w-3 h-3" />,
-                backLink: "/guides",
-                backLabel: "Back to Guides",
-                ctaTitle: "📖 Want more expert guides?",
-                ctaDescription: "Explore our complete collection of in-depth tutorials and how-to guides.",
-                ctaButtonText: "View All Guides"
-            }}
-        />
-    );
+    if (article?.noindex) {
+        return {
+            title: article.title || slug,
+            robots: { index: false, follow: false },
+        };
+    }
+
+    return {
+        title: article?.title || slug,
+    };
+}
+
+export default async function DynamicGuidePage({ params }: PageProps) {
+    const { slug } = await params;
+    return <GuidesArticleClient slug={slug} />;
 }

@@ -25,5 +25,6 @@
     {
       "name": "Surfer SEO"
     }
-  ]
+  ],
+  "noindex": true
 }
