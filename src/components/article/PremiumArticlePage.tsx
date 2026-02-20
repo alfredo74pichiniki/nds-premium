@@ -84,6 +84,8 @@ function cleanContent(content: string): string {
     cleaned = cleaned.replace(/^```markdown\s*/i, '');
     cleaned = cleaned.replace(/```\s*$/i, '');
     cleaned = cleaned.replace(/^---\s*\n[\s\S]*?\n---\s*\n?/m, '');
+    // CRITICAL: Strip <script> blocks — JSON-LD is handled by SchemaMarkup component
+    cleaned = cleaned.replace(/<script[\s\S]*?<\/script>/gi, '');
     cleaned = cleaned.trim();
     return cleaned;
 }
