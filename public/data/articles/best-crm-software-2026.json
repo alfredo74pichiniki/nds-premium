@@ -61,38 +61,74 @@
       }
     ]
   },
-  "faq": [
-    {
-      "question": "What is the best CRM software in 2026?",
-      "answer": "HubSpot CRM is the best overall with the most generous free plan, intuitive interface, and scalable Hub system. Pipedrive is best for sales teams. Salesforce for enterprise."
-    },
-    {
-      "question": "Is HubSpot CRM really free?",
-      "answer": "Yes. Unlimited users, 1 million contacts, deal pipelines, email tracking, and meeting scheduling with no time limit and no credit card."
-    },
-    {
-      "question": "HubSpot vs Salesforce: which is better?",
-      "answer": "HubSpot for SMBs wanting intuitive, scalable CRM with a strong free tier. Salesforce for enterprises needing infinite customization."
-    },
-    {
-      "question": "How much does CRM software cost?",
-      "answer": "Free (HubSpot, Zoho) to $300+/user/month (Salesforce Unlimited). Sweet spot for small businesses: $14-29/user/month."
-    },
-    {
-      "question": "What CRM is best for small business?",
-      "answer": "HubSpot Free to start. Pipedrive ($14/user) for sales focus. Zoho ($14/user) for maximum features at minimum cost."
-    },
-    {
-      "question": "Do I really need a CRM?",
-      "answer": "If you have more than 10 customers and any sales process, yes. CRM increases sales by 29% and productivity by 34%."
-    },
-    {
-      "question": "Can I switch CRMs without losing data?",
-      "answer": "Yes. All major CRMs support CSV import/export and many offer migration tools. The main challenge is re-creating automations."
-    },
-    {
-      "question": "What's the difference between CRM and ERP?",
-      "answer": "CRM manages customer interactions and sales. ERP manages internal operations (accounting, inventory, HR). Most small businesses need CRM first."
-    }
-  ]
+  "faqSchema": {
+    "@type": "FAQPage",
+    "@context": "https://schema.org",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the best CRM software in 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "HubSpot CRM is the best overall CRM in 2026, offering the most generous free plan (unlimited users, 1M contacts), the most intuitive interface, and a modular Hub system that scales from startup to enterprise. For sales-focused teams, Pipedrive ($14/user/month) is best. For enterprise, Salesforce remains the standard."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is HubSpot CRM really free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. HubSpot's free CRM includes unlimited users, up to 1 million contacts, deal pipelines, email tracking, meeting scheduling, live chat, and basic reporting — with no time limit and no credit card required. Paid features (advanced automation, sequences, AI) require Starter ($20/user) or Professional ($100/user)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "HubSpot vs Salesforce: which is better?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "HubSpot for small-to-medium businesses wanting an intuitive, scalable platform with a strong free tier. Salesforce for enterprises needing infinite customization, complex workflows, and industry-specific solutions. Salesforce is more powerful; HubSpot is easier to use."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does CRM software cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Prices range from free (HubSpot, Zoho, Freshsales) to $300+/user/month (Salesforce Unlimited). The sweet spot for small businesses is $14-29/user/month (Pipedrive, Freshsales, Monday CRM). Budget $20-50/user/month for meaningful features."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What CRM is best for small business?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "HubSpot Free for businesses just starting with CRM. Pipedrive ($14/user) for sales-focused small teams. Zoho CRM ($14/user) for businesses wanting maximum features at minimum cost. Freshsales ($15/user) for teams that make a lot of phone calls."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I really need a CRM?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If you have more than 10 customers and any sales process, yes. CRM increases sales by 29% and productivity by 34%. Start with HubSpot Free — it costs nothing and reveals immediately how much time you've been wasting on spreadsheets."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I switch CRMs without losing data?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. All major CRMs support CSV import/export, and many offer direct migration tools. HubSpot, Pipedrive, and Salesforce all provide migration assistance. The main challenge is re-creating automation workflows and custom fields in the new system."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the difference between CRM and ERP?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "CRM (Customer Relationship Management) manages customer interactions, sales, and marketing. ERP (Enterprise Resource Planning) manages internal operations — accounting, inventory, HR, manufacturing. Some platforms (Zoho, Salesforce) offer both. Most small businesses need CRM first, ERP later. ---"
+        }
+      }
+    ]
+  }
 }

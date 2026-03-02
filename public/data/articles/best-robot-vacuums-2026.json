@@ -40,8 +40,8 @@
     ]
   },
   "faqSchema": {
-    "@context": "https://schema.org",
     "@type": "FAQPage",
+    "@context": "https://schema.org",
     "mainEntity": [
       {
         "@type": "Question",
@@ -56,7 +56,7 @@
         "name": "Are robot vacuums worth the money?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, for most households. A premium robot vacuum running daily replaces 30-45 minutes of manual vacuuming and mopping per day, saving roughly 180-270 hours per year. At $1,500 for a top model lasting 3-5 years, that's $1-2.50 per hour of saved labor."
+          "text": "Yes, for most households. A premium robot vacuum running daily replaces 30-45 minutes of manual vacuuming and mopping per day, saving roughly 180-270 hours per year. At $1,500 for a top model lasting 3-5 years, that's $1-2.50 per hour of saved labor. Budget models like the Roborock Q7 Max+ at $349-$429 offer even better value calculations."
         }
       },
       {
@@ -64,7 +64,7 @@
         "name": "Can robot vacuums replace regular vacuums?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "For daily maintenance, yes — modern robot vacuums with 5,000Pa+ suction handle 90-95% of routine cleaning. However, most households still benefit from a traditional vacuum for occasional deep cleaning of upholstery, stairs, car interiors, and tight spaces robots can't reach."
+          "text": "For daily maintenance, yes — modern robot vacuums with 5,000Pa+ suction handle 90-95% of routine cleaning. However, most households still benefit from a traditional vacuum for occasional deep cleaning of upholstery, stairs, car interiors, and tight spaces robots can't reach. Think of robot vacuums as daily maintenance and traditional vacuums as weekly deep cleaning."
         }
       },
       {
@@ -72,7 +72,7 @@
         "name": "How often should a robot vacuum run?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Most experts recommend daily or every-other-day runs for optimal floor cleanliness, especially in homes with pets or children. Modern robot vacuums are designed for daily use with minimal wear."
+          "text": "Most experts recommend daily or every-other-day runs for optimal floor cleanliness, especially in homes with pets or children. Modern robot vacuums are designed for daily use with minimal wear. Running frequently at lower suction is actually gentler on floors and the robot than running infrequently at maximum power."
         }
       },
       {
@@ -80,7 +80,7 @@
         "name": "Do robot vacuums work on carpet?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, but suction power matters. Robots with 2,000-3,000Pa handle low-pile carpet effectively. For medium-pile, look for 4,000-5,000Pa. For thick carpet or homes with shedding pets, 7,000Pa+ ensures thorough cleaning."
+          "text": "Yes, but suction power matters significantly. Robots with 2,000-3,000Pa handle low-pile carpet and rugs effectively. For medium-pile carpet, look for 4,000-5,000Pa. For thick, high-pile carpet or homes with heavy shedding pets, 7,000Pa+ ensures thorough cleaning. All robots on our list automatically increase suction when carpet is detected."
         }
       },
       {
@@ -88,7 +88,7 @@
         "name": "How long do robot vacuums last?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Premium robot vacuums typically last 3-5 years with proper maintenance. Key maintenance includes replacing brushes every 6-12 months ($10-30), filters every 3-6 months ($10-20), and self-empty bags every 30-60 days ($5-15)."
+          "text": "Premium robot vacuums (Roborock, iRobot, Ecovacs) typically last 3-5 years with proper maintenance. Key maintenance includes: replacing brushes every 6-12 months ($10-30), replacing filters every 3-6 months ($10-20), and replacing self-empty bags every 30-60 days ($5-15). Total annual maintenance cost averages $50-100."
         }
       },
       {
@@ -96,7 +96,7 @@
         "name": "Are robot vacuums safe for hardwood floors?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, all modern robot vacuums are safe for sealed hardwood floors. Rubber brush rolls don't scratch finishes and auto-mop-lift features prevent moisture damage when transitioning to carpet."
+          "text": "Yes, all modern robot vacuums are safe for sealed hardwood floors. Rubber brush rolls (standard on most 2026 models) don't scratch finishes. Auto-mop-lift features prevent moisture damage when transitioning from hard floors to carpet. For extra caution, use the app to set mopping water flow to \"low\" on hardwood rooms."
         }
       },
       {
@@ -104,7 +104,7 @@
         "name": "Roborock vs iRobot vs Ecovacs: which brand is best?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Roborock leads in raw performance. iRobot leads in reliability and customer support. Ecovacs leads in innovation and value. For most buyers, Roborock offers the best performance-per-dollar."
+          "text": "Roborock leads in raw performance (strongest suction, best AI avoidance, most advanced docks). iRobot leads in reliability, customer support, and brand trust (30+ years of robot vacuum engineering). Ecovacs leads in innovation and value (square design, voice assistant, aggressive sale pricing). For most buyers, Roborock offers the best performance-per-dollar. ---"
         }
       }
     ]

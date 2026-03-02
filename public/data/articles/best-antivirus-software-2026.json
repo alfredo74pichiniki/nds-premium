@@ -61,38 +61,74 @@
       }
     ]
   },
-  "faq": [
-    {
-      "question": "What is the best antivirus software in 2026?",
-      "answer": "Bitdefender Total Security is the best antivirus in 2026, offering a perfect 18/18 AV-TEST score, the lightest system impact, and the lowest introductory pricing at $19.99/year for 3 devices."
-    },
-    {
-      "question": "Is Windows Defender good enough in 2026?",
-      "answer": "For low-risk users who browse carefully and keep Windows updated, yes. Windows Defender now scores 17.5/18 on AV-TEST. However, it lacks VPN, identity monitoring, and cross-platform protection."
-    },
-    {
-      "question": "Norton vs Bitdefender: which is better?",
-      "answer": "Bitdefender wins on price and system performance. Norton wins on included extras (unlimited VPN, cloud backup, dark web monitoring). Choose based on whether you want pure antivirus or a complete ecosystem."
-    },
-    {
-      "question": "Is Kaspersky safe to use in 2026?",
-      "answer": "Kaspersky's antivirus technology is excellent, consistently rated among the best by independent labs. However, it's headquartered in Moscow, Russia, and was banned from US government systems. The decision is personal."
-    },
-    {
-      "question": "Do Macs need antivirus?",
-      "answer": "Yes. While macOS is more resistant to traditional viruses, macOS malware detections increased 27% year-over-year in 2025. Bitdefender, Norton, and Kaspersky all offer robust macOS protection."
-    },
-    {
-      "question": "Is free antivirus safe to use?",
-      "answer": "Windows Defender (free, built into Windows) is safe and effective. Most third-party free antivirus monetize through data collection or ads. Avoid unknown free antivirus products."
-    },
-    {
-      "question": "Can antivirus slow down my computer?",
-      "answer": "Yes, especially during full scans. Bitdefender and ESET have the lightest impact. Schedule scans during off-hours on older systems with HDDs and 8GB RAM."
-    },
-    {
-      "question": "What happens when my antivirus subscription expires?",
-      "answer": "Most products stop receiving malware updates, leaving you vulnerable. Windows Defender automatically activates as a fallback on Windows systems."
-    }
-  ]
+  "faqSchema": {
+    "@type": "FAQPage",
+    "@context": "https://schema.org",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the best antivirus software in 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bitdefender Total Security is the best antivirus in 2026, offering a perfect 18/18 AV-TEST score, the lightest system impact, and the lowest introductory pricing at $19.99/year for 3 devices. For the most complete security ecosystem with VPN and cloud backup included, Norton 360 Deluxe ($49.99/year) is the best choice."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Windows Defender good enough in 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For low-risk users who browse carefully and keep Windows updated, yes — Windows Defender now scores 17.5/18 on AV-TEST with TOP PRODUCT certification. However, it lacks VPN, identity monitoring, cross-platform protection, and advanced features that paid suites include. It's sufficient for basic protection but not for comprehensive security."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is free antivirus safe to use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Windows Defender (free, built into Windows) is safe and effective. Most third-party free antivirus products, however, monetize through data collection, ads, or aggressive upselling. Bitdefender Free Edition and Avast Free are legitimate but limited. Avoid unknown free antivirus products — they may themselves be malware."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Norton vs Bitdefender: which is better?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bitdefender wins on price ($19.99 vs $49.99/year), system performance (lighter resource usage), and value per dollar. Norton wins on included extras (unlimited VPN, 50GB cloud backup, dark web monitoring, password manager). Choose Bitdefender for pure antivirus protection; choose Norton if you want a complete security ecosystem."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do Macs need antivirus?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. While macOS is more resistant to traditional viruses than Windows, Macs are increasingly targeted by adware, phishing, and malware. In 2025, macOS malware detections increased 27% year-over-year. Bitdefender, Norton, and Kaspersky all offer robust macOS protection."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can antivirus slow down my computer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, especially during full system scans. Bitdefender and ESET have the lightest system impact. Norton and McAfee use more resources but are acceptable on modern hardware (16GB+ RAM, SSD storage). Older systems with HDDs and 8GB RAM may notice significant slowdowns during scans — schedule them during off-hours."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Kaspersky safe to use in 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Kaspersky's antivirus technology is consistently rated among the best by independent labs. However, the company is headquartered in Moscow, Russia, and was banned from US government systems in 2017 due to national security concerns. Kaspersky has responded by moving data processing to Switzerland and opening Transparency Centers. The decision is personal — the product is excellent, but the jurisdiction remains controversial."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens when my antivirus subscription expires?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most antivirus products stop receiving malware definition updates when subscriptions expire, leaving you vulnerable to new threats. Windows Defender automatically activates as a fallback on Windows systems. To avoid gaps in protection, either renew, switch providers, or ensure Defender is configured as your backup. ---"
+        }
+      }
+    ]
+  }
 }

@@ -35,6 +35,20 @@ import { getDefaultAuthorForCategory } from "@/data/authors";
 // TYPES
 // ═══════════════════════════════════════════════════════════════
 
+interface ArticleFAQ {
+    question: string;
+    answer: string;
+}
+
+interface ArticleFAQSchema {
+    "@type": string;
+    mainEntity: Array<{
+        "@type": string;
+        name: string;
+        acceptedAnswer: { "@type": string; text: string };
+    }>;
+}
+
 interface Article {
     slug: string;
     title: string;
@@ -46,6 +60,8 @@ interface Article {
     wordCount: number;
     score?: number;
     noindex?: boolean;
+    faqSchema?: ArticleFAQSchema;
+    faq?: ArticleFAQ[];
 }
 
 interface ArticleListItem {
@@ -78,6 +94,21 @@ interface PremiumArticlePageProps {
 // ═══════════════════════════════════════════════════════════════
 // HELPER FUNCTIONS
 // ═══════════════════════════════════════════════════════════════
+
+function extractFAQs(article: Article): Array<{ question: string; answer: string }> {
+    // Priority 1: faqSchema field (JSON-LD ready format)
+    if (article.faqSchema?.mainEntity?.length) {
+        return article.faqSchema.mainEntity.map(item => ({
+            question: item.name,
+            answer: item.acceptedAnswer.text,
+        }));
+    }
+    // Priority 2: faq array (simple format)
+    if (article.faq?.length) {
+        return article.faq;
+    }
+    return [];
+}
 
 function cleanContent(content: string): string {
     let cleaned = content;
@@ -182,7 +213,7 @@ export function PremiumArticlePage({ slug, category, config }: PremiumArticlePag
                     wordCount: article.wordCount,
                     readTime: readTime,
                     products: [],
-                    faqs: [],
+                    faqs: extractFAQs(article),
                     relatedArticles: [],
                 }}
                 url={`https://nestdigitalstudio.com/${category}/${slug}`}

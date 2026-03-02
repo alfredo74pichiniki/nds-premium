@@ -47,28 +47,10 @@ export const Breadcrumbs: React.FC<BreadcrumbsProps> = ({
     items,
     className = "",
 }) => {
-    // Generate schema data
-    const schemaData = {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        itemListElement: items.map((item, index) => ({
-            "@type": "ListItem",
-            position: index + 1,
-            name: item.label,
-            item: item.href.startsWith("http") ? item.href : `https://nestdigitalstudio.com${item.href}`,
-        })),
-    };
+    // BreadcrumbList JSON-LD is handled by SchemaMarkup component
 
     return (
         <>
-            {/* Schema markup */}
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify(schemaData),
-                }}
-            />
-
             {/* Breadcrumb navigation */}
             <nav
                 className={`flex items-center ${className}`}

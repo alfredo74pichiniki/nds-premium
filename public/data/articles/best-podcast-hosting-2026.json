@@ -32,15 +32,15 @@
     ]
   },
   "faqSchema": {
-    "@context": "https://schema.org",
     "@type": "FAQPage",
+    "@context": "https://schema.org",
     "mainEntity": [
       {
         "@type": "Question",
         "name": "What is the best podcast hosting platform in 2026?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Buzzsprout is best for most podcasters with intuitive interface and monetization from $12/month. Transistor is best for professionals with unlimited shows at $19/month. Spotify for Creators is best for free hosting."
+          "text": "Buzzsprout is best for most podcasters with its intuitive interface, strong analytics, and built-in monetization starting at $12/month. Transistor is best for professionals needing unlimited shows ($19/month). Spotify for Creators is best for free hosting with no limitations."
         }
       },
       {
@@ -48,7 +48,7 @@
         "name": "Can I host a podcast for free?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. Spotify for Creators offers free hosting with unlimited storage and downloads. Buzzsprout and Podbean also have free tiers. For professional long-term podcasting, paid hosting ($5-19/month) provides better analytics and monetization."
+          "text": "Spotify for Creators offers completely free hosting with unlimited storage and downloads. Buzzsprout has a free plan (90-day episode hosting). Podbean offers a free tier with 5 hours of storage. For a professional long-term podcast, paid hosting ($5-19/month) provides better analytics, monetization, and control."
         }
       },
       {
@@ -56,7 +56,23 @@
         "name": "How much does podcast hosting cost?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Basic plans start at $5/month (Libsyn) to $19/month (Transistor). Most podcasters spend $12-29/month. Unlimited plans range from $29-99/month. Free options exist with trade-offs."
+          "text": "Basic plans start at $5/month (Libsyn) to $19/month (Transistor, Captivate). Most podcasters spend $12-29/month. Unlimited plans range from $29-99/month. Free options exist (Spotify for Creators) but with trade-offs in analytics and platform control."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need podcast hosting if I just want to be on Spotify?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Even Spotify requires an RSS feed from a hosting platform. Spotify for Creators provides this for free. If you want your podcast on Apple Podcasts, Google, Amazon, and other directories simultaneously, any host on this list distributes to all platforms from a single upload."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When should I upgrade from free to paid hosting?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Upgrade when: (1) you need IAB-certified analytics for sponsorships, (2) you want dynamic ad insertion for monetization, (3) you're running multiple shows, or (4) you want full control over your RSS feed and data. Most podcasters upgrade between episodes 10-25 when they commit to podcasting long-term. ---"
         }
       }
     ]

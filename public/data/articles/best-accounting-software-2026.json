@@ -40,15 +40,15 @@
     ]
   },
   "faqSchema": {
-    "@context": "https://schema.org",
     "@type": "FAQPage",
+    "@context": "https://schema.org",
     "mainEntity": [
       {
         "@type": "Question",
         "name": "What is the best accounting software for small business in 2026?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "QuickBooks Online is the best accounting software for small businesses in 2026, offering the most comprehensive feature set with AI-powered insights, 750+ integrations, and the largest accountant network."
+          "text": "QuickBooks Online is the best accounting software for small businesses in 2026, offering the most comprehensive feature set with AI-powered insights, 750+ integrations, and the largest accountant network. For freelancers, FreshBooks is the best for invoicing. For teams, Xero offers unlimited users at every tier."
         }
       },
       {
@@ -56,7 +56,7 @@
         "name": "Is QuickBooks worth the price?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "For businesses above $50K/year revenue, yes. For startups under $50K, Wave (free) or FreshBooks Lite ($15/month) provide better value."
+          "text": "For established businesses with revenue above $50K/year, yes. QuickBooks' integration ecosystem, accountant compatibility, and feature depth justify the $30-$85/month cost. For startups or side hustles under $50K revenue, Wave (free) or FreshBooks Lite ($15/month) provide better value."
         }
       },
       {
@@ -64,7 +64,7 @@
         "name": "Can I do my own bookkeeping without an accountant?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes — modern accounting software with AI categorization and guided workflows makes basic bookkeeping accessible. We recommend a CPA for annual tax filing and complex situations."
+          "text": "Yes — modern accounting software with AI categorization, bank feeds, and guided workflows makes basic bookkeeping accessible to non-accountants. FreshBooks and Kashoo are specifically designed for business owners without accounting knowledge. However, we recommend consulting a CPA for annual tax filing and any complex tax situations."
         }
       },
       {
@@ -72,7 +72,7 @@
         "name": "QuickBooks vs FreshBooks vs Xero: which should I choose?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "QuickBooks for products/inventory, FreshBooks for invoicing/time tracking, Xero for teams with 3+ members or international multi-currency needs."
+          "text": "QuickBooks if you sell products, need inventory, or want the most integrations. FreshBooks if you invoice clients, track time, and want the simplest interface. Xero if you have 3+ team members who need access or operate internationally with multi-currency needs."
         }
       },
       {
@@ -80,7 +80,7 @@
         "name": "Is Wave accounting really free?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes — core accounting, invoicing, and receipt scanning are free forever. Wave monetizes through payment processing fees and optional payroll add-on."
+          "text": "Yes — Wave's core accounting, invoicing, and receipt scanning are genuinely free forever. Wave monetizes through payment processing (2.9% + $0.60 per transaction) and optional payroll ($20-$40/month). The free tier is fully functional for basic bookkeeping."
         }
       },
       {
@@ -88,7 +88,7 @@
         "name": "Do I need accounting software or just a spreadsheet?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Once your business earns revenue, accounting software provides automatic bank feeds, legal double-entry bookkeeping, tax-ready reports, and audit trails that spreadsheets cannot."
+          "text": "Accounting software provides: automatic bank feeds, legal double-entry bookkeeping, tax-ready reports, invoice tracking, and audit trails. Spreadsheets work for simple expense tracking but don't provide legal financial statements, automatic reconciliation, or tax compliance. Once your business earns revenue, accounting software is a worthwhile investment."
         }
       },
       {
@@ -96,7 +96,7 @@
         "name": "How much should accounting software cost?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Solo freelancers: $0-$15/month. Small businesses: $25-$55/month. Growing teams: $60-$120/month. Annual cost of $180-$1,440 is a fraction of a bookkeeper's salary."
+          "text": "For solo freelancers: $0-$15/month (Wave free or FreshBooks Lite). For small businesses: $25-$55/month (QuickBooks Essentials or Xero Growing). For growing teams: $60-$120/month (QuickBooks Plus/Advanced or Zoho Elite). Total annual cost of $180-$1,440 is a fraction of a bookkeeper's salary."
         }
       },
       {
@@ -104,7 +104,7 @@
         "name": "Can I switch accounting software easily?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Most platforms offer import tools, but switching mid-year is complex. Best time is at the start of a new fiscal year. Allow 1-2 weeks for setup and reconciliation."
+          "text": "Most platforms offer data import tools, but switching mid-year is complex. The best time to switch is at the start of a new fiscal year. Export your chart of accounts, customer list, and open invoices from the old platform, then import into the new one. Allow 1-2 weeks for setup and reconciliation. ---"
         }
       }
     ]

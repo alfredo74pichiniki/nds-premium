@@ -40,15 +40,15 @@
     ]
   },
   "faqSchema": {
-    "@context": "https://schema.org",
     "@type": "FAQPage",
+    "@context": "https://schema.org",
     "mainEntity": [
       {
         "@type": "Question",
         "name": "What is the best AI writing tool in 2026?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Jasper is the best AI writing tool for marketing teams in 2026, with a 4.8/5 G2 rating, Brand Voice technology, 50+ templates, and team governance features starting at $49/month. For individual writers, Claude Pro at $18/month produces the most natural long-form content. For budget users, Writesonic at $16/month offers unlimited words with built-in SEO."
+          "text": "Jasper is the best AI writing tool for marketing teams in 2026, with a 4.8/5 G2 rating, Brand Voice technology, 50+ templates, and team governance features starting at $49/month. For individual writers who prioritize output quality over workflow tools, Claude Pro at $18/month produces the most natural long-form content. For budget users, Writesonic at $16/month offers unlimited words with built-in SEO optimization."
         }
       },
       {
@@ -56,7 +56,7 @@
         "name": "Is Jasper AI worth the price in 2026?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Jasper is worth it for marketing teams of 3+ people who produce branded content across multiple channels. For solo creators, the $49/month price is hard to justify — Claude Pro ($18) or Writesonic ($16) deliver comparable writing quality at a fraction of the cost."
+          "text": "Jasper is worth it for marketing teams of 3+ people who produce branded content across multiple channels. The Brand Voice, templates, and team governance features save significant time compared to configuring ChatGPT or Claude prompts for each team member. For solo creators, the $49/month price is hard to justify — Claude Pro ($18) or Writesonic ($16) deliver comparable writing quality at a fraction of the cost."
         }
       },
       {
@@ -64,7 +64,7 @@
         "name": "Can AI writing tools replace human writers?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No. AI writing tools in 2026 are productivity multipliers, not replacements. They excel at first drafts and repetitive content but still require human oversight for factual accuracy, brand nuance, and strategic messaging."
+          "text": "No. AI writing tools in 2026 are best understood as productivity multipliers, not replacements. They excel at first drafts, ideation, and repetitive content (product descriptions, social posts). However, they still require human oversight for factual accuracy, brand nuance, strategic messaging, and the kind of original thought that builds authority. The most effective content teams use AI to handle 60-70% of the writing workload while humans handle strategy, editing, and quality control."
         }
       },
       {
@@ -72,7 +72,23 @@
         "name": "ChatGPT vs Claude vs Jasper: which should I use?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "ChatGPT Plus ($20/month) for research-heavy tasks and image generation. Claude Pro ($18/month) for the highest quality long-form writing. Jasper ($49/month) for marketing teams needing brand consistency and governance."
+          "text": "ChatGPT Plus ($20/month) for research-heavy tasks, structured content, and access to DALL-E image generation. Claude Pro ($18/month) for the highest quality long-form writing with the most natural tone. Jasper ($49/month) for marketing teams that need brand consistency, templates, and governance across multiple team members. Many professionals use two — typically ChatGPT or Claude for drafting, plus Jasper or a SEO tool for optimization."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there a free AI writing tool worth using?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Rytr's free plan (10,000 characters/month) is surprisingly capable for occasional use. Claude's free tier provides access to the Sonnet model with daily message limits. Grammarly Free handles basic grammar and spelling across all platforms. The combination of Claude Free + Grammarly Free gives you a genuinely useful AI writing stack at $0/month, though with significant usage limitations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do AI writing tools help with SEO?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Some do, but most don't. Frase.io is purpose-built for SEO content with SERP analysis, content briefs, and AI visibility tracking starting at $15/month. Writesonic integrates with Surfer SEO for real-time optimization. Jasper offers a basic SEO mode. Tools like Claude, ChatGPT, and Rytr have no built-in SEO features — you'd need to pair them with a dedicated SEO tool."
         }
       },
       {
@@ -80,7 +96,15 @@
         "name": "What is GEO and why does it matter for AI writing?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "GEO (Generative Engine Optimization) is optimizing content to be cited by AI assistants like ChatGPT, Perplexity, Claude, and Google AI Overviews. In 2026, an estimated 30% of search queries are answered by AI. Frase.io is the only AI writing tool that tracks AI citation across multiple platforms."
+          "text": "GEO (Generative Engine Optimization) is the practice of optimizing content to be cited by AI assistants like ChatGPT, Perplexity, Claude, and Google AI Overviews. In 2026, an estimated 30% of search queries are answered by AI without the user clicking through to a website. Frase.io is currently the only AI writing tool that tracks whether your content is being cited across multiple AI platforms."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many words can AI writing tools generate per month?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It varies significantly: Writesonic offers unlimited words at $16/month. Jasper doesn't cap words on any plan. Rytr Unlimited offers unlimited at $29/month. Claude Pro has usage limits measured in messages rather than words. Copy.ai Free caps at 2,000 words/month. For high-volume content production, Writesonic and Jasper offer the most generous limits. ---"
         }
       }
     ]

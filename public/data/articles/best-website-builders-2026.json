@@ -40,15 +40,15 @@
     ]
   },
   "faqSchema": {
-    "@context": "https://schema.org",
     "@type": "FAQPage",
+    "@context": "https://schema.org",
     "mainEntity": [
       {
         "@type": "Question",
         "name": "What is the best website builder for beginners in 2026?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Wix is the best website builder for beginners thanks to its AI site generator that creates functional sites in under 60 seconds, 900+ templates across every industry, and a drag-and-drop editor that requires zero technical knowledge."
+          "text": "Wix is the best website builder for beginners thanks to its AI site generator that creates functional sites in under 60 seconds, 900+ templates across every industry, and a drag-and-drop editor that requires zero technical knowledge. GoDaddy's Airo AI is even faster for simple sites, but Wix offers more flexibility as your needs grow."
         }
       },
       {
@@ -56,7 +56,7 @@
         "name": "Can I build a website for free?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. Wix offers a permanent free plan with Wix branding. WordPress.com has a free plan on a wordpress.com subdomain. Webflow allows 2 free pages on a webflow.io subdomain. For a professional presence with your own domain, paid plans start at $2.99/month (Hostinger)."
+          "text": "Yes. Wix offers a permanent free plan with Wix branding. WordPress.com has a free plan on a wordpress.com subdomain. Webflow allows 2 free pages on a webflow.io subdomain. However, for a professional presence with your own domain and no branding, you'll need a paid plan starting at $2.99/month (Hostinger) to $17/month (Wix)."
         }
       },
       {
@@ -64,7 +64,15 @@
         "name": "Which website builder is best for SEO?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "WordPress.com has the strongest SEO capabilities through plugins like Yoast SEO and RankMath. Webflow generates the cleanest HTML code for better Core Web Vitals scores. Wix has improved dramatically with built-in SEO tools."
+          "text": "WordPress.com has the strongest SEO capabilities through plugins like Yoast SEO and RankMath (available on Business plan). Webflow generates the cleanest HTML code, which Google rewards with better Core Web Vitals scores. Wix has improved dramatically and now includes built-in SEO tools comparable to plugins. Squarespace's SEO is solid but less customizable."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a website builder or can I use WordPress?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "WordPress.org (self-hosted) requires managing your own hosting, security, updates, and backups — it's more powerful but more work. Website builders (including WordPress.com) handle all technical infrastructure. If you're not a developer and don't want to maintain servers, a website builder is the right choice. If you need maximum flexibility and have technical support, self-hosted WordPress is unmatched."
         }
       },
       {
@@ -72,7 +80,23 @@
         "name": "How much does a website builder cost per year?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Annual costs vary: Hostinger $36-48/year, WordPress.com $48-396/year, Squarespace $192-1,188/year, Wix $204-1,908/year, Shopify $348-2,388/year, Webflow $168-468/year. Add domain renewal and any premium themes or apps."
+          "text": "Annual costs vary significantly. Hostinger: $36-$48/year. WordPress.com: $48-$396/year. Squarespace: $192-$1,188/year. Wix: $204-$1,908/year. Shopify: $348-$2,388/year. Webflow: $168-$468/year. These are base prices — add $12-20 for domain renewal, plus any premium themes, apps, or e-commerce transaction fees."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which website builder is best for e-commerce?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Shopify is the best for dedicated e-commerce with its purpose-built checkout, 8,000+ apps, and multi-channel selling. Squarespace is best for small stores where design matters (0% transaction fees on Core plan). Wix works for stores that also need non-commerce features. WooCommerce on WordPress is best for maximum customization but requires more setup."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I switch website builders later?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Switching builders is difficult. Wix and Squarespace do not allow site export — you'll need to manually rebuild on the new platform. WordPress.com content exports easily to WordPress.org. Webflow allows HTML/CSS export. Best practice: Choose carefully upfront, and if you anticipate future migration, prefer WordPress.com or Webflow."
         }
       },
       {
@@ -80,7 +104,7 @@
         "name": "Wix vs Squarespace vs WordPress: which should I choose?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Wix for maximum features and flexibility with AI assistance. Squarespace if design quality is your top priority. WordPress.com if content and blogging are central or you want the largest plugin ecosystem."
+          "text": "Wix if you want maximum features and flexibility with AI assistance. Squarespace if design quality is your top priority and you prefer a curated experience. WordPress.com if content and blogging are central, you want the largest plugin ecosystem, or you might migrate to self-hosted WordPress later. All three are excellent — the wrong choice is spending months deciding instead of building. ---"
         }
       }
     ]

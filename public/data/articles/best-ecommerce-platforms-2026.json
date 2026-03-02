@@ -36,15 +36,15 @@
     ]
   },
   "faqSchema": {
-    "@context": "https://schema.org",
     "@type": "FAQPage",
+    "@context": "https://schema.org",
     "mainEntity": [
       {
         "@type": "Question",
         "name": "What is the best e-commerce platform in 2026?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Shopify is the best overall e-commerce platform in 2026, with the largest app ecosystem (8,000+), highest-converting checkout (Shop Pay), and most comprehensive multi-channel selling. BigCommerce is best for zero transaction fees."
+          "text": "Shopify is the best overall e-commerce platform in 2026, with the largest app ecosystem (8,000+), highest-converting checkout (Shop Pay), and most comprehensive multi-channel selling. BigCommerce is best for zero transaction fees and B2B features. WooCommerce is best for WordPress users wanting maximum flexibility."
         }
       },
       {
@@ -52,7 +52,7 @@
         "name": "How much does it cost to start an online store?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Realistically $29-79/month on Shopify or BigCommerce for a professional store. Budget stores: $15/month on Ecwid or free with WooCommerce plus $5-15/month hosting. Total first-year costs typically range from $500 to $3,000."
+          "text": "Realistically: $29-79/month on Shopify or BigCommerce for a professional store. Budget stores: $15/month on Ecwid or free with WooCommerce (plus $5-15/month hosting). Total first-year costs typically range from $500 to $3,000 including domain, theme, apps, and payment processing."
         }
       },
       {
@@ -60,7 +60,15 @@
         "name": "Shopify vs WooCommerce: which is better?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Shopify for a managed, all-in-one solution with no technical maintenance. WooCommerce for maximum flexibility and open-source code, if you're willing to handle hosting and updates yourself."
+          "text": "Shopify if you want a managed, all-in-one solution with no technical maintenance. WooCommerce if you want maximum flexibility, open-source code, and lower ongoing costs — but are willing to handle hosting, security, and updates yourself. Most beginners choose Shopify; most developers choose WooCommerce."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a separate payment processor?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Shopify offers Shopify Payments (powered by Stripe). BigCommerce integrates with 65+ gateways without surcharges. Squarespace uses Stripe. WooCommerce supports any gateway via extensions. You don't need to set up a separate payment processor — each platform includes at least one integrated option."
         }
       },
       {
@@ -68,7 +76,7 @@
         "name": "Can I switch e-commerce platforms later?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, but expect $2,000-$20,000 in migration costs. Product data and customers can be migrated using tools like LitExtension, but custom design, SEO rankings, and app integrations don't transfer."
+          "text": "Yes, but it's expensive and disruptive. Product data, customer information, and order history can be migrated using tools like LitExtension or Cart2Cart ($29-299). However, custom design, SEO rankings, and app integrations don't transfer. Expect $2,000-$20,000 in migration costs depending on store complexity. Choose carefully upfront."
         }
       },
       {
@@ -76,7 +84,23 @@
         "name": "Which platform is best for dropshipping?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Shopify is the industry standard for dropshipping with direct integrations for DSers, Spocket, and Printful. WooCommerce with AliDropship is the cheapest option."
+          "text": "Shopify is the industry standard for dropshipping with direct integrations for DSers, Spocket, Printful, and hundreds of dropshipping suppliers. WooCommerce with AliDropship is the cheapest option. BigCommerce supports dropshipping but has fewer dedicated apps. Avoid Squarespace and Ecwid for dropshipping."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What about Etsy and Amazon?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Etsy and Amazon are marketplaces, not platforms — you sell within their ecosystem with limited branding control and significant fees (6.5-15%+). They're excellent for discovery and additional sales channels, but you should also have your own store on Shopify/BigCommerce/WooCommerce where you own the customer relationship and pay lower fees."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How important is mobile commerce?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Critical. Over 73% of e-commerce sales will come from mobile devices in 2026. Every platform on this list provides mobile-responsive storefronts. Shopify and Squarespace produce the most polished mobile shopping experiences. WooCommerce mobile quality depends on your theme. Always test your store on multiple devices. ---"
         }
       }
     ]

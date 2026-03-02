@@ -21,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/reviews`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
     { url: `${BASE_URL}/software`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
     { url: `${BASE_URL}/gaming`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
+    { url: `${BASE_URL}/home`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
     { url: `${BASE_URL}/audio`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
     { url: `${BASE_URL}/outdoor`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
     { url: `${BASE_URL}/guides`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },

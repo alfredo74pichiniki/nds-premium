@@ -32,15 +32,15 @@
     ]
   },
   "faqSchema": {
-    "@context": "https://schema.org",
     "@type": "FAQPage",
+    "@context": "https://schema.org",
     "mainEntity": [
       {
         "@type": "Question",
         "name": "What is the best graphic design tool for beginners?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Canva is the best design tool for beginners with zero learning curve, AI-powered templates, and a generous free plan. Adobe Express is the best alternative for Adobe Firefly AI quality. Procreate costs only $12.99 one-time for iPad artists."
+          "text": "Canva is the best design tool for beginners with zero learning curve, AI-powered templates, and a generous free plan. Adobe Express is the best alternative if you want Adobe Firefly's AI quality. For digital artists, Procreate on iPad is intuitive and costs only $12.99 one-time."
         }
       },
       {
@@ -48,15 +48,7 @@
         "name": "Is Canva better than Photoshop?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "They serve different purposes. Canva is for marketing materials and social posts quickly with no skill required. Photoshop is for professional photo editing and compositing with significant skill required. Most businesses need Canva; professional designers need Photoshop."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is Adobe Creative Cloud worth $70/month?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "For professional designers, yes — Adobe is the industry standard. For everyone else: Canva Pro ($12.99/month) handles marketing design, Affinity Suite ($169.99 one-time) handles professional work, and Adobe's Photography Plan ($9.99/month) covers photo editing."
+          "text": "They serve different purposes. Canva is for creating marketing materials, social posts, and presentations quickly — no skill required. Photoshop is for professional photo editing, manipulation, and compositing — significant skill required. Most businesses need Canva; professional designers need Photoshop. Many use both."
         }
       },
       {
@@ -64,7 +56,23 @@
         "name": "What is the best free graphic design tool?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Canva Free is the most powerful with 250,000+ templates. Figma Free offers 3 professional design files. VistaCreate Free provides animated templates. For professional work, GIMP is a free open-source Photoshop alternative."
+          "text": "Canva Free is the most powerful free design tool with 250,000+ templates and millions of free assets. Figma Free offers 3 professional design files. VistaCreate Free provides template-based design with animated options. For professional work, GIMP (free, open-source) offers Photoshop-like functionality."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Adobe Creative Cloud worth $70/month?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For professional designers whose income depends on design output, yes — Adobe is the industry standard and Firefly AI is transformative. For everyone else, consider: Canva Pro ($12.99/month) handles marketing design. Affinity Suite ($169.99 one-time) handles professional work. Adobe's Photography Plan ($9.99/month) is excellent value for photo editing specifically."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can Figma replace Adobe Illustrator?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For UI/UX design and digital interfaces, Figma has largely replaced Adobe XD and is competitive with Illustrator for screen-based vector work. For print design, complex illustrations, and packaging, Illustrator remains superior. Figma's strength is collaboration and digital design; Illustrator's is versatile vector creation. ---"
         }
       }
     ]

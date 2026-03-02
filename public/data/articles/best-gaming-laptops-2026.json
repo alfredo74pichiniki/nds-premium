@@ -40,15 +40,15 @@
     ]
   },
   "faqSchema": {
-    "@context": "https://schema.org",
     "@type": "FAQPage",
+    "@context": "https://schema.org",
     "mainEntity": [
       {
         "@type": "Question",
         "name": "What is the best gaming laptop in 2026?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The ASUS ROG Zephyrus G16 is the best overall gaming laptop in 2026, balancing RTX 5080 performance, a 240Hz OLED display, 10-hour battery life, and 4.3 lb portability. For pure performance, the Razer Blade 16 with RTX 5090 is the fastest."
+          "text": "The ASUS ROG Zephyrus G16 is the best overall gaming laptop in 2026, balancing RTX 5080 performance, a 240Hz OLED display, 10-hour battery life, and 4.3 lb portability. For pure performance, the Razer Blade 16 with RTX 5090 is the fastest. For value, the HP Omen Max 16 delivers RTX 5080 performance at $1,999."
         }
       },
       {
@@ -56,7 +56,7 @@
         "name": "Is RTX 5090 worth it over RTX 5080 for gaming?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "For most gamers, no. The RTX 5080 delivers 85-90% of the RTX 5090's gaming performance at $500-$1,000 less. The RTX 5090 premium is justified for 4K native gaming without DLSS or professional GPU workloads."
+          "text": "For most gamers, no. The RTX 5080 delivers 85-90% of the RTX 5090's gaming performance at $500-$1,000 less. The RTX 5090 premium is justified for 4K native gaming without DLSS, professional GPU workloads (3D rendering, AI training), or users who simply want the absolute fastest hardware regardless of price."
         }
       },
       {
@@ -64,7 +64,7 @@
         "name": "How long do gaming laptops last?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Modern gaming laptops last 4-6 years for mainstream gaming. An RTX 5080 laptop purchased in 2026 will handle 1080p/1440p gaming at medium-high settings through 2030-2031."
+          "text": "Modern gaming laptops last 4-6 years for mainstream gaming. An RTX 5080 laptop purchased in 2026 will handle 1080p/1440p gaming at medium-high settings through 2030-2031. Repasting thermal compound at year 2-3 can extend peak performance. Battery degradation (losing 20-30% capacity by year 3) is the most common aging issue."
         }
       },
       {
@@ -72,7 +72,7 @@
         "name": "Can a gaming laptop replace a desktop?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "In 2026, yes for most gamers. RTX 5090 laptops match desktop RTX 4090 performance. The tradeoffs are 30-40% higher cost, limited upgradeability, and more fan noise under load."
+          "text": "In 2026, yes — for most gamers. RTX 5090 laptops match desktop RTX 4090 performance, and RTX 5080 laptops exceed desktop RTX 4080 performance. The tradeoffs are: laptops cost 30-40% more for equivalent GPU power, have limited upgradeability, and produce more fan noise under load. If portability matters to you, the performance gap is now negligible."
         }
       },
       {
@@ -80,7 +80,7 @@
         "name": "What's the best budget gaming laptop in 2026?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The Acer Predator Helios 16 at $1,799 with an RTX 5070 Ti is the best budget option, exceeding last-gen RTX 4080 performance."
+          "text": "The Acer Predator Helios 16 at $1,799 with an RTX 5070 Ti is the best budget option, exceeding last-gen RTX 4080 performance. For under $1,500, look for RTX 5070 or RTX 4070 Ti configurations from ASUS TUF, Lenovo IdeaPad Gaming, or HP Victus lines."
         }
       },
       {
@@ -88,7 +88,7 @@
         "name": "Do I need 64GB RAM for gaming?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "32GB is sufficient for all current games and most multitasking. 64GB benefits simultaneous gaming + streaming + OBS, or video editing and AI workloads."
+          "text": "32GB is sufficient for all current games and most multitasking scenarios. 64GB is beneficial if you simultaneously game + stream + run OBS + have browser tabs open, or if you use the laptop for video editing, 3D rendering, or AI workloads. For pure gaming, 32GB DDR5-5600 is the sweet spot."
         }
       },
       {
@@ -96,7 +96,7 @@
         "name": "How important is display refresh rate for gaming?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "240Hz is the current sweet spot. At QHD resolution, RTX 5080/5090 GPUs push 200+ fps in esports titles. The jump from 60Hz to 144Hz is life-changing; from 240Hz to 360Hz, most players can't tell the difference."
+          "text": "240Hz is the current sweet spot for gaming laptops. At QHD resolution, RTX 5080/5090 GPUs can push 200+ fps in esports titles, making 240Hz panels genuinely useful. 360Hz panels exist but offer diminishing returns — the jump from 60Hz to 144Hz is life-changing; from 240Hz to 360Hz, most players can't tell the difference."
         }
       },
       {
@@ -104,7 +104,7 @@
         "name": "Should I wait for AMD Ryzen or buy Intel now?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Intel Core Ultra 9 275HX currently leads in single-thread performance for gaming. AMD's Strix Point is competitive in multi-thread workloads. Both are excellent — don't delay a purchase waiting for the perfect CPU."
+          "text": "Intel Core Ultra 9 275HX currently leads in single-thread performance, which matters most for gaming. AMD's Strix Point refresh is competitive in multi-thread workloads but slightly behind in gaming. Both are excellent choices — don't delay a purchase waiting for the \"perfect\" CPU generation. ---"
         }
       }
     ]

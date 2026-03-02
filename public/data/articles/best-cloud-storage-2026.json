@@ -61,38 +61,74 @@
       }
     ]
   },
-  "faq": [
-    {
-      "question": "What is the best cloud storage in 2026?",
-      "answer": "Google Drive for most users (15GB free, Google Workspace integration). OneDrive for value (1TB + Office at $6.99/mo). pCloud for privacy (lifetime plans + zero-knowledge encryption)."
-    },
-    {
-      "question": "Which cloud storage is cheapest?",
-      "answer": "IDrive at $2.95/year for 100GB. For monthly plans, iCloud at $0.99/month for 50GB. For lifetime value, pCloud at $399 for 2TB."
-    },
-    {
-      "question": "Google Drive vs Dropbox vs OneDrive: which is best?",
-      "answer": "Google Drive for free storage and collaboration. OneDrive for value with Microsoft 365. Dropbox for sync speed and reliability."
-    },
-    {
-      "question": "Which cloud storage has the best free plan?",
-      "answer": "Google Drive (15GB) offers the most free storage. IDrive (10GB) and pCloud (10GB) also offer generous free tiers."
-    },
-    {
-      "question": "Are lifetime cloud storage plans worth it?",
-      "answer": "Yes, if you commit for 3+ years. pCloud's 2TB lifetime ($399) breaks even vs Google Drive ($9.99/mo) in 40 months."
-    },
-    {
-      "question": "Is Google Drive secure enough for sensitive files?",
-      "answer": "Google uses AES-256 encryption but holds the keys. For truly sensitive data, use Sync.com (zero-knowledge) or iCloud Advanced Data Protection."
-    },
-    {
-      "question": "Can cloud storage be hacked?",
-      "answer": "Providers can be breached. Minimize risk with 2FA, zero-knowledge encryption, and unique passwords."
-    },
-    {
-      "question": "Do I need cloud storage if I have an external hard drive?",
-      "answer": "Yes. External drives fail or get destroyed. The ideal setup: important files on both cloud and local drives (3-2-1 backup rule)."
-    }
-  ]
+  "faqSchema": {
+    "@type": "FAQPage",
+    "@context": "https://schema.org",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the best cloud storage in 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Google Drive is the best cloud storage for most users in 2026, offering 15GB free, Google Workspace integration, and plans up to 30TB. For value, Microsoft OneDrive bundles 1TB with Microsoft 365 at $6.99/month. For privacy, pCloud offers lifetime plans with optional zero-knowledge encryption."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which cloud storage is cheapest?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "IDrive is the cheapest at $2.95/year for 100GB. For larger storage, pCloud's lifetime 2TB plan at $399 is cheapest over 3+ years. For monthly plans, iCloud at $0.99/month for 50GB is the cheapest entry point. Google Drive's 100GB at $1.99/month is the cheapest monthly option from a major provider."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Google Drive secure enough for sensitive files?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Google Drive uses AES-256 encryption at rest and TLS in transit, which protects against external attacks. However, Google holds the encryption keys and can technically access your files. For truly sensitive data (medical, legal, financial), use Sync.com (zero-knowledge by default) or enable iCloud Advanced Data Protection."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Google Drive vs Dropbox vs OneDrive: which is best?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Google Drive for free storage and collaboration. OneDrive for value (1TB + Microsoft 365 at $6.99/month). Dropbox for sync speed and reliability with large files. Choose based on which ecosystem you use most."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are lifetime cloud storage plans worth it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, if you commit to the provider for 3+ years. pCloud's 2TB lifetime plan ($399) breaks even versus Google Drive's 2TB ($9.99/month) in 40 months. The risk is the provider going out of business, but pCloud has been profitable since 2018."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which cloud storage has the best free plan?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Google Drive (15GB) offers the most free storage from a major provider. IDrive (10GB) and pCloud (10GB) also offer generous free tiers. Note that Google's 15GB is shared across Drive, Gmail, and Photos."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can cloud storage be hacked?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Cloud storage providers can be breached — Dropbox exposed 68 million credentials in 2012. However, modern providers use strong encryption. To minimize risk: enable 2FA, use zero-knowledge encryption (Sync.com, pCloud Crypto), and don't reuse passwords."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need cloud storage if I have an external hard drive?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. External drives fail, get lost, or get destroyed in fires/floods. Cloud storage provides off-site backup that survives physical disasters. The ideal setup: important files on both cloud storage AND a local external drive (3-2-1 backup rule). ---"
+        }
+      }
+    ]
+  }
 }

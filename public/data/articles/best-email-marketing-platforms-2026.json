@@ -61,38 +61,74 @@
       }
     ]
   },
-  "faq": [
-    {
-      "question": "What is the best email marketing platform in 2026?",
-      "answer": "Mailchimp is the best overall for most businesses. Klaviyo is best for e-commerce. Beehiiv is best for newsletter creators."
-    },
-    {
-      "question": "Which email marketing platform has the best free plan?",
-      "answer": "Brevo offers unlimited contacts with 9,000 emails/month for free. Kit allows up to 10,000 free subscribers."
-    },
-    {
-      "question": "Mailchimp vs Klaviyo: which should I choose?",
-      "answer": "Mailchimp for general businesses and beginners. Klaviyo for e-commerce stores wanting revenue-attributed automation."
-    },
-    {
-      "question": "How much does email marketing cost per month?",
-      "answer": "Ranges from free to $200+/month for 10K subscribers. Average small business spends $30-75/month."
-    },
-    {
-      "question": "Is Substack or Beehiiv better for newsletters?",
-      "answer": "Beehiiv for monetization (0% rev share, ad network). Substack for simplicity and built-in discovery."
-    },
-    {
-      "question": "What is the best email marketing platform for Shopify?",
-      "answer": "Klaviyo offers the deepest native Shopify integration with real-time product, order, and behavior syncing."
-    },
-    {
-      "question": "Can I switch email marketing platforms without losing subscribers?",
-      "answer": "Yes. All platforms support CSV export/import. Warm up deliverability gradually by sending to engaged segments first."
-    },
-    {
-      "question": "What email marketing ROI should I expect?",
-      "answer": "Average $36 ROI per $1 spent. E-commerce with automated sequences typically see 20-50x ROI."
-    }
-  ]
+  "faqSchema": {
+    "@type": "FAQPage",
+    "@context": "https://schema.org",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the best email marketing platform in 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Mailchimp is the best overall email marketing platform in 2026 for most businesses, combining an intuitive editor, AI optimization, 300+ integrations, and a free plan for up to 500 contacts. For e-commerce, Klaviyo is the best. For newsletter creators, Beehiiv leads."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which email marketing platform has the best free plan?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Brevo offers the most generous free plan with unlimited contacts and 9,000 emails/month. Kit (formerly ConvertKit) allows up to 10,000 free subscribers. Mailchimp's free plan (500 contacts) is the most restrictive among major platforms."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Mailchimp vs Klaviyo: which should I choose?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Choose Mailchimp if you're a general business, service provider, or just starting with email marketing — it's easier to learn and cheaper to use. Choose Klaviyo if you run an e-commerce store and want revenue-attributed automation, abandoned cart recovery, and predictive analytics."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does email marketing cost per month?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Platforms range from free (Brevo, MailerLite, Kit) to $50-200+/month for 10,000 subscribers on paid plans. Budget option: MailerLite at $73/month for 10K subscribers. Premium option: Klaviyo at $150/month for 10K. The average small business spends $30-75/month on email marketing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Substack or Beehiiv better for newsletters?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Beehiiv is better for creators focused on monetization and growth — it charges 0% on paid subscriptions (vs. Substack's 10%), includes a native ad network, and offers referral programs. Substack is simpler and has a larger built-in discovery network. Choose Beehiiv for revenue; Substack for simplicity."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the best email marketing platform for Shopify?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Klaviyo is the best email marketing platform for Shopify stores, offering the deepest native integration with real-time sync of products, orders, and customer behavior. Mailchimp also integrates with Shopify but with less depth. Brevo and ActiveCampaign offer Shopify plugins but aren't e-commerce-first."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I switch email marketing platforms without losing subscribers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. All platforms support CSV export and import of subscriber lists. Most also offer direct migration tools from competing platforms. The key concern isn't losing subscribers — it's maintaining deliverability reputation with your new sending domain. Warm up gradually by sending to your most engaged segments first."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What email marketing ROI should I expect?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The average email marketing ROI in 2026 is $36 for every $1 spent (DMA/Litmus data), making it the highest-ROI digital marketing channel. E-commerce businesses using Klaviyo or Mailchimp with automated sequences (welcome, abandoned cart, post-purchase) typically see 20-50x ROI on their email marketing spend. ---"
+        }
+      }
+    ]
+  }
 }

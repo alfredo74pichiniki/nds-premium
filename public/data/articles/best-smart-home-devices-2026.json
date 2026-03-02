@@ -40,15 +40,15 @@
     ]
   },
   "faqSchema": {
-    "@context": "https://schema.org",
     "@type": "FAQPage",
+    "@context": "https://schema.org",
     "mainEntity": [
       {
         "@type": "Question",
         "name": "What is the best smart home hub in 2026?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The Amazon Echo Hub is the best smart home hub in 2026, supporting WiFi, Bluetooth, Zigbee, Matter, Thread, and Sidewalk protocols. For Apple users, the Apple TV 4K is the best HomeKit hub. For budget buyers, the SmartThings Station at $59 offers remarkable protocol support."
+          "text": "The Amazon Echo Hub is the best smart home hub in 2026, supporting WiFi, Bluetooth, Zigbee, Matter, Thread, and Sidewalk protocols — the widest compatibility of any hub. For Apple users, the Apple TV 4K is the best HomeKit hub. For budget buyers, the SmartThings Station at $59 offers remarkable protocol support."
         }
       },
       {
@@ -56,7 +56,7 @@
         "name": "What is Matter and why does it matter?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Matter is a universal smart home standard supported by Apple, Google, Amazon, and Samsung. A Matter-compatible device works with any Matter controller regardless of brand, ending the era of needing specific hubs for specific devices."
+          "text": "Matter is a universal smart home standard supported by Apple, Google, Amazon, and Samsung. It means a Matter-compatible device works with any Matter controller regardless of brand — ending the era of needing specific hubs for specific devices. In 2026, Matter should be a requirement for any new smart home purchase."
         }
       },
       {
@@ -64,7 +64,7 @@
         "name": "Do I need a smart home hub?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "In 2026, a hub is still recommended. A hub with Zigbee and Thread support provides better device range, lower latency, local automation processing, and support for battery-powered sensors that can't use WiFi efficiently."
+          "text": "In 2026, a hub is still recommended for the best experience. While many WiFi devices work directly with voice assistants, a hub with Zigbee and Thread support provides: better device range, lower latency, local automation processing (works without internet), and support for battery-powered sensors that can't use WiFi efficiently."
         }
       },
       {
@@ -72,7 +72,7 @@
         "name": "Is Alexa or Google Assistant better for smart home?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Alexa has more compatible devices (140,000+) and a more powerful routines engine. Google Assistant has better natural language understanding. For smart home control, Alexa has the edge. With Matter, the difference matters less."
+          "text": "Alexa has more compatible devices (140,000+) and a more powerful routines engine for complex automations. Google Assistant has better natural language understanding and information retrieval. For smart home control specifically, Alexa has the edge. With Matter, the difference matters less since devices work with both."
         }
       },
       {
@@ -80,7 +80,7 @@
         "name": "How much does a smart home cost to set up?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "A useful starter smart home costs $400-$700: hub ($60-$180), smart bulbs for 2-3 rooms ($50-$150), smart thermostat ($200-$250), and door sensors ($30-$60). A comprehensive setup runs $1,500-$3,000."
+          "text": "A useful starter smart home costs $400-$700: hub ($60-$180), smart bulbs for 2-3 rooms ($50-$150), smart thermostat ($200-$250), and door sensors ($30-$60). A comprehensive smart home with lighting, security, climate, and robot vacuum runs $1,500-$3,000. Costs have dropped significantly as Matter eliminates the need for proprietary bridges."
         }
       },
       {
@@ -88,7 +88,7 @@
         "name": "Are smart home devices secure?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Matter devices use end-to-end encryption and require secure onboarding. Stick to reputable brands, enable two-factor authentication, and keep devices updated for the best security."
+          "text": "Matter devices use end-to-end encryption and require secure device onboarding. Major ecosystems (Apple, Google, Amazon) have strong security track records. Risks come from: weak WiFi passwords, outdated firmware, and cheap no-name devices without security updates. Stick to reputable brands, enable two-factor authentication, and keep devices updated."
         }
       },
       {
@@ -96,7 +96,7 @@
         "name": "Can I mix different smart home brands?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes — Matter allows you to use Philips Hue lights, Ecobee thermostat, Ring cameras, and Aqara sensors all controlled from a single app. The era of brand lock-in is ending."
+          "text": "Yes — this is Matter's primary benefit. In 2026, you can use Philips Hue lights, an Ecobee thermostat, Ring cameras, and Aqara sensors all controlled from a single app (Apple Home, Google Home, or Alexa) through Matter. The era of brand lock-in is ending."
         }
       },
       {
@@ -104,7 +104,7 @@
         "name": "What's the difference between Zigbee, Z-Wave, Thread, and WiFi?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "WiFi is everywhere but drains batteries. Zigbee is low-power mesh requiring a bridge. Z-Wave is similar with less congestion. Thread is the newest mesh protocol designed for Matter with better range and no single point of failure."
+          "text": "WiFi is everywhere but drains batteries quickly and congests networks. Zigbee is a low-power mesh protocol used by Hue, Aqara, and SmartThings sensors — reliable but requires a bridge. Z-Wave is similar to Zigbee with less device congestion but smaller ecosystem. Thread is the newest mesh protocol, designed for Matter, with better range, reliability, and no single point of failure. ---"
         }
       }
     ]

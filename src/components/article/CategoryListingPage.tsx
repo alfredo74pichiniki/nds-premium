@@ -39,6 +39,7 @@ const categoryEmojis: Record<string, string> = {
     audio: "🎧",
     gaming: "🎮",
     software: "💻",
+    home: "🏠",
     guides: "📖",
     deals: "🏷️",
     reviews: "⭐",
