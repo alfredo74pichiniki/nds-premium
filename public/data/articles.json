@@ -2,12 +2,12 @@
   {
     "slug": "best-ai-writing-tools-2026",
     "title": "7 Best AI Writing Tools in 2026: Quality, Speed & Value Tested",
-    "description": "Jasper is the best AI writing tool in 2026 with a 4.8/5 G2 rating from 537+ reviews, 50+ templates, and the most consistent long-form output. Full comparison of 7 tools including Writesonic, Claude Pro, Copy.ai, Rytr, Frase.io, and Grammarly.",
+    "description": "Compare 7 top AI writing tools including Jasper, Writesonic, Copy.ai, Claude Pro, Rytr, Frase, and Grammarly. Pricing, output quality, and use-case breakdowns for 2026.",
     "category": "software",
-    "articleType": "best_list",
+    "articleType": "comparison",
     "date": "March 02, 2026",
     "featured": true,
-    "wordCount": 3720,
+    "wordCount": 5971,
     "score": 95,
     "href": "/software/best-ai-writing-tools-2026"
   },
@@ -383,7 +383,6 @@
     "score": 90,
     "href": "/gaming/best-lightweight-gaming-mice-under-60g"
   },
-
   {
     "slug": "best-noise-cancelling-headphones-2026-expert-research-guide",
     "title": "Best Noise Cancelling Headphones 2026: Expert Research Guide",
@@ -407,5 +406,53 @@
     "wordCount": 1864,
     "score": 90,
     "href": "/software/best-software-tools-2025"
+  },
+  {
+    "slug": "how-to-set-up-home-office-2026",
+    "title": "How to Set Up a Complete Home Office in 2026: The Ultimate Guide",
+    "description": "Step-by-step guide to building a productive home office in 2026. Covers desks, chairs, monitors, audio, lighting, and networking with 3 budget tiers.",
+    "category": "guides",
+    "articleType": "guide",
+    "date": "March 03, 2026",
+    "featured": true,
+    "wordCount": 3585,
+    "score": 94,
+    "href": "/guides/how-to-set-up-home-office-2026"
+  },
+  {
+    "slug": "how-to-protect-home-network-2026",
+    "title": "How to Protect Your Home Network from Hackers: A 2026 Security Guide",
+    "description": "Learn how to protect your home network from hackers with this 10-step 2026 security guide covering router hardening, VPN setup, DNS protection, and IoT security.",
+    "category": "guides",
+    "articleType": "guide",
+    "date": "March 03, 2026",
+    "featured": true,
+    "wordCount": 4514,
+    "score": 94,
+    "href": "/guides/how-to-protect-home-network-2026"
+  },
+  {
+    "slug": "best-portable-power-stations-2026",
+    "title": "7 Best Portable Power Stations in 2026: Camping, Emergency & Off-Grid Tested",
+    "description": "Compare the 7 best portable power stations for 2026. LiFePO4 models from EcoFlow, Jackery, Bluetti and Anker rated by capacity, solar input, and real-world use.",
+    "category": "outdoor",
+    "articleType": "best_list",
+    "date": "March 03, 2026",
+    "featured": true,
+    "wordCount": 5183,
+    "score": 94,
+    "href": "/outdoor/best-portable-power-stations-2026"
+  },
+  {
+    "slug": "best-nas-devices-2026",
+    "title": "7 Best NAS Devices for Home in 2026: Personal Cloud Storage Compared",
+    "description": "Compare the 7 best NAS devices for home use in 2026. Real specs, pricing, and 5-year cost analysis vs cloud storage. Find your perfect personal cloud.",
+    "category": "home",
+    "articleType": "best_list",
+    "date": "March 03, 2026",
+    "featured": true,
+    "wordCount": 6087,
+    "score": 94,
+    "href": "/home/best-nas-devices-2026"
   }
 ]
