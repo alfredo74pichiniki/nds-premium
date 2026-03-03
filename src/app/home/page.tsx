@@ -1,7 +1,19 @@
-"use client";
-
+import type { Metadata } from "next";
 import { CategoryListingPage } from "@/components/article/CategoryListingPage";
-import { Home } from "lucide-react";
+
+const BASE_URL = "https://nestdigitalstudio.com";
+
+export const metadata: Metadata = {
+    title: "Best Smart Home & Home Office Tech 2026 | Nest Digital Studio",
+    description: "Expert reviews of smart home devices, security systems, robot vacuums, and home office monitors.",
+    alternates: { canonical: `${BASE_URL}/home` },
+    openGraph: {
+        title: "Best Smart Home & Home Office Tech 2026 | Nest Digital Studio",
+        description: "Expert reviews of smart home devices, security systems, robot vacuums, and home office monitors.",
+        url: `${BASE_URL}/home`,
+        siteName: "Nest Digital Studio",
+    },
+};
 
 export default function HomePage() {
     return (
@@ -12,7 +24,6 @@ export default function HomePage() {
                 emoji: "🏠",
                 color: "amber",
                 description: "Smart home devices, security systems, and home office gear reviews",
-                icon: <Home className="w-4 h-4" />,
             }}
         />
     );

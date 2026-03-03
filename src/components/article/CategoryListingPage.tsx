@@ -31,7 +31,7 @@ interface CategoryConfig {
     emoji: string;
     color: string;
     description: string;
-    icon: React.ReactNode;
+    icon?: React.ReactNode;
 }
 
 // Category emojis

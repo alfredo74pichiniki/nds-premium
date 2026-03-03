@@ -1,7 +1,19 @@
-"use client";
-
+import type { Metadata } from "next";
 import { CategoryListingPage } from "@/components/article/CategoryListingPage";
-import { Gamepad2 } from "lucide-react";
+
+const BASE_URL = "https://nestdigitalstudio.com";
+
+export const metadata: Metadata = {
+    title: "Best Gaming Gear & Hardware 2026 | Nest Digital Studio",
+    description: "In-depth gaming laptop, mouse, keyboard, and monitor reviews. Tested by experts with real benchmarks.",
+    alternates: { canonical: `${BASE_URL}/gaming` },
+    openGraph: {
+        title: "Best Gaming Gear & Hardware 2026 | Nest Digital Studio",
+        description: "In-depth gaming laptop, mouse, keyboard, and monitor reviews. Tested by experts with real benchmarks.",
+        url: `${BASE_URL}/gaming`,
+        siteName: "Nest Digital Studio",
+    },
+};
 
 export default function GamingPage() {
     return (
@@ -12,7 +24,6 @@ export default function GamingPage() {
                 emoji: "🎮",
                 color: "purple",
                 description: "Gaming gear reviews, setups, and hardware recommendations",
-                icon: <Gamepad2 className="w-4 h-4" />,
             }}
         />
     );

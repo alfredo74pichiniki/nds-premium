@@ -11,11 +11,32 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Nest Digital Studio | Expert Tech Reviews Powered by AI",
+  metadataBase: new URL("https://nestdigitalstudio.com"),
+  title: {
+    default: "Nest Digital Studio | Expert Tech Reviews Powered by AI",
+    template: "%s | Nest Digital Studio",
+  },
   description: "In-depth, unbiased analysis of the best technology products. AI-powered recommendations based on 50,000+ verified user reviews.",
-  keywords: "tech reviews, product recommendations, AI assistant, buying guides",
+  keywords: "tech reviews, product recommendations, AI assistant, buying guides, best products 2026",
   verification: {
     google: "9-hbkjkJzJhzqRenz4lVK6fsDq-drky3PSzzAwiDRWU",
+  },
+  openGraph: {
+    type: "website",
+    siteName: "Nest Digital Studio",
+    title: "Nest Digital Studio | Expert Tech Reviews Powered by AI",
+    description: "In-depth, unbiased analysis of the best technology products. AI-powered recommendations based on 50,000+ verified user reviews.",
+    url: "https://nestdigitalstudio.com",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Nest Digital Studio" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Nest Digital Studio | Expert Tech Reviews Powered by AI",
+    description: "In-depth, unbiased analysis of the best technology products. AI-powered recommendations based on 50,000+ verified user reviews.",
+    images: ["/og-image.png"],
+  },
+  alternates: {
+    canonical: "https://nestdigitalstudio.com",
   },
 };
 

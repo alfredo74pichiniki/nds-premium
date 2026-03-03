@@ -1,7 +1,19 @@
-"use client";
-
+import type { Metadata } from "next";
 import { CategoryListingPage } from "@/components/article/CategoryListingPage";
-import { BookOpen } from "lucide-react";
+
+const BASE_URL = "https://nestdigitalstudio.com";
+
+export const metadata: Metadata = {
+    title: "Tech Guides & Tutorials 2026 | Nest Digital Studio",
+    description: "In-depth how-to guides, tutorials, and expert tips for getting the most out of your tech.",
+    alternates: { canonical: `${BASE_URL}/guides` },
+    openGraph: {
+        title: "Tech Guides & Tutorials 2026 | Nest Digital Studio",
+        description: "In-depth how-to guides, tutorials, and expert tips for getting the most out of your tech.",
+        url: `${BASE_URL}/guides`,
+        siteName: "Nest Digital Studio",
+    },
+};
 
 export default function GuidesPage() {
     return (
@@ -12,7 +24,6 @@ export default function GuidesPage() {
                 emoji: "📖",
                 color: "orange",
                 description: "In-depth tutorials, how-to guides, and expert tips",
-                icon: <BookOpen className="w-4 h-4" />,
             }}
         />
     );

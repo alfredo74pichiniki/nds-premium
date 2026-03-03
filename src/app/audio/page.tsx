@@ -1,7 +1,19 @@
-"use client";
-
+import type { Metadata } from "next";
 import { CategoryListingPage } from "@/components/article/CategoryListingPage";
-import { Headphones } from "lucide-react";
+
+const BASE_URL = "https://nestdigitalstudio.com";
+
+export const metadata: Metadata = {
+    title: "Best Headphones, Speakers & Audio Gear 2026 | Nest Digital Studio",
+    description: "Expert headphone and audio equipment reviews. Noise-cancelling, wireless, studio monitors tested and compared.",
+    alternates: { canonical: `${BASE_URL}/audio` },
+    openGraph: {
+        title: "Best Headphones, Speakers & Audio Gear 2026 | Nest Digital Studio",
+        description: "Expert headphone and audio equipment reviews. Noise-cancelling, wireless, studio monitors tested and compared.",
+        url: `${BASE_URL}/audio`,
+        siteName: "Nest Digital Studio",
+    },
+};
 
 export default function AudioPage() {
     return (
@@ -12,7 +24,6 @@ export default function AudioPage() {
                 emoji: "🎧",
                 color: "pink",
                 description: "Headphones, speakers, audio gear reviews and comparisons",
-                icon: <Headphones className="w-4 h-4" />,
             }}
         />
     );
