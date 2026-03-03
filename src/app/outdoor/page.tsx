@@ -12,6 +12,7 @@ export const metadata: Metadata = {
         description: "Expert reviews of outdoor tech, adventure gear, and nature equipment. GPS, action cameras, and more.",
         url: `${BASE_URL}/outdoor`,
         siteName: "Nest Digital Studio",
+        images: [{ url: "/opengraph-image" }],
     },
 };
 

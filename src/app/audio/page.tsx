@@ -12,6 +12,7 @@ export const metadata: Metadata = {
         description: "Expert headphone and audio equipment reviews. Noise-cancelling, wireless, studio monitors tested and compared.",
         url: `${BASE_URL}/audio`,
         siteName: "Nest Digital Studio",
+        images: [{ url: "/opengraph-image" }],
     },
 };
 

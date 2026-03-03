@@ -12,6 +12,7 @@ export const metadata: Metadata = {
         description: "In-depth gaming laptop, mouse, keyboard, and monitor reviews. Tested by experts with real benchmarks.",
         url: `${BASE_URL}/gaming`,
         siteName: "Nest Digital Studio",
+        images: [{ url: "/opengraph-image" }],
     },
 };
 

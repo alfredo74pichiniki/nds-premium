@@ -12,6 +12,7 @@ export const metadata: Metadata = {
         description: "Expert reviews of smart home devices, security systems, robot vacuums, and home office monitors.",
         url: `${BASE_URL}/home`,
         siteName: "Nest Digital Studio",
+        images: [{ url: "/opengraph-image" }],
     },
 };
 

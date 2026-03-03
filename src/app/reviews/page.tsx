@@ -12,6 +12,7 @@ export const metadata: Metadata = {
         description: "Hands-on product reviews powered by AI analysis and 50,000+ verified user reviews. Unbiased expert testing.",
         url: `${BASE_URL}/reviews`,
         siteName: "Nest Digital Studio",
+        images: [{ url: "/opengraph-image" }],
     },
 };
 

@@ -12,6 +12,7 @@ export const metadata: Metadata = {
         description: "In-depth how-to guides, tutorials, and expert tips for getting the most out of your tech.",
         url: `${BASE_URL}/guides`,
         siteName: "Nest Digital Studio",
+        images: [{ url: "/opengraph-image" }],
     },
 };
 

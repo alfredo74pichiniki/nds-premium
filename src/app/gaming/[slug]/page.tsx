@@ -34,6 +34,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
             url: canonical,
             type: "article",
             siteName: "Nest Digital Studio",
+            images: [{ url: "/opengraph-image" }],
         },
         twitter: {
             card: "summary_large_image",

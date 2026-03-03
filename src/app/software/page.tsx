@@ -12,6 +12,7 @@ export const metadata: Metadata = {
         description: "Expert reviews of the best software tools, productivity apps, and SaaS platforms. AI-powered analysis with real user data.",
         url: `${BASE_URL}/software`,
         siteName: "Nest Digital Studio",
+        images: [{ url: "/opengraph-image" }],
     },
 };
 
