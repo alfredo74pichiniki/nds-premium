@@ -1,6 +1,5 @@
-import Image from "next/image";
 import type { Metadata } from "next";
-import { ArrowRight, Sparkles, Zap, TrendingUp } from "lucide-react";
+import { ArrowRight, Sparkles, Zap, TrendingUp, Mail } from "lucide-react";
 
 export const metadata: Metadata = {
     title: "Digital Products & Templates",
@@ -23,7 +22,7 @@ const newProducts = [
         originalPrice: 49,
         badge: "NEW",
         emoji: "💰",
-        shopifyUrl: "https://nest-digital-studio.myshopify.com/products/personal-finance-dashboard",
+        features: ["11 automated sheets", "Income & expense tracking", "Investment portfolio view", "Net worth calculator"],
     },
     {
         slug: "travel-planner-bundle",
@@ -33,7 +32,7 @@ const newProducts = [
         originalPrice: 59,
         badge: "NEW",
         emoji: "✈️",
-        shopifyUrl: "https://nest-digital-studio.myshopify.com/products/travel-planner-bundle",
+        features: ["10-sheet planner", "Budget tracker", "Packing lists", "Itinerary builder"],
     },
     {
         slug: "habit-tracker-2026",
@@ -43,7 +42,7 @@ const newProducts = [
         originalPrice: 19.99,
         badge: "BEST VALUE",
         emoji: "📊",
-        shopifyUrl: "https://nest-digital-studio.myshopify.com/products/habit-tracker-2026",
+        features: ["Streak tracking", "Gamification system", "Visual progress", "19 sheets"],
     },
     {
         slug: "ai-beginners-guide",
@@ -53,73 +52,57 @@ const newProducts = [
         originalPrice: 19.99,
         badge: "NEW",
         emoji: "🤖",
-        shopifyUrl: "https://nest-digital-studio.myshopify.com/products/ai-beginners-guide",
-    },
-];
-
-const legacyProducts = [
-    {
-        slug: "shopify-conversion-engine",
-        title: "Shopify Conversion Engine",
-        tagline: "15+ Liquid Snippets that replace $100+/month in apps",
-        price: 97,
-        originalPrice: 197,
-        shopifyUrl: "https://nest-digital-studio.myshopify.com/products/shopify-conversion-engine",
-        mockup: "/mockups/shopify_mockup_v2.png",
+        features: ["200+ pages", "25 ready-to-use prompts", "30-day challenge", "Beginner friendly"],
     },
     {
-        slug: "freelancer-success-bundle",
-        title: "Freelancer Success Bundle",
-        tagline: "Contracts, proposals, and professional pricing system",
-        price: 89,
-        originalPrice: 178,
-        shopifyUrl: "https://nest-digital-studio.myshopify.com/products/freelancer-success-bundle",
-        mockup: "/mockups/freelancer_mockup_v2.png",
+        slug: "side-hustle-income-tracker",
+        title: "Side Hustle Income Tracker Pro",
+        tagline: "Track multiple income streams, expenses, and profit margins in one dashboard",
+        price: 24.99,
+        originalPrice: 49,
+        badge: "NEW",
+        emoji: "💸",
+        features: ["15 sheets", "Multi-stream tracking", "Tax estimation", "Profit analysis"],
     },
     {
-        slug: "notion-business-system",
-        title: "Notion Business System",
-        tagline: "CRM, projects, finances. Your entire business in Notion",
-        price: 79,
-        originalPrice: 158,
-        shopifyUrl: "https://nest-digital-studio.myshopify.com/products/notion-business-system",
-        mockup: "/mockups/notion_mockup_v2.png",
+        slug: "meal-planner-2026",
+        title: "Ultimate Meal Planner 2026",
+        tagline: "Weekly meal planning, grocery lists, nutrition tracking & recipe organizer",
+        price: 14.99,
+        originalPrice: 29.99,
+        badge: "NEW",
+        emoji: "🥗",
+        features: ["12 sheets", "Grocery list generator", "Nutrition tracker", "Recipe database"],
+    },
+    {
+        slug: "student-productivity",
+        title: "Student Productivity System",
+        tagline: "GPA tracker, assignment planner, study scheduler & exam prep all-in-one",
+        price: 12.99,
+        originalPrice: 24.99,
+        badge: "NEW",
+        emoji: "📚",
+        features: ["15 sheets", "GPA calculator", "Assignment tracker", "Study planner"],
     },
     {
         slug: "content-creator-toolkit",
-        title: "Content Creator Empire",
-        tagline: "100+ templates, hooks, and content structures",
-        price: 79,
-        originalPrice: 149,
-        shopifyUrl: "https://nest-digital-studio.myshopify.com/products/content-creator-toolkit",
-        mockup: "/mockups/content_creator_mockup_v2.png",
+        title: "Content Creator Toolkit",
+        tagline: "Content calendar, analytics dashboard, brand kit & collaboration tracker",
+        price: 24.99,
+        originalPrice: 49,
+        badge: "NEW",
+        emoji: "🎬",
+        features: ["14 sheets", "Content calendar", "Analytics dashboard", "Brand kit"],
     },
     {
-        slug: "social-media-factory",
-        title: "Social Media Factory",
-        tagline: "Create 30 days of content in 4 hours",
-        price: 69,
-        originalPrice: 138,
-        shopifyUrl: "https://nest-digital-studio.myshopify.com/products/social-media-factory",
-        mockup: "/mockups/social_factory_mockup_v2.png",
-    },
-    {
-        slug: "ai-prompt-mastery",
-        title: "AI Prompt Mastery",
-        tagline: "500+ prompts for ChatGPT, Claude, Gemini and more",
-        price: 59,
-        originalPrice: 118,
-        shopifyUrl: "https://nest-digital-studio.myshopify.com/products/ai-prompt-mastery",
-        mockup: "/mockups/ai_prompts_mockup_v2.png",
-    },
-    {
-        slug: "startup-blueprint",
-        title: "Startup Launch Blueprint",
-        tagline: "From idea to first customers in 30 days",
-        price: 49,
-        originalPrice: 98,
-        shopifyUrl: "https://nest-digital-studio.myshopify.com/products/startup-blueprint",
-        mockup: "/mockups/startup_mockup_v2.png",
+        slug: "wedding-planner",
+        title: "Ultimate Wedding Planner",
+        tagline: "Budget tracker, guest list manager, vendor contacts & timeline planner",
+        price: 29.99,
+        originalPrice: 59,
+        badge: "NEW",
+        emoji: "💍",
+        features: ["16 sheets", "Budget tracker", "Guest management", "Vendor tracking"],
     },
 ];
 
@@ -141,25 +124,23 @@ export default function ProductsPage() {
                         Tools That Pay For Themselves
                     </h1>
                     <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-                        Templates, systems, and resources that save time and drive real results
+                        Templates, systems, and resources that save time and drive real results.
+                        Instant digital download.
                     </p>
                 </div>
 
-                {/* NEW Products — Featured Section */}
+                {/* Products Grid */}
                 <div className="mb-8">
                     <div className="flex items-center gap-3 mb-8">
                         <Zap className="w-5 h-5 text-emerald-400" />
-                        <h2 className="text-2xl font-bold text-white">New Releases</h2>
+                        <h2 className="text-2xl font-bold text-white">Our Products</h2>
                         <span className="px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-bold rounded-full">2026</span>
                     </div>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {newProducts.map((product) => (
-                            <a
+                            <div
                                 key={product.slug}
-                                href={product.shopifyUrl}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="group relative bg-gradient-to-b from-[#141414] to-[#0f0f0f] border border-white/10 rounded-2xl overflow-hidden hover:border-[#00b4d8]/40 transition-all duration-300 hover:shadow-[0_0_40px_rgba(0,180,216,0.15)] hover:-translate-y-1"
+                                className="group relative bg-gradient-to-b from-[#141414] to-[#0f0f0f] border border-white/10 rounded-2xl overflow-hidden hover:border-[#00b4d8]/40 transition-all duration-300 hover:shadow-[0_0_40px_rgba(0,180,216,0.15)]"
                             >
                                 <div className="absolute top-4 right-4 z-10 px-3 py-1 bg-gradient-to-r from-emerald-500 to-green-600 rounded-full text-xs font-bold text-white">
                                     {product.badge}
@@ -179,75 +160,55 @@ export default function ProductsPage() {
                                     <p className="text-gray-400 mb-4 text-sm line-clamp-2">
                                         {product.tagline}
                                     </p>
+
+                                    {/* Features */}
+                                    <ul className="space-y-1 mb-4">
+                                        {product.features.map((feature) => (
+                                            <li key={feature} className="text-xs text-gray-500 flex items-center gap-2">
+                                                <span className="text-emerald-400">✓</span> {feature}
+                                            </li>
+                                        ))}
+                                    </ul>
+
                                     <div className="flex items-center justify-between">
                                         <div className="flex items-baseline gap-2">
                                             <span className="text-xl font-bold text-[#00b4d8]">{formatPrice(product.price)}</span>
                                             <span className="text-sm text-gray-500 line-through">{formatPrice(product.originalPrice)}</span>
                                         </div>
-                                        <div className="flex items-center gap-1 text-sm text-[#00b4d8] opacity-0 group-hover:opacity-100 transition-opacity">
-                                            Buy <ArrowRight className="w-4 h-4" />
+                                        <div className="px-3 py-1.5 bg-amber-500/20 text-amber-400 text-xs font-bold rounded-full">
+                                            Coming Soon
                                         </div>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         ))}
                     </div>
                 </div>
 
-                {/* LEGACY Products — Professional Templates */}
-                <div className="mt-16">
-                    <div className="flex items-center gap-3 mb-8">
-                        <TrendingUp className="w-5 h-5 text-[#00b4d8]" />
-                        <h2 className="text-2xl font-bold text-white">Professional Templates</h2>
-                    </div>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {legacyProducts.map((product) => (
-                            <a
-                                key={product.slug}
-                                href={product.shopifyUrl}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="group relative bg-gradient-to-b from-[#141414] to-[#0f0f0f] border border-white/10 rounded-2xl overflow-hidden hover:border-[#00b4d8]/40 transition-all duration-300 hover:shadow-[0_0_40px_rgba(0,180,216,0.15)] hover:-translate-y-1"
-                            >
-                                <div className="relative h-56 w-full overflow-hidden bg-gradient-to-b from-[#0a0a0a] to-[#141414] p-4">
-                                    <Image
-                                        src={product.mockup}
-                                        alt={product.title}
-                                        fill
-                                        className="object-contain p-2 group-hover:scale-105 transition-transform duration-500"
-                                    />
-                                    <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[#141414] to-transparent" />
-                                </div>
-
-                                <div className="p-6">
-                                    <h3 className="text-xl font-bold mb-2 group-hover:text-[#00b4d8] transition-colors">
-                                        {product.title}
-                                    </h3>
-                                    <p className="text-gray-400 mb-4 text-sm line-clamp-2">
-                                        {product.tagline}
-                                    </p>
-                                    <div className="flex items-center justify-between">
-                                        <div className="flex items-baseline gap-2">
-                                            <span className="text-2xl font-bold text-[#00b4d8]">{formatPrice(product.price)}</span>
-                                            <span className="text-sm text-gray-500 line-through">{formatPrice(product.originalPrice)}</span>
-                                        </div>
-                                        <div className="flex items-center gap-1 text-sm text-[#00b4d8] opacity-0 group-hover:opacity-100 transition-opacity">
-                                            Buy <ArrowRight className="w-4 h-4" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        ))}
+                {/* Get Notified CTA */}
+                <div className="mt-16 text-center">
+                    <div className="max-w-xl mx-auto bg-gradient-to-b from-[#141414] to-[#0f0f0f] border border-white/10 rounded-2xl p-8">
+                        <Mail className="w-8 h-8 text-[#00b4d8] mx-auto mb-4" />
+                        <h3 className="text-xl font-bold mb-2">Get Notified When Available</h3>
+                        <p className="text-gray-400 text-sm mb-6">
+                            We&apos;re setting up our store. Join the waitlist to get exclusive launch discounts.
+                        </p>
+                        <a
+                            href="mailto:admin@nestdigitalstudio.com?subject=Waitlist%20-%20NDS%20Products"
+                            className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#00b4d8] to-[#0077b6] rounded-full text-white font-semibold hover:shadow-[0_0_30px_rgba(0,180,216,0.3)] transition-all duration-300"
+                        >
+                            Join Waitlist <ArrowRight className="w-4 h-4" />
+                        </a>
                     </div>
                 </div>
 
                 {/* Trust Signals */}
-                <div className="mt-20 text-center">
+                <div className="mt-12 text-center">
                     <div className="flex items-center justify-center gap-8 text-sm text-gray-400 flex-wrap">
                         <span>✓ Instant digital download</span>
                         <span>✓ 30-day money-back guarantee</span>
                         <span>✓ Lifetime updates included</span>
-                        <span>✓ Secure checkout via Shopify</span>
+                        <span>✓ Secure checkout</span>
                     </div>
                 </div>
             </div>
