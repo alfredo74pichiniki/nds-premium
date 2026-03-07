@@ -112,7 +112,7 @@ export function Hero() {
                             <Star className="w-6 h-6 text-white" />
                         </div>
                         <div>
-                            <p className="text-2xl font-black text-white">50+</p>
+                            <p className="text-2xl font-black text-white">112+</p>
                             <p className="text-xs text-gray-400 uppercase tracking-wider">Articles Published</p>
                         </div>
                     </div>
@@ -268,7 +268,7 @@ export function Hero() {
                     className="flex flex-wrap justify-center gap-10 md:gap-16 mb-12"
                 >
                     {[
-                        { value: "50+", label: "Products Analyzed" },
+                        { value: "112+", label: "Products Analyzed" },
                         { value: "500+", label: "Reviews Sourced" },
                         { value: "AI", label: "Research Powered" },
                     ].map((stat, i) => (

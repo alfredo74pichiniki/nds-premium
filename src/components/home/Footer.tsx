@@ -78,7 +78,7 @@ export function Footer() {
                         <h4 className="font-bold mb-4">Top Articles</h4>
                         <ul className="space-y-2 text-gray-400 text-sm">
                             <li><Link href="/reviews/best-noise-canceling-headphones" className="hover:text-[var(--nds-primary)] transition-colors">Sony vs Bose Headphones</Link></li>
-                            <li><Link href="/reviews/best-webcams-2025" className="hover:text-[var(--nds-primary)] transition-colors">Best Webcams 2026</Link></li>
+                            <li><Link href="/reviews/best-webcams-2026" className="hover:text-[var(--nds-primary)] transition-colors">Best Webcams 2026</Link></li>
                             <li><Link href="/reviews/best-wireless-earbuds" className="hover:text-[var(--nds-primary)] transition-colors">Best Wireless Earbuds</Link></li>
                             <li><Link href="/deals/january-2026-best-tech-deals" className="hover:text-[var(--nds-primary)] transition-colors">January Tech Deals</Link></li>
                             <li><Link href="/gaming" className="hover:text-[var(--nds-primary)] transition-colors">Gaming Guides</Link></li>

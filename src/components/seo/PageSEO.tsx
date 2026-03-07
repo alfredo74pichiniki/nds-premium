@@ -46,8 +46,8 @@ export function PageSEO({
     slug,
     products = [],
     faqs,
-    datePublished = "2025-12-01T00:00:00Z",
-    dateModified = "2025-12-21T00:00:00Z"
+    datePublished = "2026-01-01T00:00:00Z",
+    dateModified = "2026-03-07T00:00:00Z"
 }: PageSEOProps) {
     const effectiveFaqs = faqs && faqs.length > 0 ? faqs : generateDefaultFAQs(title);
     const canonicalUrl = `https://nestdigitalstudio.com/${category}/${slug}`;

@@ -10,7 +10,7 @@ import { useRef } from "react";
 const categories = [
     {
         title: "Best Of",
-        subtitle: "Top Picks 2025",
+        subtitle: "Top Picks 2026",
         description: "Elite products handpicked by AI analysis of 50,000+ reviews",
         badge: "🏆 #1",
         gradient: "from-amber-400 via-orange-500 to-red-500",
