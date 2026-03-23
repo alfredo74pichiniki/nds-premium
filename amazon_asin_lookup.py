@@ -137,7 +137,7 @@ def get_amazon_asin(product_name: str, use_cache: bool = True) -> Optional[str]:
     return asin
 
 
-def get_amazon_product_link(product_name: str, affiliate_tag: str = "nestdigital0e-20") -> str:
+def get_amazon_product_link(product_name: str, affiliate_tag: str = "nestdigital-20") -> str:
     """
     Obtiene el enlace de Amazon para CUALQUIER producto.
     
@@ -162,7 +162,7 @@ def get_amazon_product_link(product_name: str, affiliate_tag: str = "nestdigital
         return f"https://www.amazon.com/s?k={search_query}&tag={affiliate_tag}"
 
 
-def get_product_info(product_name: str, affiliate_tag: str = "nestdigital0e-20") -> Dict:
+def get_product_info(product_name: str, affiliate_tag: str = "nestdigital-20") -> Dict:
     """
     Obtiene información completa del producto incluyendo enlace verificado.
     

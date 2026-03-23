@@ -16,7 +16,7 @@ from typing import List, Dict
 
 # Configuration
 SCRAPERAPI_KEY = "71e0826747273ee3c9c4649e63b4ba19"
-AFFILIATE_TAG = "nestdigital0e-20"  # CORRECT TAG from model article
+AFFILIATE_TAG = "nestdigital-20"  # CORRECT TAG from model article
 ARTICLES_DIR = os.path.join(os.path.dirname(__file__), "public", "data", "articles")
 INDEX_FILE = os.path.join(os.path.dirname(__file__), "public", "data", "articles.json")
 

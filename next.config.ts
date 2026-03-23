@@ -1,6 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  images: {
+    unoptimized: true,
+  },
   async redirects() {
     return [
       // =====================================================
@@ -46,8 +49,10 @@ const nextConfig: NextConfig = {
       },
       // Catch-all: any other old /products/slug that doesn't
       // have its own page → redirect to products listing
+      // IMPORTANT: Exclude static files (.png, .jpg, .webp, .svg, .ico, .json)
+      // so that images in /public/products/ are served correctly
       {
-        source: "/products/:slug((?!$).*)",
+        source: "/products/:slug((?!.*\\.).*)",
         destination: "/products",
         permanent: false,  // 302 for catch-all (flexible)
       },

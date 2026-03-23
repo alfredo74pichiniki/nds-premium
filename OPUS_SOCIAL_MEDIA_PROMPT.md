@@ -2,7 +2,7 @@
 
 **OBJETIVO:** Generar posts que CONVIERTAN en ventas de Amazon
 **PUBLICO:** USA/UK (anglosajones, compradores impulsivos)
-**AFILIADO:** nestdigital0e-20
+**AFILIADO:** nestdigital-20
 
 ---
 
