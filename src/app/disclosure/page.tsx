@@ -33,7 +33,7 @@ export default function DisclosurePage() {
                         <section className="p-6 rounded-2xl bg-gradient-to-br from-amber-500/10 to-orange-500/5 border border-amber-500/20">
                             <h2 className="text-xl font-bold text-white mb-4">How We Make Money</h2>
                             <p className="leading-relaxed">
-                                <strong className="text-white">Nest Digital Studio</strong> participates in affiliate marketing programs operated by <strong className="text-white">Amazon Associates, Rakuten Advertising, Awin, Impact Radius, ShareASale, CJ Affiliate</strong>, and other networks.
+                                <strong className="text-white">Nest Digital Studio</strong> participates in affiliate marketing programs including <strong className="text-white">Amazon Associates, NordVPN, Surfshark, IPVanish, Elementor, Hosting.com (A2 Hosting), and Hotmart</strong>.
                             </p>
                             <p className="leading-relaxed mt-4">
                                 This means when you click on certain links on our website and make a purchase, we may receive a small commission at <strong className="text-amber-400">no additional cost to you</strong>.

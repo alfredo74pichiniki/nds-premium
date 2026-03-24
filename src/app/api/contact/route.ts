@@ -1,5 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server';
 
+function escapeHtml(str: string): string {
+    return str
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+}
+
 export async function POST(request: NextRequest) {
     try {
         const { name, email, subject, message } = await request.json();
@@ -24,14 +33,14 @@ export async function POST(request: NextRequest) {
             body: JSON.stringify({
                 from: 'NDS Contact Form <onboarding@resend.dev>',
                 to: 'admin@nestdigitalstudio.com',
-                subject: `[Contact Form] ${subject || 'New message'}`,
+                subject: `[Contact Form] ${escapeHtml(subject || 'New message')}`,
                 html: `
                     <h2>New Contact Form Submission</h2>
-                    <p><strong>Name:</strong> ${name}</p>
-                    <p><strong>Email:</strong> ${email}</p>
-                    <p><strong>Subject:</strong> ${subject || 'N/A'}</p>
+                    <p><strong>Name:</strong> ${escapeHtml(name)}</p>
+                    <p><strong>Email:</strong> ${escapeHtml(email)}</p>
+                    <p><strong>Subject:</strong> ${escapeHtml(subject || 'N/A')}</p>
                     <p><strong>Message:</strong></p>
-                    <p>${message.replace(/\n/g, '<br>')}</p>
+                    <p>${escapeHtml(message).replace(/\n/g, '<br>')}</p>
                 `,
             }),
         });
