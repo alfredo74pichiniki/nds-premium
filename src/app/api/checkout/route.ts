@@ -1,9 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server';
 import Stripe from 'stripe';
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: '2025-01-27.acacia' as Stripe.LatestApiVersion,
-});
+function getStripe() {
+  return new Stripe(process.env.STRIPE_SECRET_KEY!, {
+    apiVersion: '2025-01-27.acacia' as Stripe.LatestApiVersion,
+  });
+}
 
 // Catálogo — slugs y precios EXACTOS del products page
 const PRODUCTS: Record<string, { name: string; price: number; description: string }> = {
@@ -63,6 +65,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Product not found' }, { status: 404 });
     }
 
+    const stripe = getStripe();
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ['card'],
       line_items: [
