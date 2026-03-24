@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Sparkles, Zap, Shield, CreditCard, Lock } from "lucide-react";
 import { BuyButton } from "@/components/ui/BuyButton";
+import { Navbar } from "@/components/ui/Navbar";
+import { Footer } from "@/components/home/Footer";
 
 export const metadata: Metadata = {
     title: "Digital Products & Templates",
@@ -113,7 +115,9 @@ function formatPrice(price: number) {
 
 export default function ProductsPage() {
     return (
-        <div className="min-h-screen bg-[#0a0a0a] text-white py-20 px-4">
+        <main className="min-h-screen bg-[#0a0a0a]">
+            <Navbar />
+            <div className="text-white pt-32 pb-20 px-4">
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <div className="text-center mb-16">
@@ -219,6 +223,8 @@ export default function ProductsPage() {
                     </div>
                 </div>
             </div>
-        </div>
+            </div>
+            <Footer />
+        </main>
     );
 }
