@@ -119,8 +119,8 @@ export default function DisclosurePage() {
                             </p>
                             <p className="leading-relaxed text-gray-300 mt-4">
                                 We are committed to maintaining transparency with our readers. If you have any questions about our affiliate relationships, please contact us at{" "}
-                                <a href="mailto:contact@nestdigitalstudio.com" className="text-[var(--nds-primary)] hover:underline">
-                                    contact@nestdigitalstudio.com
+                                <a href="mailto:admin@nestdigitalstudio.com" className="text-[var(--nds-primary)] hover:underline">
+                                    admin@nestdigitalstudio.com
                                 </a>.
                             </p>
                         </section>

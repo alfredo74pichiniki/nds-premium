@@ -16,9 +16,9 @@ export default function Home() {
   return (
     <>
       <PageSEO
-        title="Page Title"
-        description="Page description"
-        category=""
+        title="Nest Digital Studio — Expert Tech Reviews & Digital Products"
+        description="In-depth, data-driven reviews of technology products and services. We analyze 50,000+ verified reviews to deliver honest, unbiased recommendations."
+        category="tech-reviews"
         slug=""
       />
       <main className="min-h-screen relative bg-transparent">

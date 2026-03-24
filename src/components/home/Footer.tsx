@@ -65,23 +65,23 @@ export function Footer() {
                     <div>
                         <h4 className="font-bold mb-4">Explore</h4>
                         <ul className="space-y-2 text-gray-400 text-sm">
-                            <li><Link href="/reviews" className="hover:text-[var(--nds-primary)] transition-colors">Reviews</Link></li>
-                            <li><Link href="/compare" className="hover:text-[var(--nds-primary)] transition-colors">Best Of</Link></li>
-                            <li><Link href="/software" className="hover:text-[var(--nds-primary)] transition-colors">Software</Link></li>
-                            <li><Link href="/gaming" className="hover:text-[var(--nds-primary)] transition-colors">Gaming</Link></li>
-                            <li><Link href="/deals" className="hover:text-[var(--nds-primary)] transition-colors">Deals</Link></li>
+                            <li><Link href="/products" className="hover:text-[var(--nds-primary)] transition-colors">Digital Products</Link></li>
+                            <li><Link href="/blog" className="hover:text-[var(--nds-primary)] transition-colors">Blog & Reviews</Link></li>
+                            <li><Link href="/about" className="hover:text-[var(--nds-primary)] transition-colors">About Us</Link></li>
+                            <li><Link href="/methodology" className="hover:text-[var(--nds-primary)] transition-colors">Our Methodology</Link></li>
+                            <li><Link href="/contact" className="hover:text-[var(--nds-primary)] transition-colors">Contact</Link></li>
                         </ul>
                     </div>
 
-                    {/* Top Articles */}
+                    {/* Popular Topics */}
                     <div>
-                        <h4 className="font-bold mb-4">Top Articles</h4>
+                        <h4 className="font-bold mb-4">Popular Topics</h4>
                         <ul className="space-y-2 text-gray-400 text-sm">
-                            <li><Link href="/reviews/best-noise-canceling-headphones" className="hover:text-[var(--nds-primary)] transition-colors">Sony vs Bose Headphones</Link></li>
-                            <li><Link href="/reviews/best-webcams-2026" className="hover:text-[var(--nds-primary)] transition-colors">Best Webcams 2026</Link></li>
-                            <li><Link href="/reviews/best-wireless-earbuds" className="hover:text-[var(--nds-primary)] transition-colors">Best Wireless Earbuds</Link></li>
-                            <li><Link href="/deals/january-2026-best-tech-deals" className="hover:text-[var(--nds-primary)] transition-colors">January Tech Deals</Link></li>
-                            <li><Link href="/gaming" className="hover:text-[var(--nds-primary)] transition-colors">Gaming Guides</Link></li>
+                            <li><Link href="/blog" className="hover:text-[var(--nds-primary)] transition-colors">VPN Reviews</Link></li>
+                            <li><Link href="/blog" className="hover:text-[var(--nds-primary)] transition-colors">Best Software 2026</Link></li>
+                            <li><Link href="/blog" className="hover:text-[var(--nds-primary)] transition-colors">Tech Deals</Link></li>
+                            <li><Link href="/blog" className="hover:text-[var(--nds-primary)] transition-colors">Headphone Reviews</Link></li>
+                            <li><Link href="/products" className="hover:text-[var(--nds-primary)] transition-colors">Productivity Templates</Link></li>
                         </ul>
                     </div>
 

@@ -211,7 +211,12 @@ export default function AboutPage() {
                                         <h4 className="font-semibold text-white mb-2">Affiliate Partnerships</h4>
                                         <ul className="space-y-2 text-gray-400 text-sm">
                                             <li>✅ Amazon Associates Program</li>
-
+                                            <li>✅ NordVPN Affiliate Program</li>
+                                            <li>✅ Surfshark Affiliate Program</li>
+                                            <li>✅ IPVanish Affiliate Program</li>
+                                            <li>✅ Elementor Affiliate Program</li>
+                                            <li>✅ Hosting.com (A2 Hosting) Affiliate Program</li>
+                                            <li>✅ Hotmart Affiliate Marketplace</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -233,8 +238,8 @@ export default function AboutPage() {
                             <p className="text-gray-300 mb-4">
                                 For press inquiries, partnership opportunities, or feedback:
                             </p>
-                            <a href="mailto:contact@nestdigitalstudio.com" className="text-[var(--nds-primary)] hover:underline font-semibold">
-                                contact@nestdigitalstudio.com
+                            <a href="mailto:admin@nestdigitalstudio.com" className="text-[var(--nds-primary)] hover:underline font-semibold">
+                                admin@nestdigitalstudio.com
                             </a>
                         </section>
                     </div>

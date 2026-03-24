@@ -152,8 +152,8 @@ export default function PrivacyPage() {
                             </p>
                             <p className="mt-4">
                                 <strong className="text-white">Email:</strong>{" "}
-                                <a href="mailto:contact@nestdigitalstudio.com" className="text-[var(--nds-primary)] hover:underline">
-                                    contact@nestdigitalstudio.com
+                                <a href="mailto:admin@nestdigitalstudio.com" className="text-[var(--nds-primary)] hover:underline">
+                                    admin@nestdigitalstudio.com
                                 </a>
                             </p>
                         </section>
