@@ -211,8 +211,7 @@ export default function AboutPage() {
                                         <h4 className="font-semibold text-white mb-2">Affiliate Partnerships</h4>
                                         <ul className="space-y-2 text-gray-400 text-sm">
                                             <li>✅ Amazon Associates Program</li>
-                                            <li>⏳ Awin (Application in Progress)</li>
-                                            <li>⏳ Impact (Application in Progress)</li>
+
                                         </ul>
                                     </div>
                                 </div>

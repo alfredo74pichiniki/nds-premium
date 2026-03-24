@@ -53,7 +53,7 @@ export function Footer() {
                                 <Linkedin className="w-5 h-5 group-hover:text-white transition-colors" />
                             </a>
                             <a
-                                href="mailto:contact@nestdigitalstudio.com"
+                                href="mailto:admin@nestdigitalstudio.com"
                                 className="group w-10 h-10 rounded-full bg-white/5 hover:bg-gradient-to-br hover:from-purple-500 hover:to-purple-600 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-[0_0_20px_rgba(139,92,246,0.4)]"
                             >
                                 <Mail className="w-5 h-5 group-hover:text-white transition-colors" />
@@ -90,9 +90,11 @@ export function Footer() {
                         <h4 className="font-bold mb-4">Company</h4>
                         <ul className="space-y-2 text-gray-400 text-sm">
                             <li><Link href="/about" className="hover:text-[var(--nds-primary)] transition-colors">About Us</Link></li>
+                            <li><Link href="/editorial-policy" className="hover:text-[var(--nds-primary)] transition-colors">Editorial Policy</Link></li>
+                            <li><Link href="/methodology" className="hover:text-[var(--nds-primary)] transition-colors">Methodology</Link></li>
                             <li><Link href="/disclosure" className="hover:text-[var(--nds-primary)] transition-colors">Advertiser Disclosure</Link></li>
                             <li><Link href="/privacy" className="hover:text-[var(--nds-primary)] transition-colors">Privacy Policy</Link></li>
-                            <li><a href="mailto:contact@nestdigitalstudio.com" className="hover:text-[var(--nds-primary)] transition-colors">Contact</a></li>
+                            <li><Link href="/contact" className="hover:text-[var(--nds-primary)] transition-colors">Contact</Link></li>
                         </ul>
                     </div>
                 </div>
@@ -101,14 +103,14 @@ export function Footer() {
                     <p className="text-gray-500 text-sm">
                         © 2026 Nest Digital Studio. All rights reserved.
                     </p>
-                    <div className="flex items-center gap-4 text-gray-500 text-sm">
-                        <Link href="/disclosure" className="hover:text-gray-400 transition-colors">
-                            Affiliate Disclosure
-                        </Link>
+                    <div className="flex items-center gap-4 text-gray-500 text-sm flex-wrap">
+                        <Link href="/editorial-policy" className="hover:text-gray-400 transition-colors">Editorial Policy</Link>
                         <span>•</span>
-                        <Link href="/privacy" className="hover:text-gray-400 transition-colors">
-                            Privacy
-                        </Link>
+                        <Link href="/disclosure" className="hover:text-gray-400 transition-colors">Affiliate Disclosure</Link>
+                        <span>•</span>
+                        <Link href="/privacy" className="hover:text-gray-400 transition-colors">Privacy</Link>
+                        <span>•</span>
+                        <Link href="/contact" className="hover:text-gray-400 transition-colors">Contact</Link>
                     </div>
                 </div>
             </div>

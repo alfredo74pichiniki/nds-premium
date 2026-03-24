@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { ArrowRight, Sparkles, Zap, TrendingUp, Mail } from "lucide-react";
+import { Sparkles, Zap, Shield, CreditCard, Lock } from "lucide-react";
+import { BuyButton } from "@/components/ui/BuyButton";
 
 export const metadata: Metadata = {
     title: "Digital Products & Templates",
@@ -170,13 +171,19 @@ export default function ProductsPage() {
                                         ))}
                                     </ul>
 
-                                    <div className="flex items-center justify-between">
+                                    {/* Price + Buy Button */}
+                                    <div className="space-y-3">
                                         <div className="flex items-baseline gap-2">
-                                            <span className="text-xl font-bold text-[#00b4d8]">{formatPrice(product.price)}</span>
+                                            <span className="text-2xl font-bold text-[#00b4d8]">{formatPrice(product.price)}</span>
                                             <span className="text-sm text-gray-500 line-through">{formatPrice(product.originalPrice)}</span>
+                                            <span className="text-xs text-emerald-400 font-semibold">
+                                                {Math.round((1 - product.price / product.originalPrice) * 100)}% OFF
+                                            </span>
                                         </div>
-                                        <div className="px-3 py-1.5 bg-amber-500/20 text-amber-400 text-xs font-bold rounded-full">
-                                            Coming Soon
+                                        <BuyButton slug={product.slug} price={formatPrice(product.price)} />
+                                        <div className="flex items-center justify-center gap-3 text-xs text-gray-500">
+                                            <span className="flex items-center gap-1"><Shield className="w-3 h-3" /> Secure Checkout</span>
+                                            <span className="flex items-center gap-1"><CreditCard className="w-3 h-3" /> Visa, MC, Amex</span>
                                         </div>
                                     </div>
                                 </div>
@@ -185,20 +192,20 @@ export default function ProductsPage() {
                     </div>
                 </div>
 
-                {/* Get Notified CTA */}
+                {/* Trust Badges */}
                 <div className="mt-16 text-center">
                     <div className="max-w-xl mx-auto bg-gradient-to-b from-[#141414] to-[#0f0f0f] border border-white/10 rounded-2xl p-8">
-                        <Mail className="w-8 h-8 text-[#00b4d8] mx-auto mb-4" />
-                        <h3 className="text-xl font-bold mb-2">Get Notified When Available</h3>
-                        <p className="text-gray-400 text-sm mb-6">
-                            We&apos;re setting up our store. Join the waitlist to get exclusive launch discounts.
+                        <Lock className="w-8 h-8 text-emerald-400 mx-auto mb-4" />
+                        <h3 className="text-xl font-bold mb-2">Secure Checkout via Stripe</h3>
+                        <p className="text-gray-400 text-sm mb-4">
+                            All transactions are encrypted and processed securely through Stripe.
+                            Your payment information is never stored on our servers.
                         </p>
-                        <a
-                            href="mailto:admin@nestdigitalstudio.com?subject=Waitlist%20-%20NDS%20Products"
-                            className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#00b4d8] to-[#0077b6] rounded-full text-white font-semibold hover:shadow-[0_0_30px_rgba(0,180,216,0.3)] transition-all duration-300"
-                        >
-                            Join Waitlist <ArrowRight className="w-4 h-4" />
-                        </a>
+                        <div className="flex items-center justify-center gap-6 text-sm text-gray-400">
+                            <span>🔒 SSL Encrypted</span>
+                            <span>💳 All Cards Accepted</span>
+                            <span>🔄 30-Day Refund</span>
+                        </div>
                     </div>
                 </div>
 
