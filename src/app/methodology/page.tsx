@@ -213,8 +213,8 @@ export default function MethodologyPage() {
                             <p className="text-gray-300 mb-4">
                                 We&apos;re committed to transparency. If you have questions about how we evaluate products, reach out:
                             </p>
-                            <a href="mailto:methodology@nestdigitalstudio.com" className="text-[var(--nds-primary)] hover:underline font-semibold">
-                                methodology@nestdigitalstudio.com
+                            <a href="mailto:admin@nestdigitalstudio.com" className="text-[var(--nds-primary)] hover:underline font-semibold">
+                                admin@nestdigitalstudio.com
                             </a>
                         </section>
                     </div>
