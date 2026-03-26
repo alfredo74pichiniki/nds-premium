@@ -25,7 +25,21 @@
       "@type": "Organization",
       "name": "Nest Digital Studio",
       "url": "https://nestdigitalstudio.com"
-    }
+    },
+    "isBasedOn": [
+      {
+        "@type": "WebPage",
+        "name": "Wikipedia"
+      },
+      {
+        "@type": "WebPage",
+        "name": "G2"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Capterra"
+      }
+    ]
   },
   "faqSchema": {
     "@context": "https://schema.org",
