@@ -34,6 +34,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
             url: canonical,
             type: "article",
             siteName: "Nest Digital Studio",
+            publishedTime: article?.date,
+            modifiedTime: article?.date,
+            authors: ["Nest Digital Studio"],
             images: [{ url: `/api/og?title=${encodeURIComponent(title)}&category=${encodeURIComponent(CATEGORY)}` }],
         },
         twitter: {
