@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getArticleBySlug } from "@/lib/articles";
 import DealsArticleClient from "./client";
+import ServerJsonLd from "@/components/seo/ServerJsonLd";
 
 const BASE_URL = "https://nestdigitalstudio.com";
 const CATEGORY = "deals";
@@ -49,5 +50,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function DynamicDealPage({ params }: PageProps) {
     const { slug } = await params;
-    return <DealsArticleClient slug={slug} />;
+    const article = getArticleBySlug(slug);
+    return (
+        <>
+            {article && <ServerJsonLd article={article} category={CATEGORY} />}
+            <DealsArticleClient slug={slug} />
+        </>
+    );
 }
