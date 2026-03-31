@@ -12,7 +12,6 @@ import { useState, useEffect } from "react";
 import { Navbar } from "@/components/ui/Navbar";
 import { Footer } from "@/components/home/Footer";
 import { AIChat } from "@/components/chat/AIChat";
-import { EmailCapture } from "@/components/ui/EmailCapture";
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 import Link from "next/link";
@@ -313,8 +312,6 @@ export function PremiumArticlePage({ slug, category, config }: PremiumArticlePag
                             </Link>
                         </div>
 
-                        {/* Email Capture Widget */}
-                        <EmailCapture />
 
                         {/* Related Articles */}
                         {relatedArticles.length > 0 && (
