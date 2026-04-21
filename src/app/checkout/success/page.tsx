@@ -8,7 +8,16 @@ export const metadata: Metadata = {
     description: "Thank you for your purchase from Nest Digital Studio.",
 };
 
-export default function CheckoutSuccessPage() {
+type SearchParams = Promise<{ session_id?: string }>;
+
+export default async function CheckoutSuccessPage({
+    searchParams,
+}: {
+    searchParams: SearchParams;
+}) {
+    const { session_id } = await searchParams;
+    const orderRef = session_id ? session_id.slice(-8).toUpperCase() : null;
+
     return (
         <main className="min-h-screen bg-[#0a0a0a]">
             <Navbar />
@@ -16,32 +25,45 @@ export default function CheckoutSuccessPage() {
             <article className="pt-32 pb-24 px-6">
                 <div className="max-w-2xl mx-auto text-center">
                     <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-emerald-500/20 flex items-center justify-center text-4xl">
-                        ✅
+                        ✓
                     </div>
                     <h1 className="text-4xl md:text-5xl font-black mb-4 leading-tight text-white">
-                        Thank You for Your{" "}
+                        Payment Received —{" "}
                         <span className="bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">
-                            Purchase!
+                            Thank You
                         </span>
                     </h1>
-                    <p className="text-xl text-gray-400 mb-8">
-                        Your order has been confirmed. Check your email for the download link and receipt.
+                    <p className="text-xl text-gray-400 mb-2">
+                        Your order is confirmed.
                     </p>
+                    {orderRef && (
+                        <p className="text-sm text-gray-500 mb-8 font-mono tracking-wider">
+                            Order reference: {orderRef}
+                        </p>
+                    )}
 
                     <div className="p-6 rounded-2xl bg-white/5 border border-white/10 mb-8 text-left">
-                        <h3 className="text-lg font-bold text-white mb-4">What happens next?</h3>
+                        <h3 className="text-lg font-bold text-white mb-4">
+                            Check your inbox in the next few minutes
+                        </h3>
                         <ul className="space-y-3 text-gray-300">
                             <li className="flex items-start gap-3">
-                                <span className="text-emerald-400 mt-1">1.</span>
-                                <span>You&apos;ll receive a confirmation email from Stripe with your receipt</span>
+                                <span className="text-emerald-400 mt-1 font-mono text-sm">01.</span>
+                                <span>
+                                    A confirmation email from <span className="text-white">Stripe</span> with your payment receipt.
+                                </span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <span className="text-emerald-400 mt-1">2.</span>
-                                <span>Your download link will be sent to the email you provided at checkout</span>
+                                <span className="text-emerald-400 mt-1 font-mono text-sm">02.</span>
+                                <span>
+                                    A separate email from <span className="text-white">Nest Digital Studio</span> containing your download link for the file you purchased.
+                                </span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <span className="text-emerald-400 mt-1">3.</span>
-                                <span>If you don&apos;t receive it within 10 minutes, check your spam folder or contact us</span>
+                                <span className="text-emerald-400 mt-1 font-mono text-sm">03.</span>
+                                <span>
+                                    If you don&apos;t see the delivery email within 10 minutes, check your spam folder — then contact us and we&apos;ll send it manually.
+                                </span>
                             </li>
                         </ul>
                     </div>
@@ -63,9 +85,17 @@ export default function CheckoutSuccessPage() {
 
                     <p className="mt-8 text-sm text-gray-500">
                         Need help? Contact us at{" "}
-                        <a href="mailto:admin@nestdigitalstudio.com" className="text-[var(--nds-primary)] hover:underline">
+                        <a
+                            href="mailto:admin@nestdigitalstudio.com"
+                            className="text-[var(--nds-primary)] hover:underline"
+                        >
                             admin@nestdigitalstudio.com
                         </a>
+                        {orderRef && (
+                            <>
+                                {" "}and mention order <span className="font-mono">{orderRef}</span>.
+                            </>
+                        )}
                     </p>
                 </div>
             </article>
