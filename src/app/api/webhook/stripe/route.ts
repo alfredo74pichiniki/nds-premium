@@ -5,6 +5,7 @@ import {
     getProductDownloadUrl,
     deliverProductByEmail,
 } from '@/lib/product-delivery';
+import { signDownloadToken } from '@/lib/download-token';
 
 function getStripe() {
     return new Stripe(process.env.STRIPE_SECRET_KEY!);
@@ -61,8 +62,8 @@ export async function POST(request: NextRequest) {
             return NextResponse.json({ error: 'Unknown product' }, { status: 200 });
         }
 
-        const downloadUrl = getProductDownloadUrl(product);
-        if (!downloadUrl) {
+        const blobUrl = getProductDownloadUrl(product);
+        if (!blobUrl) {
             console.error(
                 `[stripe-webhook] No download URL configured for ${productSlug} (env ${product.envVar})`
             );
@@ -74,6 +75,27 @@ export async function POST(request: NextRequest) {
                 reason: `Missing env var ${product.envVar}`,
             });
             return NextResponse.json({ error: 'Product not configured' }, { status: 200 });
+        }
+
+        let downloadUrl: string;
+        try {
+            const token = signDownloadToken({
+                productSlug,
+                stripeSessionId: session.id,
+                customerEmail,
+            });
+            const base =
+                process.env.NEXT_PUBLIC_BASE_URL ?? 'https://nestdigitalstudio.com';
+            downloadUrl = `${base}/api/download?t=${token}`;
+        } catch (err) {
+            console.error('[stripe-webhook] Failed to sign download token:', err);
+            await notifyAdminOfFailedDelivery({
+                session: session.id,
+                email: customerEmail,
+                productSlug,
+                reason: 'DOWNLOAD_TOKEN_SECRET is not set',
+            });
+            return NextResponse.json({ error: 'Signing disabled' }, { status: 200 });
         }
 
         const result = await deliverProductByEmail({

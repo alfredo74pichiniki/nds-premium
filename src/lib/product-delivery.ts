@@ -136,7 +136,7 @@ export async function deliverProductByEmail(params: {
     customerEmail: string;
     customerName?: string;
     product: DigitalProduct;
-    downloadUrl: string;
+    downloadUrl: string; // signed /api/download?t=... URL
     sessionId: string;
     amountCents: number;
 }): Promise<DeliveryResult> {

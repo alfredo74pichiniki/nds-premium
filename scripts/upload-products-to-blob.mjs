@@ -100,9 +100,10 @@ async function main() {
         const buffer = fs.readFileSync(filePath);
         try {
             const blob = await put(`products/${product.fileName}`, buffer, {
-                access: "public",
+                access: "private",
                 contentType: product.contentType,
-                addRandomSuffix: true, // cryptographically random URL = effectively private
+                addRandomSuffix: true,
+                allowOverwrite: true,
             });
             console.log(`  ✓ ${product.envVar}=${blob.url}`);
             results.push({ envVar: product.envVar, status: "ok", url: blob.url });
