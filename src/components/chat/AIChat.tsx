@@ -10,6 +10,9 @@ interface Message {
 }
 
 export function AIChat() {
+    // TEMPORARILY DISABLED — remove this line to re-enable
+    return null;
+
     const [isOpen, setIsOpen] = useState(false);
     const [messages, setMessages] = useState<Message[]>([
         {
