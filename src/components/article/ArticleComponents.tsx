@@ -86,6 +86,20 @@ export function PremiumTd({ children, ...props }: React.ComponentPropsWithoutRef
 export function PremiumH2({ children, ...props }: React.ComponentPropsWithoutRef<"h2">) {
     const text = String(children);
 
+    // Special styling for Quick Answer headings
+    const isQuickAnswer = text.toLowerCase().includes("quick answer");
+
+    if (isQuickAnswer) {
+        return (
+            <div className="my-8 p-6 rounded-2xl bg-gradient-to-r from-cyan-500/15 to-teal-500/15 border border-cyan-500/30">
+                <h2 className="flex items-center gap-3 text-2xl font-black text-white m-0" {...props}>
+                    <span className="text-2xl">⚡</span>
+                    {children}
+                </h2>
+            </div>
+        );
+    }
+
     // Special styling for verdict/winner headings
     const isVerdict = text.toLowerCase().includes("verdict") ||
         text.toLowerCase().includes("winner") ||
