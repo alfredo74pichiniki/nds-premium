@@ -114,7 +114,7 @@ function cleanContent(content: string): string {
     let cleaned = content;
     cleaned = cleaned.replace(/^```markdown\s*/i, '');
     cleaned = cleaned.replace(/```\s*$/i, '');
-    cleaned = cleaned.replace(/^---\s*\n[\s\S]*?\n---\s*\n?/m, '');
+    cleaned = cleaned.replace(/^\s*---\s*\n[\s\S]*?\n---\s*\n?/, '');
     // CRITICAL: Strip <script> blocks — JSON-LD is handled by SchemaMarkup component
     cleaned = cleaned.replace(/<script[\s\S]*?<\/script>/gi, '');
     cleaned = cleaned.trim();

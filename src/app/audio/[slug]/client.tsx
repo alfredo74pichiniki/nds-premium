@@ -114,7 +114,7 @@ export default function AudioArticleClient({ slug }: { slug: string }) {
         let cleaned = content;
         cleaned = cleaned.replace(/^```markdown\s*/i, '');
         cleaned = cleaned.replace(/```\s*$/i, '');
-        cleaned = cleaned.replace(/^---\s*\n[\s\S]*?\n---\s*\n?/m, '');
+        cleaned = cleaned.replace(/^\s*---\s*\n[\s\S]*?\n---\s*\n?/, '');
         cleaned = cleaned.trim();
         return cleaned;
     };
