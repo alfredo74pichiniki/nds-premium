@@ -134,7 +134,7 @@ export default function BlogPage() {
                                                 {featuredArticle.title}
                                             </h2>
                                             <p className="text-gray-400 mb-6 line-clamp-3">
-                                                {featuredArticle.description?.slice(0, 200) || `Expert ${featuredArticle.articleType} about ${featuredArticle.title}`}
+                                                {featuredArticle.description?.slice(0, 200) || `Expert ${featuredArticle.articleType || 'review'} about ${featuredArticle.title}`}
                                             </p>
                                             <div className="flex items-center gap-4 text-sm text-gray-500">
                                                 <span className="flex items-center gap-1">
@@ -180,7 +180,7 @@ export default function BlogPage() {
                                                     {article.category}
                                                 </span>
                                                 <span className="px-2 py-1 rounded-full bg-cyan-500/20 text-cyan-400 text-xs capitalize">
-                                                    {article.articleType.replace(/_/g, " ")}
+                                                    {(article.articleType || "review").replace(/_/g, " ")}
                                                 </span>
                                             </div>
 
@@ -189,7 +189,7 @@ export default function BlogPage() {
                                             </h3>
 
                                             <p className="text-gray-400 text-sm line-clamp-2 mb-4">
-                                                {article.description?.slice(0, 100) || `Expert ${article.articleType} about ${article.title.toLowerCase()}`}
+                                                {article.description?.slice(0, 100) || `Expert ${article.articleType || 'article'} about ${article.title.toLowerCase()}`}
                                             </p>
 
                                             <div className="flex items-center justify-between text-xs text-gray-500">
