@@ -20,12 +20,17 @@
   ],
   "affiliateLinks": [
     {
-      "name": "Cloudways",
-      "url": "https://www.cloudways.com/en/?id=2134070"
+      "label": "Try Cloudways Free for 3 Days",
+      "url": "https://www.cloudways.com/en/?id=AFFILIATE_ID",
+      "type": "primary",
+      "cta": "Start Free Trial",
+      "badge": "Best Value Managed Cloud"
     },
     {
-      "name": "Kinsta",
-      "url": "https://kinsta.com/?kaid=ULBVTXSGGBYO"
+      "label": "View Cloudways Plans",
+      "url": "https://www.cloudways.com/en/pricing.php?id=AFFILIATE_ID",
+      "type": "secondary",
+      "cta": "See Pricing"
     }
   ],
   "schema": {

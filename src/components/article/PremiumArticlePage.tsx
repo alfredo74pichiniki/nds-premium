@@ -49,6 +49,15 @@ interface ArticleFAQSchema {
     }>;
 }
 
+interface AffiliateLink {
+    label: string;
+    url: string;
+    type: "primary" | "secondary";
+    cta: string;
+    badge?: string;
+    internal?: boolean;
+}
+
 interface Article {
     slug: string;
     title: string;
@@ -62,6 +71,8 @@ interface Article {
     noindex?: boolean;
     faqSchema?: ArticleFAQSchema;
     faq?: ArticleFAQ[];
+    affiliateLinks?: AffiliateLink[];
+    quickAnswer?: string;
 }
 
 interface ArticleListItem {
@@ -300,17 +311,68 @@ export function PremiumArticlePage({ slug, category, config }: PremiumArticlePag
                             />
                         </div>
 
-                        {/* CTA Box */}
-                        <div className={`mt-12 p-6 rounded-2xl bg-gradient-to-br from-${config.color}-500/10 to-purple-500/10 border border-${config.color}-500/20`}>
-                            <h3 className="text-lg font-bold text-white mb-2">{config.ctaTitle}</h3>
-                            <p className="text-gray-400 mb-4">{config.ctaDescription}</p>
-                            <Link
-                                href={config.backLink}
-                                className={`inline-flex items-center gap-2 px-6 py-3 bg-${config.color}-500 hover:bg-${config.color}-600 text-white font-semibold rounded-full transition-colors`}
-                            >
-                                {config.ctaButtonText}
-                            </Link>
-                        </div>
+                        {/* Affiliate CTA Block — shown when article has affiliateLinks in JSON */}
+                        {article.affiliateLinks && article.affiliateLinks.length > 0 ? (
+                            <div className={`mt-12 p-6 rounded-2xl bg-gradient-to-br from-${config.color}-500/10 to-purple-500/10 border border-${config.color}-500/20`}>
+                                <h3 className="text-lg font-bold text-white mb-4">
+                                    🏆 Our Top Pick
+                                </h3>
+                                <div className="flex flex-col gap-3">
+                                    {article.affiliateLinks.map((link, i) => (
+                                        <div key={i}>
+                                            {link.badge && (
+                                                <span className={`inline-block mb-2 px-3 py-0.5 rounded-full text-xs font-bold bg-${config.color}-500/20 text-${config.color}-400`}>
+                                                    {link.badge}
+                                                </span>
+                                            )}
+                                            <div>
+                                                {link.internal ? (
+                                                    <Link
+                                                        href={link.url}
+                                                        className={
+                                                            link.type === "primary"
+                                                                ? `inline-flex items-center gap-2 px-6 py-3 bg-${config.color}-500 hover:bg-${config.color}-600 text-white font-semibold rounded-full transition-colors w-full justify-center sm:w-auto`
+                                                                : "inline-flex items-center gap-2 px-6 py-2.5 border border-white/20 hover:border-white/40 text-gray-300 hover:text-white font-medium rounded-full transition-colors w-full justify-center sm:w-auto"
+                                                        }
+                                                    >
+                                                        {link.cta}
+                                                    </Link>
+                                                ) : (
+                                                    <a
+                                                        href={link.url}
+                                                        target="_blank"
+                                                        rel="nofollow sponsored noopener noreferrer"
+                                                        className={
+                                                            link.type === "primary"
+                                                                ? `inline-flex items-center gap-2 px-6 py-3 bg-${config.color}-500 hover:bg-${config.color}-600 text-white font-semibold rounded-full transition-colors w-full justify-center sm:w-auto`
+                                                                : "inline-flex items-center gap-2 px-6 py-2.5 border border-white/20 hover:border-white/40 text-gray-300 hover:text-white font-medium rounded-full transition-colors w-full justify-center sm:w-auto"
+                                                        }
+                                                    >
+                                                        {link.cta} ↗
+                                                    </a>
+                                                )}
+                                                {i === 0 && (
+                                                    <p className="text-xs text-gray-500 mt-1.5 ml-1">{link.label}</p>
+                                                )}
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                                <p className="text-xs text-gray-600 mt-4">We may earn a commission if you purchase through our links, at no extra cost to you.</p>
+                            </div>
+                        ) : (
+                            // Generic CTA fallback
+                            <div className={`mt-12 p-6 rounded-2xl bg-gradient-to-br from-${config.color}-500/10 to-purple-500/10 border border-${config.color}-500/20`}>
+                                <h3 className="text-lg font-bold text-white mb-2">{config.ctaTitle}</h3>
+                                <p className="text-gray-400 mb-4">{config.ctaDescription}</p>
+                                <Link
+                                    href={config.backLink}
+                                    className={`inline-flex items-center gap-2 px-6 py-3 bg-${config.color}-500 hover:bg-${config.color}-600 text-white font-semibold rounded-full transition-colors`}
+                                >
+                                    {config.ctaButtonText}
+                                </Link>
+                            </div>
+                        )}
 
 
                         {/* Related Articles */}

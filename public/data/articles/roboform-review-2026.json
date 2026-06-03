@@ -132,5 +132,14 @@
       }
     ]
   },
-  "modifiedDate": "2026-05-26"
+  "modifiedDate": "2026-05-26",
+  "affiliateLinks": [
+    {
+      "label": "Try RoboForm Free",
+      "url": "https://www.roboform.com/go?id=AFFILIATE_ID",
+      "type": "primary",
+      "cta": "Try Free",
+      "badge": "Best Form-Filling Password Manager"
+    }
+  ]
 }

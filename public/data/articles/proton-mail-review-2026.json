@@ -106,5 +106,20 @@
       }
     ]
   },
-  "modifiedDate": "2026-05-26"
+  "modifiedDate": "2026-05-26",
+  "affiliateLinks": [
+    {
+      "label": "Get Proton Mail Free",
+      "url": "https://proton.me/mail/referral?ref=AFFILIATE_ID",
+      "type": "primary",
+      "cta": "Create Free Account",
+      "badge": "Most Secure Email Provider"
+    },
+    {
+      "label": "Proton Unlimited — All Apps Bundle",
+      "url": "https://proton.me/pricing?ref=AFFILIATE_ID",
+      "type": "secondary",
+      "cta": "See Proton Unlimited"
+    }
+  ]
 }

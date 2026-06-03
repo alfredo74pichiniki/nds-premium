@@ -105,5 +105,21 @@
       }
     ]
   },
-  "modifiedDate": "2026-04-08"
+  "modifiedDate": "2026-04-08",
+  "affiliateLinks": [
+    {
+      "label": "Try Pipedrive Free — 14 Days",
+      "url": "https://www.pipedrive.com/en/affiliates/AFFILIATE_ID",
+      "type": "primary",
+      "cta": "Start Free Trial",
+      "badge": "#1 CRM for Sales Teams"
+    },
+    {
+      "label": "Compare Top CRM Tools",
+      "url": "https://nestdigitalstudio.com/software/best-crm-software-2026",
+      "type": "secondary",
+      "cta": "See Full Comparison",
+      "internal": true
+    }
+  ]
 }

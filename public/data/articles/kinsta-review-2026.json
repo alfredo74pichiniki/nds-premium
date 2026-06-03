@@ -20,12 +20,17 @@
   ],
   "affiliateLinks": [
     {
-      "name": "Kinsta",
-      "url": "https://kinsta.com/?kaid=ULBVTXSGGBYO"
+      "label": "Try Kinsta Free for 30 Days",
+      "url": "https://kinsta.com/?kaid=AFFILIATE_ID",
+      "type": "primary",
+      "cta": "Start Free Trial",
+      "badge": "Best for High-Traffic Sites"
     },
     {
-      "name": "Cloudways",
-      "url": "https://www.cloudways.com/en/?id=2134070"
+      "label": "View Kinsta Plans & Pricing",
+      "url": "https://kinsta.com/plans/?kaid=AFFILIATE_ID",
+      "type": "secondary",
+      "cta": "See All Plans"
     }
   ],
   "schema": {

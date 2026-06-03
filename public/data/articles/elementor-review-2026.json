@@ -20,16 +20,17 @@
   ],
   "affiliateLinks": [
     {
-      "name": "Elementor",
-      "url": "https://be.elementor.com/visit/?bta=231223&brand=elementor"
+      "label": "Get Elementor Pro",
+      "url": "https://be.elementor.com/visit/?bta=AFFILIATE_ID&brand=elementorpro",
+      "type": "primary",
+      "cta": "Get Elementor Pro",
+      "badge": "Best WordPress Page Builder"
     },
     {
-      "name": "Kinsta",
-      "url": "https://kinsta.com/?kaid=ULBVTXSGGBYO"
-    },
-    {
-      "name": "Cloudways",
-      "url": "https://www.cloudways.com/en/?id=2134070"
+      "label": "Elementor Free vs Pro Comparison",
+      "url": "https://be.elementor.com/visit/?bta=AFFILIATE_ID&brand=elementorpro",
+      "type": "secondary",
+      "cta": "Compare Plans"
     }
   ],
   "schema": {
