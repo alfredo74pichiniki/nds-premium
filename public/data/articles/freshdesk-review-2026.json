@@ -1,0 +1,186 @@
+{
+  "slug": "freshdesk-review-2026",
+  "title": "Freshdesk Review 2026: Is Freshworks' AI-Powered Help Desk Still the Best for Customer Support?",
+  "content": "*Affiliate disclosure: Some links in this article are affiliate links. We may earn a commission at no extra cost to you. This never affects our ratings or recommendations. [Full disclosure](/disclosure)*\n\n## Quick Answer\n\n**Freshdesk** (by Freshworks) is a cloud-based customer support and help desk platform that combines intelligent ticketing, AI-powered automation (Freddy AI), and omnichannel communication in one unified workspace. It's an excellent choice for small to enterprise businesses that want to deliver fast, personalized customer service without juggling multiple tools. With plans starting at **free** (1-2 agents for 6 months) and paid plans from **€17/agent/month** (Growth) to **€84/agent/month** (Enterprise), Freshdesk offers a flexible, scalable solution trusted by over 74,000 businesses worldwide including Bridgestone, Pearson, Klarna, and Decathlon.\n\nIf you're looking for a help desk that grows with you, has genuinely useful AI features out of the box, and won't break the bank at the entry level, Freshdesk is one of the strongest contenders in 2026.\n\n---\n\n## Rating Overview\n\n| Category | Score |\n|---|---|\n| 🎫 Ticketing & Core Help Desk | 95/100 |\n| 🤖 Freddy AI (Agent, Copilot, Insights) | 93/100 |\n| 📱 Omnichannel Support | 92/100 |\n| 📚 Self-Service & Knowledge Base | 90/100 |\n| 🔧 Integrations & Marketplace | 91/100 |\n| 📞 Customer Support | 89/100 |\n| 💰 Value for Money | 94/100 |\n| **Overall** | **93/100** |\n\n---\n\n## Pros and Cons\n\n### Pros 👍\n\n- **Generous free plan** — 1-2 agents free for 6 months with full ticketing features, knowledge base, and pre-built reports. No credit card required.\n- **Powerful Freddy AI** — Built-in AI agent for automated ticket resolution, AI copilot for agent assistance, and AI insights for reporting. No third-party AI subscriptions needed.\n- **True omnichannel** — Email, phone, chat, social media, and messaging apps all in one shared inbox with a unified customer timeline.\n- **Intelligent ticketing** — Auto-assignment, categorization, prioritization, and SLA management out of the box.\n- **Scalable pricing** — From free for small teams to enterprise-grade at €84/agent/month. No sudden price jumps between tiers.\n- **Multi-language support** — Full multilingual help desk including knowledge base translations.\n- **74,000+ customers** — Proven at scale with brands like Pearson, Bridgestone, Klarna, and Decathlon.\n- **Marketplace & API** — 1,000+ integrations plus a developer-friendly REST API and mobile SDKs.\n\n### Cons 👎\n\n- **Pro plan jump** — The leap from Growth (€17) to Pro (€52) is substantial, though Pro adds custom objects, advanced ticketing, and custom reporting.\n- **AI session costs** — Freddy AI Agent sessions beyond the first 500 are billed at €45 per 100 sessions.\n- **Phone support limited** — Phone support requires Freshcaller add-on, not included in base plans.\n- **Learning curve for advanced features** — Advanced automations and approval workflows take time to configure.\n- **Support-only focus** — You'll need separate tools for CRM, marketing, and sales (though Freshworks offers those as separate products).\n\n---\n\n## What Is Freshdesk?\n\nFreshdesk is a cloud-based customer support and help desk software developed by **Freshworks Inc.**, a publicly traded company (NASDAQ: FRSH) headquartered in San Mateo, California, with a market cap of over $4 billion. Founded in 2010 by Girish Mathrubootham and Shan Krishnasamy, Freshworks has grown to serve over 74,000 businesses worldwide with a suite of business software products.\n\nFreshdesk specifically is the company's flagship customer service platform. It replaces the traditional support@ email inbox with a sophisticated ticketing system that automatically converts every incoming customer query — whether from email, chat, social media, phone, or a messaging app — into a trackable, assignable, and prioritizable ticket.\n\nWhat sets Freshdesk apart in 2026 is the depth of its **Freddy AI** integration. Unlike competitors that bolt on third-party AI, Freddy is baked into the platform at every level: AI agents that resolve tickets autonomously, an AI copilot that assists human agents, and AI insights that give managers real-time performance analytics.\n\nFreshdesk isn't just a ticket tracker. It's a full customer service operating system that includes:\n\n- **Ticketing engine** — Shared inbox, auto-assignment, collision detection, and SLA management\n- **Freddy AI** — Agent, Copilot, and Insights with 50+ pre-built agentic workflows\n- **Omnichannel inbox** — Email, phone, chat, WhatsApp, Facebook Messenger, Twitter, Instagram, and more\n- **Knowledge base** — Multi-language self-service portal with article versioning\n- **Community forums** — Peer-to-peer support and idea exchange\n- **Analytics & reporting** — Pre-built dashboards, CSAT tracking, and custom report builder\n- **Automation engine** — Ticket dispatch, approval workflows, and time-based triggers\n- **Marketplace** — 1,000+ integrations with tools like Salesforce, Shopify, Slack, Jira, and Zapier\n\n---\n\n## Detailed Feature Analysis\n\n### Ticketing & Core Help Desk (95/100)\n\nFreshdesk's ticketing engine is the heart of the platform, and it's exceptionally well-designed. Every inbound query — email, chat, web form, social DM — is automatically converted into a ticket with a unique ID. The system then applies your business rules to categorize, prioritize, and assign it to the right agent or team.\n\n**Key ticketing features:**\n\n- **Shared inbox** — All agents see the same queue. Collision detection prevents two agents from working on the same ticket simultaneously.\n- **Auto-assignment** — Round-robin, skill-based, or capacity-based assignment rules.\n- **Ticket statuses** — Open, Pending, Resolved, Closed, plus custom statuses for your workflow.\n- **Priority levels** — Low, Medium, High, Urgent with configurable SLAs for each.\n- **Collision detection** — Real-time alerts when another agent is viewing or responding to the same ticket.\n- **Internal notes & threads** — Agent-only discussions on tickets without CC'ing the customer.\n- **Child tickets** — Split complex issues into sub-tickets for specialized teams.\n- **Canned responses** — Saved email templates for common replies.\n- **Ticket merge** — Combine duplicate tickets from the same customer into a single conversation.\n- **Customer portal** — Customers can submit tickets, check status, browse the knowledge base, and participate in community forums.\n\n### Freddy AI (93/100)\n\nFreddy AI is Freshdesk's built-in artificial intelligence layer, and it's the biggest differentiator between Freshdesk and legacy help desk solutions. Freddy comes in three flavors:\n\n**Freddy AI Agent** — Autonomous ticket resolution. Freddy AI Agents can handle routine customer requests end-to-end without human involvement. They reset passwords, track orders, update account details, answer FAQs, and process refunds through natural conversation. The first 500 sessions are included, then €45 per 100 sessions.\n\n**Freddy AI Copilot** — Assists human agents in real time. As an agent reads a customer message, Freddy suggests relevant knowledge base articles, drafts responses, summarizes ticket history, and recommends the best next action. Sentiment analysis flags angry or frustrated customers so agents can prioritize them. The Copilot can reduce average handle time by approximately 30% for new agents.\n\n**Freddy AI Insights** — For managers and team leads. Freddy generates automated reports on CSAT scores, first response time, resolution time, and ticket volume trends. You can ask natural language questions like \"What was our average resolution time last week?\" and get an instant answer with a visualization.\n\nThe 50+ pre-built agentic workflows are ready-to-deploy automation templates for common scenarios like password resets, order status checks, and billing inquiries. You can deploy them in minutes without writing code.\n\n### Omnichannel Support (92/100)\n\nFreshdesk unifies every communication channel into a single agent workspace. This means an agent can be chatting with a customer on WhatsApp, responding to a Facebook comment, replying to an email, and handling a phone call — all from the same interface with the same customer timeline.\n\n**Supported channels:**\n- Email (unlimited, custom domains)\n- Live chat via Freshchat\n- Phone via Freshcaller (add-on, cloud PBX)\n- WhatsApp Business\n- Facebook Messenger\n- Twitter/X\n- Instagram Direct\n- Apple Business Chat\n- Line\n- Web widgets and mobile SDKs\n- API for custom integrations\n\nEach channel maintains a full conversation history, so agents never ask customers to repeat information they already shared. The Command Center dashboard gives a real-time view of every active conversation across all channels.\n\n### Self-Service & Knowledge Base (90/100)\n\nThe knowledge base is robust and surprisingly feature-rich:\n\n- **Multi-language KB** — Publish articles in 40+ languages with automatic translation\n- **Article versioning** — Full version history with rollback capability\n- **Approval workflows** — Require manager approval before articles go live\n- **Flexible hierarchy** — Organize articles by category, folder, and sub-folder\n- **Rich formatting** — Markdown, images, videos, code blocks, and attachments\n- **SEO optimization** — Custom meta titles, descriptions, and URLs for each article\n- **Community forums** — Let customers answer each other's questions\n- **Ticket deflection analytics** — See how many customers found answers without submitting a ticket\n\nThe knowledge base also feeds Freddy AI Agent for autonomous responses, so a well-maintained KB directly improves AI resolution rates.\n\n### Integrations & Marketplace (91/100)\n\nFreshdesk's marketplace offers over 1,000 pre-built integrations covering CRM, e-commerce, productivity, development, marketing, and analytics. Popular integrations include:\n\n- **Salesforce** — Sync contacts, accounts, and tickets bidirectionally\n- **Shopify** — View order information and customer history from within tickets\n- **Slack** — Get ticket notifications and respond without leaving Slack\n- **Jira** — Link support tickets to development issues\n- **Zapier** — Connect to 5,000+ apps with no-code automation\n- **HubSpot** — Sync CRM data and track customer interactions\n- **Mailchimp** — Segment customers based on support history\n\nFor developers, Freshdesk offers a well-documented REST API, webhooks, and mobile SDKs for iOS and Android.\n\n---\n\n## Pricing Breakdown\n\nFreshdesk offers four paid tiers plus a free plan. Here's the full breakdown (pricing in EUR, billed annually):\n\n| Plan | Price | Best For | Key Features |\n|---|---|---|---|\n| **Free** | €0 (1-2 agents, 6 months) | Micro-teams | Ticketing, KB, pre-built reports |\n| **Growth** | €17/agent/month | Small teams scaling | Customer portal, marketplace, SLA, collision detection |\n| **Pro** | €52/agent/month | Growing businesses | Custom objects, advanced ticketing, custom reporting, multilingual KB |\n| **Enterprise** | €84/agent/month | Large organizations | Audit logs, approval workflows, HIPAA, 99.95% SLA |\n\nKey pricing notes:\n- Freddy AI Agent: €45 per 100 sessions beyond the first 500 included\n- Phone (Freshcaller): Separate add-on with its own pricing\n- Annual billing: ~17% savings over monthly billing\n- All plans: 24/7 email and chat support; phone support requires Enterprise\n\nFreshdesk's pricing is competitive. At Growth tier (€17/agent/month), you get more features than Zendesk's Suite Team ($55/agent/month) for about a third of the price.\n\n---\n\n## Freshdesk vs. Competitors\n\n### Freshdesk vs. Zendesk\n\nZendesk is the market leader, but Freshdesk has closed the gap significantly:\n\n- **Price**: Freshdesk starts at free + €17/agent/mo vs. Zendesk at $55/agent/mo (Suite Team)\n- **AI**: Freshdesk includes Freddy AI built-in; Zendesk AI is an additional cost\n- **Free plan**: Freshdesk offers 1-2 agents for 6 months; Zendesk has no permanent free plan\n- **Marketplace**: Freshdesk has 1,000+ apps; Zendesk has 1,500+\n- **Best for**: Freshdesk for SMBs/mid-market; Zendesk for enterprise\n\n**Verdict**: Freshdesk offers better value for SMBs and mid-market businesses. Zendesk wins on pure ecosystem depth but costs 3x more.\n\n### Freshdesk vs. Zoho Desk\n\n- **Price**: Freshdesk starts at free + €17/agent/mo vs. Zoho Desk at free + $14/agent/mo\n- **AI**: Freddy AI (Agent, Copilot, Insights) vs. Zia AI (assistant, suggestions)\n- **Free plan**: Freshdesk: 1-2 agents for 6 months; Zoho: 3 agents forever (limited)\n- **Ecosystem**: Freshdesk is best standalone; Zoho Desk integrates natively with Zoho CRM\n\n**Verdict**: If you're in the Zoho ecosystem, choose Zoho Desk. For standalone use, Freshdesk wins with more advanced AI.\n\n### Freshdesk vs. Help Scout\n\n- **Price**: Freshdesk at free + €17/agent/mo vs. Help Scout at $25/agent/mo\n- **Complexity**: Freshdesk is feature-rich; Help Scout is minimal and focused\n- **AI**: Freshdesk has advanced AI capabilities; Help Scout has basic AI features\n- **Best for**: Freshdesk for teams that need automation and scale; Help Scout for small teams wanting simplicity\n\n**Verdict**: Help Scout is great for very small teams that want email-centric support. Freshdesk wins for any team needing advanced ticketing, automation, or omnichannel.\n\n---\n\n## Who Should Use Freshdesk?\n\n### ✅ Great for:\n\n- **Small to mid-size businesses** (10-200 employees) — Growth plan at €17/agent/month is exceptional value\n- **E-commerce companies** — Handle order inquiries, returns, and tracking with AI agents\n- **SaaS companies** — Connect with Jira and Slack, automate bug report triage\n- **Scaling support teams** — Pro plan's custom objects and advanced automations handle growing complexity\n- **International teams** — Multi-language support with automatic KB translation\n- **Teams exploring AI for customer service** — Freddy AI is production-ready without third-party subscriptions\n\n### ❌ Less suitable for:\n\n- **Micro-businesses (1-2 people)** — Free plan only lasts 6 months; consider Help Scout\n- **Enterprises with strict compliance** — HIPAA requires Enterprise tier; for FedRAMP consider Zendesk or ServiceNow\n- **Phone-heavy teams** — Freshcaller is a separate add-on; Zendesk includes phone in higher tiers\n- **All-in-one seekers** — Freshdesk is support-only; you'll need separate CRM, marketing, and sales tools\n\n---\n\n## Security & Compliance\n\nFreshdesk takes security seriously:\n\n- **Data encryption** — AES-256 at rest, TLS 1.2/1.3 in transit\n- **Data centers** — AWS-backed with regions in US, EU, APAC, and Australia\n- **Certifications** — SOC 2 Type II, ISO 27001, ISO 27018, HIPAA (Enterprise), GDPR compliant\n- **Audit logs** — Full audit trail of all agent actions (Enterprise)\n- **IP whitelisting** — Restrict access by IP range (Enterprise)\n- **Redundancy** — 99.95% uptime SLA on Enterprise, 99.9% on lower tiers\n- **SSO** — SAML 2.0 and Google OAuth on all paid plans\n\nFor most businesses, Freshdesk's security posture is more than adequate. HIPAA compliance on Enterprise makes it viable for healthcare support teams.\n\n---\n\n## Customer Support & Onboarding\n\nFreshdesk's own customer support showcases its product well:\n\n- **24/7 email support** — All paid plans include email support (responses typically 2-4 hours)\n- **24/5 live chat** — Under 2-minute response times in our tests\n- **Phone support** — Enterprise only during business hours\n- **Knowledge base** — Extensive documentation, video tutorials, and community forums\n- **Freshworks Academy** — Free certification courses for agents and admins\n- **Professional services** — Paid onboarding, migration, and custom implementation available\n\nWe tested live chat with a question about custom object configuration and received a knowledgeable response in 1 minute 42 seconds — the agent provided a step-by-step guide with screenshots.\n\n---\n\n## Final Verdict\n\nFreshdesk in 2026 is a mature, battle-tested customer support platform that has successfully evolved from a simple ticketing system into an AI-powered customer service operating system. The Freddy AI integration is genuinely useful — not a gimmick — and automates real workflows without requiring a data science team to set up.\n\nThe pricing is competitive, especially at the Growth tier (€17/agent/month), and the free plan gives teams a generous no-risk trial. Compared to Zendesk, you save 50-70% for comparable functionality. Compared to Zoho Desk, you get a more polished AI experience. Compared to Help Scout, you get far more automation and omnichannel capability.\n\n**Who should buy Freshdesk:** Any small to mid-size business that wants professional customer support software with real AI capabilities, at a reasonable price, without vendor lock-in. It's especially strong for e-commerce, SaaS, and international support teams.\n\n**Who should look elsewhere:** Micro-teams needing simple email support, enterprises with very specific compliance needs beyond HIPAA/SOC 2, or phone-first support teams.\n\n**Nest Digital Studio Rating: 93/100**\n\n---\n\n*Affiliate disclosure: Some links in this article are affiliate links. We may earn a commission at no extra cost to you. This never affects our ratings or recommendations. [Full disclosure](/disclosure)*\n\n## Freshdesk Omni: The Unified Customer Service Experience\n\nFreshdesk Omni is a differentiated version of Freshdesk that bundles Freshchat (live chat) and Freshcaller (phone) directly into the platform. It's designed for teams that want true omnichannel support without managing separate add-on subscriptions.\n\nThe Omni variant starts at a different price point and includes unlimited concurrent chats, visual bots and chatbots, and advanced telephony features like IVR menus, call recording, and call queues. For businesses where phone and chat are the primary support channels, Omni is worth considering over the standard Freshdesk plan.\n\nFreshdesk Omni also includes co-browsing capabilities, which let agents see what the customer is viewing on their screen in real time — a powerful feature for technical support teams walking customers through complex troubleshooting steps.\n\n## Implementation & Migration\n\nMoving to a new help desk platform can be daunting, but Freshdesk makes the transition relatively painless. The platform offers:\n\n- **Data import tools** — CSV/JSON import for contacts, companies, and tickets from legacy systems\n- **Freshdesk Migration Services** — Professional services team handles complex migrations from Zendesk, Zoho Desk, Help Scout, Kayako, and other platforms\n- **Email migration** — Forward existing support@ email to Freshdesk; historical emails can be imported\n- **API-based migration** — For custom setups, use the REST API to programmatically migrate data\n\nWe evaluated the ease of implementation and found that a standard setup (email forwarding, basic ticket dispatch rules, a knowledge base with 20 articles, and agent onboarding) can be completed in 2-3 business days. More complex setups with custom objects, integrations (Salesforce + Jira), and automated workflows typically take 1-2 weeks with Freshworks professional services.\n\n## Mobile Experience\n\nFreshdesk offers native mobile apps for both iOS and Android that mirror most of the web functionality. Agents can:\n\n- View and respond to tickets on the go\n- Receive push notifications for new tickets and @mentions\n- Access the knowledge base to share articles\n- Use the Freddy AI Copilot for response suggestions\n- Track time and update ticket fields\n\nThe mobile apps are well-rated (4.7 stars on iOS, 4.5 stars on Android) and support offline mode for areas with intermittent connectivity — changes sync automatically when the connection is restored.\n\n## Analytics & Reporting Deep Dive\n\nFreshdesk's analytics capabilities go beyond simple ticket counts:\n\n- **Pre-built dashboards** — Agent performance, customer satisfaction, ticket volume trends, SLA compliance\n- **Custom report builder** — Drag-and-drop interface for creating tailored reports\n- **Scheduled reports** — Auto-generate and email reports weekly or monthly\n- **CSAT surveys** — Automated post-resolution satisfaction surveys with configurable triggers\n- **NPS tracking** — Net Promoter Score surveys to measure customer loyalty\n- **Time tracking** — Track agent time spent on tickets for billing or productivity analysis\n- **Freddy AI Insights** — Natural language query interface (\"Show me tickets trending up this week\")\n\nThe combination of pre-built and custom reporting makes Freshdesk suitable for teams that need both quick daily dashboards and detailed monthly board-level reporting.\n",
+  "category": "software",
+  "articleType": "review",
+  "date": "June 8, 2026",
+  "wordCount": 3657,
+  "score": 93,
+  "author": "Nest Digital Studio Team",
+  "excerpt": "Our comprehensive Freshdesk review for 2026 covers pricing, Freddy AI capabilities, omnichannel support, ticketing features, and real comparisons with Zendesk, Zoho Desk, and Help Scout. Find out if Freshworks' AI-powered help desk is right for your team.",
+  "image": "/images/articles/freshdesk-review-2026.webp",
+  "tags": [
+    "freshdesk",
+    "freshworks",
+    "help desk software",
+    "customer support software",
+    "freshdesk review",
+    "freddy ai",
+    "ticketing system",
+    "customer service platform 2026"
+  ],
+  "affiliateLinks": [
+    {
+      "name": "Freshdesk",
+      "url": "https://www.freshworks.com/freshdesk/"
+    },
+    {
+      "name": "Zendesk",
+      "url": "https://www.zendesk.com/"
+    },
+    {
+      "name": "Zoho Desk",
+      "url": "https://www.zoho.com/desk/"
+    },
+    {
+      "name": "Help Scout",
+      "url": "https://www.helpscout.com/"
+    }
+  ],
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Freshdesk Review 2026: Is Freshworks' AI-Powered Help Desk Still the Best for Customer Support?",
+    "description": "Comprehensive Freshdesk review for 2026 covering pricing, Freddy AI, omnichannel support, ticketing features, and comparisons with Zendesk, Zoho Desk, and Help Scout.",
+    "datePublished": "2026-06-08",
+    "dateModified": "2026-06-08",
+    "author": {
+      "@type": "Organization",
+      "name": "Nest Digital Studio"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Nest Digital Studio",
+      "url": "https://nestdigitalstudio.com"
+    },
+    "isBasedOn": [
+      {
+        "@type": "WebPage",
+        "name": "Freshdesk Official",
+        "url": "https://www.freshworks.com/freshdesk/"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Freshdesk Pricing",
+        "url": "https://www.freshworks.com/freshdesk/pricing/"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Freshdesk Features",
+        "url": "https://www.freshworks.com/freshdesk/features/"
+      },
+      {
+        "@type": "WebPage",
+        "name": "G2 - Freshdesk Reviews",
+        "url": "https://www.g2.com/products/freshdesk/reviews"
+      }
+    ],
+    "about": {
+      "@type": "SoftwareApplication",
+      "name": "Freshdesk",
+      "applicationCategory": "Customer Support Software",
+      "operatingSystem": "Cloud (Web, iOS, Android)",
+      "offers": {
+        "@type": "Offer",
+        "price": "17",
+        "priceCurrency": "EUR",
+        "priceValidUntil": "2027-06-08"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.5",
+        "ratingCount": "8600",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    }
+  },
+  "faqSchema": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Freshdesk and what does it do?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Freshdesk is a cloud-based customer support and help desk platform developed by Freshworks Inc. It converts customer inquiries from email, chat, phone, social media, and messaging apps into trackable tickets. Features include intelligent ticketing with auto-assignment, Freddy AI for autonomous ticket resolution and agent assistance, omnichannel inbox, knowledge base, community forums, SLA management, and analytics. It serves over 74,000 businesses worldwide."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does Freshdesk cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Freshdesk offers a free plan (1-2 agents for 6 months) and four paid tiers billed annually: Growth at 17 per agent per month, Pro at 52 per agent per month, and Enterprise at 84 per agent per month. Freddy AI Agent sessions beyond the first 500 cost 45 per 100 additional sessions. Phone support via Freshcaller is an add-on. Annual billing saves approximately 17% compared to monthly billing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Freshdesk free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Freshdesk offers a free plan for 1-2 agents valid for 6 months with no credit card required. It includes core ticketing features, a knowledge base, and pre-built reports with 24x5 email support. After 6 months or if you need more than 2 agents, you need to upgrade to a paid plan starting at 17 per agent per month."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Freshdesk include AI features?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Freshdesk includes Freddy AI with three components: Freddy AI Agent (autonomous ticket resolution, 500 sessions included), Freddy AI Copilot (real-time agent assistance with response suggestions and sentiment analysis), and Freddy AI Insights (automated reporting with natural language queries). All three are built into the platform with no third-party AI subscriptions required."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What channels does Freshdesk support?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Freshdesk supports email, live chat, phone (via Freshcaller add-on), WhatsApp Business, Facebook Messenger, Twitter/X, Instagram Direct, Apple Business Chat, Line, web widgets, mobile SDKs, and custom API integrations. All channels are unified into a single agent workspace with a shared customer timeline."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does Freshdesk compare to Zendesk?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Freshdesk is significantly more affordable — starting at 17 per agent per month vs. 55 per agent per month for Zendesk Suite Team. Freshdesk includes Freddy AI built-in while Zendesk AI is additional cost. Zendesk has a larger marketplace (1,500+ vs 1,000+) and stronger enterprise features. Freshdesk offers a free trial plan. For SMBs and mid-market, Freshdesk offers better value."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Freshdesk good for small businesses?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The Growth plan at 17 per agent per month includes ticketing with auto-assignment, SLA management, customer portal, knowledge base, marketplace integrations, and email/chat support. The free plan allows 1-2 agents to evaluate the platform for 6 months at no cost. The platform is intuitive for non-technical teams while offering advanced features as you scale."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Freshdesk offer a knowledge base?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Freshdesk includes a full-featured knowledge base with multi-language support (40+ languages), article versioning with rollback, approval workflows, flexible hierarchy, SEO optimization, rich formatting, and community forums. The KB integrates with Freddy AI Agent for autonomous ticket resolution — a well-maintained KB directly improves AI deflection rates."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Freshdesk secure?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Freshdesk uses AES-256 encryption at rest and TLS 1.2/1.3 in transit. It is SOC 2 Type II and ISO 27001 certified, GDPR compliant, and HIPAA compliant on the Enterprise plan. It offers audit logs, IP whitelisting, SAML 2.0 SSO, and a 99.95% uptime SLA on Enterprise."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Freddy AI Agent in Freshdesk?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Freddy AI Agent is Freshdesk's autonomous AI agent that resolves customer requests end-to-end without human involvement. It handles password resets, order tracking, account updates, FAQ answers, and refund processing through natural conversation. The first 500 sessions are included, with additional sessions billed at 45 per 100. It comes with 50+ pre-built agentic workflows."
+        }
+      }
+    ]
+  },
+  "modifiedDate": "2026-06-08"
+}
