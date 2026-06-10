@@ -16,6 +16,7 @@ import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
+import LeadMagnet from "@/components/article/LeadMagnet";
 import remarkGfm from "remark-gfm";
 import { premiumComponents } from "@/components/article/ArticleComponents";
 import {
@@ -300,6 +301,14 @@ export function PremiumArticlePage({ slug, category, config }: PremiumArticlePag
                                 {articleContent}
                             </ReactMarkdown>
                         </motion.div>
+
+                        {/* Lead Magnet (Newsletter Capture) */}
+                        <div className="mt-12">
+                            <LeadMagnet 
+                                productName="Ultimate Tech Toolkit" 
+                                hook="Join 5,000+ founders and get our exclusive toolkit with the top 50 productivity tools for 2026." 
+                            />
+                        </div>
 
                         {/* Author Bio Footer */}
                         <div className="mt-16 pt-8 border-t border-white/10">
