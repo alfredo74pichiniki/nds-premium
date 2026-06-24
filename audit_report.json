@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-24T16:14:54.949853+00:00",
+  "timestamp": "2026-06-24T17:13:22.876757+00:00",
   "assumptions": {
     "monthly_visits_per_article": 120,
     "ctr_primary_cta": 0.06,
@@ -13,7 +13,7 @@
     "links_amazon_bad_tag": 0,
     "articles_with_critical": 2,
     "articles_short": 33,
-    "articles_no_quick_answer": 28,
+    "articles_no_quick_answer": 10,
     "articles_mute_cta": 0,
     "money_at_risk_month": 91.26,
     "money_at_risk_year": 1095.12
@@ -96,17 +96,17 @@
         {
           "dim": "EEAT",
           "sev": "low",
-          "msg": "wordCount declarado (4874) difiere del real (6529)"
+          "msg": "wordCount declarado (4874) difiere del real (6609)"
         },
         {
           "dim": "GEO",
-          "sev": "high",
-          "msg": "Sin bloque '## Quick Answer' (clave para ser citado por IA)"
+          "sev": "low",
+          "msg": "El 'Quick Answer' no está en las primeras ~150 palabras"
         }
       ],
       "info": [
         {
-          "real_words": 6529,
+          "real_words": 6609,
           "declared_words": 4874
         },
         {
@@ -733,16 +733,11 @@
           "dim": "CRO",
           "sev": "medium",
           "msg": "Sin affiliateLinks => se muestra el CTA genérico de respaldo (no monetiza)"
-        },
-        {
-          "dim": "GEO",
-          "sev": "high",
-          "msg": "Sin bloque '## Quick Answer' (clave para ser citado por IA)"
         }
       ],
       "info": [
         {
-          "real_words": 5739,
+          "real_words": 5818,
           "declared_words": 5916
         },
         {
@@ -1043,8 +1038,8 @@
       "warnings": [
         {
           "dim": "GEO",
-          "sev": "high",
-          "msg": "Sin bloque '## Quick Answer' (clave para ser citado por IA)"
+          "sev": "low",
+          "msg": "El 'Quick Answer' no está en las primeras ~150 palabras"
         },
         {
           "dim": "SEO",
@@ -1064,7 +1059,7 @@
       ],
       "info": [
         {
-          "real_words": 3439,
+          "real_words": 3518,
           "declared_words": 3393
         },
         {
@@ -1290,12 +1285,7 @@
         {
           "dim": "EEAT",
           "sev": "low",
-          "msg": "wordCount declarado (2764) difiere del real (3967)"
-        },
-        {
-          "dim": "GEO",
-          "sev": "high",
-          "msg": "Sin bloque '## Quick Answer' (clave para ser citado por IA)"
+          "msg": "wordCount declarado (2764) difiere del real (4045)"
         },
         {
           "dim": "SEO",
@@ -1315,7 +1305,7 @@
       ],
       "info": [
         {
-          "real_words": 3967,
+          "real_words": 4045,
           "declared_words": 2764
         },
         {
@@ -1783,17 +1773,12 @@
         {
           "dim": "EEAT",
           "sev": "low",
-          "msg": "wordCount declarado (5412) difiere del real (7052)"
-        },
-        {
-          "dim": "GEO",
-          "sev": "high",
-          "msg": "Sin bloque '## Quick Answer' (clave para ser citado por IA)"
+          "msg": "wordCount declarado (5412) difiere del real (7132)"
         }
       ],
       "info": [
         {
-          "real_words": 7052,
+          "real_words": 7132,
           "declared_words": 5412
         },
         {
@@ -2175,12 +2160,7 @@
         {
           "dim": "EEAT",
           "sev": "medium",
-          "msg": "Contenido corto: 2071 palabras (objetivo 3000+)"
-        },
-        {
-          "dim": "GEO",
-          "sev": "high",
-          "msg": "Sin bloque '## Quick Answer' (clave para ser citado por IA)"
+          "msg": "Contenido corto: 2163 palabras (objetivo 3000+)"
         },
         {
           "dim": "SEO",
@@ -2205,7 +2185,7 @@
       ],
       "info": [
         {
-          "real_words": 2071,
+          "real_words": 2163,
           "declared_words": 2011
         },
         {
@@ -2717,12 +2697,7 @@
         {
           "dim": "EEAT",
           "sev": "low",
-          "msg": "wordCount declarado (2252) difiere del real (3133)"
-        },
-        {
-          "dim": "GEO",
-          "sev": "high",
-          "msg": "Sin bloque '## Quick Answer' (clave para ser citado por IA)"
+          "msg": "wordCount declarado (2252) difiere del real (3201)"
         },
         {
           "dim": "SEO",
@@ -2742,7 +2717,7 @@
       ],
       "info": [
         {
-          "real_words": 3133,
+          "real_words": 3201,
           "declared_words": 2252
         },
         {
@@ -2891,16 +2866,11 @@
           "dim": "CRO",
           "sev": "medium",
           "msg": "Sin affiliateLinks => se muestra el CTA genérico de respaldo (no monetiza)"
-        },
-        {
-          "dim": "GEO",
-          "sev": "high",
-          "msg": "Sin bloque '## Quick Answer' (clave para ser citado por IA)"
         }
       ],
       "info": [
         {
-          "real_words": 6887,
+          "real_words": 6972,
           "declared_words": 6951
         },
         {
@@ -3100,12 +3070,7 @@
         {
           "dim": "EEAT",
           "sev": "low",
-          "msg": "wordCount declarado (2290) difiere del real (3471)"
-        },
-        {
-          "dim": "GEO",
-          "sev": "high",
-          "msg": "Sin bloque '## Quick Answer' (clave para ser citado por IA)"
+          "msg": "wordCount declarado (2290) difiere del real (3540)"
         },
         {
           "dim": "SEO",
@@ -3125,7 +3090,7 @@
       ],
       "info": [
         {
-          "real_words": 3471,
+          "real_words": 3540,
           "declared_words": 2290
         },
         {
@@ -4132,13 +4097,7 @@
     {
       "file": "best-seo-tools-for-small-business-2026.json",
       "slug": "best-seo-tools-for-small-business-2026",
-      "errors": [
-        {
-          "dim": "EEAT",
-          "sev": "high",
-          "msg": "Sin campo 'author'"
-        }
-      ],
+      "errors": [],
       "warnings": [
         {
           "dim": "CRO",
@@ -4612,11 +4571,6 @@
           "msg": "Sin affiliateLinks => se muestra el CTA genérico de respaldo (no monetiza)"
         },
         {
-          "dim": "GEO",
-          "sev": "high",
-          "msg": "Sin bloque '## Quick Answer' (clave para ser citado por IA)"
-        },
-        {
           "dim": "SEO",
           "sev": "medium",
           "msg": "schema sin '@context' (JSON-LD inválido como standalone)"
@@ -4639,7 +4593,7 @@
       ],
       "info": [
         {
-          "real_words": 3216,
+          "real_words": 3297,
           "declared_words": 2995
         },
         {
@@ -4667,12 +4621,7 @@
         {
           "dim": "EEAT",
           "sev": "low",
-          "msg": "wordCount declarado (2570) difiere del real (4228)"
-        },
-        {
-          "dim": "GEO",
-          "sev": "high",
-          "msg": "Sin bloque '## Quick Answer' (clave para ser citado por IA)"
+          "msg": "wordCount declarado (2570) difiere del real (4304)"
         },
         {
           "dim": "SEO",
@@ -4692,7 +4641,7 @@
       ],
       "info": [
         {
-          "real_words": 4228,
+          "real_words": 4304,
           "declared_words": 2570
         },
         {
@@ -5214,8 +5163,8 @@
         },
         {
           "dim": "GEO",
-          "sev": "high",
-          "msg": "Sin bloque '## Quick Answer' (clave para ser citado por IA)"
+          "sev": "low",
+          "msg": "El 'Quick Answer' no está en las primeras ~150 palabras"
         },
         {
           "dim": "SEO",
@@ -5235,7 +5184,7 @@
       ],
       "info": [
         {
-          "real_words": 5307,
+          "real_words": 5389,
           "declared_words": 5144
         },
         {
@@ -5947,8 +5896,8 @@
         },
         {
           "dim": "GEO",
-          "sev": "high",
-          "msg": "Sin bloque '## Quick Answer' (clave para ser citado por IA)"
+          "sev": "low",
+          "msg": "El 'Quick Answer' no está en las primeras ~150 palabras"
         },
         {
           "dim": "SEO",
@@ -5968,7 +5917,7 @@
       ],
       "info": [
         {
-          "real_words": 3985,
+          "real_words": 4060,
           "declared_words": 3845
         },
         {
@@ -6270,12 +6219,12 @@
         {
           "dim": "EEAT",
           "sev": "low",
-          "msg": "wordCount declarado (5399) difiere del real (7819)"
+          "msg": "wordCount declarado (5399) difiere del real (7899)"
         },
         {
           "dim": "GEO",
-          "sev": "high",
-          "msg": "Sin bloque '## Quick Answer' (clave para ser citado por IA)"
+          "sev": "low",
+          "msg": "El 'Quick Answer' no está en las primeras ~150 palabras"
         },
         {
           "dim": "GEO",
@@ -6285,7 +6234,7 @@
       ],
       "info": [
         {
-          "real_words": 7819,
+          "real_words": 7899,
           "declared_words": 5399
         },
         {
@@ -6347,16 +6296,10 @@
       "file": "best-woocommerce-hosting-2026.json",
       "slug": "best-woocommerce-hosting-2026",
       "errors": [],
-      "warnings": [
-        {
-          "dim": "GEO",
-          "sev": "high",
-          "msg": "Sin bloque '## Quick Answer' (clave para ser citado por IA)"
-        }
-      ],
+      "warnings": [],
       "info": [
         {
-          "real_words": 3300,
+          "real_words": 3372,
           "declared_words": 3850
         },
         {
@@ -6469,16 +6412,10 @@
       "file": "best-wordpress-page-builders-2026.json",
       "slug": "best-wordpress-page-builders-2026",
       "errors": [],
-      "warnings": [
-        {
-          "dim": "GEO",
-          "sev": "high",
-          "msg": "Sin bloque '## Quick Answer' (clave para ser citado por IA)"
-        }
-      ],
+      "warnings": [],
       "info": [
         {
-          "real_words": 3335,
+          "real_words": 3411,
           "declared_words": 3750
         },
         {
@@ -6561,13 +6498,7 @@
     {
       "file": "ces-2026-top-5-gadgets.json",
       "slug": "ces-2026-top-5-gadgets",
-      "errors": [
-        {
-          "dim": "EEAT",
-          "sev": "high",
-          "msg": "Sin campo 'author'"
-        }
-      ],
+      "errors": [],
       "warnings": [
         {
           "dim": "CRO",
@@ -6577,12 +6508,7 @@
         {
           "dim": "EEAT",
           "sev": "medium",
-          "msg": "Contenido corto: 2259 palabras (objetivo 3000+)"
-        },
-        {
-          "dim": "GEO",
-          "sev": "high",
-          "msg": "Sin bloque '## Quick Answer' (clave para ser citado por IA)"
+          "msg": "Contenido corto: 2334 palabras (objetivo 3000+)"
         },
         {
           "dim": "GEO",
@@ -6612,7 +6538,7 @@
       ],
       "info": [
         {
-          "real_words": 2259,
+          "real_words": 2334,
           "declared_words": 2109
         },
         {
@@ -6630,13 +6556,7 @@
     {
       "file": "chatgpt-vs-claude-2026.json",
       "slug": "chatgpt-vs-claude-2026",
-      "errors": [
-        {
-          "dim": "EEAT",
-          "sev": "high",
-          "msg": "Sin campo 'author'"
-        }
-      ],
+      "errors": [],
       "warnings": [
         {
           "dim": "CRO",
@@ -6646,12 +6566,7 @@
         {
           "dim": "EEAT",
           "sev": "low",
-          "msg": "wordCount declarado (2108) difiere del real (3386)"
-        },
-        {
-          "dim": "GEO",
-          "sev": "high",
-          "msg": "Sin bloque '## Quick Answer' (clave para ser citado por IA)"
+          "msg": "wordCount declarado (2108) difiere del real (3460)"
         },
         {
           "dim": "SEO",
@@ -6676,7 +6591,7 @@
       ],
       "info": [
         {
-          "real_words": 3386,
+          "real_words": 3460,
           "declared_words": 2108
         },
         {
@@ -6780,13 +6695,13 @@
         },
         {
           "dim": "GEO",
-          "sev": "high",
-          "msg": "Sin bloque '## Quick Answer' (clave para ser citado por IA)"
+          "sev": "low",
+          "msg": "El 'Quick Answer' no está en las primeras ~150 palabras"
         }
       ],
       "info": [
         {
-          "real_words": 5617,
+          "real_words": 5696,
           "declared_words": 5420
         },
         {
@@ -7059,13 +6974,7 @@
     {
       "file": "home-office-setup-under-500.json",
       "slug": "home-office-setup-under-500",
-      "errors": [
-        {
-          "dim": "EEAT",
-          "sev": "high",
-          "msg": "Sin campo 'author'"
-        }
-      ],
+      "errors": [],
       "warnings": [
         {
           "dim": "CRO",
@@ -7075,12 +6984,7 @@
         {
           "dim": "EEAT",
           "sev": "low",
-          "msg": "wordCount declarado (1818) difiere del real (3574)"
-        },
-        {
-          "dim": "GEO",
-          "sev": "high",
-          "msg": "Sin bloque '## Quick Answer' (clave para ser citado por IA)"
+          "msg": "wordCount declarado (1818) difiere del real (3651)"
         },
         {
           "dim": "SEO",
@@ -7105,7 +7009,7 @@
       ],
       "info": [
         {
-          "real_words": 3574,
+          "real_words": 3651,
           "declared_words": 1818
         },
         {
@@ -7185,8 +7089,8 @@
         },
         {
           "dim": "GEO",
-          "sev": "high",
-          "msg": "Sin bloque '## Quick Answer' (clave para ser citado por IA)"
+          "sev": "low",
+          "msg": "El 'Quick Answer' no está en las primeras ~150 palabras"
         },
         {
           "dim": "SEO",
@@ -7201,7 +7105,7 @@
       ],
       "info": [
         {
-          "real_words": 6673,
+          "real_words": 6764,
           "declared_words": 5850
         },
         {
@@ -7392,13 +7296,7 @@
     {
       "file": "january-2026-best-tech-deals.json",
       "slug": "january-2026-best-tech-deals",
-      "errors": [
-        {
-          "dim": "EEAT",
-          "sev": "high",
-          "msg": "Sin campo 'author'"
-        }
-      ],
+      "errors": [],
       "warnings": [
         {
           "dim": "CRO",
@@ -7408,12 +7306,7 @@
         {
           "dim": "EEAT",
           "sev": "medium",
-          "msg": "Contenido corto: 2066 palabras (objetivo 3000+)"
-        },
-        {
-          "dim": "GEO",
-          "sev": "high",
-          "msg": "Sin bloque '## Quick Answer' (clave para ser citado por IA)"
+          "msg": "Contenido corto: 2141 palabras (objetivo 3000+)"
         },
         {
           "dim": "SEO",
@@ -7438,7 +7331,7 @@
       ],
       "info": [
         {
-          "real_words": 2066,
+          "real_words": 2141,
           "declared_words": 1732
         },
         {
@@ -7871,17 +7764,17 @@
         {
           "dim": "EEAT",
           "sev": "low",
-          "msg": "wordCount declarado (4961) difiere del real (6804)"
+          "msg": "wordCount declarado (4961) difiere del real (6879)"
         },
         {
           "dim": "GEO",
-          "sev": "high",
-          "msg": "Sin bloque '## Quick Answer' (clave para ser citado por IA)"
+          "sev": "low",
+          "msg": "El 'Quick Answer' no está en las primeras ~150 palabras"
         }
       ],
       "info": [
         {
-          "real_words": 6804,
+          "real_words": 6879,
           "declared_words": 4961
         },
         {
@@ -8059,11 +7952,6 @@
           "msg": "Sin affiliateLinks => se muestra el CTA genérico de respaldo (no monetiza)"
         },
         {
-          "dim": "GEO",
-          "sev": "high",
-          "msg": "Sin bloque '## Quick Answer' (clave para ser citado por IA)"
-        },
-        {
           "dim": "SEO",
           "sev": "medium",
           "msg": "schema sin '@context' (JSON-LD inválido como standalone)"
@@ -8081,7 +7969,7 @@
       ],
       "info": [
         {
-          "real_words": 3173,
+          "real_words": 3263,
           "declared_words": 3620
         },
         {
@@ -8160,13 +8048,7 @@
     {
       "file": "remote-work-trends-2026.json",
       "slug": "remote-work-trends-2026",
-      "errors": [
-        {
-          "dim": "EEAT",
-          "sev": "high",
-          "msg": "Sin campo 'author'"
-        }
-      ],
+      "errors": [],
       "warnings": [
         {
           "dim": "CRO",
@@ -8176,12 +8058,7 @@
         {
           "dim": "EEAT",
           "sev": "medium",
-          "msg": "Contenido corto: 2357 palabras (objetivo 3000+)"
-        },
-        {
-          "dim": "GEO",
-          "sev": "high",
-          "msg": "Sin bloque '## Quick Answer' (clave para ser citado por IA)"
+          "msg": "Contenido corto: 2436 palabras (objetivo 3000+)"
         },
         {
           "dim": "GEO",
@@ -8211,7 +8088,7 @@
       ],
       "info": [
         {
-          "real_words": 2357,
+          "real_words": 2436,
           "declared_words": 2094
         },
         {
@@ -8428,8 +8305,8 @@
         },
         {
           "dim": "GEO",
-          "sev": "high",
-          "msg": "Sin bloque '## Quick Answer' (clave para ser citado por IA)"
+          "sev": "low",
+          "msg": "El 'Quick Answer' no está en las primeras ~150 palabras"
         },
         {
           "dim": "SEO",
@@ -8444,7 +8321,7 @@
       ],
       "info": [
         {
-          "real_words": 5581,
+          "real_words": 5658,
           "declared_words": 5808
         },
         {
@@ -8612,11 +8489,6 @@
           "msg": "No hay enlace a /disclosure en el contenido"
         },
         {
-          "dim": "GEO",
-          "sev": "high",
-          "msg": "Sin bloque '## Quick Answer' (clave para ser citado por IA)"
-        },
-        {
           "dim": "SEO",
           "sev": "low",
           "msg": "schema @type='HowTo' (se esperaba Article)"
@@ -8629,7 +8501,7 @@
       ],
       "info": [
         {
-          "real_words": 5672,
+          "real_words": 5773,
           "declared_words": 5109
         },
         {

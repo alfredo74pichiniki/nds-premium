@@ -7,7 +7,7 @@
   "date": "May 29, 2026",
   "wordCount": 3440,
   "score": 95,
-  "author": "Tech Research Team",
+  "author": "Nest Digital Studio Team",
   "authorBio": "We analyze thousands of verified user reviews, run real-world benchmarks, and compare specs across dozens of products to deliver trustworthy, data-driven recommendations. Every article on Nest Digital Studio is fact-checked and updated quarterly.",
   "featured": false,
   "description": "Looking for the best project management software in 2026? We compared Monday.com, ClickUp, Asana, Notion, Jira, Trello, Basecamp & Wrike across pricing, AI features, integrations, and user reviews to help you choose.",
@@ -19,9 +19,18 @@
       "name": "Nest Digital Studio"
     },
     "isBasedOn": [
-      {"@type": "WebPage", "name": "G2 Reviews"},
-      {"@type": "WebPage", "name": "Capterra"},
-      {"@type": "WebPage", "name": "TrustRadius"}
+      {
+        "@type": "WebPage",
+        "name": "G2 Reviews"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Capterra"
+      },
+      {
+        "@type": "WebPage",
+        "name": "TrustRadius"
+      }
     ]
   },
   "faqSchema": {

@@ -1,6 +1,6 @@
 # 🔍 Auditoría de Afiliados — Nest Digital Studio
 
-*Generado: 2026-06-24T16:14:54.949853+00:00 · 196 artículos · Motor: audit_engine.py (Arquitecto)*
+*Generado: 2026-06-24T17:13:22.876757+00:00 · 196 artículos · Motor: audit_engine.py (Arquitecto)*
 
 > Auditoría crítica que sustituye al mega-prompt de Gemini. Prioriza por **dinero en riesgo**, no por número de warnings.
 
@@ -15,7 +15,7 @@
 | 🔴 Amazon con tag incorrecto | 0 |
 | 🔇 Artículos con CTA mudo (botón sin texto) | 0 |
 | 📝 Artículos cortos (<3000 palabras) | 33 |
-| 🤖 Artículos sin Quick Answer (GEO) | 28 |
+| 🤖 Artículos sin Quick Answer (GEO) | 10 |
 | **💸 Comisión en riesgo / mes (est.)** | **~$91** |
 | **💸 Comisión en riesgo / año (est.)** | **~$1,095** |
 
@@ -81,9 +81,9 @@
 | a2-hosting-review-2026 | 2256 | 3 | 2 | $14.40 |
 | hostinger-review-2026 | 4269 | 3 | 0 | $11.70 |
 | proton-mail-review-2026 | 3191 | 3 | 3 | $9.72 |
-| best-crm-for-small-business-2026 | 3439 | 2 | 4 | $7.20 |
+| best-crm-for-small-business-2026 | 3518 | 2 | 4 | $7.20 |
 | best-crm-software-2026 | 4398 | 2 | 4 | $2.88 |
-| best-web-hosting-for-wordpress-beginners-2026 | 3985 | 2 | 5 | $2.16 |
+| best-web-hosting-for-wordpress-beginners-2026 | 4060 | 2 | 5 | $2.16 |
 | best-side-hustle-tools-apps-2026 | 1303 | 2 | 5 | $1.44 |
 | best-tools-for-freelancers-2026 | 1138 | 2 | 5 | $1.44 |
 | freshsales-review-2026 | 3110 | 1 | 0 | $5.76 |
@@ -99,22 +99,16 @@
 | best-vpn-remote-work-2026 | 4144 | 1 | 4 | $1.08 |
 | best-vpn-services-2026 | 4386 | 1 | 4 | $1.08 |
 | how-to-protect-home-network-2026 | 4906 | 1 | 4 | $1.08 |
-| nordvpn-vs-surfshark-vs-proton-vpn-2026 | 6804 | 1 | 3 | $1.08 |
+| nordvpn-vs-surfshark-vs-proton-vpn-2026 | 6879 | 1 | 3 | $1.08 |
 | best-website-builders-2026 | 4711 | 1 | 4 | $0.90 |
 | roboform-review-2026 | 3505 | 1 | 3 | $0.72 |
 | best-ai-productivity-tools-remote-workers-2026 | 1317 | 1 | 5 | $0.00 |
 | best-parental-control-software-2026 | 1131 | 1 | 5 | $0.00 |
-| best-seo-tools-for-small-business-2026 | 3984 | 1 | 6 | $0.00 |
 | best-travel-tech-essentials-2026 | 1221 | 1 | 5 | $0.00 |
 | best-vpn-for-gaming-2026 | 1448 | 1 | 4 | $0.00 |
-| ces-2026-top-5-gadgets | 2259 | 1 | 8 | $0.00 |
-| chatgpt-vs-claude-2026 | 3386 | 1 | 7 | $0.00 |
-| home-office-setup-under-500 | 3574 | 1 | 7 | $0.00 |
-| january-2026-best-tech-deals | 2066 | 1 | 7 | $0.00 |
-| remote-work-trends-2026 | 2357 | 1 | 8 | $0.00 |
 | surfshark-one-review-2026-bundle | 1339 | 1 | 3 | $0.00 |
-| why-is-my-wifi-slow-fixes-2026 | 5672 | 1 | 5 | $0.00 |
-| ai-tools-replace-subscriptions-2026 | 6529 | 0 | 3 | $0.00 |
+| why-is-my-wifi-slow-fixes-2026 | 5773 | 1 | 4 | $0.00 |
+| ai-tools-replace-subscriptions-2026 | 6609 | 0 | 3 | $0.00 |
 | asana-review-2026 | 3738 | 0 | 0 | $0.00 |
 | best-4k-monitors-work-2026 | 4282 | 0 | 4 | $0.00 |
 | best-ad-blockers-privacy-tools-2026 | 4089 | 0 | 4 | $0.00 |
@@ -127,7 +121,7 @@
 | best-backpacks-work-laptop-2026 | 4223 | 0 | 4 | $0.00 |
 | best-bluetooth-speakers-2026 | 4064 | 0 | 4 | $0.00 |
 | best-budget-mechanical-keyboards-2026 | 4192 | 0 | 4 | $0.00 |
-| best-budget-tablets-2026 | 5739 | 0 | 2 | $0.00 |
+| best-budget-tablets-2026 | 5818 | 0 | 1 | $0.00 |
 | best-budgeting-apps-2026 | 4665 | 0 | 4 | $0.00 |
 | best-cheap-laptops-2026 | 4124 | 0 | 4 | $0.00 |
 | best-cloud-hosting-providers-2026 | 4007 | 0 | 4 | $0.00 |
@@ -137,7 +131,7 @@
 | best-cybersecurity-tools-small-business-2026 | 1705 | 0 | 5 | $0.00 |
 | best-dash-cams-2026 | 4221 | 0 | 4 | $0.00 |
 | best-desk-lamps-2026 | 4233 | 0 | 4 | $0.00 |
-| best-earbuds-under-100 | 3967 | 0 | 6 | $0.00 |
+| best-earbuds-under-100 | 4045 | 0 | 5 | $0.00 |
 | best-ecommerce-platforms-2026 | 4623 | 0 | 4 | $0.00 |
 | best-electric-bikes-2026 | 4239 | 0 | 4 | $0.00 |
 | best-electric-kettles-2026 | 4565 | 0 | 4 | $0.00 |
@@ -148,7 +142,7 @@
 | best-encrypted-email-services-2026 | 3680 | 0 | 4 | $0.00 |
 | best-ergonomic-mice-2026 | 2900 | 0 | 5 | $0.00 |
 | best-ergonomic-office-chairs-2026 | 4687 | 0 | 4 | $0.00 |
-| best-external-monitors-laptop-2026 | 7052 | 0 | 3 | $0.00 |
+| best-external-monitors-laptop-2026 | 7132 | 0 | 2 | $0.00 |
 | best-external-ssds-2026 | 2477 | 0 | 5 | $0.00 |
 | best-fitness-trackers-2026 | 4745 | 0 | 4 | $0.00 |
 | best-free-vpn-alternatives-2026 | 4004 | 0 | 4 | $0.00 |
@@ -157,7 +151,7 @@
 | best-gaming-laptops-2026 | 4598 | 0 | 4 | $0.00 |
 | best-graphic-design-tools-2026 | 4912 | 0 | 4 | $0.00 |
 | best-headphones-for-working-from-home-2026 | 3735 | 0 | 4 | $0.00 |
-| best-headphones-for-working-from-home | 2071 | 0 | 8 | $0.00 |
+| best-headphones-for-working-from-home | 2163 | 0 | 7 | $0.00 |
 | best-home-gym-equipment-2026 | 4263 | 0 | 4 | $0.00 |
 | best-home-office-desks-2026 | 4687 | 0 | 4 | $0.00 |
 | best-home-security-systems-2026 | 3804 | 0 | 4 | $0.00 |
@@ -168,15 +162,15 @@
 | best-language-learning-apps-2026 | 4680 | 0 | 4 | $0.00 |
 | best-laptop-stands-2026 | 4812 | 0 | 4 | $0.00 |
 | best-led-strip-lights-2026 | 4237 | 0 | 4 | $0.00 |
-| best-lightweight-gaming-mice-under-60g | 3133 | 0 | 6 | $0.00 |
+| best-lightweight-gaming-mice-under-60g | 3201 | 0 | 5 | $0.00 |
 | best-mechanical-keyboards-2026 | 7493 | 0 | 1 | $0.00 |
 | best-meditation-apps-2026 | 4277 | 0 | 4 | $0.00 |
-| best-mesh-wifi-systems-2026 | 6887 | 0 | 2 | $0.00 |
+| best-mesh-wifi-systems-2026 | 6972 | 0 | 1 | $0.00 |
 | best-microphones-podcasting-2026 | 4680 | 0 | 4 | $0.00 |
 | best-microphones-streaming-podcasting-2026 | 4215 | 0 | 4 | $0.00 |
 | best-monitors-for-wfh-2026 | 4158 | 0 | 4 | $0.00 |
 | best-nas-devices-2026 | 5882 | 0 | 4 | $0.00 |
-| best-noise-cancelling-headphones-2026-expert-research-guide | 3471 | 0 | 6 | $0.00 |
+| best-noise-cancelling-headphones-2026-expert-research-guide | 3540 | 0 | 5 | $0.00 |
 | best-noise-cancelling-headphones-under-100-2026 | 4235 | 0 | 4 | $0.00 |
 | best-note-taking-apps-2026 | 4823 | 0 | 4 | $0.00 |
 | best-online-course-platforms-2026 | 4358 | 0 | 4 | $0.00 |
@@ -196,6 +190,7 @@
 | best-robot-vacuums-2026 | 2617 | 0 | 6 | $0.00 |
 | best-screen-recording-software-2026 | 4381 | 0 | 4 | $0.00 |
 | best-seo-tools-2026 | 4709 | 0 | 4 | $0.00 |
+| best-seo-tools-for-small-business-2026 | 3984 | 0 | 6 | $0.00 |
 | best-sleep-trackers-2026 | 4249 | 0 | 4 | $0.00 |
 | best-smart-door-locks-2026 | 4697 | 0 | 4 | $0.00 |
 | best-smart-home-devices-2026 | 4134 | 0 | 4 | $0.00 |
@@ -204,8 +199,8 @@
 | best-smart-thermostats-2026 | 4193 | 0 | 4 | $0.00 |
 | best-smartwatches-2026 | 3766 | 0 | 4 | $0.00 |
 | best-social-media-management-tools-2026 | 4774 | 0 | 4 | $0.00 |
-| best-software-tools-2025 | 3216 | 0 | 6 | $0.00 |
-| best-solar-power-stations-for-emergency | 4228 | 0 | 6 | $0.00 |
+| best-software-tools-2025 | 3297 | 0 | 5 | $0.00 |
+| best-solar-power-stations-for-emergency | 4304 | 0 | 5 | $0.00 |
 | best-standing-desks-2026 | 6579 | 0 | 1 | $0.00 |
 | best-time-tracking-software-2026 | 4898 | 0 | 4 | $0.00 |
 | best-travel-pillows-2026 | 4028 | 0 | 4 | $0.00 |
@@ -215,7 +210,7 @@
 | best-video-doorbells-2026 | 4256 | 0 | 4 | $0.00 |
 | best-video-editing-software-2026 | 4340 | 0 | 4 | $0.00 |
 | best-vpn-for-android-2026 | 4643 | 0 | 4 | $0.00 |
-| best-vpn-for-china-2026 | 5307 | 0 | 5 | $0.00 |
+| best-vpn-for-china-2026 | 5389 | 0 | 5 | $0.00 |
 | best-vpn-for-firestick-2026 | 3807 | 0 | 4 | $0.00 |
 | best-vpn-for-iphone-2026 | 5100 | 0 | 5 | $0.00 |
 | best-vpn-for-mac-2026 | 4269 | 0 | 4 | $0.00 |
@@ -229,24 +224,28 @@
 | best-wifi-routers-2026 | 4393 | 0 | 4 | $0.00 |
 | best-wireless-chargers-2026 | 4329 | 0 | 4 | $0.00 |
 | best-wireless-earbuds-2026 | 3772 | 0 | 4 | $0.00 |
-| best-wireless-earbuds-running-2026 | 7819 | 0 | 4 | $0.00 |
+| best-wireless-earbuds-running-2026 | 7899 | 0 | 4 | $0.00 |
 | best-wireless-mice-2026 | 4189 | 0 | 4 | $0.00 |
-| best-woocommerce-hosting-2026 | 3300 | 0 | 1 | $0.00 |
-| best-wordpress-page-builders-2026 | 3335 | 0 | 1 | $0.00 |
+| best-woocommerce-hosting-2026 | 3372 | 0 | 0 | $0.00 |
+| best-wordpress-page-builders-2026 | 3411 | 0 | 0 | $0.00 |
 | bitdefender-antivirus-review-2026 | 3756 | 0 | 4 | $0.00 |
 | buzzsprout-review-2026 | 3281 | 0 | 0 | $0.00 |
+| ces-2026-top-5-gadgets | 2334 | 0 | 7 | $0.00 |
+| chatgpt-vs-claude-2026 | 3460 | 0 | 6 | $0.00 |
 | clickup-review-2026 | 2549 | 0 | 2 | $0.00 |
-| complete-guide-digital-privacy-2026 | 5617 | 0 | 2 | $0.00 |
+| complete-guide-digital-privacy-2026 | 5696 | 0 | 2 | $0.00 |
 | convertkit-vs-mailchimp-vs-activecampaign-2026 | 4060 | 0 | 4 | $0.00 |
 | elementor-review-2026 | 3107 | 0 | 1 | $0.00 |
 | elementor-vs-squarespace-vs-wix-2026 | 2428 | 0 | 5 | $0.00 |
 | elementor-vs-wordpress-block-editor-vs-divi-2026 | 1558 | 0 | 5 | $0.00 |
 | freshdesk-review-2026 | 2933 | 0 | 2 | $0.00 |
 | getresponse-review-2026 | 4177 | 0 | 0 | $0.00 |
-| how-to-build-gaming-pc-2026 | 6673 | 0 | 4 | $0.00 |
+| home-office-setup-under-500 | 3651 | 0 | 6 | $0.00 |
+| how-to-build-gaming-pc-2026 | 6764 | 0 | 4 | $0.00 |
 | how-to-build-website-from-scratch-2026 | 1564 | 0 | 5 | $0.00 |
 | how-to-set-up-home-office-2026 | 3978 | 0 | 3 | $0.00 |
 | ipvanish-review-2026 | 2169 | 0 | 2 | $0.00 |
+| january-2026-best-tech-deals | 2141 | 0 | 6 | $0.00 |
 | kinsta-review-2026 | 3040 | 0 | 1 | $0.00 |
 | kit-convertkit-review-2026 | 3941 | 0 | 0 | $0.00 |
 | monday-com-review-2026 | 3205 | 0 | 0 | $0.00 |
@@ -258,14 +257,15 @@
 | nordvpn-vs-surfshark-vs-ipvanish-2026 | 2627 | 0 | 5 | $0.00 |
 | notion-review-2026 | 3293 | 0 | 0 | $0.00 |
 | pcloud-review-2026 | 3668 | 0 | 0 | $0.00 |
-| proton-pass-review-2026 | 3173 | 0 | 5 | $0.00 |
+| proton-pass-review-2026 | 3263 | 0 | 4 | $0.00 |
 | protonvpn-review-2026 | 2264 | 0 | 2 | $0.00 |
 | quickbooks-review-2026 | 3073 | 0 | 1 | $0.00 |
+| remote-work-trends-2026 | 2436 | 0 | 7 | $0.00 |
 | remove-personal-data-internet-2026 | 3813 | 0 | 4 | $0.00 |
 | secretlab-review-2026 | 2432 | 0 | 2 | $0.00 |
 | semrush-vs-ahrefs-2026 | 3615 | 0 | 4 | $0.00 |
 | simplisafe-review-2026 | 4105 | 0 | 0 | $0.00 |
-| smart-home-beginners-guide-2026 | 5581 | 0 | 4 | $0.00 |
+| smart-home-beginners-guide-2026 | 5658 | 0 | 4 | $0.00 |
 | surfshark-vs-nordvpn-2026 | 4047 | 0 | 4 | $0.00 |
 | teachable-review-2026 | 3636 | 0 | 0 | $0.00 |
 | transistor-review-2026 | 3717 | 0 | 0 | $0.00 |

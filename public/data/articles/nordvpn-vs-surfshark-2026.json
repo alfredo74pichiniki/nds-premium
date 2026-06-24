@@ -7,7 +7,7 @@
   "date": "May 29, 2026",
   "wordCount": 3410,
   "score": 95,
-  "author": "Tech Research Team",
+  "author": "Nest Digital Studio Team",
   "authorBio": "We analyze thousands of verified user reviews, run real-world benchmarks, and compare specs across dozens of products. Our research methodology combines data aggregation from trusted sources with hands-on testing to deliver honest, data-driven recommendations.",
   "featured": true,
   "schema": {
@@ -35,13 +35,34 @@
       }
     ],
     "about": [
-      { "@type": "SoftwareApplication", "name": "NordVPN" },
-      { "@type": "SoftwareApplication", "name": "Surfshark" },
-      { "@type": "SoftwareApplication", "name": "Proton VPN" },
-      { "@type": "SoftwareApplication", "name": "ExpressVPN" },
-      { "@type": "SoftwareApplication", "name": "IPVanish" },
-      { "@type": "SoftwareApplication", "name": "CyberGhost" },
-      { "@type": "SoftwareApplication", "name": "Mullvad" }
+      {
+        "@type": "SoftwareApplication",
+        "name": "NordVPN"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "Surfshark"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "Proton VPN"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "ExpressVPN"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "IPVanish"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "CyberGhost"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "Mullvad"
+      }
     ]
   },
   "faqSchema": {
