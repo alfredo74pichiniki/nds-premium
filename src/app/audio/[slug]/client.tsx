@@ -18,8 +18,7 @@ import {
     ReadingProgress,
     RelatedArticles,
     Breadcrumbs,
-    generateBreadcrumbs,
-    SchemaMarkup
+    generateBreadcrumbs
 } from "@/components/article";
 import { getDefaultAuthorForCategory } from "@/data/authors";
 
@@ -123,24 +122,8 @@ export default function AudioArticleClient({ slug }: { slug: string }) {
 
     return (
         <>
-            <SchemaMarkup
-                article={{
-                    title: article.title,
-                    slug: slug,
-                    description: article.description || article.title,
-                    category: article.category,
-                    articleType: (article.articleType as "comparison" | "review" | "best_list" | "how_to_guide" | "news" | "deals_roundup" | "trend_analysis" | "opinion") || "review",
-                    datePublished: article.date,
-                    dateModified: article.date,
-                    author: author,
-                    wordCount: article.wordCount,
-                    readTime: readTime,
-                    products: [],
-                    faqs: [],
-                    relatedArticles: [],
-                }}
-                url={`https://nestdigitalstudio.com/audio/${slug}`}
-            />
+            {/* JSON-LD emitted server-side by <ServerJsonLd> in audio/[slug]/page.tsx
+                (removed duplicate SchemaMarkup). */}
 
             <ReadingProgress />
 

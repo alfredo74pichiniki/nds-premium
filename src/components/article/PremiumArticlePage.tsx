@@ -27,8 +27,7 @@ import {
     ReadingProgress,
     RelatedArticles,
     Breadcrumbs,
-    generateBreadcrumbs,
-    SchemaMarkup
+    generateBreadcrumbs
 } from "@/components/article";
 import { getDefaultAuthorForCategory } from "@/data/authors";
 
@@ -107,27 +106,12 @@ interface PremiumArticlePageProps {
 // HELPER FUNCTIONS
 // ═══════════════════════════════════════════════════════════════
 
-function extractFAQs(article: Article): Array<{ question: string; answer: string }> {
-    // Priority 1: faqSchema field (JSON-LD ready format)
-    if (article.faqSchema?.mainEntity?.length) {
-        return article.faqSchema.mainEntity.map(item => ({
-            question: item.name,
-            answer: item.acceptedAnswer.text,
-        }));
-    }
-    // Priority 2: faq array (simple format)
-    if (article.faq?.length) {
-        return article.faq;
-    }
-    return [];
-}
-
 function cleanContent(content: string): string {
     let cleaned = content;
     cleaned = cleaned.replace(/^```markdown\s*/i, '');
     cleaned = cleaned.replace(/```\s*$/i, '');
     cleaned = cleaned.replace(/^\s*---\s*\n[\s\S]*?\n---\s*\n?/, '');
-    // CRITICAL: Strip <script> blocks — JSON-LD is handled by SchemaMarkup component
+    // CRITICAL: Strip <script> blocks — JSON-LD is emitted server-side by ServerJsonLd
     cleaned = cleaned.replace(/<script[\s\S]*?<\/script>/gi, '');
     cleaned = cleaned.trim();
     return cleaned;
@@ -211,25 +195,9 @@ export function PremiumArticlePage({ slug, category, config }: PremiumArticlePag
 
     return (
         <>
-            {/* Schema Markup for SEO */}
-            <SchemaMarkup
-                article={{
-                    title: article.title,
-                    slug: slug,
-                    description: article.description || article.title,
-                    category: article.category,
-                    articleType: (article.articleType as "comparison" | "review" | "best_list" | "how_to_guide" | "news" | "deals_roundup" | "trend_analysis" | "opinion") || "review",
-                    datePublished: article.date,
-                    dateModified: article.date,
-                    author: author,
-                    wordCount: article.wordCount,
-                    readTime: readTime,
-                    products: [],
-                    faqs: extractFAQs(article),
-                    relatedArticles: [],
-                }}
-                url={`https://nestdigitalstudio.com/${category}/${slug}`}
-            />
+            {/* JSON-LD (Article + FAQPage + BreadcrumbList) is emitted server-side by
+                <ServerJsonLd> in each [slug]/page.tsx. Rendering SchemaMarkup here too
+                produced duplicate structured data, so it was removed. */}
 
             {/* Reading Progress Bar */}
             <ReadingProgress />
