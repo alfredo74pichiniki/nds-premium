@@ -22,19 +22,31 @@
   "affiliateLinks": [
     {
       "name": "GetResponse",
-      "url": "https://www.getresponse.com/"
+      "url": "https://www.getresponse.com/",
+      "cta": "Visit GetResponse",
+      "label": "GetResponse",
+      "type": "primary"
     },
     {
       "name": "ActiveCampaign",
-      "url": "https://www.activecampaign.com/"
+      "url": "https://www.activecampaign.com/",
+      "cta": "Visit ActiveCampaign",
+      "label": "ActiveCampaign",
+      "type": "secondary"
     },
     {
       "name": "ConvertKit",
-      "url": "https://kit.com/"
+      "url": "https://kit.com/",
+      "cta": "Visit ConvertKit",
+      "label": "ConvertKit",
+      "type": "secondary"
     },
     {
       "name": "Mailchimp",
-      "url": "https://mailchimp.com/"
+      "url": "https://mailchimp.com/",
+      "cta": "Visit Mailchimp",
+      "label": "Mailchimp",
+      "type": "secondary"
     }
   ],
   "schema": {

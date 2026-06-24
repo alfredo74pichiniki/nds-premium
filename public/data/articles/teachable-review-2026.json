@@ -10,12 +10,47 @@
   "author": "Nest Digital Studio Team",
   "excerpt": "Is Teachable still the best platform to sell online courses in 2026? Our comprehensive review covers pricing, AI features, mobile experience, affiliate tools, and direct comparisons with Kajabi, Thinkific, Podia, and Udemy. Includes real creator feedback and a detailed pricing analysis.",
   "image": "/images/articles/teachable-review-2026.webp",
-  "tags": ["teachable", "online courses", "course creation platform", "teachable review", "sell online courses", "teachable pricing", "kajabi alternative", "thinkific alternative", "teachable vs kajabi", "online education platform"],
+  "tags": [
+    "teachable",
+    "online courses",
+    "course creation platform",
+    "teachable review",
+    "sell online courses",
+    "teachable pricing",
+    "kajabi alternative",
+    "thinkific alternative",
+    "teachable vs kajabi",
+    "online education platform"
+  ],
   "affiliateLinks": [
-    {"name": "Teachable", "url": "https://teachable.com/"},
-    {"name": "ConvertKit", "url": "https://kit.com/"},
-    {"name": "Kajabi", "url": "https://kajabi.com/"},
-    {"name": "Thinkific", "url": "https://thinkific.com/"}
+    {
+      "name": "Teachable",
+      "url": "https://teachable.com/",
+      "cta": "Visit Teachable",
+      "label": "Teachable",
+      "type": "primary"
+    },
+    {
+      "name": "ConvertKit",
+      "url": "https://kit.com/",
+      "cta": "Visit ConvertKit",
+      "label": "ConvertKit",
+      "type": "secondary"
+    },
+    {
+      "name": "Kajabi",
+      "url": "https://kajabi.com/",
+      "cta": "Visit Kajabi",
+      "label": "Kajabi",
+      "type": "secondary"
+    },
+    {
+      "name": "Thinkific",
+      "url": "https://thinkific.com/",
+      "cta": "Visit Thinkific",
+      "label": "Thinkific",
+      "type": "secondary"
+    }
   ],
   "schema": {
     "@context": "https://schema.org",
@@ -24,14 +59,41 @@
     "description": "Comprehensive Teachable review for 2026 covering pricing, AI features, mobile experience, affiliate program, and comparisons with Kajabi, Thinkific, Podia, and Udemy. Includes pros and cons, real creator feedback, and pricing analysis.",
     "datePublished": "2026-06-07",
     "dateModified": "2026-06-07",
-    "author": {"@type": "Organization", "name": "Nest Digital Studio"},
-    "publisher": {"@type": "Organization", "name": "Nest Digital Studio", "url": "https://nestdigitalstudio.com"},
+    "author": {
+      "@type": "Organization",
+      "name": "Nest Digital Studio"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Nest Digital Studio",
+      "url": "https://nestdigitalstudio.com"
+    },
     "isBasedOn": [
-      {"@type": "WebPage", "name": "Teachable Official", "url": "https://teachable.com/"},
-      {"@type": "WebPage", "name": "Teachable Pricing", "url": "https://teachable.com/pricing"},
-      {"@type": "WebPage", "name": "Teachable Features", "url": "https://teachable.com/features"},
-      {"@type": "WebPage", "name": "iOS App Store - Teachable", "url": "https://apps.apple.com/app/teachable/id1492882863"},
-      {"@type": "WebPage", "name": "Google Play - Teachable", "url": "https://play.google.com/store/apps/details?id=com.teachableapp"}
+      {
+        "@type": "WebPage",
+        "name": "Teachable Official",
+        "url": "https://teachable.com/"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Teachable Pricing",
+        "url": "https://teachable.com/pricing"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Teachable Features",
+        "url": "https://teachable.com/features"
+      },
+      {
+        "@type": "WebPage",
+        "name": "iOS App Store - Teachable",
+        "url": "https://apps.apple.com/app/teachable/id1492882863"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Google Play - Teachable",
+        "url": "https://play.google.com/store/apps/details?id=com.teachableapp"
+      }
     ],
     "about": {
       "@type": "SoftwareApplication",

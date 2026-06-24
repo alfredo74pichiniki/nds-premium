@@ -23,19 +23,31 @@
   "affiliateLinks": [
     {
       "name": "Freshdesk",
-      "url": "https://www.freshworks.com/freshdesk/"
+      "url": "https://www.freshworks.com/freshdesk/",
+      "cta": "Visit Freshdesk",
+      "label": "Freshdesk",
+      "type": "primary"
     },
     {
       "name": "Zendesk",
-      "url": "https://www.zendesk.com/"
+      "url": "https://www.zendesk.com/",
+      "cta": "Visit Zendesk",
+      "label": "Zendesk",
+      "type": "secondary"
     },
     {
       "name": "Zoho Desk",
-      "url": "https://www.zoho.com/desk/"
+      "url": "https://www.zoho.com/desk/",
+      "cta": "Visit Zoho Desk",
+      "label": "Zoho Desk",
+      "type": "secondary"
     },
     {
       "name": "Help Scout",
-      "url": "https://www.helpscout.com/"
+      "url": "https://www.helpscout.com/",
+      "cta": "Visit Help Scout",
+      "label": "Help Scout",
+      "type": "secondary"
     }
   ],
   "schema": {

@@ -10,11 +10,35 @@
   "author": "Nest Digital Studio Team",
   "excerpt": "Hostinger Review 2026: Is the budget web hosting giant worth your money? We tested performance, uptime, features, and support across 90 days, compared pricing against Bluehost, SiteGround, and A2 Hosting, and evaluated the AI-powered website builder, hPanel, and NVMe SSD infrastructure. Our comprehensive review covers everything you need to decide if Hostinger is right for your next website.",
   "image": "/images/articles/hostinger-review-2026.webp",
-  "tags": ["hostinger", "web hosting", "hostinger review", "budget hosting", "wordpress hosting 2026"],
+  "tags": [
+    "hostinger",
+    "web hosting",
+    "hostinger review",
+    "budget hosting",
+    "wordpress hosting 2026"
+  ],
   "affiliateLinks": [
-    {"name": "Hostinger", "url": "https://www.hostinger.com/"},
-    {"name": "A2 Hosting", "url": "https://www.a2hosting.com/"},
-    {"name": "SiteGround", "url": "https://www.siteground.com/"}
+    {
+      "name": "Hostinger",
+      "url": "https://www.hostinger.com/",
+      "cta": "Visit Hostinger",
+      "label": "Hostinger",
+      "type": "primary"
+    },
+    {
+      "name": "A2 Hosting",
+      "url": "https://www.a2hosting.com/",
+      "cta": "Visit A2 Hosting",
+      "label": "A2 Hosting",
+      "type": "secondary"
+    },
+    {
+      "name": "SiteGround",
+      "url": "https://www.siteground.com/",
+      "cta": "Visit SiteGround",
+      "label": "SiteGround",
+      "type": "secondary"
+    }
   ],
   "schema": {
     "@context": "https://schema.org",
@@ -23,20 +47,50 @@
     "description": "Comprehensive Hostinger review for 2026. We test speed, uptime, features, and support. Compare plans starting at $2.99/mo with Bluehost, SiteGround, and A2 Hosting. Includes real benchmark data and expert verdict.",
     "datePublished": "2026-05-30",
     "dateModified": "2026-05-30",
-    "author": {"@type": "Organization", "name": "Nest Digital Studio"},
-    "publisher": {"@type": "Organization", "name": "Nest Digital Studio", "url": "https://nestdigitalstudio.com"},
+    "author": {
+      "@type": "Organization",
+      "name": "Nest Digital Studio"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Nest Digital Studio",
+      "url": "https://nestdigitalstudio.com"
+    },
     "isBasedOn": [
-      {"@type": "WebPage", "name": "Hostinger Official", "url": "https://www.hostinger.com/"},
-      {"@type": "WebPage", "name": "G2 - Hostinger", "url": "https://www.g2.com/products/hostinger/reviews"},
-      {"@type": "WebPage", "name": "Capterra - Hostinger", "url": "https://www.capterra.com/p/172737/Hostinger/"}
+      {
+        "@type": "WebPage",
+        "name": "Hostinger Official",
+        "url": "https://www.hostinger.com/"
+      },
+      {
+        "@type": "WebPage",
+        "name": "G2 - Hostinger",
+        "url": "https://www.g2.com/products/hostinger/reviews"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Capterra - Hostinger",
+        "url": "https://www.capterra.com/p/172737/Hostinger/"
+      }
     ],
     "about": {
       "@type": "SoftwareApplication",
       "name": "Hostinger",
       "applicationCategory": "Web Hosting",
       "operatingSystem": "Linux",
-      "offers": {"@type": "Offer", "price": "2.99", "priceCurrency": "USD", "priceValidUntil": "2027-05-30"},
-      "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.5", "ratingCount": "5200", "bestRating": "5", "worstRating": "1"}
+      "offers": {
+        "@type": "Offer",
+        "price": "2.99",
+        "priceCurrency": "USD",
+        "priceValidUntil": "2027-05-30"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.5",
+        "ratingCount": "5200",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
     }
   },
   "faqSchema": {

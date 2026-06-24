@@ -22,19 +22,31 @@
   "affiliateLinks": [
     {
       "name": "Transistor Free Trial",
-      "url": "https://transistor.fm/"
+      "url": "https://transistor.fm/",
+      "cta": "Visit Transistor Free Trial",
+      "label": "Transistor Free Trial",
+      "type": "primary"
     },
     {
       "name": "Transistor Pricing",
-      "url": "https://transistor.fm/pricing"
+      "url": "https://transistor.fm/pricing",
+      "cta": "Visit Transistor Pricing",
+      "label": "Transistor Pricing",
+      "type": "secondary"
     },
     {
       "name": "Buzzsprout",
-      "url": "https://www.buzzsprout.com/?referrer_id=215815"
+      "url": "https://www.buzzsprout.com/?referrer_id=215815",
+      "cta": "Visit Buzzsprout",
+      "label": "Buzzsprout",
+      "type": "secondary"
     },
     {
       "name": "Captivate",
-      "url": "https://www.captivate.fm/"
+      "url": "https://www.captivate.fm/",
+      "cta": "Visit Captivate",
+      "label": "Captivate",
+      "type": "secondary"
     }
   ],
   "schema": {

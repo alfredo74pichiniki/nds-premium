@@ -23,7 +23,10 @@
   "affiliateLinks": [
     {
       "name": "Writesonic",
-      "url": "https://writesonic.com"
+      "url": "https://writesonic.com",
+      "cta": "Visit Writesonic",
+      "label": "Writesonic",
+      "type": "primary"
     }
   ],
   "schema": {

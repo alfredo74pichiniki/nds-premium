@@ -21,19 +21,31 @@
   "affiliateLinks": [
     {
       "name": "ProtonVPN Plus",
-      "url": "https://go.getproton.me/aff_c?offer_id=50&aff_id=17015"
+      "url": "https://go.getproton.me/aff_c?offer_id=50&aff_id=17015",
+      "cta": "Visit ProtonVPN Plus",
+      "label": "ProtonVPN Plus",
+      "type": "primary"
     },
     {
       "name": "ProtonVPN Free",
-      "url": "https://go.getproton.me/aff_c?offer_id=7&aff_id=17015"
+      "url": "https://go.getproton.me/aff_c?offer_id=7&aff_id=17015",
+      "cta": "Visit ProtonVPN Free",
+      "label": "ProtonVPN Free",
+      "type": "secondary"
     },
     {
       "name": "NordVPN",
-      "url": "https://go.nordvpn.net/aff_c?offer_id=15&aff_id=142918&url_id=902"
+      "url": "https://go.nordvpn.net/aff_c?offer_id=15&aff_id=142918&url_id=902",
+      "cta": "Visit NordVPN",
+      "label": "NordVPN",
+      "type": "secondary"
     },
     {
       "name": "Surfshark",
-      "url": "https://get.surfshark.net/aff_c?offer_id=1498&aff_id=45353"
+      "url": "https://get.surfshark.net/aff_c?offer_id=1498&aff_id=45353",
+      "cta": "Visit Surfshark",
+      "label": "Surfshark",
+      "type": "secondary"
     }
   ],
   "schema": {

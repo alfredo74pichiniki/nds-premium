@@ -21,14 +21,14 @@
   "affiliateLinks": [
     {
       "label": "Try Cloudways Free for 3 Days",
-      "url": "https://www.cloudways.com/en/?id=AFFILIATE_ID",
+      "url": "https://www.cloudways.com/en/?id=2134070",
       "type": "primary",
       "cta": "Start Free Trial",
       "badge": "Best Value Managed Cloud"
     },
     {
       "label": "View Cloudways Plans",
-      "url": "https://www.cloudways.com/en/pricing.php?id=AFFILIATE_ID",
+      "url": "https://www.cloudways.com/en/pricing.php?id=2134070",
       "type": "secondary",
       "cta": "See Pricing"
     }

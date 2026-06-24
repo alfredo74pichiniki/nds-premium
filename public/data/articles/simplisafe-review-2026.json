@@ -23,10 +23,34 @@
     "home alarm system"
   ],
   "affiliateLinks": [
-    {"name": "SimpliSafe", "url": "https://simplisafe.com/"},
-    {"name": "Ring Alarm", "url": "https://ring.com/"},
-    {"name": "Cove", "url": "https://cove.com/"},
-    {"name": "ADT", "url": "https://adt.com/"}
+    {
+      "name": "SimpliSafe",
+      "url": "https://simplisafe.com/",
+      "cta": "Visit SimpliSafe",
+      "label": "SimpliSafe",
+      "type": "primary"
+    },
+    {
+      "name": "Ring Alarm",
+      "url": "https://ring.com/",
+      "cta": "Visit Ring Alarm",
+      "label": "Ring Alarm",
+      "type": "secondary"
+    },
+    {
+      "name": "Cove",
+      "url": "https://cove.com/",
+      "cta": "Visit Cove",
+      "label": "Cove",
+      "type": "secondary"
+    },
+    {
+      "name": "ADT",
+      "url": "https://adt.com/",
+      "cta": "Visit ADT",
+      "label": "ADT",
+      "type": "secondary"
+    }
   ],
   "schema": {
     "@context": "https://schema.org",
@@ -35,15 +59,46 @@
     "description": "Comprehensive SimpliSafe review for 2026 covering packages ($249-$700), monitoring plans ($27.99-$32.99/mo), Anti-Theft Guarantee, physical privacy shutters, 4K Camera Pro with AI detection, and comparisons with Ring, ADT, and Cove. Includes real installation experience, app review, and detailed privacy analysis.",
     "datePublished": "2026-06-18",
     "dateModified": "2026-06-18",
-    "author": {"@type": "Organization", "name": "Nest Digital Studio"},
-    "publisher": {"@type": "Organization", "name": "Nest Digital Studio", "url": "https://nestdigitalstudio.com"},
+    "author": {
+      "@type": "Organization",
+      "name": "Nest Digital Studio"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Nest Digital Studio",
+      "url": "https://nestdigitalstudio.com"
+    },
     "isBasedOn": [
-      {"@type": "WebPage", "name": "SimpliSafe Official", "url": "https://simplisafe.com/"},
-      {"@type": "WebPage", "name": "SimpliSafe Help Center", "url": "https://help.simplisafe.com/"},
-      {"@type": "WebPage", "name": "Amazon - SimpliSafe", "url": "https://www.amazon.com/stores/SimpliSafe/SimpliSafe/page/4A28F8A7-6430-4C35-B2D2-06D66C79082D"},
-      {"@type": "WebPage", "name": "Consumer Reports - Home Security", "url": "https://www.consumerreports.org/home-security/"},
-      {"@type": "WebPage", "name": "App Store - SimpliSafe", "url": "https://apps.apple.com/us/app/simplisafe/id1356377873"},
-      {"@type": "WebPage", "name": "Google Play - SimpliSafe", "url": "https://play.google.com/store/apps/details?id=com.simplisafe.mobile"}
+      {
+        "@type": "WebPage",
+        "name": "SimpliSafe Official",
+        "url": "https://simplisafe.com/"
+      },
+      {
+        "@type": "WebPage",
+        "name": "SimpliSafe Help Center",
+        "url": "https://help.simplisafe.com/"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Amazon - SimpliSafe",
+        "url": "https://www.amazon.com/stores/SimpliSafe/SimpliSafe/page/4A28F8A7-6430-4C35-B2D2-06D66C79082D"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Consumer Reports - Home Security",
+        "url": "https://www.consumerreports.org/home-security/"
+      },
+      {
+        "@type": "WebPage",
+        "name": "App Store - SimpliSafe",
+        "url": "https://apps.apple.com/us/app/simplisafe/id1356377873"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Google Play - SimpliSafe",
+        "url": "https://play.google.com/store/apps/details?id=com.simplisafe.mobile"
+      }
     ],
     "about": {
       "@type": "Product",

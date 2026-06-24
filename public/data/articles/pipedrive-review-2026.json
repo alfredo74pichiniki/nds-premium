@@ -22,19 +22,31 @@
   "affiliateLinks": [
     {
       "name": "Pipedrive",
-      "url": "https://www.pipedrive.com/"
+      "url": "https://www.pipedrive.com/",
+      "cta": "Visit Pipedrive",
+      "label": "Pipedrive",
+      "type": "primary"
     },
     {
       "name": "HubSpot",
-      "url": "https://www.hubspot.com/"
+      "url": "https://www.hubspot.com/",
+      "cta": "Visit HubSpot",
+      "label": "HubSpot",
+      "type": "secondary"
     },
     {
       "name": "Zoho CRM",
-      "url": "https://www.zoho.com/crm/"
+      "url": "https://www.zoho.com/crm/",
+      "cta": "Visit Zoho CRM",
+      "label": "Zoho CRM",
+      "type": "secondary"
     },
     {
       "name": "Freshworks CRM",
-      "url": "https://www.freshworks.com/crm/sales/"
+      "url": "https://www.freshworks.com/crm/sales/",
+      "cta": "Visit Freshworks CRM",
+      "label": "Freshworks CRM",
+      "type": "secondary"
     }
   ],
   "schema": {

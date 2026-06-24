@@ -21,14 +21,14 @@
   "affiliateLinks": [
     {
       "label": "Get Elementor Pro",
-      "url": "https://be.elementor.com/visit/?bta=AFFILIATE_ID&brand=elementorpro",
+      "url": "https://be.elementor.com/visit/?bta=231223&brand=elementorpro",
       "type": "primary",
       "cta": "Get Elementor Pro",
       "badge": "Best WordPress Page Builder"
     },
     {
       "label": "Elementor Free vs Pro Comparison",
-      "url": "https://be.elementor.com/visit/?bta=AFFILIATE_ID&brand=elementorpro",
+      "url": "https://be.elementor.com/visit/?bta=231223&brand=elementorpro",
       "type": "secondary",
       "cta": "Compare Plans"
     }

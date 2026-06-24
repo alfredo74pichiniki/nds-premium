@@ -23,15 +23,24 @@
   "affiliateLinks": [
     {
       "name": "IPVanish",
-      "url": "https://www.ipvanish.com/?a_aid=partner&chan=nds-premium"
+      "url": "https://www.ipvanish.com/?a_aid=partner&chan=nds-premium",
+      "cta": "Visit IPVanish",
+      "label": "IPVanish",
+      "type": "primary"
     },
     {
       "name": "NordVPN",
-      "url": "https://nordvpn.com/"
+      "url": "https://go.nordvpn.net/aff_c?offer_id=15&aff_id=142918",
+      "cta": "Visit NordVPN",
+      "label": "NordVPN",
+      "type": "secondary"
     },
     {
       "name": "Surfshark",
-      "url": "https://surfshark.com/"
+      "url": "https://get.surfshark.net/aff_c?offer_id=926&aff_id=45353",
+      "cta": "Visit Surfshark",
+      "label": "Surfshark",
+      "type": "secondary"
     }
   ],
   "schema": {

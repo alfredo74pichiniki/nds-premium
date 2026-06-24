@@ -32,15 +32,24 @@
   "affiliateLinks": [
     {
       "name": "Notion",
-      "url": "https://www.notion.so/"
+      "url": "https://www.notion.so/",
+      "cta": "Visit Notion",
+      "label": "Notion",
+      "type": "primary"
     },
     {
       "name": "Obsidian",
-      "url": "https://obsidian.md/"
+      "url": "https://obsidian.md/",
+      "cta": "Visit Obsidian",
+      "label": "Obsidian",
+      "type": "secondary"
     },
     {
       "name": "ClickUp",
-      "url": "https://clickup.com/"
+      "url": "https://clickup.com/",
+      "cta": "Visit ClickUp",
+      "label": "ClickUp",
+      "type": "secondary"
     }
   ],
   "schema": {

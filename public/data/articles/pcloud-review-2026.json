@@ -20,15 +20,24 @@
   "affiliateLinks": [
     {
       "name": "pCloud",
-      "url": "https://partner.pcloud.com/r/155930"
+      "url": "https://partner.pcloud.com/r/155930",
+      "cta": "Visit pCloud",
+      "label": "pCloud",
+      "type": "primary"
     },
     {
       "name": "Google Drive",
-      "url": "https://www.google.com/drive/"
+      "url": "https://www.google.com/drive/",
+      "cta": "Visit Google Drive",
+      "label": "Google Drive",
+      "type": "secondary"
     },
     {
       "name": "Dropbox",
-      "url": "https://www.dropbox.com/"
+      "url": "https://www.dropbox.com/",
+      "cta": "Visit Dropbox",
+      "label": "Dropbox",
+      "type": "secondary"
     }
   ],
   "schema": {

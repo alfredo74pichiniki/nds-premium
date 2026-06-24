@@ -24,19 +24,31 @@
   "affiliateLinks": [
     {
       "name": "Asana",
-      "url": "https://asana.com/"
+      "url": "https://asana.com/",
+      "cta": "Visit Asana",
+      "label": "Asana",
+      "type": "primary"
     },
     {
       "name": "Asana Pricing",
-      "url": "https://asana.com/pricing"
+      "url": "https://asana.com/pricing",
+      "cta": "Visit Asana Pricing",
+      "label": "Asana Pricing",
+      "type": "secondary"
     },
     {
       "name": "ClickUp",
-      "url": "https://clickup.com/"
+      "url": "https://clickup.com/",
+      "cta": "Visit ClickUp",
+      "label": "ClickUp",
+      "type": "secondary"
     },
     {
       "name": "Monday.com",
-      "url": "https://monday.com/"
+      "url": "https://monday.com/",
+      "cta": "Visit Monday.com",
+      "label": "Monday.com",
+      "type": "secondary"
     }
   ],
   "schema": {

@@ -110,14 +110,14 @@
   "affiliateLinks": [
     {
       "label": "Get NordVPN — 74% Off + 3 Months Free",
-      "url": "https://go.nordvpn.net/aff_c?offer_id=15&aff_id=AFFILIATE_ID",
+      "url": "https://go.nordvpn.net/aff_c?offer_id=15&aff_id=142918",
       "type": "primary",
       "cta": "Claim Deal",
       "badge": "Best Overall VPN"
     },
     {
       "label": "NordVPN Plans Comparison",
-      "url": "https://go.nordvpn.net/aff_c?offer_id=15&aff_id=AFFILIATE_ID",
+      "url": "https://go.nordvpn.net/aff_c?offer_id=15&aff_id=142918",
       "type": "secondary",
       "cta": "Compare Plans"
     }

@@ -21,15 +21,24 @@
   "affiliateLinks": [
     {
       "name": "ClickUp",
-      "url": "https://clickup.com/"
+      "url": "https://clickup.com/",
+      "cta": "Visit ClickUp",
+      "label": "ClickUp",
+      "type": "primary"
     },
     {
       "name": "Monday.com",
-      "url": "https://monday.com/"
+      "url": "https://monday.com/",
+      "cta": "Visit Monday.com",
+      "label": "Monday.com",
+      "type": "secondary"
     },
     {
       "name": "NordVPN",
-      "url": "https://go.nordvpn.net/aff_c?offer_id=15&aff_id=142918&url_id=902"
+      "url": "https://go.nordvpn.net/aff_c?offer_id=15&aff_id=142918&url_id=902",
+      "cta": "Visit NordVPN",
+      "label": "NordVPN",
+      "type": "secondary"
     }
   ],
   "schema": {

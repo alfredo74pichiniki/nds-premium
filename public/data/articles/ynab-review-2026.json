@@ -23,15 +23,24 @@
   "affiliateLinks": [
     {
       "name": "YNAB",
-      "url": "https://www.ynab.com/"
+      "url": "https://www.ynab.com/",
+      "cta": "Visit YNAB",
+      "label": "YNAB",
+      "type": "primary"
     },
     {
       "name": "Monarch Money",
-      "url": "https://www.monarchmoney.com/"
+      "url": "https://www.monarchmoney.com/",
+      "cta": "Visit Monarch Money",
+      "label": "Monarch Money",
+      "type": "secondary"
     },
     {
       "name": "Quicken Simplifi",
-      "url": "https://www.quicken.com/simplifi"
+      "url": "https://www.quicken.com/simplifi",
+      "cta": "Visit Quicken Simplifi",
+      "label": "Quicken Simplifi",
+      "type": "secondary"
     }
   ],
   "schema": {

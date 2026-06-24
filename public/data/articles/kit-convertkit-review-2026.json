@@ -29,15 +29,24 @@
   "affiliateLinks": [
     {
       "name": "Kit (ConvertKit)",
-      "url": "https://kit.com/"
+      "url": "https://kit.com/",
+      "cta": "Visit Kit (ConvertKit)",
+      "label": "Kit (ConvertKit)",
+      "type": "primary"
     },
     {
       "name": "ActiveCampaign",
-      "url": "https://www.activecampaign.com/"
+      "url": "https://www.activecampaign.com/",
+      "cta": "Visit ActiveCampaign",
+      "label": "ActiveCampaign",
+      "type": "secondary"
     },
     {
       "name": "Mailchimp",
-      "url": "https://mailchimp.com/"
+      "url": "https://mailchimp.com/",
+      "cta": "Visit Mailchimp",
+      "label": "Mailchimp",
+      "type": "secondary"
     }
   ],
   "schema": {

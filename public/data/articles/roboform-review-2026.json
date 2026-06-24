@@ -136,7 +136,7 @@
   "affiliateLinks": [
     {
       "label": "Try RoboForm Free",
-      "url": "https://www.roboform.com/go?id=AFFILIATE_ID",
+      "url": "https://www.roboform.com/?affid=aocaa",
       "type": "primary",
       "cta": "Try Free",
       "badge": "Best Form-Filling Password Manager"

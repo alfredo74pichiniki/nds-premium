@@ -10,19 +10,37 @@
   "author": "Nest Digital Studio Team",
   "excerpt": "QuickBooks Online powers over 7 million businesses worldwide. Our comprehensive 2026 review covers plans from $30-$200/mo, key features like inventory tracking, payroll integration, bank reconciliation, and 750+ integrations. Compare with Xero, FreshBooks, Wave, and Zoho Books. Includes real pricing breakdown, pros and cons, and which plan is right for your business.",
   "image": "/images/articles/quickbooks-review-2026.webp",
-  "tags": ["quickbooks", "quickbooks online", "small business accounting", "accounting software", "intuit", "invoice software", "business finance", "bookkeeping 2026"],
+  "tags": [
+    "quickbooks",
+    "quickbooks online",
+    "small business accounting",
+    "accounting software",
+    "intuit",
+    "invoice software",
+    "business finance",
+    "bookkeeping 2026"
+  ],
   "affiliateLinks": [
     {
       "name": "QuickBooks Online",
-      "url": "https://quickbooks.intuit.com/"
+      "url": "https://quickbooks.intuit.com/",
+      "cta": "Visit QuickBooks Online",
+      "label": "QuickBooks Online",
+      "type": "primary"
     },
     {
       "name": "Xero",
-      "url": "https://www.xero.com/"
+      "url": "https://www.xero.com/",
+      "cta": "Visit Xero",
+      "label": "Xero",
+      "type": "secondary"
     },
     {
       "name": "FreshBooks",
-      "url": "https://www.freshbooks.com/"
+      "url": "https://www.freshbooks.com/",
+      "cta": "Visit FreshBooks",
+      "label": "FreshBooks",
+      "type": "secondary"
     }
   ],
   "schema": {
@@ -70,10 +88,34 @@
         "priceCurrency": "USD",
         "offerCount": "4",
         "offers": [
-          {"@type": "Offer", "name": "Simple Start", "price": "30", "priceCurrency": "USD", "priceValidUntil": "2027-06-12"},
-          {"@type": "Offer", "name": "Essentials", "price": "55", "priceCurrency": "USD", "priceValidUntil": "2027-06-12"},
-          {"@type": "Offer", "name": "Plus", "price": "85", "priceCurrency": "USD", "priceValidUntil": "2027-06-12"},
-          {"@type": "Offer", "name": "Advanced", "price": "200", "priceCurrency": "USD", "priceValidUntil": "2027-06-12"}
+          {
+            "@type": "Offer",
+            "name": "Simple Start",
+            "price": "30",
+            "priceCurrency": "USD",
+            "priceValidUntil": "2027-06-12"
+          },
+          {
+            "@type": "Offer",
+            "name": "Essentials",
+            "price": "55",
+            "priceCurrency": "USD",
+            "priceValidUntil": "2027-06-12"
+          },
+          {
+            "@type": "Offer",
+            "name": "Plus",
+            "price": "85",
+            "priceCurrency": "USD",
+            "priceValidUntil": "2027-06-12"
+          },
+          {
+            "@type": "Offer",
+            "name": "Advanced",
+            "price": "200",
+            "priceCurrency": "USD",
+            "priceValidUntil": "2027-06-12"
+          }
         ]
       },
       "aggregateRating": {

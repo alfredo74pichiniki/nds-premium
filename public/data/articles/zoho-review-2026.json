@@ -22,23 +22,38 @@
   "affiliateLinks": [
     {
       "name": "Zoho One",
-      "url": "https://www.zoho.com/one/"
+      "url": "https://www.zoho.com/one/",
+      "cta": "Visit Zoho One",
+      "label": "Zoho One",
+      "type": "primary"
     },
     {
       "name": "Zoho CRM",
-      "url": "https://www.zoho.com/crm/"
+      "url": "https://www.zoho.com/crm/",
+      "cta": "Visit Zoho CRM",
+      "label": "Zoho CRM",
+      "type": "secondary"
     },
     {
       "name": "HubSpot",
-      "url": "https://www.hubspot.com/"
+      "url": "https://www.hubspot.com/",
+      "cta": "Visit HubSpot",
+      "label": "HubSpot",
+      "type": "secondary"
     },
     {
       "name": "Google Workspace",
-      "url": "https://workspace.google.com/"
+      "url": "https://workspace.google.com/",
+      "cta": "Visit Google Workspace",
+      "label": "Google Workspace",
+      "type": "secondary"
     },
     {
       "name": "Monday.com",
-      "url": "https://monday.com/"
+      "url": "https://monday.com/",
+      "cta": "Visit Monday.com",
+      "label": "Monday.com",
+      "type": "secondary"
     }
   ],
   "schema": {

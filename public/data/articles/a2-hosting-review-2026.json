@@ -10,11 +10,36 @@
   "author": "Nest Digital Studio Team",
   "excerpt": "Is A2 Hosting worth the premium price in 2026? We put Turbo Servers to the test with real-world benchmarks, compared pricing against Hostinger and SiteGround, and evaluated the 24/7 Guru Crew support. Our comprehensive review covers everything from the anytime money-back guarantee to developer tools, speed tests, and migration experience.",
   "image": "/images/articles/a2-hosting-review-2026.webp",
-  "tags": ["a2 hosting", "web hosting", "a2 hosting review", "managed hosting", "wordpress hosting 2026", "turbo servers"],
+  "tags": [
+    "a2 hosting",
+    "web hosting",
+    "a2 hosting review",
+    "managed hosting",
+    "wordpress hosting 2026",
+    "turbo servers"
+  ],
   "affiliateLinks": [
-    {"name": "A2 Hosting", "url": "https://www.a2hosting.com/"},
-    {"name": "SiteGround", "url": "https://www.siteground.com/"},
-    {"name": "Hostinger", "url": "https://www.hostinger.com/"}
+    {
+      "name": "A2 Hosting",
+      "url": "https://www.a2hosting.com/",
+      "cta": "Visit A2 Hosting",
+      "label": "A2 Hosting",
+      "type": "primary"
+    },
+    {
+      "name": "SiteGround",
+      "url": "https://www.siteground.com/",
+      "cta": "Visit SiteGround",
+      "label": "SiteGround",
+      "type": "secondary"
+    },
+    {
+      "name": "Hostinger",
+      "url": "https://www.hostinger.com/",
+      "cta": "Visit Hostinger",
+      "label": "Hostinger",
+      "type": "secondary"
+    }
   ],
   "schema": {
     "@context": "https://schema.org",
@@ -23,20 +48,50 @@
     "description": "Comprehensive A2 Hosting review for 2026. We test Turbo Server speed, uptime, and support. Compare plans starting at $2.99/mo with Hostinger, SiteGround, and Bluehost. Includes real benchmark data and expert verdict.",
     "datePublished": "2026-05-29",
     "dateModified": "2026-05-29",
-    "author": {"@type": "Organization", "name": "Nest Digital Studio"},
-    "publisher": {"@type": "Organization", "name": "Nest Digital Studio", "url": "https://nestdigitalstudio.com"},
+    "author": {
+      "@type": "Organization",
+      "name": "Nest Digital Studio"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Nest Digital Studio",
+      "url": "https://nestdigitalstudio.com"
+    },
     "isBasedOn": [
-      {"@type": "WebPage", "name": "A2 Hosting Official", "url": "https://www.a2hosting.com/"},
-      {"@type": "WebPage", "name": "G2 - A2 Hosting", "url": "https://www.g2.com/products/a2-hosting/reviews"},
-      {"@type": "WebPage", "name": "Capterra - A2 Hosting", "url": "https://www.capterra.com/p/133745/A2-Hosting/"}
+      {
+        "@type": "WebPage",
+        "name": "A2 Hosting Official",
+        "url": "https://www.a2hosting.com/"
+      },
+      {
+        "@type": "WebPage",
+        "name": "G2 - A2 Hosting",
+        "url": "https://www.g2.com/products/a2-hosting/reviews"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Capterra - A2 Hosting",
+        "url": "https://www.capterra.com/p/133745/A2-Hosting/"
+      }
     ],
     "about": {
       "@type": "SoftwareApplication",
       "name": "A2 Hosting",
       "applicationCategory": "Web Hosting",
       "operatingSystem": "Linux",
-      "offers": {"@type": "Offer", "price": "2.99", "priceCurrency": "USD", "priceValidUntil": "2027-05-29"},
-      "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.5", "ratingCount": "3200", "bestRating": "5", "worstRating": "1"}
+      "offers": {
+        "@type": "Offer",
+        "price": "2.99",
+        "priceCurrency": "USD",
+        "priceValidUntil": "2027-05-29"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.5",
+        "ratingCount": "3200",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
     }
   },
   "faqSchema": {
