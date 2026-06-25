@@ -1,14 +1,40 @@
 import sys
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-import paramiko, json
+import os, json
 from pathlib import Path
+import paramiko
+
+# ---------------------------------------------------------------------------
+# Credenciales del VDS: SE LEEN DE .env.local (gitignored). NUNCA hardcodear
+# secretos en este archivo — está versionado en un repo público.
+# Define en .env.local:
+#   HERMES_VDS_HOST=...
+#   HERMES_VDS_USER=root
+#   HERMES_VDS_PASS=...
+# ---------------------------------------------------------------------------
+def load_env_local():
+    envf = Path('.env.local')
+    if envf.exists():
+        for line in envf.read_text(encoding='utf-8').splitlines():
+            line = line.strip()
+            if line and not line.startswith('#') and '=' in line:
+                k, v = line.split('=', 1)
+                os.environ.setdefault(k.strip(), v.strip())
+
+load_env_local()
+VDS_HOST = os.environ.get('HERMES_VDS_HOST')
+VDS_USER = os.environ.get('HERMES_VDS_USER', 'root')
+VDS_PASS = os.environ.get('HERMES_VDS_PASS')
+if not (VDS_HOST and VDS_PASS):
+    print('ERROR: faltan credenciales. Define HERMES_VDS_HOST y HERMES_VDS_PASS en .env.local')
+    sys.exit(1)
 
 LOCAL_ARTICLES_DIR = Path('public/data/articles')
 LOCAL_ARTICLES_JSON = Path('public/data/articles.json')
 
 ssh = paramiko.SSHClient()
 ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-ssh.connect('167.86.108.139', username='root', password='nZSAFau70i5XGa', timeout=15)
+ssh.connect(VDS_HOST, username=VDS_USER, password=VDS_PASS, timeout=15)
 
 # Get the full Hermes articles.json
 stdin, stdout, stderr = ssh.exec_command(
@@ -52,20 +78,20 @@ for art in new_arts:
     slug = art.get('slug', '')
     remote_path = f'/opt/data/projects/nds-premium/public/data/articles/{slug}.json'
     local_path = LOCAL_ARTICLES_DIR / f'{slug}.json'
-    
+
     if local_path.exists():
         print(f"  SKIP (exists): {slug}")
         continue
-    
+
     try:
         stdin2, stdout2, stderr2 = ssh.exec_command(f'docker exec hermes cat {remote_path} 2>/dev/null')
         content = stdout2.read().decode('utf-8', errors='replace')
-        
+
         if not content or len(content) < 50:
             # Try without docker exec (might be on host)
             stdin3, stdout3, stderr3 = ssh.exec_command(f'cat /opt/data/projects/nds-premium/public/data/articles/{slug}.json 2>/dev/null')
             content = stdout3.read().decode('utf-8', errors='replace')
-        
+
         if content and len(content) > 50:
             # Verify it's valid JSON
             json.loads(content)
