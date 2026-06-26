@@ -20,20 +20,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/products`, lastModified: now, changeFrequency: 'weekly', priority: 0.6 },
   ]
 
-  // Dynamic articles from articles.json
+  // Dynamic articles from articles.json — la URL se construye con category + slug.
+  // (Los 196 articulos usan category+slug, NO href; el filtro anterior `if (article.href)`
+  //  descartaba el 99% del contenido y por eso Google no lo indexaba.)
+  const CAT_MAP: Record<string, string> = { productivity: 'software' } // categorias sin ruta propia
   const articlePages: MetadataRoute.Sitemap = []
   try {
     const articlesPath = path.join(process.cwd(), 'public', 'data', 'articles.json')
     const articles = JSON.parse(fs.readFileSync(articlesPath, 'utf-8'))
+    const seen = new Set<string>()
     for (const article of articles) {
-      if (article.href) {
-        articlePages.push({
-          url: `${BASE_URL}${article.href}`,
-          lastModified: article.date ? new Date(article.date).toISOString() : now,
-          changeFrequency: 'monthly',
-          priority: article.featured ? 0.9 : 0.7,
-        })
+      const slug = article.slug
+      const category = CAT_MAP[article.category] || article.category
+      const urlPath = article.href || (slug && category ? `/${category}/${slug}` : null)
+      if (!urlPath || seen.has(urlPath)) continue
+      seen.add(urlPath)
+      let lastModified = now
+      if (article.date) {
+        const d = new Date(article.date)
+        if (!isNaN(d.getTime())) lastModified = d.toISOString()
       }
+      articlePages.push({
+        url: `${BASE_URL}${urlPath}`,
+        lastModified,
+        changeFrequency: 'weekly',
+        priority: article.featured ? 0.9 : 0.7,
+      })
     }
   } catch {
     // articles.json not found - skip dynamic articles
