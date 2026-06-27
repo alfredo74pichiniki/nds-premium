@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import legacyRedirects from "./legacy-redirects";
 
 const nextConfig: NextConfig = {
   images: {
@@ -6,6 +7,11 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // =====================================================
+      // Consolidacion SEO: paginas viejas 2025 -> articulos 2026 (301)
+      // Elimina contenido duplicado y concentra autoridad de dominio.
+      // =====================================================
+      ...legacyRedirects,
       // =====================================================
       // Old Shopify product URLs → /products page
       // These were used in social media posts before Shopify
