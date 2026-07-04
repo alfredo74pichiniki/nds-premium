@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { CookieConsentBanner } from "@/components/ui/CookieConsentBanner";
+import { AffiliateClickTracker } from "@/components/analytics/AffiliateClickTracker";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -64,6 +65,7 @@ export default function RootLayout({
       </head>
       <body className={`${inter.variable} font-sans antialiased bg-[#0a0a0a] text-white min-h-screen animated-bg-orbs`}>
         {children}
+        <AffiliateClickTracker />
         <CookieConsentBanner />
       </body>
     </html>
