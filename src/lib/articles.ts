@@ -115,6 +115,22 @@ export function getArticleBySlug(slug: string): (Article & { content?: string })
 }
 
 /**
+ * Categorias sin ruta propia -> ruta real. DEBE coincidir con el CAT_MAP de sitemap.ts.
+ */
+const CAT_MAP: Record<string, string> = { productivity: "software" };
+
+/**
+ * Ruta canonica unica de un articulo (category + slug), identica a la logica del sitemap.
+ * Evita que el mismo slug se sirva/indexe bajo varias categorias (duplicados: la causa
+ * del aviso "Duplicada: el usuario no ha indicado ninguna version canonica" de Search Console).
+ */
+export function canonicalPathFor(article: Pick<Article, "slug" | "category" | "href">): string {
+    if (article.href) return article.href;
+    const category = CAT_MAP[article.category] || article.category || "";
+    return `/${category}/${article.slug}`;
+}
+
+/**
  * Obtiene estadísticas por categoría
  */
 export function getCategoryStats(): Record<string, number> {

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { getArticleBySlug } from "@/lib/articles";
+import { getArticleBySlug, canonicalPathFor } from "@/lib/articles";
+import { notFound, permanentRedirect } from "next/navigation";
 import GuidesArticleClient from "./client";
 import ServerJsonLd from "@/components/seo/ServerJsonLd";
 
@@ -23,7 +24,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
     const title = article?.title || slug;
     const description = article?.description || `Expert review and buying guide for ${slug.replace(/-/g, " ")}`;
-    const canonical = `${BASE_URL}/${CATEGORY}/${slug}`;
+    const canonical = article ? `${BASE_URL}${canonicalPathFor(article)}` : `${BASE_URL}/${CATEGORY}/${slug}`;
 
     return {
         title,
@@ -51,6 +52,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function DynamicGuidePage({ params }: PageProps) {
     const { slug } = await params;
     const article = getArticleBySlug(slug);
+    if (!article) notFound();
+    const correctPath = canonicalPathFor(article);
+    if (correctPath !== `/${CATEGORY}/${slug}`) permanentRedirect(correctPath);
     return (
         <>
             {article && <ServerJsonLd article={article} category={CATEGORY} />}
