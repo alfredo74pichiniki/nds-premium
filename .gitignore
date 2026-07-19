@@ -43,7 +43,7 @@ next-env.d.ts
 # auditoria local (no publicar)
 AFFILIATE_IDS.md
 backups/
-security/
+/security/
 google-sa.json
 weekly_report.md
 affiliate_audit_mega_prompt.md
