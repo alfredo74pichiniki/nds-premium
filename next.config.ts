@@ -12,6 +12,14 @@ const nextConfig: NextConfig = {
       // Elimina contenido duplicado y concentra autoridad de dominio.
       // =====================================================
       ...legacyRedirects,
+      // Consolidacion de canibalizacion: la misma comparativa vivia en 2 URLs
+      // compitiendo en Google. 301 a la que tiene traccion (nordvpn-vs-surfshark:
+      // 2 impr, pos 74) desde la que tiene 0 impresiones (surfshark-vs-nordvpn).
+      {
+        source: "/software/surfshark-vs-nordvpn-2026",
+        destination: "/software/nordvpn-vs-surfshark-2026",
+        permanent: true,
+      },
       // =====================================================
       // Old Shopify product URLs → /products page
       // These were used in social media posts before Shopify
