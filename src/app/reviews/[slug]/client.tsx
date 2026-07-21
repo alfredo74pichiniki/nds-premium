@@ -1,12 +1,15 @@
 "use client";
 
 import { PremiumArticlePage } from "@/components/article/PremiumArticlePage";
+import type { Article, ArticleListItem } from "@/components/article/PremiumArticlePage";
 import { Star } from "lucide-react";
 
-export default function ReviewsArticleClient({ slug }: { slug: string }) {
+export default function ReviewsArticleClient({ slug, initialArticle, initialRelated }: { slug: string; initialArticle?: Article | null; initialRelated?: ArticleListItem[] }) {
     return (
         <PremiumArticlePage
             slug={slug}
+            initialArticle={initialArticle}
+            initialRelated={initialRelated}
             category="reviews"
             config={{
                 name: "Reviews",

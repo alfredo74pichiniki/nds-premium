@@ -1,12 +1,15 @@
 "use client";
 
 import { PremiumArticlePage } from "@/components/article/PremiumArticlePage";
+import type { Article, ArticleListItem } from "@/components/article/PremiumArticlePage";
 import { Mountain } from "lucide-react";
 
-export default function OutdoorArticleClient({ slug }: { slug: string }) {
+export default function OutdoorArticleClient({ slug, initialArticle, initialRelated }: { slug: string; initialArticle?: Article | null; initialRelated?: ArticleListItem[] }) {
     return (
         <PremiumArticlePage
             slug={slug}
+            initialArticle={initialArticle}
+            initialRelated={initialRelated}
             category="outdoor"
             config={{
                 name: "Outdoor",

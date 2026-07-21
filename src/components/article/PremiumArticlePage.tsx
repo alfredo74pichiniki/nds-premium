@@ -58,7 +58,7 @@ interface AffiliateLink {
     internal?: boolean;
 }
 
-interface Article {
+export interface Article {
     slug: string;
     title: string;
     description?: string;
@@ -75,7 +75,7 @@ interface Article {
     quickAnswer?: string;
 }
 
-interface ArticleListItem {
+export interface ArticleListItem {
     slug: string;
     title: string;
     category: string;
@@ -100,6 +100,12 @@ interface PremiumArticlePageProps {
     slug: string;
     category: string;
     config: CategoryConfig;
+    /** Articulo cargado EN EL SERVIDOR. Si viene, el contenido y todos sus enlaces
+     *  se renderizan en el HTML inicial (Google los ve sin ejecutar JS). Sin esto,
+     *  el crawler solo veia un esqueleto de carga. */
+    initialArticle?: Article | null;
+    /** Articulos relacionados cargados en el servidor (enlaces internos en el HTML). */
+    initialRelated?: ArticleListItem[];
 }
 
 // ═══════════════════════════════════════════════════════════════
@@ -121,15 +127,19 @@ function cleanContent(content: string): string {
 // MAIN COMPONENT
 // ═══════════════════════════════════════════════════════════════
 
-export function PremiumArticlePage({ slug, category, config }: PremiumArticlePageProps) {
-    const [article, setArticle] = useState<Article | null>(null);
-    const [relatedArticles, setRelatedArticles] = useState<ArticleListItem[]>([]);
-    const [loading, setLoading] = useState(true);
+export function PremiumArticlePage({ slug, category, config, initialArticle, initialRelated }: PremiumArticlePageProps) {
+    // Si el servidor ya nos dio el articulo, arrancamos con el: el contenido y sus
+    // enlaces salen en el HTML inicial (SEO) y no hay estado de "cargando".
+    const [article, setArticle] = useState<Article | null>(initialArticle ?? null);
+    const [relatedArticles, setRelatedArticles] = useState<ArticleListItem[]>(initialRelated ?? []);
+    const [loading, setLoading] = useState(!initialArticle);
     const [error, setError] = useState<string | null>(null);
 
     // noindex is now handled server-side via generateMetadata in each page.tsx
 
     useEffect(() => {
+        // Ya viene del servidor -> nada que pedir al navegador.
+        if (initialArticle) return;
         async function loadArticle() {
             try {
                 // Load article content
@@ -157,7 +167,7 @@ export function PremiumArticlePage({ slug, category, config }: PremiumArticlePag
             }
         }
         loadArticle();
-    }, [slug, category]);
+    }, [slug, category, initialArticle]);
 
     // Loading state
     if (loading) {

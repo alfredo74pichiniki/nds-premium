@@ -44,7 +44,7 @@ interface ArticleListItem {
     href?: string;
 }
 
-export default function AudioArticleClient({ slug }: { slug: string }) {
+export default function AudioArticleClient({ slug, initialArticle, initialRelated }: { slug: string; initialArticle?: Article | null; initialRelated?: ArticleListItem[] }) {
     const [article, setArticle] = useState<Article | null>(null);
     const [relatedArticles, setRelatedArticles] = useState<ArticleListItem[]>([]);
     const [loading, setLoading] = useState(true);

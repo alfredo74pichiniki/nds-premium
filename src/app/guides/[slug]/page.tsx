@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { getArticleBySlug, canonicalPathFor } from "@/lib/articles";
+import { getArticleBySlug, canonicalPathFor, getArticlesByCategory } from "@/lib/articles";
+import type { Article as PremiumArticle, ArticleListItem } from "@/components/article/PremiumArticlePage";
 import { notFound, permanentRedirect } from "next/navigation";
 import GuidesArticleClient from "./client";
 import ServerJsonLd from "@/components/seo/ServerJsonLd";
@@ -55,10 +56,16 @@ export default async function DynamicGuidePage({ params }: PageProps) {
     if (!article) notFound();
     const correctPath = canonicalPathFor(article);
     if (correctPath !== `/${CATEGORY}/${slug}`) permanentRedirect(correctPath);
+    // Relacionados en el SERVIDOR: enlaces internos visibles en el HTML.
+    const related = getArticlesByCategory(CATEGORY).filter((a) => a.slug !== slug).slice(0, 3);
     return (
         <>
             {article && <ServerJsonLd article={article} category={CATEGORY} />}
-            <GuidesArticleClient slug={slug} />
+            <GuidesArticleClient
+                slug={slug}
+                initialArticle={article as unknown as PremiumArticle}
+                initialRelated={related as unknown as ArticleListItem[]}
+            />
         </>
     );
 }

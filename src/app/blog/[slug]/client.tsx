@@ -1,12 +1,15 @@
 "use client";
 
 import { PremiumArticlePage } from "@/components/article/PremiumArticlePage";
+import type { Article, ArticleListItem } from "@/components/article/PremiumArticlePage";
 import { Newspaper } from "lucide-react";
 
-export default function BlogArticleClient({ slug }: { slug: string }) {
+export default function BlogArticleClient({ slug, initialArticle, initialRelated }: { slug: string; initialArticle?: Article | null; initialRelated?: ArticleListItem[] }) {
     return (
         <PremiumArticlePage
             slug={slug}
+            initialArticle={initialArticle}
+            initialRelated={initialRelated}
             category="blog"
             config={{
                 name: "Blog",
