@@ -45,7 +45,7 @@ export default function AboutPage() {
                                 We exist because most tech reviews fail professionals. They're either paid promotions disguised as opinions, or surface-level summaries that don't address real-world performance under pressure.
                             </p>
                             <p className="text-gray-300 leading-relaxed">
-                                <strong className="text-white">Our promise is simple:</strong> We help professionals and enterprises make critical infrastructure and hardware decisions through real testing, verified data from 50,000+ user reviews, and honest verdicts—not generic opinions.
+                                <strong className="text-white">Our promise is simple:</strong> We help readers choose security software and tech through careful research, transparent comparisons, and honest verdicts—including the drawbacks.
                             </p>
                         </section>
 
@@ -100,7 +100,7 @@ export default function AboutPage() {
                                 <div className="flex gap-4">
                                     <div className="w-8 h-8 rounded-full bg-[var(--nds-primary)]/20 flex items-center justify-center text-[var(--nds-primary)] font-bold shrink-0">2</div>
                                     <div>
-                                        <h4 className="text-white font-semibold">AI-Powered Pattern Recognition</h4>
+                                        <h4 className="text-white font-semibold">Cross-Source Pattern Analysis</h4>
                                         <p className="text-gray-400 text-sm">Our AI identifies common pain points, praises, and long-term reliability issues across thousands of reviews.</p>
                                     </div>
                                 </div>
@@ -180,7 +180,7 @@ export default function AboutPage() {
                                         </div>
                                     </div>
                                     <p className="text-gray-400 text-sm mb-3">
-                                        Our proprietary AI systems analyze 50,000+ user reviews from Amazon, Reddit, YouTube, and specialized forums to identify patterns, common issues, and verified performance data.
+                                        We compare vendor specifications, published pricing, independent lab results where available, and publicly available user feedback to identify recurring issues and real-world performance patterns.
                                     </p>
                                     <div className="flex flex-wrap gap-2 text-xs">
                                         <span className="px-2 py-1 rounded bg-cyan-500/20 text-cyan-400">Review Analysis</span>

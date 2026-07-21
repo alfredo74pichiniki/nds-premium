@@ -106,7 +106,7 @@ export async function POST(request: NextRequest) {
                     amazonLink: "#",
                 },
             ],
-            methodology: `Our testing process involves hands-on evaluation of each product for at least 2 weeks. We measure real-world performance, analyze 50,000+ verified customer reviews, and consult with industry experts. Our recommendations are updated monthly to reflect new releases and price changes.`,
+            methodology: `Our research process compares vendor specifications, published pricing, independent lab results where available, and publicly available user feedback. We prioritise documented, verifiable differences over marketing claims, and we state the drawbacks as clearly as the strengths. Recommendations are reviewed and updated as products and prices change.`,
             faq: [
                 {
                     question: `What is the best ${category.toLowerCase()} for most people?`,

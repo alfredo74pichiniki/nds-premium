@@ -7,7 +7,7 @@ const features = [
     {
         icon: TrendingUp,
         title: "Data-Driven Analysis",
-        description: "We aggregate 50,000+ verified user reviews from Amazon, Reddit, and YouTube.",
+        description: "We aggregate publicly available user feedback from Amazon, Reddit and YouTube.",
     },
     {
         icon: Shield,
@@ -16,7 +16,7 @@ const features = [
     },
     {
         icon: Zap,
-        title: "AI-Powered Insights",
+        title: "Cross-Source Insights",
         description: "Advanced AI synthesizes patterns across sources for comprehensive recommendations.",
     },
     {

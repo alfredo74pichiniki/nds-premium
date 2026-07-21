@@ -29,7 +29,7 @@ export function CTASection() {
                             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[var(--nds-primary)]/10 mb-6">
                                 <Zap className="w-4 h-4 text-[var(--nds-primary)]" />
                                 <span className="text-sm font-medium text-[var(--nds-primary)]">
-                                    AI-Powered Recommendations
+                                    Independent Recommendations
                                 </span>
                             </div>
 
@@ -39,7 +39,7 @@ export function CTASection() {
                             </h2>
 
                             <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
-                                Join thousands of smart shoppers who trust our AI-powered reviews
+                                Independent comparisons to help you choose with confidence
                                 to make confident purchasing decisions.
                             </p>
 

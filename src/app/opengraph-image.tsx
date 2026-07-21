@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Nest Digital Studio - Expert Tech Reviews Powered by AI";
+export const alt = "Nest Digital Studio - Security Software & Tech Reviews";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -49,7 +49,7 @@ export default async function OGImage() {
                             textAlign: "center",
                         }}
                     >
-                        Expert Tech Reviews Powered by AI
+                        Security Software & Tech Reviews
                     </div>
                     <div
                         style={{

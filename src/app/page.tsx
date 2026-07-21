@@ -17,7 +17,7 @@ export default function Home() {
     <>
       <PageSEO
         title="Nest Digital Studio — Expert Tech Reviews & Digital Products"
-        description="In-depth, data-driven reviews of technology products and services. We analyze 50,000+ verified reviews to deliver honest, unbiased recommendations."
+        description="In-depth reviews and buying guides for VPNs, antivirus, password managers and the tech that protects your digital life."
         category="tech-reviews"
         slug=""
       />

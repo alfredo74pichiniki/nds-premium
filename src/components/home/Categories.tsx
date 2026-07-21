@@ -11,7 +11,7 @@ const categories = [
     {
         title: "Best Of",
         subtitle: "Top Picks 2026",
-        description: "Elite products handpicked by AI analysis of 50,000+ reviews",
+        description: "Top picks selected through hands-on research and comparison",
         badge: "🏆 #1",
         gradient: "from-amber-400 via-orange-500 to-red-500",
         glowColor: "rgba(251, 146, 60, 0.5)",
@@ -66,7 +66,7 @@ const categories = [
     {
         title: "Tools",
         subtitle: "Interactive",
-        description: "AI-powered product finder and comparison calculators",
+        description: "Product finder and comparison calculators",
         badge: "🛠️ Beta",
         gradient: "from-violet-400 via-indigo-500 to-purple-600",
         glowColor: "rgba(139, 92, 246, 0.5)",
@@ -294,7 +294,7 @@ export function Categories() {
 
                     <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
                         AI-curated product recommendations backed by{" "}
-                        <span className="text-white font-semibold">50,000+ verified reviews</span>{" "}
+                        <span className="text-white font-semibold">independent research</span>{" "}
                         and real-world testing data
                     </p>
                 </motion.div>

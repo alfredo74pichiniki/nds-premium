@@ -214,7 +214,7 @@ export function Hero() {
                 >
                     <Zap className="w-5 h-5 text-cyan-400 animate-pulse" />
                     <span className="text-sm font-bold tracking-wider uppercase bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
-                        AI-Powered Tech Reviews
+                        Security &amp; Tech Reviews
                     </span>
                     <div className="flex items-center gap-0.5 text-yellow-400">
                         {[...Array(5)].map((_, i) => (
@@ -255,8 +255,8 @@ export function Hero() {
                     transition={{ duration: 0.8, delay: 0.7 }}
                     className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed"
                 >
-                    Expert technology reviews powered by AI. We analyze{" "}
-                    <span className="text-white font-bold">50,000+ verified reviews</span>{" "}
+                    In-depth reviews and buying guides for the tech that protects you. We compare{" "}
+                    <span className="text-white font-bold">features, pricing and independent test data</span>{" "}
                     to bring you unbiased, data-driven recommendations.
                 </motion.p>
 

@@ -33,7 +33,7 @@ export function Footer() {
                             </div>
                         </motion.div>
                         <p className="text-gray-400 text-sm max-w-md mb-6">
-                            Expert tech reviews powered by AI. We analyze 50,000+ verified reviews to deliver unbiased, data-driven recommendations.
+                            In-depth reviews and buying guides for security software and tech. Independent analysis, with affiliate links clearly disclosed.
                         </p>
                         <div className="flex gap-3">
                             <a
@@ -94,6 +94,7 @@ export function Footer() {
                             <li><Link href="/methodology" className="hover:text-[var(--nds-primary)] transition-colors">Methodology</Link></li>
                             <li><Link href="/disclosure" className="hover:text-[var(--nds-primary)] transition-colors">Advertiser Disclosure</Link></li>
                             <li><Link href="/privacy" className="hover:text-[var(--nds-primary)] transition-colors">Privacy Policy</Link></li>
+                            <li><Link href="/terms" className="hover:text-[var(--nds-primary)] transition-colors">Terms of Service</Link></li>
                             <li><Link href="/contact" className="hover:text-[var(--nds-primary)] transition-colors">Contact</Link></li>
                         </ul>
                     </div>
@@ -109,6 +110,8 @@ export function Footer() {
                         <Link href="/disclosure" className="hover:text-gray-400 transition-colors">Affiliate Disclosure</Link>
                         <span>•</span>
                         <Link href="/privacy" className="hover:text-gray-400 transition-colors">Privacy</Link>
+                        <span>•</span>
+                        <Link href="/terms" className="hover:text-gray-400 transition-colors">Terms</Link>
                         <span>•</span>
                         <Link href="/contact" className="hover:text-gray-400 transition-colors">Contact</Link>
                     </div>

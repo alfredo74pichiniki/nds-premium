@@ -11,7 +11,7 @@ const values = [
     },
     {
         icon: Zap,
-        title: "AI-Powered Research",
+        title: "In-Depth Research",
         description: "Our AI analyzes thousands of reviews to find what actually matters.",
     },
     {

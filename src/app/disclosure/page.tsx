@@ -48,7 +48,7 @@ export default function DisclosurePage() {
                             </h2>
                             <div className="space-y-4 text-gray-300">
                                 <p className="leading-relaxed">
-                                    Our reviews and recommendations are based on <strong className="text-white">independent technical analysis</strong>, aggregated user data from 50,000+ verified reviews, and real-world testing.
+                                    Our reviews and recommendations are based on <strong className="text-white">independent technical analysis</strong>, aggregated publicly available user feedback, and vendor documentation.
                                 </p>
                                 <p className="leading-relaxed">
                                     <strong className="text-white">Affiliate commissions do not influence our editorial verdicts.</strong> We recommend products because we believe they provide genuine value—not because we earn a higher commission.
