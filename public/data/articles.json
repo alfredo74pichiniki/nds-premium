@@ -1,5 +1,50 @@
 [
   {
+    "slug": "malwarebytes-review-2026",
+    "title": "Malwarebytes Review 2026: Is Premium Security Still the Lightest, Most Effective Antivirus Suite?",
+    "category": "software",
+    "articleType": "review",
+    "date": "August 2, 2026",
+    "wordCount": 4093,
+    "score": 94,
+    "author": "Nest Digital Studio Team",
+    "excerpt": "Comprehensive Malwarebytes Premium Security review for 2026. We test malware detection rates, system performance impact, Privacy VPN speeds, and the new identity theft protection suite with $2M insurance. Compare plans (Standard, Plus, Total) against Norton 360, Bitdefender, and McAfee. Includes real benchmark data, VPN speed tests, and expert verdict.",
+    "image": "/images/articles/malwarebytes-review-2026.webp",
+    "tags": [
+      "malwarebytes",
+      "malwarebytes review",
+      "antivirus software",
+      "malwarebytes premium",
+      "best antivirus 2026",
+      "cybersecurity suite",
+      "malwarebytes vs norton",
+      "identity theft protection"
+    ],
+    "affiliateLinks": [
+      {
+        "name": "Malwarebytes",
+        "url": "https://www.malwarebytes.com/",
+        "cta": "Visit Malwarebytes",
+        "label": "Malwarebytes",
+        "type": "primary"
+      },
+      {
+        "name": "Norton 360",
+        "url": "https://us.norton.com/",
+        "cta": "Visit Norton",
+        "label": "Norton 360",
+        "type": "secondary"
+      },
+      {
+        "name": "Bitdefender",
+        "url": "https://www.bitdefender.com/",
+        "cta": "Visit Bitdefender",
+        "label": "Bitdefender",
+        "type": "secondary"
+      }
+    ]
+  },
+  {
     "slug": "loom-review-2026",
     "title": "Loom Review 2026: Is Async Video the Ultimate Replacement for Meetings?",
     "description": "Is Loom the ultimate async video replacement for meetings in 2026? We test recording quality, AI features (auto-summaries, filler word removal, meeting recaps), pricing from free to $20/user/mo, and compare against Vidyard, Snagit, and ScreenPal. Our comprehensive review covers the Atlassian acquisition effect, real-world ROI calculations, and why 25 million users across 400,000+ companies choose Loom.",
