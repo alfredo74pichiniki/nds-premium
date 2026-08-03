@@ -1,5 +1,59 @@
 [
   {
+    "slug": "jira-review-2026",
+    "title": "Jira Review 2026: Is Atlassian's AI-Powered Project Management Still the Gold Standard?",
+    "category": "software",
+    "articleType": "review",
+    "date": "August 3, 2026",
+    "wordCount": 4156,
+    "score": 94,
+    "author": "Nest Digital Studio Team",
+    "excerpt": "Comprehensive Jira Software review for 2026. We evaluate Atlassian's AI-powered project management platform with Rovo agents, MCP integration for AI coding tools, and the new Teamwork Graph. Compare pricing (Free to Enterprise), features, and alternatives including Monday.com, Asana, ClickUp, and Linear. Includes real pricing breakdowns, AI capability analysis, and honest assessment of Jira's learning curve.",
+    "image": "/images/articles/jira-review-2026.webp",
+    "tags": [
+      "jira",
+      "jira review",
+      "atlassian jira",
+      "jira software",
+      "project management software",
+      "agile project management",
+      "jira vs monday.com",
+      "jira vs asana",
+      "jira vs linear",
+      "scrum tool",
+      "kanban tool",
+      "best project management 2026",
+      "ai project management",
+      "jira pricing",
+      "rovo ai",
+      "atlassian"
+    ],
+    "affiliateLinks": [
+      {
+        "name": "Jira Software",
+        "url": "https://www.atlassian.com/software/jira",
+        "cta": "Try Jira Free",
+        "label": "Jira Software",
+        "type": "primary"
+      },
+      {
+        "name": "Monday.com",
+        "url": "https://monday.com/",
+        "cta": "Visit Monday.com",
+        "label": "Monday.com",
+        "type": "secondary"
+      },
+      {
+        "name": "Asana",
+        "url": "https://asana.com/",
+        "cta": "Visit Asana",
+        "label": "Asana",
+        "type": "secondary"
+      }
+    ],
+    "modifiedDate": "2026-08-03"
+  },
+  {
     "slug": "malwarebytes-review-2026",
     "title": "Malwarebytes Review 2026: Is Premium Security Still the Lightest, Most Effective Antivirus Suite?",
     "category": "software",
