@@ -1,5 +1,59 @@
 [
   {
+    "slug": "mcafee-review-2026",
+    "title": "McAfee Total Protection Review 2026: Is the Rebranded McAfee+ Suite Worth It After the Identity Theft Overhaul?",
+    "description": "Comprehensive McAfee Total Protection (McAfee+) review for 2026. We analyze the complete rebranded product lineup — Essential, Premium, Advanced, and Ultimate — with real AV-Comparatives test results (98.5% protection, 2.6 performance impact score), identity theft protection features including $2M insurance and automatic data broker removal, Safe Family parental controls, pricing breakdown ($39.99-$279.99/year), and head-to-head comparison against Norton 360, Bitdefender, and Malwarebytes. Includes detailed analysis of the VPN limitations, True Key password manager, and honest verdict on who should buy each tier.",
+    "category": "software",
+    "articleType": "review",
+    "date": "August 4, 2026",
+    "wordCount": 4348,
+    "score": 93,
+    "author": "Nest Digital Studio Team",
+    "excerpt": "McAfee Total Protection has been rebranded to McAfee+ with a radical shift toward identity theft protection. Our comprehensive 2026 review analyzes the new Essential, Premium, Advanced, and Ultimate tiers with real AV-Comparatives lab results (98.5% protection, industry-leading 2.6 performance score), identity restoration services, automatic data broker removal, and up to $2M insurance. Compare McAfee+ vs. Norton 360, Bitdefender, and Malwarebytes to see if the identity-focused overhaul justifies the price.",
+    "image": "/images/articles/mcafee-review-2026.webp",
+    "tags": [
+      "mcafee",
+      "mcafee review",
+      "mcafee total protection",
+      "mcafee plus",
+      "antivirus software",
+      "best antivirus 2026",
+      "mcafee antivirus review",
+      "identity theft protection",
+      "mcafee vs norton",
+      "mcafee vs bitdefender",
+      "cybersecurity suite",
+      "mcafee pricing",
+      "mcafee safe family",
+      "parental controls",
+      "antivirus comparison 2026"
+    ],
+    "affiliateLinks": [
+      {
+        "name": "McAfee Total Protection",
+        "url": "https://www.mcafee.com/",
+        "cta": "Visit McAfee",
+        "label": "McAfee Total Protection",
+        "type": "primary"
+      },
+      {
+        "name": "Norton 360",
+        "url": "https://us.norton.com/",
+        "cta": "Visit Norton",
+        "label": "Norton 360",
+        "type": "secondary"
+      },
+      {
+        "name": "Bitdefender",
+        "url": "https://www.bitdefender.com/",
+        "cta": "Visit Bitdefender",
+        "label": "Bitdefender",
+        "type": "secondary"
+      }
+    ],
+    "modifiedDate": "2026-08-04"
+  },
+  {
     "slug": "jira-review-2026",
     "title": "Jira Review 2026: Is Atlassian's AI-Powered Project Management Still the Gold Standard?",
     "category": "software",
