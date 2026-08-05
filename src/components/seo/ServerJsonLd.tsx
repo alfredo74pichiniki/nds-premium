@@ -26,8 +26,36 @@ interface ArticleData {
     };
     faq?: FAQ[];
     schema?: {
-        isBasedOn?: Array<{ name: string }>;
+        // Hermes escribe este campo de tres formas distintas: lista (218 articulos),
+        // objeto suelto (3) y cadena con una URL (2). Las cadenas rompian la pagina con
+        // error 500 y los objetos sueltos se perdian en silencio. Se acepta cualquiera
+        // de las tres y se normaliza en normalizarFuentes().
+        isBasedOn?: unknown;
     };
+}
+
+/** Devuelve SIEMPRE una lista de fuentes, venga como lista, objeto o cadena. */
+function normalizarFuentes(valor: unknown): Array<{ name: string; url?: string }> {
+    const uno = (v: unknown): { name: string; url?: string } | null => {
+        if (typeof v === "string" && v.trim()) {
+            const s = v.trim();
+            try {
+                return { name: new URL(s).hostname.replace(/^www\./, ""), url: s };
+            } catch {
+                return { name: s };
+            }
+        }
+        if (v && typeof v === "object") {
+            const o = v as { name?: unknown; url?: unknown };
+            const name = typeof o.name === "string" ? o.name : typeof o.url === "string" ? o.url : null;
+            if (!name) return null;
+            return { name, url: typeof o.url === "string" ? o.url : undefined };
+        }
+        return null;
+    };
+    if (Array.isArray(valor)) return valor.map(uno).filter((x): x is { name: string; url?: string } => !!x);
+    const solo = uno(valor);
+    return solo ? [solo] : [];
 }
 
 export default function ServerJsonLd({
@@ -85,14 +113,18 @@ export default function ServerJsonLd({
             "@id": canonical,
         },
         wordCount: article.wordCount,
-        ...(article.schema?.isBasedOn?.length
-            ? {
-                  isBasedOn: article.schema.isBasedOn.map((src) => ({
-                      "@type": "WebPage",
-                      name: src.name,
-                  })),
-              }
-            : {}),
+        ...(() => {
+            const fuentes = normalizarFuentes(article.schema?.isBasedOn);
+            return fuentes.length
+                ? {
+                      isBasedOn: fuentes.map((src) => ({
+                          "@type": "WebPage",
+                          name: src.name,
+                          ...(src.url ? { url: src.url } : {}),
+                      })),
+                  }
+                : {};
+        })(),
     });
 
     // 2. FAQPage schema (critical for Rich Snippets)
