@@ -229,6 +229,18 @@ export function PremiumLi({ children, ...props }: React.ComponentPropsWithoutRef
 // ═══════════════════════════════════════════════════════════════
 // PREMIUM LINKS - CTA Buttons and styled links
 // ═══════════════════════════════════════════════════════════════
+// Enlaces que generan comision: Google EXIGE marcarlos con rel="sponsored"
+// (https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links).
+// Sin esto, cientos de enlaces monetizados pasan por votos editoriales y el sitio
+// tiene el perfil de "afiliado fino" que Google degrada.
+const AFFILIATE_HREF = /[?&]tag=[^&]*-\d{2}\b|amzn\.to|[?&]aff_id=|aff_c\b|\.sjv\.io|\.pxf\.io|\.ojrq\.net|awin1\.com|prf\.hn|partnerstack|impactradius|\.impact\.com|[?&]bta=|[?&]kaid=|[?&]affid=|trypipedrive|a2hosting\.com\/\?aid=|cloudways\.com\/[^"]*[?&]id=/i;
+
+function relFor(href?: string): string {
+    const base = "noopener noreferrer";
+    if (href && AFFILIATE_HREF.test(href)) return `sponsored nofollow ${base}`;
+    return base;
+}
+
 export function PremiumLink({ href, children, ...props }: React.ComponentPropsWithoutRef<"a">) {
     const text = String(children);
 
@@ -250,7 +262,7 @@ export function PremiumLink({ href, children, ...props }: React.ComponentPropsWi
             <a
                 href={href}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel={relFor(href)}
                 className="inline-flex items-center gap-2 px-6 py-3 my-4 rounded-full bg-gradient-to-r from-cyan-500 to-purple-600 text-white font-semibold hover:shadow-[0_0_30px_rgba(0,180,216,0.4)] transition-all hover:scale-105"
                 {...props}
             >
@@ -265,7 +277,7 @@ export function PremiumLink({ href, children, ...props }: React.ComponentPropsWi
         <a
             href={href}
             target="_blank"
-            rel="noopener noreferrer"
+            rel={relFor(href)}
             className="inline-flex items-center gap-1 text-cyan-400 hover:text-cyan-300 underline underline-offset-2 transition-colors"
             {...props}
         >
