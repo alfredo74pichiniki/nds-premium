@@ -132,6 +132,45 @@ reales.
 
 ---
 
+## Dejar de depender de Google: qué se puede y qué no
+
+Te lo separo sin adornos, porque meterlo todo en el mismo saco sale caro.
+
+### Lo que SÍ puedes dejar, y deberías
+
+| Servicio | Sustituto | Estado |
+|---|---|---|
+| **Gemini API** | Claude (la clave ya la pagas) | **Hecho el 9 ago.** El traductor de artículos ya corre con Claude, y el chat de la web deja de depender de una clave de Google rota desde junio |
+| **Google One / almacenamiento de pago** | Vaciar Fotos y Drive, o mover el correo a tu propio dominio | Pendiente, tuyo. Solo tienes **4 correos de más de 15 MB**: el espacio se lo comen Fotos y Drive, no Gmail |
+| **Gmail como correo del negocio** | Correo en `nestdigitalstudio.com`, con Proton Mail o Zoho | Pendiente. Con Proton hay un extra: **ya lo promocionas y tienes su enlace de afiliado**, así que usarías lo que recomiendas |
+| **Google Analytics** | Vercel Analytics (ya estás en Vercel) o Plausible | Opcional. GA4 es gratis, pero encaja mal con un sitio cuyo nicho es la privacidad |
+
+### Lo que NO puedes dejar, y no deberías intentarlo
+
+**Google Search no es una suscripción: es el mercado donde vendes.** No te cobra
+nada y no te amenaza con nada. Search Console y GA4 son **gratis** y no tienen
+ninguna relación con el cobro de Google One: cancelarlo no te toca ni una ni otra.
+
+Un sitio de afiliados que renuncie a la Búsqueda de Google renuncia al 100% de su
+canal principal. Eso no es independencia, es cerrar.
+
+### Lo que sí es estrategia de verdad: dejar de depender de su ALGORITMO
+
+Distinto de dejar Google. Se trata de tener audiencia propia que no te puedan
+quitar con una actualización del algoritmo:
+
+| Canal | Por qué | Cuándo se nota |
+|---|---|---|
+| **Lista de correo** | Es el único activo que es tuyo. Un lead magnet de seguridad (checklist de privacidad, comparativa de VPN) a cambio del email | 4-8 semanas para las primeras suscripciones |
+| **Pinterest** | Ya te trae 54 sesiones/semana, pero de 9 segundos: es humo. Hay que arreglar la calidad, no el volumen | 4-6 semanas |
+| **Bing / IndexNow** | Ya tienes `security/indexnow_ping.py`. Indexación instantánea en Bing, que además alimenta a ChatGPT | Inmediato |
+| **Buscadores de IA (GEO)** | La serie va a cero desde marzo (84 → 1). Se mide, no se supone | 8-12 semanas |
+
+**Regla honesta:** ninguno de estos sustituye a Google a corto plazo. Suman, y te
+dan un suelo si Google te castiga. Vender lo contrario sería humo.
+
+---
+
 ## Cómo sabremos si funciona (y cuándo dejar de insistir)
 
 Se mide el CONJUNTO del nicho, no un artículo suelto. Cada mes, con

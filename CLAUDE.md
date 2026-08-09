@@ -41,6 +41,17 @@ Repo: `github.com/alfredo74pichiniki/nds-premium`. Push a `main` = deploy a prod
 - **Proton: el `offer_id` varía por producto** (Pass=43, VPN=7, Mail=26, Unlimited=50).
   Unificarlos rompe ventas.
 - Las IDs de afiliado verificadas están en `AFFILIATE_IDS.md` (no se sube a GitHub).
+- **El sitio es en INGLÉS y compite en EE.UU.** (tag `nestdigital-20` = amazon.com).
+  Hermes ha escrito artículos en español al menos una vez (6 el 9 ago 2026). No es solo
+  el `content`: también `title`, `excerpt`, `schema` y `faqSchema`. Herramientas para
+  detectarlo y arreglarlo: `security/traducir_articulos_es.py` y
+  `security/traducir_metadatos_es.py` (ambas con `--dry-run`).
+- **Para tareas de IA se usa Claude, no Gemini** (decidido 9 ago 2026). La clave de
+  Gemini lleva invalidada desde junio y tenía el chat de la web caído sin que se notara.
+  `ANTHROPIC_API_KEY` vive en `super-agent-factory/.env`.
+- **Al traducir o reescribir, el texto de los enlaces internos NO se toca en masa.** El
+  9 ago un barrido reescribió 442 anclas en 121 artículos cuando solo había que corregir
+  5. Se revirtió. Corregir solo las anclas cuyo destino cambió de título.
 
 ## Estado del negocio (9 ago 2026)
 
