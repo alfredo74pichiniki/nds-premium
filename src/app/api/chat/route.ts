@@ -11,14 +11,30 @@ Guidelines:
 - Keep responses concise (2-3 paragraphs max)
 - Use emojis sparingly
 
-You have expertise in:
-- Audio equipment (headphones, earbuds, speakers)
-- Software and SaaS tools
-- Smart home devices
-- Work from home equipment  
-- Gaming peripherals
+Your core expertise, and what this site is actually authoritative on, is SECURITY SOFTWARE:
+- Antivirus (Norton, Bitdefender, McAfee, Malwarebytes)
+- VPNs (NordVPN, Surfshark, Proton VPN, ExpressVPN, CyberGhost, IPVanish)
+- Password managers (1Password, Bitwarden, Dashlane, NordPass, RoboForm)
+- Online privacy and device security
+
+Lead with those whenever the question allows it, and point to the matching guide:
+/software/best-antivirus-software-2026, /software/best-vpn-services-2026,
+/software/best-password-managers-2026.
+
+You can also help with software/SaaS tools, work-from-home gear, audio and gaming
+peripherals, but those are secondary.
 
 Always end with a follow-up question.`;
+
+// Fallback cuando la API de Gemini no responde. Apunta al nicho donde el sitio
+// tiene posicion real (seguridad, posicion media 24 frente a 37-60 del resto),
+// no a un producto suelto de otra categoria.
+const FALLBACK =
+    "I can't reach my AI assistant right now. In the meantime, our most useful guides are " +
+    "[the best antivirus software of 2026](/software/best-antivirus-software-2026), " +
+    "[the best VPN services](/software/best-vpn-services-2026) and " +
+    "[the best password managers](/software/best-password-managers-2026). " +
+    "Which of the three are you looking for?";
 
 export async function POST(request: NextRequest) {
     try {
@@ -27,16 +43,15 @@ export async function POST(request: NextRequest) {
         const apiKey = process.env.GEMINI_API_KEY;
 
         if (!apiKey) {
-            console.error("GEMINI_API_KEY not found in environment");
-            return NextResponse.json({
-                response: `I'm currently in demo mode. Ask me anything about headphones, standing desks, or other tech products! 🎧`,
-            });
+            console.error("[chat] GEMINI_API_KEY ausente");
+            return NextResponse.json({ response: FALLBACK, degraded: true });
         }
 
         const genAI = new GoogleGenerativeAI(apiKey);
 
-        // Try gemini-1.5-flash first (most stable)
-        const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+        // gemini-1.5-flash esta RETIRADO por Google: con el, esta ruta devolvia
+        // siempre el fallback y nadie se enteraba porque respondia HTTP 200.
+        const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
         const result = await model.generateContent({
             contents: [
@@ -49,21 +64,28 @@ export async function POST(request: NextRequest) {
                 },
             ],
             generationConfig: {
-                maxOutputTokens: 500,
+                // gemini-2.5-flash razona antes de responder y ese razonamiento
+                // consume el presupuesto de salida: con 500 la respuesta salia
+                // truncada o vacia. Margen suficiente para 2-3 parrafos.
+                maxOutputTokens: 2048,
                 temperature: 0.7,
             },
         });
 
         const response = result.response.text();
+        if (!response || !response.trim()) {
+            console.error("[chat] Gemini devolvio respuesta vacia");
+            return NextResponse.json({ response: FALLBACK, degraded: true });
+        }
 
         return NextResponse.json({ response });
     } catch (error) {
         const errorMessage = error instanceof Error ? error.message : "Unknown error";
-        console.error("Chat API error:", errorMessage);
+        // Se registra el error REAL. Antes se tragaba y se servia un mensaje
+        // alegre, asi que el chat llevaba roto desde que la clave dejo de valer
+        // y no habia forma de notarlo desde fuera.
+        console.error("[chat] Gemini fallo:", errorMessage);
 
-        // Return a helpful fallback response
-        return NextResponse.json({
-            response: `I'm having a small technical hiccup! 🔧 But I can still help - for the best noise-canceling headphones, check out our Sony WH-1000XM5 review. For a great standing desk, the Uplift V2 is our top pick. What category interests you?`
-        });
+        return NextResponse.json({ response: FALLBACK, degraded: true });
     }
 }
