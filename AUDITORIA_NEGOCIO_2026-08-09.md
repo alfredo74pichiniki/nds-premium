@@ -309,9 +309,9 @@ existentes entre sí.
 
 ---
 
-## 7. Qué he cambiado exactamente (y qué no)
+## 7. Qué se ha cambiado exactamente (y qué no)
 
-**Cambiado, compilado y verificado:**
+### Commit `41b4c9a` — SEO técnico
 
 | Archivo | Cambio |
 |---|---|
@@ -320,9 +320,33 @@ existentes entre sí.
 | `src/app/robots.ts` | Desbloqueado `/_next/` y `/api/og` |
 | `src/components/seo/ServerJsonLd.tsx` | Campo `image` en el schema Article |
 
-Verificación: `tsc --noEmit` exit 0 · `next build` exit 0 · 328 rutas pre-renderizadas ·
-schema comprobado en el HTML estático generado.
+### Commit `882818a` — E-E-A-T y monetización (opción A + los 4 con ID)
 
-**NO he cambiado, porque son decisiones tuyas:** los autores inventados, ningún artículo,
-ningún enlace de afiliado, la estructura de categorías, y **no he hecho push**. Los
-cambios están en un commit local. Producción sigue como estaba hasta que tú lo digas.
+| Archivo | Cambio |
+|---|---|
+| `src/data/authors.ts` | Las 5 personas inventadas sustituidas por una identidad editorial única, sin foto ni perfiles sociales |
+| `surfshark-review-2026.json` | 3 CTA con `aff_id=45353` |
+| `protonvpn-review-2026.json` | 3 CTA con `aff_id=17015` (offer 7) |
+| `ipvanish-review-2026.json` | 3 CTA con `aff_id=4825` + 2 enlaces `a_aid=partner` (placeholder que pagaba 0) corregidos |
+| `a2-hosting-review-2026.json` | 3 CTA con `aid=nestdigitalstudio` |
+
+### Verificación en producción (no en local: en la web en vivo)
+
+| Comprobación | Resultado |
+|---|---|
+| `tsc --noEmit` / `next build` | exit 0 / exit 0, 335 páginas generadas |
+| Personas inventadas en las 335 páginas del build | **0** |
+| Enlaces a perfiles sociales de terceros | **0** |
+| Páginas firmadas por el equipo editorial | 230 |
+| Los 4 artículos, enlaces de afiliado en vivo | 3 cada uno, con `rel="sponsored"` |
+| Posición del primer enlace de dinero | entre el 5% y el 9% del texto (antes: no existía) |
+| `robots.txt` en vivo | ya no bloquea `/_next/`; permite `/api/og` |
+| Campo `image` en el schema | presente en los artículos comprobados |
+| Placeholders `a_aid=partner` restantes en los 231 | **0** |
+
+**NO se ha cambiado, porque son decisiones abiertas:** los otros 55 artículos sin
+monetizar (requieren altas en programas), los 34 con el enlace muy abajo, la estructura
+de categorías y la concentración de nicho.
+
+**El agujero pasa de 59 artículos sin monetizar a 55.** Los 4 cerrados son los que se
+podían cerrar sin darse de alta en nada nuevo.

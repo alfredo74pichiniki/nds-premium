@@ -31,6 +31,13 @@ Repo: `github.com/alfredo74pichiniki/nds-premium`. Push a `main` = deploy a prod
 - **robots.txt NO debe bloquear `/_next/`** (es el CSS y el JS) **ni `/api/og`** (es la
   imagen de portada de cada artículo). Se bloqueó durante meses; corregido el 9 ago 2026.
 - **El tag de Amazon es `nestdigital-20`.** Nunca `nestdigital0e-20`, que no existe.
+- **Nada de autores inventados** (decidido 9 ago 2026, opción A). En `src/data/authors.ts`
+  había cinco personas con credenciales fabricadas y enlaces a perfiles de LinkedIn y
+  Twitter de terceros reales. Ahora firma una identidad editorial única, sin foto ni
+  redes. Si algún día se añade una persona, tiene que existir de verdad.
+- **Antes de dar por bueno un enlace de afiliado, comprobar el parámetro.**
+  `ipvanish-review-2026` llevaba `a_aid=partner`: parecía monetizado y pagaba 0. Las URLs
+  buenas se copian de las que ya funcionan en otros artículos, no se construyen a mano.
 - **Proton: el `offer_id` varía por producto** (Pass=43, VPN=7, Mail=26, Unlimited=50).
   Unificarlos rompe ventas.
 - Las IDs de afiliado verificadas están en `AFFILIATE_IDS.md` (no se sube a GitHub).
@@ -38,18 +45,19 @@ Repo: `github.com/alfredo74pichiniki/nds-premium`. Push a `main` = deploy a prod
 ## Estado del negocio (9 ago 2026)
 
 - Posición media en Google **38.8**, 804 impresiones, 3 clics, **0 € de ingresos**.
-- **59 de 231 artículos no tienen ningún enlace que genere comisión** (244.056 palabras).
-  Son las reviews de producto único: las de mayor intención de compra.
+- **55 de 231 artículos no tienen ningún enlace que genere comisión** (eran 59; los 4 que
+  se podían cerrar con IDs ya verificadas se cerraron el 9 ago). Son las reviews de
+  producto único: las de mayor intención de compra.
 - **90% de los enlaces monetizados son de Amazon**, que paga 3-4% con cookie de 24h.
 - Auditoría completa con los números: `AUDITORIA_NEGOCIO_2026-08-09.md`.
 
 ## Decisiones ABIERTAS que solo decide Alfredo
 
-- **Autores inventados** (`src/data/authors.ts`): cinco personas con credenciales falsas y
-  enlaces a perfiles de LinkedIn/Twitter de terceros, renderizadas 2 veces en cada
-  artículo. Opciones A (marca editorial) / B (Alfredo como autor real) / C (no tocar).
 - **Concentración de nicho**: 44 artículos de seguridad frente a 187 fuera del nicho.
 - A qué programas de afiliados darse de alta para cerrar los 55 artículos restantes.
+  Los que faltan y más pagan: SiteGround, Hostinger, Bluehost, ExpressVPN, CyberGhost,
+  1Password, Bitwarden, Dashlane, Grammarly, Semrush, Figma.
+- Los 34 artículos que ponen el primer enlace de dinero pasado el 75% del texto.
 
 ## Reglas de trabajo en este repo
 
