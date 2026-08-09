@@ -108,6 +108,11 @@ export default function ServerJsonLd({
         description:
             article.description ||
             `Expert review and buying guide for ${(article.slug || "").replace(/-/g, " ")}`,
+        // image es obligatorio para que Google muestre resultado enriquecido de Article.
+        // Faltaba en los 231 articulos: sin el, ningun articulo podia optar a rich result.
+        image: [
+            `${baseUrl}/api/og?title=${encodeURIComponent(article.title || "")}&category=${encodeURIComponent(category)}`,
+        ],
         mainEntityOfPage: {
             "@type": "WebPage",
             "@id": canonical,

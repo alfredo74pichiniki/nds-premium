@@ -131,6 +131,36 @@ export function canonicalPathFor(article: Pick<Article, "slug" | "category" | "h
 }
 
 /**
+ * Slugs que una categoria debe PRE-RENDERIZAR en el build (generateStaticParams).
+ *
+ * Por que importa: sin esto cada articulo se renderizaba en el servidor en CADA
+ * peticion. Un solo dato mal formado en articles.json (p.ej. schema.isBasedOn como
+ * cadena) se convertia en un error 500 servido a Googlebot en vez de en un fallo de
+ * build. Asi es como Search Console acabo avisando de "Error de servidor (5xx)".
+ * Pre-renderizando, ese fallo revienta el build (visible, antes de publicar) y las
+ * paginas se sirven como HTML estatico.
+ *
+ * Incluye los articulos noindex: siguen siendo accesibles por URL directa.
+ */
+export function getSlugsForCategory(category: string): string[] {
+    try {
+        const filePath = path.join(process.cwd(), "public", "data", "articles.json");
+        const parsed = JSON.parse(fs.readFileSync(filePath, "utf8"));
+        const all: Article[] = Array.isArray(parsed) ? parsed : (parsed.articles || []);
+        const slugs = new Set<string>();
+        for (const a of all) {
+            if (!a?.slug) continue;
+            // Solo su ruta canonica: evita pre-renderizar el mismo articulo bajo
+            // varias categorias (que es lo que Google marca como duplicado).
+            if (canonicalPathFor(a) === `/${category}/${a.slug}`) slugs.add(a.slug);
+        }
+        return [...slugs];
+    } catch {
+        return [];
+    }
+}
+
+/**
  * Obtiene estadísticas por categoría
  */
 export function getCategoryStats(): Record<string, number> {

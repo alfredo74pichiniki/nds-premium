@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getArticleBySlug, canonicalPathFor, getArticlesByCategory } from "@/lib/articles";
+import { getArticleBySlug, canonicalPathFor, getArticlesByCategory, getSlugsForCategory } from "@/lib/articles";
 import type { Article as PremiumArticle, ArticleListItem } from "@/components/article/PremiumArticlePage";
 import { notFound, permanentRedirect } from "next/navigation";
 import ReviewsArticleClient from "./client";
@@ -10,6 +10,12 @@ const CATEGORY = "reviews";
 
 interface PageProps {
     params: Promise<{ slug: string }>;
+}
+
+// Pre-renderiza en el build todos los articulos de esta categoria (HTML estatico).
+// dynamicParams sigue activo: un slug nuevo se sirve igual sin esperar al build.
+export async function generateStaticParams() {
+    return getSlugsForCategory(CATEGORY).map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
