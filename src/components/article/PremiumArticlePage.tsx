@@ -66,6 +66,9 @@ export interface Article {
     category: string;
     articleType: string;
     date: string;
+    // ISO 8601, escritas por security/fechas_reales.py a partir del historial de git.
+    datePublishedISO?: string;
+    updatedAt?: string;
     wordCount: number;
     score?: number;
     noindex?: boolean;
@@ -251,8 +254,8 @@ export function PremiumArticlePage({ slug, category, config, initialArticle, ini
                             {/* Author Bio Header */}
                             <AuthorBio
                                 author={author}
-                                datePublished={article.date}
-                                dateModified={article.date}
+                                datePublished={article.datePublishedISO || article.date}
+                                dateModified={article.updatedAt || article.datePublishedISO || article.date}
                                 readTime={readTime}
                                 variant="header"
                             />
@@ -292,8 +295,8 @@ export function PremiumArticlePage({ slug, category, config, initialArticle, ini
                         <div className="mt-16 pt-8 border-t border-white/10">
                             <AuthorBio
                                 author={author}
-                                datePublished={article.date}
-                                dateModified={article.date}
+                                datePublished={article.datePublishedISO || article.date}
+                                dateModified={article.updatedAt || article.datePublishedISO || article.date}
                                 variant="footer"
                             />
                         </div>

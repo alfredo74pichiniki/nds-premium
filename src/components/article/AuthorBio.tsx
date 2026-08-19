@@ -49,7 +49,10 @@ const WebsiteIcon = ({ className }: { className?: string }) => (
 // ═══════════════════════════════════════════════════════════════
 
 function formatDate(dateString: string): string {
-    const date = new Date(dateString);
+    // Una fecha ISO sin hora ("2026-08-19") la parsea el navegador como UTC y en
+    // husos negativos pinta el dia anterior. Se ancla a mediodia local.
+    const iso = /^\d{4}-\d{2}-\d{2}$/.test(dateString);
+    const date = iso ? new Date(dateString + "T12:00:00") : new Date(dateString);
     return date.toLocaleDateString("en-US", {
         year: "numeric",
         month: "long",

@@ -8,6 +8,10 @@ export interface Article {
     category: string;
     articleType: string;
     date: string;
+    // ISO 8601. Las escribe security/fechas_reales.py: `datePublishedISO` es `date`
+    // convertida, y `updatedAt` es la fecha del ultimo commit que toco el articulo.
+    datePublishedISO?: string;
+    updatedAt?: string;
     featured: boolean;
     href: string;
     wordCount?: number;

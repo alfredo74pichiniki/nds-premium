@@ -13,6 +13,12 @@ interface ArticleData {
     title?: string;
     slug?: string;
     date?: string;
+    // Fechas en ISO 8601. `date` viene de Hermes como "March 07, 2026", que NO es
+    // ISO y schema.org no la lee. Estas dos las escribe security/fechas_reales.py:
+    // datePublishedISO es `date` convertida, y updatedAt es la fecha REAL del ultimo
+    // commit que toco el JSON del articulo (no se inventa frescura).
+    datePublishedISO?: string;
+    updatedAt?: string;
     author?: string;
     authorBio?: string;
     description?: string;
@@ -89,8 +95,9 @@ export default function ServerJsonLd({
     graph.push({
         "@type": "Article",
         headline: article.title,
-        datePublished: article.date,
-        dateModified: article.date,
+        ...(article.datePublishedISO ? { datePublished: article.datePublishedISO } : {}),
+        ...(article.updatedAt || article.datePublishedISO
+            ? { dateModified: article.updatedAt || article.datePublishedISO } : {}),
         author: {
             "@type": "Organization",
             name: "Nest Digital Studio",
