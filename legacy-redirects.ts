@@ -64,5 +64,15 @@ const legacyRedirects = [
   { source: "/software/best-website-builders-2025-no-coding-required", destination: "/software/best-website-builders-2026", permanent: true },
   { source: "/software/email-marketing-comparison", destination: "/software/best-email-marketing-platforms-2026", permanent: true },
   { source: "/software/hosting-comparison-2025", destination: "/software/best-web-hosting-2026", permanent: true },
+  // Paginas que Google seguia posicionando y devolvian 404 (medido 9 ago 2026,
+  // barriendo las 222 URLs con datos en Search Console).
+  { source: "/blog/best-office-chairs-for-long-work-days", destination: "/home/best-ergonomic-office-chairs-2026", permanent: true },  // 72 impresiones/90d, daba 404
+  { source: "/blog/best-ultrawide-gaming-monitors-for-productivity", destination: "/home/best-monitors-for-wfh-2026", permanent: true },  // 53 impresiones/90d, daba 404
+  { source: "/blog/best-drones-under-500", destination: "/reviews", permanent: true },  // 12 impresiones/90d, daba 404
+  { source: "/audio/best-turntables-vinyl-2026", destination: "/audio", permanent: true },  // 5 impresiones/90d, daba 404
+  { source: "/audio/best-soundbars-tv-2026", destination: "/audio", permanent: true },  // 3 impresiones/90d, daba 404
+  { source: "/blog/ai-hardware-ces-2026-roundup", destination: "/blog/ces-2026-top-5-gadgets", permanent: true },  // 1 impresiones/90d, daba 404
+  { source: "/blog/best-fitness-trackers-2025-budget-to-premium", destination: "/reviews/best-fitness-trackers-2026", permanent: true },  // 1 impresiones/90d, daba 404
+  { source: "/blog/best-portable-power-stations-for-camping-2025", destination: "/outdoor/best-portable-power-stations-2026", permanent: true },  // 1 impresiones/90d, daba 404
 ];
 export default legacyRedirects;
