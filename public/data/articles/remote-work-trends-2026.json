@@ -95,5 +95,28 @@
   },
   "author": "Nest Digital Studio Team",
   "datePublishedISO": "2026-01-03",
-  "updatedAt": "2026-06-24"
+  "updatedAt": "2026-06-24",
+  "affiliateLinks": [
+    {
+      "name": "Logitech MX Brio 4K Webcam",
+      "url": "https://www.amazon.com/dp/B0CJV2F7J2?tag=nestdigital-20",
+      "cta": "Check Logitech MX Brio 4K Webcam Price on Amazon",
+      "label": "Logitech MX Brio 4K Webcam",
+      "type": "primary"
+    },
+    {
+      "name": "Shure MV7+ Podcast Microphone",
+      "url": "https://www.amazon.com/dp/B0CKL8L4P2?tag=nestdigital-20",
+      "cta": "See Shure MV7+ Podcast Microphone on Amazon",
+      "label": "Shure MV7+ Podcast Microphone",
+      "type": "secondary"
+    },
+    {
+      "name": "Autonomous ErgoChair Pro",
+      "url": "https://www.amazon.com/dp/B08B4B2LMK?tag=nestdigital-20",
+      "cta": "See Autonomous ErgoChair Pro on Amazon",
+      "label": "Autonomous ErgoChair Pro",
+      "type": "secondary"
+    }
+  ]
 }

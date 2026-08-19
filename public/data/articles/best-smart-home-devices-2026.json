@@ -110,5 +110,28 @@
     ]
   },
   "datePublishedISO": "2026-03-02",
-  "updatedAt": "2026-06-24"
+  "updatedAt": "2026-06-24",
+  "affiliateLinks": [
+    {
+      "name": "Amazon Echo Hub",
+      "url": "https://www.amazon.com/dp/B0BCR7M9KX?tag=nestdigital-20",
+      "cta": "Check Amazon Echo Hub Price on Amazon",
+      "label": "Amazon Echo Hub",
+      "type": "primary"
+    },
+    {
+      "name": "Apple TV 4K (3rd Generation)",
+      "url": "https://www.amazon.com/dp/B0NCQD2GVD?tag=nestdigital-20",
+      "cta": "See Apple TV 4K (3rd Generation) on Amazon",
+      "label": "Apple TV 4K (3rd Generation)",
+      "type": "secondary"
+    },
+    {
+      "name": "Google Nest Hub Max (2nd Generation)",
+      "url": "https://www.amazon.com/dp/B0C75K28XN?tag=nestdigital-20",
+      "cta": "See Google Nest Hub Max (2nd Generation) on Amazon",
+      "label": "Google Nest Hub Max (2nd Generation)",
+      "type": "secondary"
+    }
+  ]
 }

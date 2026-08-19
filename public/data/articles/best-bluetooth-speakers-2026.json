@@ -110,5 +110,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "JBL Charge 6",
+      "url": "https://www.amazon.com/dp/B0DCSRFGP9?tag=nestdigital-20",
+      "cta": "Check JBL Charge 6 Price on Amazon",
+      "label": "JBL Charge 6",
+      "type": "primary"
+    },
+    {
+      "name": "Sonos Roam 2",
+      "url": "https://www.amazon.com/dp/B0D1JTXHKF?tag=nestdigital-20",
+      "cta": "See Sonos Roam 2 on Amazon",
+      "label": "Sonos Roam 2",
+      "type": "secondary"
+    },
+    {
+      "name": "Bose SoundLink Max",
+      "url": "https://www.amazon.com/dp/B0DFGM4X3G?tag=nestdigital-20",
+      "cta": "See Bose SoundLink Max on Amazon",
+      "label": "Bose SoundLink Max",
+      "type": "secondary"
+    }
+  ]
 }

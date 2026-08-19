@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Ring Indoor Cam 2nd Gen",
+      "url": "https://www.amazon.com/dp/B0B6GLDMK4?tag=nestdigital-20",
+      "cta": "Check Ring Indoor Cam 2nd Gen Price on Amazon",
+      "label": "Ring Indoor Cam 2nd Gen",
+      "type": "primary"
+    },
+    {
+      "name": "Wyze Cam OG",
+      "url": "https://www.amazon.com/dp/B0C5LBPGTQ?tag=nestdigital-20",
+      "cta": "See Wyze Cam OG on Amazon",
+      "label": "Wyze Cam OG",
+      "type": "secondary"
+    },
+    {
+      "name": "Blink Mini 2",
+      "url": "https://www.amazon.com/dp/B0BWV3JV2G?tag=nestdigital-20",
+      "cta": "See Blink Mini 2 on Amazon",
+      "label": "Blink Mini 2",
+      "type": "secondary"
+    }
+  ]
 }

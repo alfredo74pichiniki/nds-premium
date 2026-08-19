@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Rain Design mStand",
+      "url": "https://www.amazon.com/dp/B000OOYECC?tag=nestdigital-20",
+      "cta": "Check Rain Design mStand Price on Amazon",
+      "label": "Rain Design mStand",
+      "type": "primary"
+    },
+    {
+      "name": "Twelve South Curve SE",
+      "url": "https://www.amazon.com/dp/B0BLPJ5VPX?tag=nestdigital-20",
+      "cta": "See Twelve South Curve SE on Amazon",
+      "label": "Twelve South Curve SE",
+      "type": "secondary"
+    },
+    {
+      "name": "Nulaxy C1 Laptop Stand",
+      "url": "https://www.amazon.com/dp/B07YB8LGMP?tag=nestdigital-20",
+      "cta": "See Nulaxy C1 Laptop Stand on Amazon",
+      "label": "Nulaxy C1 Laptop Stand",
+      "type": "secondary"
+    }
+  ]
 }

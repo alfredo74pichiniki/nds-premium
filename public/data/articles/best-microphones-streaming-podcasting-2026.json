@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-19"
+  "updatedAt": "2026-08-19",
+  "affiliateLinks": [
+    {
+      "name": "Shure SM7B",
+      "url": "https://www.amazon.com/dp/B0002E4Z8M?tag=nestdigital-20",
+      "cta": "Check Shure SM7B Price on Amazon",
+      "label": "Shure SM7B",
+      "type": "primary"
+    },
+    {
+      "name": "Rode PodMic USB",
+      "url": "https://www.amazon.com/dp/B0BXRP3GXY?tag=nestdigital-20",
+      "cta": "See Rode PodMic USB on Amazon",
+      "label": "Rode PodMic USB",
+      "type": "secondary"
+    },
+    {
+      "name": "Blue Yeti X",
+      "url": "https://www.amazon.com/dp/B09GXRTH2X?tag=nestdigital-20",
+      "cta": "See Blue Yeti X on Amazon",
+      "label": "Blue Yeti X",
+      "type": "secondary"
+    }
+  ]
 }

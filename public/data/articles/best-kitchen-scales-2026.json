@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-19"
+  "updatedAt": "2026-08-19",
+  "affiliateLinks": [
+    {
+      "name": "Greater Goods Nourish",
+      "url": "https://www.amazon.com/dp/B0B5F7YKQ1?tag=nestdigital-20",
+      "cta": "Check Greater Goods Nourish Price on Amazon",
+      "label": "Greater Goods Nourish",
+      "type": "primary"
+    },
+    {
+      "name": "OXO Good Grips 11lb",
+      "url": "https://www.amazon.com/dp/B000WJMTNA?tag=nestdigital-20",
+      "cta": "See OXO Good Grips 11lb on Amazon",
+      "label": "OXO Good Grips 11lb",
+      "type": "secondary"
+    },
+    {
+      "name": "Etekcity Smart Scale",
+      "url": "https://www.amazon.com/dp/B0CCXG1SB7?tag=nestdigital-20",
+      "cta": "See Etekcity Smart Scale on Amazon",
+      "label": "Etekcity Smart Scale",
+      "type": "secondary"
+    }
+  ]
 }

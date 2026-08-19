@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Anker MagGo Qi2 3-in-1",
+      "url": "https://www.amazon.com/dp/B0CF54KR3F?tag=nestdigital-20",
+      "cta": "Check Anker MagGo Qi2 3-in-1 Price on Amazon",
+      "label": "Anker MagGo Qi2 3-in-1",
+      "type": "primary"
+    },
+    {
+      "name": "Belkin BoostCharge Pro 2-in-1",
+      "url": "https://www.amazon.com/dp/B0CMBT8T6V?tag=nestdigital-20",
+      "cta": "See Belkin BoostCharge Pro 2-in-1 on Amazon",
+      "label": "Belkin BoostCharge Pro 2-in-1",
+      "type": "secondary"
+    },
+    {
+      "name": "Apple MagSafe Charger",
+      "url": "https://www.amazon.com/dp/B09G9BL2TP?tag=nestdigital-20",
+      "cta": "See Apple MagSafe Charger on Amazon",
+      "label": "Apple MagSafe Charger",
+      "type": "secondary"
+    }
+  ]
 }

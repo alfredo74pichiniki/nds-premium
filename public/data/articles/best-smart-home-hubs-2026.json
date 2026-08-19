@@ -128,7 +128,29 @@
     ]
   },
   "modifiedDate": "2026-04-28",
-  "affiliateLinks": [],
+  "affiliateLinks": [
+    {
+      "name": "Amazon Echo Hub",
+      "url": "https://www.amazon.com/s?k=Amazon+Echo+Hub&tag=nestdigital-20",
+      "cta": "Check Amazon Echo Hub Price on Amazon",
+      "label": "Amazon Echo Hub",
+      "type": "primary"
+    },
+    {
+      "name": "Apple HomePod (2nd Gen)",
+      "url": "https://www.amazon.com/s?k=Apple+HomePod+(2nd+Gen&tag=nestdigital-20",
+      "cta": "See Apple HomePod (2nd Gen) on Amazon",
+      "label": "Apple HomePod (2nd Gen)",
+      "type": "secondary"
+    },
+    {
+      "name": "Amazon Echo (4th Gen)",
+      "url": "https://www.amazon.com/s?k=Amazon+Echo+(4th+Gen&tag=nestdigital-20",
+      "cta": "See Amazon Echo (4th Gen) on Amazon",
+      "label": "Amazon Echo (4th Gen)",
+      "type": "secondary"
+    }
+  ],
   "datePublishedISO": "2026-04-28",
   "updatedAt": "2026-06-24"
 }

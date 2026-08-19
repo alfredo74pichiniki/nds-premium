@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Herman Miller Aeron Remastered",
+      "url": "https://www.amazon.com/dp/B01N0ZXH2T?tag=nestdigital-20",
+      "cta": "Check Herman Miller Aeron Remastered Price on Amazon",
+      "label": "Herman Miller Aeron Remastered",
+      "type": "primary"
+    },
+    {
+      "name": "Steelcase Leap V2",
+      "url": "https://www.amazon.com/dp/B006H1QYBA?tag=nestdigital-20",
+      "cta": "See Steelcase Leap V2 on Amazon",
+      "label": "Steelcase Leap V2",
+      "type": "secondary"
+    },
+    {
+      "name": "Steelcase Gesture",
+      "url": "https://www.amazon.com/dp/B0161GAKBE?tag=nestdigital-20",
+      "cta": "See Steelcase Gesture on Amazon",
+      "label": "Steelcase Gesture",
+      "type": "secondary"
+    }
+  ]
 }

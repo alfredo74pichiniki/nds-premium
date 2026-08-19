@@ -129,5 +129,28 @@
   },
   "modifiedDate": "2026-04-28",
   "datePublishedISO": "2026-04-28",
-  "updatedAt": "2026-06-24"
+  "updatedAt": "2026-06-24",
+  "affiliateLinks": [
+    {
+      "name": "TP-Link Archer BE550",
+      "url": "https://www.amazon.com/s?k=TP-Link+Archer+BE550&tag=nestdigital-20",
+      "cta": "Check TP-Link Archer BE550 Price on Amazon",
+      "label": "TP-Link Archer BE550",
+      "type": "primary"
+    },
+    {
+      "name": "ASUS RT-BE96U",
+      "url": "https://www.amazon.com/s?k=ASUS+RT-BE96U&tag=nestdigital-20",
+      "cta": "See ASUS RT-BE96U on Amazon",
+      "label": "ASUS RT-BE96U",
+      "type": "secondary"
+    },
+    {
+      "name": "Netgear Nighthawk RS700S",
+      "url": "https://www.amazon.com/s?k=Netgear+Nighthawk+RS700S&tag=nestdigital-20",
+      "cta": "See Netgear Nighthawk RS700S on Amazon",
+      "label": "Netgear Nighthawk RS700S",
+      "type": "secondary"
+    }
+  ]
 }

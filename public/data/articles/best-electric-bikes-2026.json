@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Aventon Soltera.2",
+      "url": "https://www.amazon.com/dp/B0D5M3KR4B?tag=nestdigital-20",
+      "cta": "Check Aventon Soltera.2 Price on Amazon",
+      "label": "Aventon Soltera.2",
+      "type": "primary"
+    },
+    {
+      "name": "Rad Power RadRunner 3 Plus",
+      "url": "https://www.amazon.com/dp/B0CWT73C9J?tag=nestdigital-20",
+      "cta": "See Rad Power RadRunner 3 Plus on Amazon",
+      "label": "Rad Power RadRunner 3 Plus",
+      "type": "secondary"
+    },
+    {
+      "name": "Lectric XP 3.0",
+      "url": "https://www.amazon.com/dp/B0D1WDBY3L?tag=nestdigital-20",
+      "cta": "See Lectric XP 3.0 on Amazon",
+      "label": "Lectric XP 3.0",
+      "type": "secondary"
+    }
+  ]
 }

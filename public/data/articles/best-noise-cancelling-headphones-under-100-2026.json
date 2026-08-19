@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Soundcore Space Q45",
+      "url": "https://www.amazon.com/dp/B0C8X3G7F9?tag=nestdigital-20",
+      "cta": "Check Soundcore Space Q45 Price on Amazon",
+      "label": "Soundcore Space Q45",
+      "type": "primary"
+    },
+    {
+      "name": "JBL Tune 770NC",
+      "url": "https://www.amazon.com/dp/B0CT6D69RQ?tag=nestdigital-20",
+      "cta": "See JBL Tune 770NC on Amazon",
+      "label": "JBL Tune 770NC",
+      "type": "secondary"
+    },
+    {
+      "name": "Sony WH-CH720N",
+      "url": "https://www.amazon.com/dp/B0BS1P9Q7P?tag=nestdigital-20",
+      "cta": "See Sony WH-CH720N on Amazon",
+      "label": "Sony WH-CH720N",
+      "type": "secondary"
+    }
+  ]
 }

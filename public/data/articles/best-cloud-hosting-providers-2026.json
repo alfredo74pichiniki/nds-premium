@@ -132,7 +132,29 @@
     ]
   },
   "modifiedDate": "2026-04-21",
-  "affiliateLinks": [],
+  "affiliateLinks": [
+    {
+      "name": "Cloudways",
+      "url": "https://www.cloudways.com/en/?id=2134070",
+      "cta": "Get Cloudways",
+      "label": "Cloudways",
+      "type": "primary"
+    },
+    {
+      "name": "Kinsta",
+      "url": "https://kinsta.com/?kaid=ULBVTXSGGBYO",
+      "cta": "Visit Kinsta",
+      "label": "Kinsta",
+      "type": "secondary"
+    },
+    {
+      "name": "External SSD for Local Backups",
+      "url": "https://www.amazon.com/s?k=external+ssd+1tb+portable&tag=nestdigital-20",
+      "cta": "Compare Options on Amazon",
+      "label": "External SSD for Local Backups",
+      "type": "secondary"
+    }
+  ],
   "datePublishedISO": "2026-04-21",
   "updatedAt": "2026-06-24"
 }

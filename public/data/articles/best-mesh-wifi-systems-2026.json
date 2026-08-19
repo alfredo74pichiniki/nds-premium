@@ -112,5 +112,28 @@
     ]
   },
   "datePublishedISO": "2026-03-03",
-  "updatedAt": "2026-06-24"
+  "updatedAt": "2026-06-24",
+  "affiliateLinks": [
+    {
+      "name": "TP-Link Deco BE63 (Deco 7 Pro)",
+      "url": "https://www.amazon.com/dp/B0CN8QLS4K?tag=nestdigital-20",
+      "cta": "Check TP-Link Deco BE63 (Deco 7 Pro) Price on Amazon",
+      "label": "TP-Link Deco BE63 (Deco 7 Pro)",
+      "type": "primary"
+    },
+    {
+      "name": "Netgear Orbi 970 Series",
+      "url": "https://www.amazon.com/dp/B0CGJGXFCS?tag=nestdigital-20",
+      "cta": "See Netgear Orbi 970 Series on Amazon",
+      "label": "Netgear Orbi 970 Series",
+      "type": "secondary"
+    },
+    {
+      "name": "Eero Max 7",
+      "url": "https://www.amazon.com/dp/B09HJJN7MS?tag=nestdigital-20",
+      "cta": "See Eero Max 7 on Amazon",
+      "label": "Eero Max 7",
+      "type": "secondary"
+    }
+  ]
 }

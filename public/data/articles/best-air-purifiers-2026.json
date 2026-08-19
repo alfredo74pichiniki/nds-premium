@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Dyson Purifier Big+Quiet Formaldehyde",
+      "url": "https://www.amazon.com/dp/B0CHXHFLR7?tag=nestdigital-20",
+      "cta": "Check Dyson Purifier Big+Quiet Formaldehyde Price on Amazon",
+      "label": "Dyson Purifier Big+Quiet Formaldehyde",
+      "type": "primary"
+    },
+    {
+      "name": "Coway Airmega AP-1512HH",
+      "url": "https://www.amazon.com/dp/B01728NLRG?tag=nestdigital-20",
+      "cta": "See Coway Airmega AP-1512HH on Amazon",
+      "label": "Coway Airmega AP-1512HH",
+      "type": "secondary"
+    },
+    {
+      "name": "Levoit Core 400S",
+      "url": "https://www.amazon.com/dp/B08R794ZMX?tag=nestdigital-20",
+      "cta": "See Levoit Core 400S on Amazon",
+      "label": "Levoit Core 400S",
+      "type": "secondary"
+    }
+  ]
 }

@@ -112,5 +112,28 @@
     ]
   },
   "datePublishedISO": "2026-03-03",
-  "updatedAt": "2026-06-24"
+  "updatedAt": "2026-06-24",
+  "affiliateLinks": [
+    {
+      "name": "Dell UltraSharp U2723QE",
+      "url": "https://www.amazon.com/dp/B09TQZP9CL?tag=nestdigital-20",
+      "cta": "Check Dell UltraSharp U2723QE Price on Amazon",
+      "label": "Dell UltraSharp U2723QE",
+      "type": "primary"
+    },
+    {
+      "name": "Dell S2722QC",
+      "url": "https://www.amazon.com/dp/B09DTDRJWP?tag=nestdigital-20",
+      "cta": "See Dell S2722QC on Amazon",
+      "label": "Dell S2722QC",
+      "type": "secondary"
+    },
+    {
+      "name": "ASUS ProArt PA279CRV",
+      "url": "https://www.amazon.com/dp/B0BQPSX5CR?tag=nestdigital-20",
+      "cta": "See ASUS ProArt PA279CRV on Amazon",
+      "label": "ASUS ProArt PA279CRV",
+      "type": "secondary"
+    }
+  ]
 }

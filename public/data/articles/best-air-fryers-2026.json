@@ -110,5 +110,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Ninja Foodi 6-in-1 DualZone",
+      "url": "https://www.amazon.com/dp/B0CHXFB3F4?tag=nestdigital-20",
+      "cta": "Check Ninja Foodi 6-in-1 DualZone Price on Amazon",
+      "label": "Ninja Foodi 6-in-1 DualZone",
+      "type": "primary"
+    },
+    {
+      "name": "Cosori TurboBlaze 6.0-Quart",
+      "url": "https://www.amazon.com/dp/B0BVMHCQY7?tag=nestdigital-20",
+      "cta": "See Cosori TurboBlaze 6.0-Quart on Amazon",
+      "label": "Cosori TurboBlaze 6.0-Quart",
+      "type": "secondary"
+    },
+    {
+      "name": "Philips Premium XXL",
+      "url": "https://www.amazon.com/dp/B09WS92VH1?tag=nestdigital-20",
+      "cta": "See Philips Premium XXL on Amazon",
+      "label": "Philips Premium XXL",
+      "type": "secondary"
+    }
+  ]
 }

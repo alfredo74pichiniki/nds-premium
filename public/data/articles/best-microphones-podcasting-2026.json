@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-19"
+  "updatedAt": "2026-08-19",
+  "affiliateLinks": [
+    {
+      "name": "Shure SM7dB",
+      "url": "https://www.amazon.com/dp/B0CXLMWFV2?tag=nestdigital-20",
+      "cta": "Check Shure SM7dB Price on Amazon",
+      "label": "Shure SM7dB",
+      "type": "primary"
+    },
+    {
+      "name": "Rode PodMic USB",
+      "url": "https://www.amazon.com/dp/B0BXNRCLY7?tag=nestdigital-20",
+      "cta": "See Rode PodMic USB on Amazon",
+      "label": "Rode PodMic USB",
+      "type": "secondary"
+    },
+    {
+      "name": "Elgato Wave:3",
+      "url": "https://www.amazon.com/dp/B088P5H3YL?tag=nestdigital-20",
+      "cta": "See Elgato Wave:3 on Amazon",
+      "label": "Elgato Wave:3",
+      "type": "secondary"
+    }
+  ]
 }

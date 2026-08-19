@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Cabeau Evolution S3",
+      "url": "https://www.amazon.com/dp/B07G9MTMCZ?tag=nestdigital-20",
+      "cta": "Check Cabeau Evolution S3 Price on Amazon",
+      "label": "Cabeau Evolution S3",
+      "type": "primary"
+    },
+    {
+      "name": "Trtl Pillow Plus",
+      "url": "https://www.amazon.com/dp/B07MNZBXGM?tag=nestdigital-20",
+      "cta": "See Trtl Pillow Plus on Amazon",
+      "label": "Trtl Pillow Plus",
+      "type": "secondary"
+    },
+    {
+      "name": "BCOZZY Chin Supporting",
+      "url": "https://www.amazon.com/dp/B00LB7REBE?tag=nestdigital-20",
+      "cta": "See BCOZZY Chin Supporting on Amazon",
+      "label": "BCOZZY Chin Supporting",
+      "type": "secondary"
+    }
+  ]
 }

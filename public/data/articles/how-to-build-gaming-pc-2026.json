@@ -191,5 +191,28 @@
   },
   "modifiedDate": "2026-05-26",
   "datePublishedISO": "2026-05-26",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "AMD Ryzen 5 9600X",
+      "url": "https://www.amazon.com/dp/B0D6NN6TM7?tag=nestdigital-20",
+      "cta": "Check AMD Ryzen 5 9600X Price on Amazon",
+      "label": "AMD Ryzen 5 9600X",
+      "type": "primary"
+    },
+    {
+      "name": "NVIDIA GeForce RTX 4060 Ti 8GB",
+      "url": "https://www.amazon.com/s?k=RTX+4060+Ti&tag=nestdigital-20",
+      "cta": "See NVIDIA GeForce RTX 4060 Ti 8GB on Amazon",
+      "label": "NVIDIA GeForce RTX 4060 Ti 8GB",
+      "type": "secondary"
+    },
+    {
+      "name": "MSI PRO B650-P WiFi",
+      "url": "https://www.amazon.com/s?k=MSI+PRO+B650-P+WiFi&tag=nestdigital-20",
+      "cta": "See MSI PRO B650-P WiFi on Amazon",
+      "label": "MSI PRO B650-P WiFi",
+      "type": "secondary"
+    }
+  ]
 }

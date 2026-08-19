@@ -110,5 +110,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Logitech MX Master 3S",
+      "url": "https://www.amazon.com/dp/B09HM94VDS?tag=nestdigital-20",
+      "cta": "Check Logitech MX Master 3S Price on Amazon",
+      "label": "Logitech MX Master 3S",
+      "type": "primary"
+    },
+    {
+      "name": "Razer DeathAdder V3 Pro",
+      "url": "https://www.amazon.com/dp/B0B6FHMSRJ?tag=nestdigital-20",
+      "cta": "See Razer DeathAdder V3 Pro on Amazon",
+      "label": "Razer DeathAdder V3 Pro",
+      "type": "secondary"
+    },
+    {
+      "name": "Apple Magic Mouse 2",
+      "url": "https://www.amazon.com/dp/B0DL41LR5K?tag=nestdigital-20",
+      "cta": "See Apple Magic Mouse 2 on Amazon",
+      "label": "Apple Magic Mouse 2",
+      "type": "secondary"
+    }
+  ]
 }

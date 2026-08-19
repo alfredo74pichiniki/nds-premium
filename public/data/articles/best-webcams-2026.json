@@ -110,5 +110,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Logitech Brio 4K Pro",
+      "url": "https://www.amazon.com/dp/B0CDLS25GV?tag=nestdigital-20",
+      "cta": "Check Logitech Brio 4K Pro Price on Amazon",
+      "label": "Logitech Brio 4K Pro",
+      "type": "primary"
+    },
+    {
+      "name": "Elgato Facecam Pro",
+      "url": "https://www.amazon.com/dp/B0CGTLZN7K?tag=nestdigital-20",
+      "cta": "See Elgato Facecam Pro on Amazon",
+      "label": "Elgato Facecam Pro",
+      "type": "secondary"
+    },
+    {
+      "name": "Insta360 Link 2",
+      "url": "https://www.amazon.com/dp/B0DH3V1QXP?tag=nestdigital-20",
+      "cta": "See Insta360 Link 2 on Amazon",
+      "label": "Insta360 Link 2",
+      "type": "secondary"
+    }
+  ]
 }

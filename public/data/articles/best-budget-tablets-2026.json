@@ -112,5 +112,28 @@
     ]
   },
   "datePublishedISO": "2026-03-03",
-  "updatedAt": "2026-06-24"
+  "updatedAt": "2026-06-24",
+  "affiliateLinks": [
+    {
+      "name": "Apple iPad 11-inch A16 (2025)",
+      "url": "https://www.amazon.com/dp/B0DZ75TN5F?tag=nestdigital-20",
+      "cta": "Check Apple iPad 11-inch A16 (2025) Price on Amazon",
+      "label": "Apple iPad 11-inch A16 (2025)",
+      "type": "primary"
+    },
+    {
+      "name": "Samsung Galaxy Tab S6 Lite (2024)",
+      "url": "https://www.amazon.com/dp/B0CWS8MNW1?tag=nestdigital-20",
+      "cta": "See Samsung Galaxy Tab S6 Lite (2024) on Amazon",
+      "label": "Samsung Galaxy Tab S6 Lite (2024)",
+      "type": "secondary"
+    },
+    {
+      "name": "Samsung Galaxy Tab A9+",
+      "url": "https://www.amazon.com/dp/B0CLF2DNMV?tag=nestdigital-20",
+      "cta": "See Samsung Galaxy Tab A9+ on Amazon",
+      "label": "Samsung Galaxy Tab A9+",
+      "type": "secondary"
+    }
+  ]
 }

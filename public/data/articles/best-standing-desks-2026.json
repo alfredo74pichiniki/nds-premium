@@ -116,5 +116,28 @@
     ]
   },
   "datePublishedISO": "2026-03-03",
-  "updatedAt": "2026-06-24"
+  "updatedAt": "2026-06-24",
+  "affiliateLinks": [
+    {
+      "name": "Uplift V2 Commercial",
+      "url": "https://www.amazon.com/dp/B07SZJPTPK?tag=nestdigital-20",
+      "cta": "Check Uplift V2 Commercial Price on Amazon",
+      "label": "Uplift V2 Commercial",
+      "type": "primary"
+    },
+    {
+      "name": "FlexiSpot E7 Pro",
+      "url": "https://www.amazon.com/dp/B0CX4KXR8Y?tag=nestdigital-20",
+      "cta": "See FlexiSpot E7 Pro on Amazon",
+      "label": "FlexiSpot E7 Pro",
+      "type": "secondary"
+    },
+    {
+      "name": "Vari Electric Standing Desk",
+      "url": "https://www.amazon.com/dp/B089DMSZTN?tag=nestdigital-20",
+      "cta": "See Vari Electric Standing Desk on Amazon",
+      "label": "Vari Electric Standing Desk",
+      "type": "secondary"
+    }
+  ]
 }

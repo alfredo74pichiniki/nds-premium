@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Nanit Pro Camera",
+      "url": "https://www.amazon.com/dp/B08S3SJ7LM?tag=nestdigital-20",
+      "cta": "Check Nanit Pro Camera Price on Amazon",
+      "label": "Nanit Pro Camera",
+      "type": "primary"
+    },
+    {
+      "name": "Owlet Cam 2",
+      "url": "https://www.amazon.com/dp/B0BXLWD6TN?tag=nestdigital-20",
+      "cta": "See Owlet Cam 2 on Amazon",
+      "label": "Owlet Cam 2",
+      "type": "secondary"
+    },
+    {
+      "name": "eufy SpaceView Pro",
+      "url": "https://www.amazon.com/dp/B08FF4GP7M?tag=nestdigital-20",
+      "cta": "See eufy SpaceView Pro on Amazon",
+      "label": "eufy SpaceView Pro",
+      "type": "secondary"
+    }
+  ]
 }

@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Furbo 360 Dog Camera",
+      "url": "https://www.amazon.com/dp/B0BQ22XKGF?tag=nestdigital-20",
+      "cta": "Check Furbo 360 Dog Camera Price on Amazon",
+      "label": "Furbo 360 Dog Camera",
+      "type": "primary"
+    },
+    {
+      "name": "Petcube Bites 2 Lite",
+      "url": "https://www.amazon.com/dp/B0BK5Z6WRG?tag=nestdigital-20",
+      "cta": "See Petcube Bites 2 Lite on Amazon",
+      "label": "Petcube Bites 2 Lite",
+      "type": "secondary"
+    },
+    {
+      "name": "Wyze Cam v3",
+      "url": "https://www.amazon.com/dp/B09KZDG61X?tag=nestdigital-20",
+      "cta": "See Wyze Cam v3 on Amazon",
+      "label": "Wyze Cam v3",
+      "type": "secondary"
+    }
+  ]
 }

@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "FlexiSpot E7 Pro Plus",
+      "url": "https://www.amazon.com/dp/B0BWLZ17RX?tag=nestdigital-20",
+      "cta": "Check FlexiSpot E7 Pro Plus Price on Amazon",
+      "label": "FlexiSpot E7 Pro Plus",
+      "type": "primary"
+    },
+    {
+      "name": "UPLIFT V2 Commercial",
+      "url": "https://www.amazon.com/dp/B0C1G4KMZZ?tag=nestdigital-20",
+      "cta": "See UPLIFT V2 Commercial on Amazon",
+      "label": "UPLIFT V2 Commercial",
+      "type": "secondary"
+    },
+    {
+      "name": "Secretlab Magnus Pro",
+      "url": "https://www.amazon.com/dp/B0BWQDFP5D?tag=nestdigital-20",
+      "cta": "See Secretlab Magnus Pro on Amazon",
+      "label": "Secretlab Magnus Pro",
+      "type": "secondary"
+    }
+  ]
 }

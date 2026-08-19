@@ -111,5 +111,28 @@
   },
   "modifiedDate": "2026-04-08",
   "datePublishedISO": "2026-03-02",
-  "updatedAt": "2026-06-25"
+  "updatedAt": "2026-06-25",
+  "affiliateLinks": [
+    {
+      "name": "Cloudways",
+      "url": "https://www.cloudways.com/en/?id=2134070",
+      "cta": "Get Cloudways",
+      "label": "Cloudways",
+      "type": "primary"
+    },
+    {
+      "name": "A2 Hosting",
+      "url": "https://a2hosting.com/?aid=nestdigitalstudio",
+      "cta": "Visit A2 Hosting",
+      "label": "A2 Hosting",
+      "type": "secondary"
+    },
+    {
+      "name": "Kinsta",
+      "url": "https://kinsta.com/?kaid=ULBVTXSGGBYO",
+      "cta": "Visit Kinsta",
+      "label": "Kinsta",
+      "type": "secondary"
+    }
+  ]
 }

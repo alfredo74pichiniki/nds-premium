@@ -158,5 +158,28 @@
   },
   "modifiedDate": "2026-05-26",
   "datePublishedISO": "2026-05-26",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Amazon Echo Dot (5th Gen)",
+      "url": "https://www.amazon.com/dp/B09B8V1LZ3?tag=nestdigital-20",
+      "cta": "Check Amazon Echo Dot (5th Gen) Price on Amazon",
+      "label": "Amazon Echo Dot (5th Gen)",
+      "type": "primary"
+    },
+    {
+      "name": "Wyze Bulb White (4-pack)",
+      "url": "https://www.amazon.com/dp/B07XB1RLNZ?tag=nestdigital-20",
+      "cta": "See Wyze Bulb White (4-pack) on Amazon",
+      "label": "Wyze Bulb White (4-pack)",
+      "type": "secondary"
+    },
+    {
+      "name": "Amazon Smart Plug",
+      "url": "https://www.amazon.com/dp/B089DR29T6?tag=nestdigital-20",
+      "cta": "See Amazon Smart Plug on Amazon",
+      "label": "Amazon Smart Plug",
+      "type": "secondary"
+    }
+  ]
 }

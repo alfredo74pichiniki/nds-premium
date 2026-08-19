@@ -42,9 +42,22 @@ const AFFILIATE_PATTERNS = [
   /a2hosting\.com.*[?&]aid=/i,           // A2 Hosting
   /partner\.pcloud\.com/i,               // pCloud
   /affiliate\.ipvanish\.com/i,           // IPVanish
+  // Segunda tanda del 19 ago 2026: estos 7 enlaces del sitio SI cobran y
+  // tampoco se estaban midiendo. Bluehost aparece como "sin ID" en
+  // AFFILIATE_IDS.md pero hay un enlace de tracking suyo con el nombre dentro.
+  /[?&]referrer_id=/i,                   // Buzzsprout
+  /[?&]via=nestdigitalstudio/i,          // Transistor.fm
+  /bluehost\.com\/track\//i,             // Bluehost
+  /podbean\.com.*[?&]ref=/i,             // Podbean
 ];
 
+// Excepciones: hacen match con algun patron de arriba pero NO pagan comision.
+// aws.amazon.com/lightsail/?tag=nestdigital-20 cae en /[?&]tag=/ y AWS no es
+// Amazon Associates: contarlo inflaria affiliate_click con dinero inexistente.
+const NO_SON_AFILIADO = [/aws\.amazon\.com/i];
+
 function isAffiliate(href: string): boolean {
+  if (NO_SON_AFILIADO.some((re) => re.test(href))) return false;
   return AFFILIATE_PATTERNS.some((re) => re.test(href));
 }
 

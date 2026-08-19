@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Ryobi RY142300 2300 PSI Electric",
+      "url": "https://www.amazon.com/dp/B09HG46R9N?tag=nestdigital-20",
+      "cta": "Check Ryobi RY142300 2300 PSI Electric Price on Amazon",
+      "label": "Ryobi RY142300 2300 PSI Electric",
+      "type": "primary"
+    },
+    {
+      "name": "Sun Joe SPX3000 2030 PSI",
+      "url": "https://www.amazon.com/dp/B00LX8Z03Y?tag=nestdigital-20",
+      "cta": "See Sun Joe SPX3000 2030 PSI on Amazon",
+      "label": "Sun Joe SPX3000 2030 PSI",
+      "type": "secondary"
+    },
+    {
+      "name": "Greenworks 2000 PSI Electric",
+      "url": "https://www.amazon.com/dp/B0BM52CQBH?tag=nestdigital-20",
+      "cta": "See Greenworks 2000 PSI Electric on Amazon",
+      "label": "Greenworks 2000 PSI Electric",
+      "type": "secondary"
+    }
+  ]
 }

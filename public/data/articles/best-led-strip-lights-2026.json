@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Govee RGBIC Pro LED Strip",
+      "url": "https://www.amazon.com/dp/B0C3Y8GPK5?tag=nestdigital-20",
+      "cta": "Check Govee RGBIC Pro LED Strip Price on Amazon",
+      "label": "Govee RGBIC Pro LED Strip",
+      "type": "primary"
+    },
+    {
+      "name": "Philips Hue Lightstrip Plus V4",
+      "url": "https://www.amazon.com/dp/B0BQM5X78K?tag=nestdigital-20",
+      "cta": "See Philips Hue Lightstrip Plus V4 on Amazon",
+      "label": "Philips Hue Lightstrip Plus V4",
+      "type": "secondary"
+    },
+    {
+      "name": "LIFX Lightstrip Color",
+      "url": "https://www.amazon.com/dp/B0861G14X6?tag=nestdigital-20",
+      "cta": "See LIFX Lightstrip Color on Amazon",
+      "label": "LIFX Lightstrip Color",
+      "type": "secondary"
+    }
+  ]
 }

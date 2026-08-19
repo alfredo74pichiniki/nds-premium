@@ -127,5 +127,21 @@
   },
   "modifiedDate": "2026-05-29",
   "datePublishedISO": "2026-05-29",
-  "updatedAt": "2026-06-24"
+  "updatedAt": "2026-06-24",
+  "affiliateLinks": [
+    {
+      "name": "Kinsta",
+      "url": "https://kinsta.com/?kaid=ULBVTXSGGBYO",
+      "cta": "Get Kinsta",
+      "label": "Kinsta",
+      "type": "primary"
+    },
+    {
+      "name": "Cloudways",
+      "url": "https://www.cloudways.com/en/?id=2134070",
+      "cta": "Visit Cloudways",
+      "label": "Cloudways",
+      "type": "secondary"
+    }
+  ]
 }

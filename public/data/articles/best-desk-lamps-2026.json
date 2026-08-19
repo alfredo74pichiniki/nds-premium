@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "BenQ ScreenBar Halo",
+      "url": "https://www.amazon.com/dp/B0CS2P1XKZ?tag=nestdigital-20",
+      "cta": "Check BenQ ScreenBar Halo Price on Amazon",
+      "label": "BenQ ScreenBar Halo",
+      "type": "primary"
+    },
+    {
+      "name": "Dyson Lightcycle Morph",
+      "url": "https://www.amazon.com/dp/B087JCFSFP?tag=nestdigital-20",
+      "cta": "See Dyson Lightcycle Morph on Amazon",
+      "label": "Dyson Lightcycle Morph",
+      "type": "secondary"
+    },
+    {
+      "name": "TaoTronics LED Desk Lamp",
+      "url": "https://www.amazon.com/dp/B07V34QF4M?tag=nestdigital-20",
+      "cta": "See TaoTronics LED Desk Lamp on Amazon",
+      "label": "TaoTronics LED Desk Lamp",
+      "type": "secondary"
+    }
+  ]
 }

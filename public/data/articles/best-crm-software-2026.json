@@ -134,5 +134,14 @@
   },
   "modifiedDate": "2026-05-26",
   "datePublishedISO": "2026-05-26",
-  "updatedAt": "2026-06-25"
+  "updatedAt": "2026-06-25",
+  "affiliateLinks": [
+    {
+      "name": "Pipedrive",
+      "url": "https://aff.trypipedrive.com/rvhldlkqe2dy",
+      "cta": "Get Pipedrive",
+      "label": "Pipedrive",
+      "type": "primary"
+    }
+  ]
 }

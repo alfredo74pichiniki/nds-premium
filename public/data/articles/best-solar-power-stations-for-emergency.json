@@ -104,5 +104,28 @@
     ]
   },
   "datePublishedISO": "2026-01-03",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Jackery 1000 v2",
+      "url": "https://www.amazon.com/dp/B0D2L1G66J?tag=nestdigital-20",
+      "cta": "Check Jackery 1000 v2 Price on Amazon",
+      "label": "Jackery 1000 v2",
+      "type": "primary"
+    },
+    {
+      "name": "MARBERO 88.8Wh",
+      "url": "https://www.amazon.com/dp/B0DFGZ5FSR?tag=nestdigital-20",
+      "cta": "See MARBERO 88.8Wh on Amazon",
+      "label": "MARBERO 88.8Wh",
+      "type": "secondary"
+    },
+    {
+      "name": "Anker SOLIX C1000",
+      "url": "https://www.amazon.com/dp/B0C5C89QKZ?tag=nestdigital-20",
+      "cta": "See Anker SOLIX C1000 on Amazon",
+      "label": "Anker SOLIX C1000",
+      "type": "secondary"
+    }
+  ]
 }

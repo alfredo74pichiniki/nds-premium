@@ -133,5 +133,28 @@
   },
   "modifiedDate": "2026-04-08",
   "datePublishedISO": "2026-03-02",
-  "updatedAt": "2026-08-09"
+  "updatedAt": "2026-08-09",
+  "affiliateLinks": [
+    {
+      "name": "Bitdefender Total Security 2026",
+      "url": "https://www.amazon.com/dp/B07G8SQ2S3?tag=nestdigital-20",
+      "cta": "Check Bitdefender Total Security 2026 Price on Amazon",
+      "label": "Bitdefender Total Security 2026",
+      "type": "primary"
+    },
+    {
+      "name": "Norton 360 Deluxe",
+      "url": "https://www.amazon.com/dp/B07Q33SJDW?tag=nestdigital-20",
+      "cta": "See Norton 360 Deluxe on Amazon",
+      "label": "Norton 360 Deluxe",
+      "type": "secondary"
+    },
+    {
+      "name": "McAfee Total Protection",
+      "url": "https://www.amazon.com/dp/B0BB2GF9WW?tag=nestdigital-20",
+      "cta": "See McAfee Total Protection on Amazon",
+      "label": "McAfee Total Protection",
+      "type": "secondary"
+    }
+  ]
 }

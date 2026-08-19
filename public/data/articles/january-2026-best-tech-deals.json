@@ -95,5 +95,28 @@
   },
   "author": "Nest Digital Studio Team",
   "datePublishedISO": "2026-01-03",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Best Overall Deal",
+      "url": "https://www.amazon.com/dp/B0FJ26JZ1M?tag=nestdigital-20",
+      "cta": "Check Best Overall Deal Price on Amazon",
+      "label": "Best Overall Deal",
+      "type": "primary"
+    },
+    {
+      "name": "Best Budget Deal",
+      "url": "https://www.amazon.com/dp/B0DXY833HV?tag=nestdigital-20",
+      "cta": "See Best Budget Deal on Amazon",
+      "label": "Best Budget Deal",
+      "type": "secondary"
+    },
+    {
+      "name": "Biggest Discount",
+      "url": "https://www.amazon.com/dp/B0FLQ43VX9?tag=nestdigital-20",
+      "cta": "See Biggest Discount on Amazon",
+      "label": "Biggest Discount",
+      "type": "secondary"
+    }
+  ]
 }

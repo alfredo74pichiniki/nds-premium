@@ -110,5 +110,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-06-24"
+  "updatedAt": "2026-06-24",
+  "affiliateLinks": [
+    {
+      "name": "Roborock S8 MaxV Ultra",
+      "url": "https://www.amazon.com/dp/B0CV3XWPP7?tag=nestdigital-20",
+      "cta": "Check Roborock S8 MaxV Ultra Price on Amazon",
+      "label": "Roborock S8 MaxV Ultra",
+      "type": "primary"
+    },
+    {
+      "name": "iRobot Roomba Combo j9+",
+      "url": "https://www.amazon.com/dp/B0C415HQPX?tag=nestdigital-20",
+      "cta": "See iRobot Roomba Combo j9+ on Amazon",
+      "label": "iRobot Roomba Combo j9+",
+      "type": "secondary"
+    },
+    {
+      "name": "eufy X10 Pro Omni",
+      "url": "https://www.amazon.com/dp/B0CY5DRSYF?tag=nestdigital-20",
+      "cta": "See eufy X10 Pro Omni on Amazon",
+      "label": "eufy X10 Pro Omni",
+      "type": "secondary"
+    }
+  ]
 }

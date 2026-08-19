@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Dell U2723QE UltraSharp 27",
+      "url": "https://www.amazon.com/dp/B09TQZP9CL?tag=nestdigital-20",
+      "cta": "Check Dell U2723QE UltraSharp 27 Price on Amazon",
+      "label": "Dell U2723QE UltraSharp 27",
+      "type": "primary"
+    },
+    {
+      "name": "LG 27UK850-W 27 4K",
+      "url": "https://www.amazon.com/dp/B078GVTD9N?tag=nestdigital-20",
+      "cta": "See LG 27UK850-W 27 4K on Amazon",
+      "label": "LG 27UK850-W 27 4K",
+      "type": "secondary"
+    },
+    {
+      "name": "Samsung ViewFinity S8 S80PB 27",
+      "url": "https://www.amazon.com/dp/B0CRJHM3XB?tag=nestdigital-20",
+      "cta": "See Samsung ViewFinity S8 S80PB 27 on Amazon",
+      "label": "Samsung ViewFinity S8 S80PB 27",
+      "type": "secondary"
+    }
+  ]
 }

@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "LG C4 55-inch OLED",
+      "url": "https://www.amazon.com/dp/B0CVSMKXQY?tag=nestdigital-20",
+      "cta": "Check LG C4 55-inch OLED Price on Amazon",
+      "label": "LG C4 55-inch OLED",
+      "type": "primary"
+    },
+    {
+      "name": "Samsung S90D 55-inch QD-OLED",
+      "url": "https://www.amazon.com/dp/B0CX4GCN4T?tag=nestdigital-20",
+      "cta": "See Samsung S90D 55-inch QD-OLED on Amazon",
+      "label": "Samsung S90D 55-inch QD-OLED",
+      "type": "secondary"
+    },
+    {
+      "name": "TCL QM851G 65-inch QLED",
+      "url": "https://www.amazon.com/dp/B0CYC7SNGL?tag=nestdigital-20",
+      "cta": "See TCL QM851G 65-inch QLED on Amazon",
+      "label": "TCL QM851G 65-inch QLED",
+      "type": "secondary"
+    }
+  ]
 }

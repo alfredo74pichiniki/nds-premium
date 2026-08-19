@@ -110,5 +110,28 @@
     ]
   },
   "datePublishedISO": "2026-03-02",
-  "updatedAt": "2026-06-24"
+  "updatedAt": "2026-06-24",
+  "affiliateLinks": [
+    {
+      "name": "Dell UltraSharp U2725QE",
+      "url": "https://www.amazon.com/dp/B0DHHY7Z8P?tag=nestdigital-20",
+      "cta": "Check Dell UltraSharp U2725QE Price on Amazon",
+      "label": "Dell UltraSharp U2725QE",
+      "type": "primary"
+    },
+    {
+      "name": "Dell UltraSharp U3225QE",
+      "url": "https://www.amazon.com/dp/B0DHHZ2N51?tag=nestdigital-20",
+      "cta": "See Dell UltraSharp U3225QE on Amazon",
+      "label": "Dell UltraSharp U3225QE",
+      "type": "secondary"
+    },
+    {
+      "name": "LG 40WP95X-W",
+      "url": "https://www.amazon.com/dp/B0CX3GCQ5R?tag=nestdigital-20",
+      "cta": "See LG 40WP95X-W on Amazon",
+      "label": "LG 40WP95X-W",
+      "type": "secondary"
+    }
+  ]
 }

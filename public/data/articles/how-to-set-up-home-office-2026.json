@@ -117,5 +117,28 @@
   },
   "modifiedDate": "2026-05-26",
   "datePublishedISO": "2026-05-26",
-  "updatedAt": "2026-06-24"
+  "updatedAt": "2026-06-24",
+  "affiliateLinks": [
+    {
+      "name": "Electric Standing Desk (Flexispot / UPLIFT)",
+      "url": "https://www.amazon.com/s?k=electric+standing+desk+60+inch&tag=nestdigital-20",
+      "cta": "Compare Options on Amazon",
+      "label": "Electric Standing Desk (Flexispot / UPLIFT)",
+      "type": "primary"
+    },
+    {
+      "name": "Ergonomic Chair with Lumbar Support",
+      "url": "https://www.amazon.com/s?k=ergonomic+chair+mesh+lumbar&tag=nestdigital-20",
+      "cta": "Compare Options on Amazon",
+      "label": "Ergonomic Chair with Lumbar Support",
+      "type": "secondary"
+    },
+    {
+      "name": "27-Inch QHD Monitor",
+      "url": "https://www.amazon.com/s?k=27+inch+qhd+monitor+144hz&tag=nestdigital-20",
+      "cta": "See 27-Inch QHD Monitor on Amazon",
+      "label": "27-Inch QHD Monitor",
+      "type": "secondary"
+    }
+  ]
 }

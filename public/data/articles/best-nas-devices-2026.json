@@ -133,5 +133,28 @@
     ]
   },
   "datePublishedISO": "2026-03-03",
-  "updatedAt": "2026-06-24"
+  "updatedAt": "2026-06-24",
+  "affiliateLinks": [
+    {
+      "name": "Synology DS224+",
+      "url": "https://www.amazon.com/dp/B0C6927XPX?tag=nestdigital-20",
+      "cta": "Check Synology DS224+ Price on Amazon",
+      "label": "Synology DS224+",
+      "type": "primary"
+    },
+    {
+      "name": "Synology DS925+",
+      "url": "https://www.amazon.com/dp/B0C8S7SF4B?tag=nestdigital-20",
+      "cta": "See Synology DS925+ on Amazon",
+      "label": "Synology DS925+",
+      "type": "secondary"
+    },
+    {
+      "name": "QNAP TS-464",
+      "url": "https://www.amazon.com/dp/B0BQ5TWCL8?tag=nestdigital-20",
+      "cta": "See QNAP TS-464 on Amazon",
+      "label": "QNAP TS-464",
+      "type": "secondary"
+    }
+  ]
 }

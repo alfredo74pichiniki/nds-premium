@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Viofo A229 Pro Duo",
+      "url": "https://www.amazon.com/dp/B0CP6PHGHX?tag=nestdigital-20",
+      "cta": "Check Viofo A229 Pro Duo Price on Amazon",
+      "label": "Viofo A229 Pro Duo",
+      "type": "primary"
+    },
+    {
+      "name": "Nextbase 622GW",
+      "url": "https://www.amazon.com/dp/B0BHMZ2FKB?tag=nestdigital-20",
+      "cta": "See Nextbase 622GW on Amazon",
+      "label": "Nextbase 622GW",
+      "type": "secondary"
+    },
+    {
+      "name": "Garmin Dash Cam 67W",
+      "url": "https://www.amazon.com/dp/B09W4Z9GZ3?tag=nestdigital-20",
+      "cta": "See Garmin Dash Cam 67W on Amazon",
+      "label": "Garmin Dash Cam 67W",
+      "type": "secondary"
+    }
+  ]
 }

@@ -103,7 +103,29 @@
       }
     ]
   },
-  "affiliateLinks": [],
+  "affiliateLinks": [
+    {
+      "name": "JBL Live Pro 2",
+      "url": "https://www.amazon.com/dp/B09V9P5Q6W?tag=nestdigital-20",
+      "cta": "Check JBL Live Pro 2 Price on Amazon",
+      "label": "JBL Live Pro 2",
+      "type": "primary"
+    },
+    {
+      "name": "Soundcore P30i",
+      "url": "https://www.amazon.com/dp/B0CRTYZG5C?tag=nestdigital-20",
+      "cta": "See Soundcore P30i on Amazon",
+      "label": "Soundcore P30i",
+      "type": "secondary"
+    },
+    {
+      "name": "Beats Studio Buds",
+      "url": "https://www.amazon.com/dp/B096SV8SJG?tag=nestdigital-20",
+      "cta": "See Beats Studio Buds on Amazon",
+      "label": "Beats Studio Buds",
+      "type": "secondary"
+    }
+  ],
   "datePublishedISO": "2026-01-03",
   "updatedAt": "2026-06-24"
 }

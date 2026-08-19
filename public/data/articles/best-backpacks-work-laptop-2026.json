@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Peak Design Everyday Backpack V2 30L",
+      "url": "https://www.amazon.com/dp/B0842DZ2F3?tag=nestdigital-20",
+      "cta": "Check Peak Design Everyday Backpack V2 30L Price on Amazon",
+      "label": "Peak Design Everyday Backpack V2 30L",
+      "type": "primary"
+    },
+    {
+      "name": "Osprey Arcane Large Day",
+      "url": "https://www.amazon.com/dp/B0952SC2S5?tag=nestdigital-20",
+      "cta": "See Osprey Arcane Large Day on Amazon",
+      "label": "Osprey Arcane Large Day",
+      "type": "secondary"
+    },
+    {
+      "name": "Timbuk2 Authority Laptop Backpack",
+      "url": "https://www.amazon.com/dp/B07YDLX6GD?tag=nestdigital-20",
+      "cta": "See Timbuk2 Authority Laptop Backpack on Amazon",
+      "label": "Timbuk2 Authority Laptop Backpack",
+      "type": "secondary"
+    }
+  ]
 }

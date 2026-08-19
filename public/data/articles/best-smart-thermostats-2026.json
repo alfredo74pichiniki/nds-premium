@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Google Nest Learning Thermostat 4th Gen",
+      "url": "https://www.amazon.com/dp/B0CWPFJVMT?tag=nestdigital-20",
+      "cta": "Check Google Nest Learning Thermostat 4th Gen Price on Amazon",
+      "label": "Google Nest Learning Thermostat 4th Gen",
+      "type": "primary"
+    },
+    {
+      "name": "Ecobee Smart Thermostat Premium",
+      "url": "https://www.amazon.com/dp/B09XXS48P8?tag=nestdigital-20",
+      "cta": "See Ecobee Smart Thermostat Premium on Amazon",
+      "label": "Ecobee Smart Thermostat Premium",
+      "type": "secondary"
+    },
+    {
+      "name": "Honeywell Home T9",
+      "url": "https://www.amazon.com/dp/B07YS1V3YZ?tag=nestdigital-20",
+      "cta": "See Honeywell Home T9 on Amazon",
+      "label": "Honeywell Home T9",
+      "type": "secondary"
+    }
+  ]
 }

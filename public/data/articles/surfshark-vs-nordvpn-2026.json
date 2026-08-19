@@ -133,5 +133,28 @@
   },
   "modifiedDate": "2026-04-15",
   "datePublishedISO": "2026-04-15",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Surfshark",
+      "url": "https://get.surfshark.net/aff_c?offer_id=926&aff_id=45353",
+      "cta": "Get Surfshark",
+      "label": "Surfshark",
+      "type": "primary"
+    },
+    {
+      "name": "NordVPN",
+      "url": "https://go.nordvpn.net/aff_c?offer_id=15&aff_id=142918&url_id=902",
+      "cta": "Visit NordVPN",
+      "label": "NordVPN",
+      "type": "secondary"
+    },
+    {
+      "name": "Proton VPN",
+      "url": "https://go.getproton.me/aff_c?offer_id=7&aff_id=17015",
+      "cta": "Visit Proton VPN",
+      "label": "Proton VPN",
+      "type": "secondary"
+    }
+  ]
 }

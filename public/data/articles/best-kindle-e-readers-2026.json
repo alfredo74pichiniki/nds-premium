@@ -110,5 +110,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Kindle Paperwhite Signature Edition",
+      "url": "https://www.amazon.com/dp/B0CFPJYX1S?tag=nestdigital-20",
+      "cta": "Check Kindle Paperwhite Signature Edition Price on Amazon",
+      "label": "Kindle Paperwhite Signature Edition",
+      "type": "primary"
+    },
+    {
+      "name": "Kindle Scribe",
+      "url": "https://www.amazon.com/dp/B0CX4X5KFG?tag=nestdigital-20",
+      "cta": "See Kindle Scribe on Amazon",
+      "label": "Kindle Scribe",
+      "type": "secondary"
+    },
+    {
+      "name": "Kindle Paperwhite",
+      "url": "https://www.amazon.com/dp/B0CFPJWWBV?tag=nestdigital-20",
+      "cta": "See Kindle Paperwhite on Amazon",
+      "label": "Kindle Paperwhite",
+      "type": "secondary"
+    }
+  ]
 }

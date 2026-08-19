@@ -110,5 +110,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Apple Watch Ultra 3",
+      "url": "https://www.amazon.com/dp/B0DGHQWXY3?tag=nestdigital-20",
+      "cta": "Check Apple Watch Ultra 3 Price on Amazon",
+      "label": "Apple Watch Ultra 3",
+      "type": "primary"
+    },
+    {
+      "name": "Samsung Galaxy Watch 7 Ultra",
+      "url": "https://www.amazon.com/dp/B0D7BVWQGN?tag=nestdigital-20",
+      "cta": "See Samsung Galaxy Watch 7 Ultra on Amazon",
+      "label": "Samsung Galaxy Watch 7 Ultra",
+      "type": "secondary"
+    },
+    {
+      "name": "Garmin Venu 4",
+      "url": "https://www.amazon.com/dp/B0DH7KXQS6?tag=nestdigital-20",
+      "cta": "See Garmin Venu 4 on Amazon",
+      "label": "Garmin Venu 4",
+      "type": "secondary"
+    }
+  ]
 }

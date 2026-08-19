@@ -32,9 +32,7 @@
     "dropbox paper",
     "productivity"
   ],
-  "affiliateLinks": [
-    "Dropbox"
-  ],
+  "affiliateLinks": null,
   "schema": {
     "@context": "https://schema.org",
     "@type": "Article",

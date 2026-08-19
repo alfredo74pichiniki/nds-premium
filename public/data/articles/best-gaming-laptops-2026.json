@@ -111,5 +111,28 @@
     ]
   },
   "datePublishedISO": "2026-03-02",
-  "updatedAt": "2026-06-24"
+  "updatedAt": "2026-06-24",
+  "affiliateLinks": [
+    {
+      "name": "ASUS ROG Zephyrus G16 (2026)",
+      "url": "https://www.amazon.com/dp/B0DV6YB5CG?tag=nestdigital-20",
+      "cta": "Check ASUS ROG Zephyrus G16 (2026) Price on Amazon",
+      "label": "ASUS ROG Zephyrus G16 (2026)",
+      "type": "primary"
+    },
+    {
+      "name": "Razer Blade 16 (2026)",
+      "url": "https://www.amazon.com/dp/B0DZV9G97X?tag=nestdigital-20",
+      "cta": "See Razer Blade 16 (2026) on Amazon",
+      "label": "Razer Blade 16 (2026)",
+      "type": "secondary"
+    },
+    {
+      "name": "Lenovo Legion Pro 7i (2026)",
+      "url": "https://www.amazon.com/dp/B0DZ3BVBFJ?tag=nestdigital-20",
+      "cta": "See Lenovo Legion Pro 7i (2026) on Amazon",
+      "label": "Lenovo Legion Pro 7i (2026)",
+      "type": "secondary"
+    }
+  ]
 }

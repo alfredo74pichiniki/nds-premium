@@ -110,5 +110,28 @@
     ]
   },
   "datePublishedISO": "2026-03-02",
-  "updatedAt": "2026-06-24"
+  "updatedAt": "2026-06-24",
+  "affiliateLinks": [
+    {
+      "name": "SimpliSafe",
+      "url": "https://www.amazon.com/dp/B0BFDF1RWR?tag=nestdigital-20",
+      "cta": "Check SimpliSafe Price on Amazon",
+      "label": "SimpliSafe",
+      "type": "primary"
+    },
+    {
+      "name": "Ring Alarm Pro (2nd Gen)",
+      "url": "https://www.amazon.com/dp/B09MG3XPR2?tag=nestdigital-20",
+      "cta": "See Ring Alarm Pro (2nd Gen) on Amazon",
+      "label": "Ring Alarm Pro (2nd Gen)",
+      "type": "secondary"
+    },
+    {
+      "name": "Abode",
+      "url": "https://www.amazon.com/dp/B085T1S8TR?tag=nestdigital-20",
+      "cta": "See Abode on Amazon",
+      "label": "Abode",
+      "type": "secondary"
+    }
+  ]
 }

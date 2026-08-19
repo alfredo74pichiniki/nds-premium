@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Bowflex SelectTech 552 Dumbbells",
+      "url": "https://www.amazon.com/dp/B001ARYU58?tag=nestdigital-20",
+      "cta": "Check Bowflex SelectTech 552 Dumbbells Price on Amazon",
+      "label": "Bowflex SelectTech 552 Dumbbells",
+      "type": "primary"
+    },
+    {
+      "name": "Peloton Bike+",
+      "url": "https://www.amazon.com/dp/B08QGDMGNS?tag=nestdigital-20",
+      "cta": "See Peloton Bike+ on Amazon",
+      "label": "Peloton Bike+",
+      "type": "secondary"
+    },
+    {
+      "name": "NordicTrack Commercial 1750",
+      "url": "https://www.amazon.com/dp/B0BXDQ81R7?tag=nestdigital-20",
+      "cta": "See NordicTrack Commercial 1750 on Amazon",
+      "label": "NordicTrack Commercial 1750",
+      "type": "secondary"
+    }
+  ]
 }

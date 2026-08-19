@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "TP-Link Deco XE75 Mesh WiFi 6E",
+      "url": "https://www.amazon.com/dp/B0BRXTN2Z3?tag=nestdigital-20",
+      "cta": "Check TP-Link Deco XE75 Mesh WiFi 6E Price on Amazon",
+      "label": "TP-Link Deco XE75 Mesh WiFi 6E",
+      "type": "primary"
+    },
+    {
+      "name": "ASUS ROG Rapture GT-AXE16000",
+      "url": "https://www.amazon.com/dp/B09V16YWMY?tag=nestdigital-20",
+      "cta": "See ASUS ROG Rapture GT-AXE16000 on Amazon",
+      "label": "ASUS ROG Rapture GT-AXE16000",
+      "type": "secondary"
+    },
+    {
+      "name": "Netgear Nighthawk RAXE500",
+      "url": "https://www.amazon.com/dp/B09GYVNJNQ?tag=nestdigital-20",
+      "cta": "See Netgear Nighthawk RAXE500 on Amazon",
+      "label": "Netgear Nighthawk RAXE500",
+      "type": "secondary"
+    }
+  ]
 }

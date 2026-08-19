@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Fellow Stagg EKG Pro Studio",
+      "url": "https://www.amazon.com/dp/B0CHGVZRSM?tag=nestdigital-20",
+      "cta": "Check Fellow Stagg EKG Pro Studio Price on Amazon",
+      "label": "Fellow Stagg EKG Pro Studio",
+      "type": "primary"
+    },
+    {
+      "name": "Cuisinart CPK-17 PerfecTemp",
+      "url": "https://www.amazon.com/dp/B003KYSLNQ?tag=nestdigital-20",
+      "cta": "See Cuisinart CPK-17 PerfecTemp on Amazon",
+      "label": "Cuisinart CPK-17 PerfecTemp",
+      "type": "secondary"
+    },
+    {
+      "name": "Cosori Electric Gooseneck Kettle",
+      "url": "https://www.amazon.com/dp/B08XYXL4RZ?tag=nestdigital-20",
+      "cta": "See Cosori Electric Gooseneck Kettle on Amazon",
+      "label": "Cosori Electric Gooseneck Kettle",
+      "type": "secondary"
+    }
+  ]
 }

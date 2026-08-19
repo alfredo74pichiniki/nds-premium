@@ -120,5 +120,28 @@
     ]
   },
   "datePublishedISO": "2026-03-03",
-  "updatedAt": "2026-06-24"
+  "updatedAt": "2026-06-24",
+  "affiliateLinks": [
+    {
+      "name": "Jabra Elite 8 Active Gen 2",
+      "url": "https://www.amazon.com/dp/B0D7V3Q42P?tag=nestdigital-20",
+      "cta": "Check Jabra Elite 8 Active Gen 2 Price on Amazon",
+      "label": "Jabra Elite 8 Active Gen 2",
+      "type": "primary"
+    },
+    {
+      "name": "JBL Endurance Race 2",
+      "url": "https://www.amazon.com/dp/B0DVTGBCBL?tag=nestdigital-20",
+      "cta": "See JBL Endurance Race 2 on Amazon",
+      "label": "JBL Endurance Race 2",
+      "type": "secondary"
+    },
+    {
+      "name": "Beats Powerbeats Pro 2",
+      "url": "https://www.amazon.com/dp/B0DT2LTRL7?tag=nestdigital-20",
+      "cta": "See Beats Powerbeats Pro 2 on Amazon",
+      "label": "Beats Powerbeats Pro 2",
+      "type": "secondary"
+    }
+  ]
 }

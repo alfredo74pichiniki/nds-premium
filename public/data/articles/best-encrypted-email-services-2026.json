@@ -133,5 +133,21 @@
   },
   "modifiedDate": "2026-04-21",
   "datePublishedISO": "2026-04-21",
-  "updatedAt": "2026-08-09"
+  "updatedAt": "2026-08-09",
+  "affiliateLinks": [
+    {
+      "name": "Proton Mail",
+      "url": "https://go.getproton.me/aff_c?offer_id=26&aff_id=17015",
+      "cta": "Get Proton Mail",
+      "label": "Proton Mail",
+      "type": "primary"
+    },
+    {
+      "name": "Proton Unlimited",
+      "url": "https://go.getproton.me/aff_c?offer_id=50&aff_id=17015",
+      "cta": "Visit Proton Unlimited",
+      "label": "Proton Unlimited",
+      "type": "secondary"
+    }
+  ]
 }

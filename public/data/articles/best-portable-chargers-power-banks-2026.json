@@ -110,5 +110,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Anker Prime 27,650mAh",
+      "url": "https://www.amazon.com/dp/B0C5D9QD1T?tag=nestdigital-20",
+      "cta": "Check Anker Prime 27,650mAh Price on Amazon",
+      "label": "Anker Prime 27,650mAh",
+      "type": "primary"
+    },
+    {
+      "name": "Ugreen Nexode 25000mAh",
+      "url": "https://www.amazon.com/dp/B0CSYFC1PQ?tag=nestdigital-20",
+      "cta": "See Ugreen Nexode 25000mAh on Amazon",
+      "label": "Ugreen Nexode 25000mAh",
+      "type": "secondary"
+    },
+    {
+      "name": "Anker Nano Power Bank 5000mAh",
+      "url": "https://www.amazon.com/dp/B0C2Y8MYQL?tag=nestdigital-20",
+      "cta": "See Anker Nano Power Bank 5000mAh on Amazon",
+      "label": "Anker Nano Power Bank 5000mAh",
+      "type": "secondary"
+    }
+  ]
 }

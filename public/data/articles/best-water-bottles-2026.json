@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Stanley Quencher H2.0 40oz",
+      "url": "https://www.amazon.com/dp/B0CX7DH97H?tag=nestdigital-20",
+      "cta": "Check Stanley Quencher H2.0 40oz Price on Amazon",
+      "label": "Stanley Quencher H2.0 40oz",
+      "type": "primary"
+    },
+    {
+      "name": "Hydro Flask Wide Mouth 32oz",
+      "url": "https://www.amazon.com/dp/B01ACAX7S2?tag=nestdigital-20",
+      "cta": "See Hydro Flask Wide Mouth 32oz on Amazon",
+      "label": "Hydro Flask Wide Mouth 32oz",
+      "type": "secondary"
+    },
+    {
+      "name": "Yeti Rambler 26oz",
+      "url": "https://www.amazon.com/dp/B0BQC2VQNJ?tag=nestdigital-20",
+      "cta": "See Yeti Rambler 26oz on Amazon",
+      "label": "Yeti Rambler 26oz",
+      "type": "secondary"
+    }
+  ]
 }

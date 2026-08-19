@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Samsung The Freestyle 2nd Gen",
+      "url": "https://www.amazon.com/dp/B0CTJXNPG7?tag=nestdigital-20",
+      "cta": "Check Samsung The Freestyle 2nd Gen Price on Amazon",
+      "label": "Samsung The Freestyle 2nd Gen",
+      "type": "primary"
+    },
+    {
+      "name": "Xgimi MoGo 2 Pro",
+      "url": "https://www.amazon.com/dp/B0C1N4NR8J?tag=nestdigital-20",
+      "cta": "See Xgimi MoGo 2 Pro on Amazon",
+      "label": "Xgimi MoGo 2 Pro",
+      "type": "secondary"
+    },
+    {
+      "name": "BenQ GV50",
+      "url": "https://www.amazon.com/dp/B0D2KQNR8V?tag=nestdigital-20",
+      "cta": "See BenQ GV50 on Amazon",
+      "label": "BenQ GV50",
+      "type": "secondary"
+    }
+  ]
 }

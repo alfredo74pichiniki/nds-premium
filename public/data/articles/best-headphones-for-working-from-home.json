@@ -34,5 +34,28 @@
     ]
   },
   "datePublishedISO": "2026-01-02",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Wireless Headset",
+      "url": "https://www.amazon.com/dp/B0FXGN1S5B?tag=nestdigital-20",
+      "cta": "Check Wireless Headset Price on Amazon",
+      "label": "Wireless Headset",
+      "type": "primary"
+    },
+    {
+      "name": "Reviews",
+      "url": "https://www.amazon.com/dp/B000UXZQ42?tag=nestdigital-20",
+      "cta": "See Reviews on Amazon",
+      "label": "Reviews",
+      "type": "secondary"
+    },
+    {
+      "name": "Reviews",
+      "url": "https://www.amazon.com/dp/B09XQLFVJ3?tag=nestdigital-20",
+      "cta": "See Reviews on Amazon",
+      "label": "Reviews",
+      "type": "secondary"
+    }
+  ]
 }

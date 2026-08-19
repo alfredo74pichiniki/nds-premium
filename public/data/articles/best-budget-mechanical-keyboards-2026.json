@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Keychron K8 Pro TKL",
+      "url": "https://www.amazon.com/dp/B0B2D3VK67?tag=nestdigital-20",
+      "cta": "Check Keychron K8 Pro TKL Price on Amazon",
+      "label": "Keychron K8 Pro TKL",
+      "type": "primary"
+    },
+    {
+      "name": "Royal Kludge RK84 Pro",
+      "url": "https://www.amazon.com/dp/B0BF5QKV25?tag=nestdigital-20",
+      "cta": "See Royal Kludge RK84 Pro on Amazon",
+      "label": "Royal Kludge RK84 Pro",
+      "type": "secondary"
+    },
+    {
+      "name": "Epomaker TH80 Pro",
+      "url": "https://www.amazon.com/dp/B0CHBF7RM1?tag=nestdigital-20",
+      "cta": "See Epomaker TH80 Pro on Amazon",
+      "label": "Epomaker TH80 Pro",
+      "type": "secondary"
+    }
+  ]
 }

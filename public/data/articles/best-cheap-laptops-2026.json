@@ -110,5 +110,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-06-24"
+  "updatedAt": "2026-06-24",
+  "affiliateLinks": [
+    {
+      "name": "Acer Aspire Go 15",
+      "url": "https://www.amazon.com/dp/B0D5Y5V7FM?tag=nestdigital-20",
+      "cta": "Check Acer Aspire Go 15 Price on Amazon",
+      "label": "Acer Aspire Go 15",
+      "type": "primary"
+    },
+    {
+      "name": "ASUS Chromebook Plus CX14",
+      "url": "https://www.amazon.com/dp/B0CV5ZL7P7?tag=nestdigital-20",
+      "cta": "See ASUS Chromebook Plus CX14 on Amazon",
+      "label": "ASUS Chromebook Plus CX14",
+      "type": "secondary"
+    },
+    {
+      "name": "Acer Aspire 3 (A315-24P)",
+      "url": "https://www.amazon.com/dp/B0CN1SH1R6?tag=nestdigital-20",
+      "cta": "See Acer Aspire 3 (A315-24P) on Amazon",
+      "label": "Acer Aspire 3 (A315-24P)",
+      "type": "secondary"
+    }
+  ]
 }

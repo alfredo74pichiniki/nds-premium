@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "SteelSeries Arctis Nova Pro Wireless",
+      "url": "https://www.amazon.com/dp/B0B15QMR5C?tag=nestdigital-20",
+      "cta": "Check SteelSeries Arctis Nova Pro Wireless Price on Amazon",
+      "label": "SteelSeries Arctis Nova Pro Wireless",
+      "type": "primary"
+    },
+    {
+      "name": "HyperX Cloud III Wireless",
+      "url": "https://www.amazon.com/dp/B0C4THP35P?tag=nestdigital-20",
+      "cta": "See HyperX Cloud III Wireless on Amazon",
+      "label": "HyperX Cloud III Wireless",
+      "type": "secondary"
+    },
+    {
+      "name": "Razer BlackShark V2 Pro 2023",
+      "url": "https://www.amazon.com/dp/B0C7JLQ2DK?tag=nestdigital-20",
+      "cta": "See Razer BlackShark V2 Pro 2023 on Amazon",
+      "label": "Razer BlackShark V2 Pro 2023",
+      "type": "secondary"
+    }
+  ]
 }

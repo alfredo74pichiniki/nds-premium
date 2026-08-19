@@ -110,5 +110,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Breville Barista Express Impress",
+      "url": "https://www.amazon.com/dp/B0CS7RQHM4?tag=nestdigital-20",
+      "cta": "Check Breville Barista Express Impress Price on Amazon",
+      "label": "Breville Barista Express Impress",
+      "type": "primary"
+    },
+    {
+      "name": "Technivorm Moccamaster KBGV",
+      "url": "https://www.amazon.com/dp/B08DQ78MCC?tag=nestdigital-20",
+      "cta": "See Technivorm Moccamaster KBGV on Amazon",
+      "label": "Technivorm Moccamaster KBGV",
+      "type": "secondary"
+    },
+    {
+      "name": "Nespresso Vertuo Next",
+      "url": "https://www.amazon.com/dp/B084GY58S6?tag=nestdigital-20",
+      "cta": "See Nespresso Vertuo Next on Amazon",
+      "label": "Nespresso Vertuo Next",
+      "type": "secondary"
+    }
+  ]
 }

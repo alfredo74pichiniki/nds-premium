@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "TP-Link Kasa Smart Plug KP125",
+      "url": "https://www.amazon.com/dp/B0CRXKMNG5?tag=nestdigital-20",
+      "cta": "Check TP-Link Kasa Smart Plug KP125 Price on Amazon",
+      "label": "TP-Link Kasa Smart Plug KP125",
+      "type": "primary"
+    },
+    {
+      "name": "Amazon Smart Plug",
+      "url": "https://www.amazon.com/dp/B089DR29T6?tag=nestdigital-20",
+      "cta": "See Amazon Smart Plug on Amazon",
+      "label": "Amazon Smart Plug",
+      "type": "secondary"
+    },
+    {
+      "name": "Wemo Smart Plug V2",
+      "url": "https://www.amazon.com/dp/B09B9L4GXM?tag=nestdigital-20",
+      "cta": "See Wemo Smart Plug V2 on Amazon",
+      "label": "Wemo Smart Plug V2",
+      "type": "secondary"
+    }
+  ]
 }

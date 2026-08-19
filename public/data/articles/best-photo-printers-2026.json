@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Canon SELPHY CP1500",
+      "url": "https://www.amazon.com/dp/B0B9NMZ32X?tag=nestdigital-20",
+      "cta": "Check Canon SELPHY CP1500 Price on Amazon",
+      "label": "Canon SELPHY CP1500",
+      "type": "primary"
+    },
+    {
+      "name": "Epson EcoTank ET-8550",
+      "url": "https://www.amazon.com/dp/B09SQ7BDH7?tag=nestdigital-20",
+      "cta": "See Epson EcoTank ET-8550 on Amazon",
+      "label": "Epson EcoTank ET-8550",
+      "type": "secondary"
+    },
+    {
+      "name": "HP Sprocket Portable",
+      "url": "https://www.amazon.com/dp/B0CFJ4FB2R?tag=nestdigital-20",
+      "cta": "See HP Sprocket Portable on Amazon",
+      "label": "HP Sprocket Portable",
+      "type": "secondary"
+    }
+  ]
 }

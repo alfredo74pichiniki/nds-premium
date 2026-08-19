@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-19"
+  "updatedAt": "2026-08-19",
+  "affiliateLinks": [
+    {
+      "name": "Elgato Ring Light",
+      "url": "https://www.amazon.com/dp/B0CSN1J1D2?tag=nestdigital-20",
+      "cta": "Check Elgato Ring Light Price on Amazon",
+      "label": "Elgato Ring Light",
+      "type": "primary"
+    },
+    {
+      "name": "Lume Cube Cordless Ring Light Pro",
+      "url": "https://www.amazon.com/dp/B0B2K5HGNV?tag=nestdigital-20",
+      "cta": "See Lume Cube Cordless Ring Light Pro on Amazon",
+      "label": "Lume Cube Cordless Ring Light Pro",
+      "type": "secondary"
+    },
+    {
+      "name": "Neewer 18-Inch Pro Ring Light",
+      "url": "https://www.amazon.com/dp/B0BXRHYLCM?tag=nestdigital-20",
+      "cta": "See Neewer 18-Inch Pro Ring Light on Amazon",
+      "label": "Neewer 18-Inch Pro Ring Light",
+      "type": "secondary"
+    }
+  ]
 }

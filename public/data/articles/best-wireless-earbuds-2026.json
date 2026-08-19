@@ -110,5 +110,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Apple AirPods Pro 3",
+      "url": "https://www.amazon.com/dp/B0DJL1MP5G?tag=nestdigital-20",
+      "cta": "Check Apple AirPods Pro 3 Price on Amazon",
+      "label": "Apple AirPods Pro 3",
+      "type": "primary"
+    },
+    {
+      "name": "Sony WF-1000XM6",
+      "url": "https://www.amazon.com/dp/B0D5JTMLKZ?tag=nestdigital-20",
+      "cta": "See Sony WF-1000XM6 on Amazon",
+      "label": "Sony WF-1000XM6",
+      "type": "secondary"
+    },
+    {
+      "name": "Samsung Galaxy Buds 4 Pro",
+      "url": "https://www.amazon.com/dp/B0D64DM1CQ?tag=nestdigital-20",
+      "cta": "See Samsung Galaxy Buds 4 Pro on Amazon",
+      "label": "Samsung Galaxy Buds 4 Pro",
+      "type": "secondary"
+    }
+  ]
 }

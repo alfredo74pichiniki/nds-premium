@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Ring Battery Doorbell Pro",
+      "url": "https://www.amazon.com/dp/B0BFJNL42P?tag=nestdigital-20",
+      "cta": "Check Ring Battery Doorbell Pro Price on Amazon",
+      "label": "Ring Battery Doorbell Pro",
+      "type": "primary"
+    },
+    {
+      "name": "Google Nest Doorbell 2nd Gen Wired",
+      "url": "https://www.amazon.com/dp/B0CVMJ9JTZ?tag=nestdigital-20",
+      "cta": "See Google Nest Doorbell 2nd Gen Wired on Amazon",
+      "label": "Google Nest Doorbell 2nd Gen Wired",
+      "type": "secondary"
+    },
+    {
+      "name": "eufy Video Doorbell S330",
+      "url": "https://www.amazon.com/dp/B0BZFZ96DY?tag=nestdigital-20",
+      "cta": "See eufy Video Doorbell S330 on Amazon",
+      "label": "eufy Video Doorbell S330",
+      "type": "secondary"
+    }
+  ]
 }

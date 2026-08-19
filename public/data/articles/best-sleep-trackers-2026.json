@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Oura Ring Gen 4",
+      "url": "https://www.amazon.com/dp/B0DJLC7SC9?tag=nestdigital-20",
+      "cta": "Check Oura Ring Gen 4 Price on Amazon",
+      "label": "Oura Ring Gen 4",
+      "type": "primary"
+    },
+    {
+      "name": "Whoop 5.0 Band",
+      "url": "https://www.amazon.com/dp/B0DKR5VH2N?tag=nestdigital-20",
+      "cta": "See Whoop 5.0 Band on Amazon",
+      "label": "Whoop 5.0 Band",
+      "type": "secondary"
+    },
+    {
+      "name": "Withings Sleep Analyzer",
+      "url": "https://www.amazon.com/dp/B07NH2NQFN?tag=nestdigital-20",
+      "cta": "See Withings Sleep Analyzer on Amazon",
+      "label": "Withings Sleep Analyzer",
+      "type": "secondary"
+    }
+  ]
 }

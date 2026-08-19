@@ -32,9 +32,7 @@
     "google workspace plans",
     "office suite"
   ],
-  "affiliateLinks": [
-    "Google Workspace"
-  ],
+  "affiliateLinks": null,
   "schema": {
     "@context": "https://schema.org",
     "@type": "Article",

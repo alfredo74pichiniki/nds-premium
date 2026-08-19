@@ -133,5 +133,28 @@
   },
   "modifiedDate": "2026-04-28",
   "datePublishedISO": "2026-04-28",
-  "updatedAt": "2026-06-24"
+  "updatedAt": "2026-06-24",
+  "affiliateLinks": [
+    {
+      "name": "Logitech MX Master 4",
+      "url": "https://www.amazon.com/s?k=Logitech+MX+Master+4&tag=nestdigital-20",
+      "cta": "Check Logitech MX Master 4 Price on Amazon",
+      "label": "Logitech MX Master 4",
+      "type": "primary"
+    },
+    {
+      "name": "Logitech MX Vertical",
+      "url": "https://www.amazon.com/s?k=Logitech+MX+Vertical&tag=nestdigital-20",
+      "cta": "See Logitech MX Vertical on Amazon",
+      "label": "Logitech MX Vertical",
+      "type": "secondary"
+    },
+    {
+      "name": "Logitech Lift",
+      "url": "https://www.amazon.com/s?k=Logitech+Lift+Vertical&tag=nestdigital-20",
+      "cta": "See Logitech Lift on Amazon",
+      "label": "Logitech Lift",
+      "type": "secondary"
+    }
+  ]
 }

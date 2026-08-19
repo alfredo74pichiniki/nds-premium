@@ -108,5 +108,28 @@
   },
   "modifiedDate": "2026-05-26",
   "datePublishedISO": "2026-05-26",
-  "updatedAt": "2026-06-24"
+  "updatedAt": "2026-06-24",
+  "affiliateLinks": [
+    {
+      "name": "Cloudways",
+      "url": "https://www.cloudways.com/en/?id=2134070",
+      "cta": "Get Cloudways",
+      "label": "Cloudways",
+      "type": "primary"
+    },
+    {
+      "name": "Elementor",
+      "url": "https://be.elementor.com/visit/?bta=231223&brand=elementor",
+      "cta": "Visit Elementor",
+      "label": "Elementor",
+      "type": "secondary"
+    },
+    {
+      "name": "Kinsta",
+      "url": "https://kinsta.com/?kaid=ULBVTXSGGBYO",
+      "cta": "Visit Kinsta",
+      "label": "Kinsta",
+      "type": "secondary"
+    }
+  ]
 }

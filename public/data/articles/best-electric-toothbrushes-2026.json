@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Oral-B iO Series 9",
+      "url": "https://www.amazon.com/dp/B0B4NBTRKN?tag=nestdigital-20",
+      "cta": "Check Oral-B iO Series 9 Price on Amazon",
+      "label": "Oral-B iO Series 9",
+      "type": "primary"
+    },
+    {
+      "name": "Philips Sonicare DiamondClean Smart 9500",
+      "url": "https://www.amazon.com/dp/B07QYK4NQL?tag=nestdigital-20",
+      "cta": "See Philips Sonicare DiamondClean Smart 9500 on Amazon",
+      "label": "Philips Sonicare DiamondClean Smart 9500",
+      "type": "secondary"
+    },
+    {
+      "name": "Oral-B iO Series 5",
+      "url": "https://www.amazon.com/dp/B0C3LKWK7G?tag=nestdigital-20",
+      "cta": "See Oral-B iO Series 5 on Amazon",
+      "label": "Oral-B iO Series 5",
+      "type": "secondary"
+    }
+  ]
 }

@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "August WiFi Smart Lock 4th Gen",
+      "url": "https://www.amazon.com/dp/B0BHTQQ1H6?tag=nestdigital-20",
+      "cta": "Check August WiFi Smart Lock 4th Gen Price on Amazon",
+      "label": "August WiFi Smart Lock 4th Gen",
+      "type": "primary"
+    },
+    {
+      "name": "Yale Assure Lock 2",
+      "url": "https://www.amazon.com/dp/B0BYVFFMPS?tag=nestdigital-20",
+      "cta": "See Yale Assure Lock 2 on Amazon",
+      "label": "Yale Assure Lock 2",
+      "type": "secondary"
+    },
+    {
+      "name": "Schlage Encode Plus",
+      "url": "https://www.amazon.com/dp/B09JZTHDJB?tag=nestdigital-20",
+      "cta": "See Schlage Encode Plus on Amazon",
+      "label": "Schlage Encode Plus",
+      "type": "secondary"
+    }
+  ]
 }

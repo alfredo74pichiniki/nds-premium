@@ -116,5 +116,28 @@
     ]
   },
   "datePublishedISO": "2026-03-03",
-  "updatedAt": "2026-06-24"
+  "updatedAt": "2026-06-24",
+  "affiliateLinks": [
+    {
+      "name": "Wooting 80HE",
+      "url": "https://www.amazon.com/dp/B0DY6CZLRM?tag=nestdigital-20",
+      "cta": "Check Wooting 80HE Price on Amazon",
+      "label": "Wooting 80HE",
+      "type": "primary"
+    },
+    {
+      "name": "Razer BlackWidow V4 Pro 75%",
+      "url": "https://www.amazon.com/dp/B0DD5S8TM8?tag=nestdigital-20",
+      "cta": "See Razer BlackWidow V4 Pro 75% on Amazon",
+      "label": "Razer BlackWidow V4 Pro 75%",
+      "type": "secondary"
+    },
+    {
+      "name": "SteelSeries Apex Pro TKL Gen 3",
+      "url": "https://www.amazon.com/dp/B0DGZLHN8G?tag=nestdigital-20",
+      "cta": "See SteelSeries Apex Pro TKL Gen 3 on Amazon",
+      "label": "SteelSeries Apex Pro TKL Gen 3",
+      "type": "secondary"
+    }
+  ]
 }

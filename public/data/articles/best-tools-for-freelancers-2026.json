@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-25",
-  "updatedAt": "2026-08-19"
+  "updatedAt": "2026-08-19",
+  "affiliateLinks": [
+    {
+      "name": "Elementor",
+      "url": "https://be.elementor.com/visit/?bta=231223&brand=elementor",
+      "cta": "Get Elementor",
+      "label": "Elementor",
+      "type": "primary"
+    },
+    {
+      "name": "NordVPN",
+      "url": "https://go.nordvpn.net/aff_c?offer_id=15&aff_id=142918&url_id=902",
+      "cta": "Visit NordVPN",
+      "label": "NordVPN",
+      "type": "secondary"
+    },
+    {
+      "name": "Echo Show 8",
+      "url": "https://www.amazon.com/dp/B0BZDHTJRB?tag=nestdigital-20",
+      "cta": "See Echo Show 8 on Amazon",
+      "label": "Echo Show 8",
+      "type": "secondary"
+    }
+  ]
 }

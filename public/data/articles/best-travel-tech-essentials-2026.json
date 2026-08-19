@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-25",
-  "updatedAt": "2026-08-19"
+  "updatedAt": "2026-08-19",
+  "affiliateLinks": [
+    {
+      "name": "NordVPN",
+      "url": "https://go.nordvpn.net/aff_c?offer_id=15&aff_id=142918&url_id=902",
+      "cta": "Get NordVPN",
+      "label": "NordVPN",
+      "type": "primary"
+    },
+    {
+      "name": "Apple AirTags",
+      "url": "https://www.amazon.com/dp/B0933BVK6T?tag=nestdigital-20",
+      "cta": "See Apple AirTags on Amazon",
+      "label": "Apple AirTags",
+      "type": "secondary"
+    },
+    {
+      "name": "Sony WH-1000XM5",
+      "url": "https://www.amazon.com/dp/B09XS7JWHH?tag=nestdigital-20",
+      "cta": "See Sony WH-1000XM5 on Amazon",
+      "label": "Sony WH-1000XM5",
+      "type": "secondary"
+    }
+  ]
 }

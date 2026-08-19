@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Segway Ninebot Max G2",
+      "url": "https://www.amazon.com/dp/B0CMHP8HZ1?tag=nestdigital-20",
+      "cta": "Check Segway Ninebot Max G2 Price on Amazon",
+      "label": "Segway Ninebot Max G2",
+      "type": "primary"
+    },
+    {
+      "name": "Xiaomi Electric Scooter 4 Pro",
+      "url": "https://www.amazon.com/dp/B0CTPN2JV8?tag=nestdigital-20",
+      "cta": "See Xiaomi Electric Scooter 4 Pro on Amazon",
+      "label": "Xiaomi Electric Scooter 4 Pro",
+      "type": "secondary"
+    },
+    {
+      "name": "Gotrax G4",
+      "url": "https://www.amazon.com/dp/B0BFMHX9NQ?tag=nestdigital-20",
+      "cta": "See Gotrax G4 on Amazon",
+      "label": "Gotrax G4",
+      "type": "secondary"
+    }
+  ]
 }

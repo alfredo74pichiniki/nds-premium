@@ -106,5 +106,21 @@
     ]
   },
   "datePublishedISO": "2026-03-25",
-  "updatedAt": "2026-06-24"
+  "updatedAt": "2026-06-24",
+  "affiliateLinks": [
+    {
+      "name": "NordVPN",
+      "url": "https://go.nordvpn.net/aff_c?offer_id=15&aff_id=142918&url_id=902",
+      "cta": "Get NordVPN",
+      "label": "NordVPN",
+      "type": "primary"
+    },
+    {
+      "name": "Amazon eero Mesh Routers",
+      "url": "https://www.amazon.com/dp/B085VM9ZDD?tag=nestdigital-20",
+      "cta": "See Amazon eero Mesh Routers on Amazon",
+      "label": "Amazon eero Mesh Routers",
+      "type": "secondary"
+    }
+  ]
 }

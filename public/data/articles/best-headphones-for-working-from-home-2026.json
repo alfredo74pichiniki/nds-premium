@@ -110,5 +110,28 @@
     ]
   },
   "datePublishedISO": "2026-02-20",
-  "updatedAt": "2026-06-24"
+  "updatedAt": "2026-06-24",
+  "affiliateLinks": [
+    {
+      "name": "Sony WH-1000XM5 Wireless Noise Cancelling Headphones",
+      "url": "https://www.amazon.com/dp/B09XS7JWHH?tag=nestdigital-20",
+      "cta": "Check Sony WH-1000XM5 Wireless Noise Cancelling Headphones Price on Amazon",
+      "label": "Sony WH-1000XM5 Wireless Noise Cancelling Headphones",
+      "type": "primary"
+    },
+    {
+      "name": "Bose QuietComfort Ultra Headphones",
+      "url": "https://www.amazon.com/dp/B0CCZ1L489?tag=nestdigital-20",
+      "cta": "See Bose QuietComfort Ultra Headphones on Amazon",
+      "label": "Bose QuietComfort Ultra Headphones",
+      "type": "secondary"
+    },
+    {
+      "name": "Apple AirPods Max (USB-C)",
+      "url": "https://www.amazon.com/dp/B0DGJC52FP?tag=nestdigital-20",
+      "cta": "See Apple AirPods Max (USB-C) on Amazon",
+      "label": "Apple AirPods Max (USB-C)",
+      "type": "secondary"
+    }
+  ]
 }

@@ -104,5 +104,28 @@
     ]
   },
   "datePublishedISO": "2026-02-14",
-  "updatedAt": "2026-06-24"
+  "updatedAt": "2026-06-24",
+  "affiliateLinks": [
+    {
+      "name": "Soundcore Anker Life Q20",
+      "url": "https://www.amazon.com/dp/B0D1QR8NL8?tag=nestdigital-20",
+      "cta": "Check Soundcore Anker Life Q20 Price on Amazon",
+      "label": "Soundcore Anker Life Q20",
+      "type": "primary"
+    },
+    {
+      "name": "Bose QuietComfort Ultra Bluetooth Headphones (2nd Gen)",
+      "url": "https://www.amazon.com/dp/B0FDKRX5G9?tag=nestdigital-20",
+      "cta": "See Bose QuietComfort Ultra Bluetooth Headphones (2nd Gen) on Amazon",
+      "label": "Bose QuietComfort Ultra Bluetooth Headphones (2nd Gen)",
+      "type": "secondary"
+    },
+    {
+      "name": "2025 Upgraded Wireless Noise Cancelling Headphones",
+      "url": "https://www.amazon.com/dp/B0CR7JX6G6?tag=nestdigital-20",
+      "cta": "See 2025 Upgraded Wireless Noise Cancelling Headphones on Amazon",
+      "label": "2025 Upgraded Wireless Noise Cancelling Headphones",
+      "type": "secondary"
+    }
+  ]
 }

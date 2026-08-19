@@ -95,5 +95,28 @@
   },
   "author": "Nest Digital Studio Team",
   "datePublishedISO": "2026-01-03",
-  "updatedAt": "2026-06-24"
+  "updatedAt": "2026-06-24",
+  "affiliateLinks": [
+    {
+      "name": "Samsung Galaxy Ring (1st Generation)",
+      "url": "https://www.amazon.com/dp/B0D7C8SLPZ?tag=nestdigital-20",
+      "cta": "Check Samsung Galaxy Ring (1st Generation) Price on Amazon",
+      "label": "Samsung Galaxy Ring (1st Generation)",
+      "type": "primary"
+    },
+    {
+      "name": "Sony LinkBuds Open",
+      "url": "https://www.amazon.com/dp/B0BYPQG9Y3?tag=nestdigital-20",
+      "cta": "See Sony LinkBuds Open on Amazon",
+      "label": "Sony LinkBuds Open",
+      "type": "secondary"
+    },
+    {
+      "name": "Withings BeamO",
+      "url": "https://www.amazon.com/dp/B0D1BQ8C4N?tag=nestdigital-20",
+      "cta": "See Withings BeamO on Amazon",
+      "label": "Withings BeamO",
+      "type": "secondary"
+    }
+  ]
 }

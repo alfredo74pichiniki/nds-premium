@@ -97,5 +97,28 @@
   "modifiedDate": "2026-05-26",
   "author": "Nest Digital Studio Team",
   "datePublishedISO": "2026-05-26",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Keyboard and Mouse",
+      "url": "https://www.amazon.com/dp/B07Y4GWNML?tag=nestdigital-20",
+      "cta": "Check Keyboard and Mouse Price on Amazon",
+      "label": "Keyboard and Mouse",
+      "type": "primary"
+    },
+    {
+      "name": "Desk Lighting",
+      "url": "https://www.amazon.com/dp/B08DKQ3JG1?tag=nestdigital-20",
+      "cta": "See Desk Lighting on Amazon",
+      "label": "Desk Lighting",
+      "type": "secondary"
+    },
+    {
+      "name": "Cable Management",
+      "url": "https://www.amazon.com/dp/B07GPFDL1K?tag=nestdigital-20",
+      "cta": "See Cable Management on Amazon",
+      "label": "Cable Management",
+      "type": "secondary"
+    }
+  ]
 }

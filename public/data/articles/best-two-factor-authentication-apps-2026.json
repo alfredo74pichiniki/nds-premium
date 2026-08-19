@@ -133,5 +133,28 @@
   },
   "modifiedDate": "2026-04-21",
   "datePublishedISO": "2026-04-21",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Proton Pass",
+      "url": "https://go.getproton.me/aff_c?offer_id=43&aff_id=17015",
+      "cta": "Get Proton Pass",
+      "label": "Proton Pass",
+      "type": "primary"
+    },
+    {
+      "name": "YubiKey 5 NFC",
+      "url": "https://www.amazon.com/dp/B07HBD71HL?tag=nestdigital-20",
+      "cta": "See YubiKey 5 NFC on Amazon",
+      "label": "YubiKey 5 NFC",
+      "type": "secondary"
+    },
+    {
+      "name": "NordPass",
+      "url": "https://go.nordpass.io/aff_c?offer_id=488&aff_id=142918&url_id=9356",
+      "cta": "Visit NordPass",
+      "label": "NordPass",
+      "type": "secondary"
+    }
+  ]
 }

@@ -33,9 +33,7 @@
     "content optimization",
     "seo software"
   ],
-  "affiliateLinks": [
-    "Semrush"
-  ],
+  "affiliateLinks": null,
   "schema": {
     "@context": "https://schema.org",
     "@type": "Article",

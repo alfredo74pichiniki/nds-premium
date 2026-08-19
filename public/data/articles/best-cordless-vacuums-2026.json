@@ -106,5 +106,28 @@
     ]
   },
   "datePublishedISO": "2026-03-07",
-  "updatedAt": "2026-08-05"
+  "updatedAt": "2026-08-05",
+  "affiliateLinks": [
+    {
+      "name": "Dyson V15 Detect Absolute",
+      "url": "https://www.amazon.com/dp/B0CX47PFGS?tag=nestdigital-20",
+      "cta": "Check Dyson V15 Detect Absolute Price on Amazon",
+      "label": "Dyson V15 Detect Absolute",
+      "type": "primary"
+    },
+    {
+      "name": "Shark Stratos Cordless",
+      "url": "https://www.amazon.com/dp/B0CDF2LH1Y?tag=nestdigital-20",
+      "cta": "See Shark Stratos Cordless on Amazon",
+      "label": "Shark Stratos Cordless",
+      "type": "secondary"
+    },
+    {
+      "name": "Samsung Bespoke Jet AI",
+      "url": "https://www.amazon.com/dp/B0CV7QFNX4?tag=nestdigital-20",
+      "cta": "See Samsung Bespoke Jet AI on Amazon",
+      "label": "Samsung Bespoke Jet AI",
+      "type": "secondary"
+    }
+  ]
 }

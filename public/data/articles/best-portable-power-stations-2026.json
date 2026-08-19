@@ -111,5 +111,28 @@
     ]
   },
   "datePublishedISO": "2026-03-03",
-  "updatedAt": "2026-06-24"
+  "updatedAt": "2026-06-24",
+  "affiliateLinks": [
+    {
+      "name": "EcoFlow Delta 3 Plus",
+      "url": "https://www.amazon.com/dp/B0DL1KNMD4?tag=nestdigital-20",
+      "cta": "Check EcoFlow Delta 3 Plus Price on Amazon",
+      "label": "EcoFlow Delta 3 Plus",
+      "type": "primary"
+    },
+    {
+      "name": "Anker SOLIX C1000 Gen 2",
+      "url": "https://www.amazon.com/dp/B0FN7MSY4L?tag=nestdigital-20",
+      "cta": "See Anker SOLIX C1000 Gen 2 on Amazon",
+      "label": "Anker SOLIX C1000 Gen 2",
+      "type": "secondary"
+    },
+    {
+      "name": "Jackery Explorer 2000 Plus",
+      "url": "https://www.amazon.com/dp/B0C6DHK68Q?tag=nestdigital-20",
+      "cta": "See Jackery Explorer 2000 Plus on Amazon",
+      "label": "Jackery Explorer 2000 Plus",
+      "type": "secondary"
+    }
+  ]
 }

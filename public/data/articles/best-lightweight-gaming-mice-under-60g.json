@@ -104,5 +104,28 @@
     ]
   },
   "datePublishedISO": "2026-01-02",
-  "updatedAt": "2026-06-24"
+  "updatedAt": "2026-06-24",
+  "affiliateLinks": [
+    {
+      "name": "INPHIC IN10P",
+      "url": "https://www.amazon.com/dp/B0F1CXP3JJ?tag=nestdigital-20",
+      "cta": "Check INPHIC IN10P Price on Amazon",
+      "label": "INPHIC IN10P",
+      "type": "primary"
+    },
+    {
+      "name": "Budget Pick",
+      "url": "https://www.amazon.com/dp/B07CMS5Q6P?tag=nestdigital-20",
+      "cta": "See Budget Pick on Amazon",
+      "label": "Budget Pick",
+      "type": "secondary"
+    },
+    {
+      "name": "Premium Option",
+      "url": "https://www.amazon.com/dp/B0DB59DXMZ?tag=nestdigital-20",
+      "cta": "See Premium Option on Amazon",
+      "label": "Premium Option",
+      "type": "secondary"
+    }
+  ]
 }
