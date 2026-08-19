@@ -65,8 +65,16 @@ const nextConfig: NextConfig = {
       // have its own page → redirect to products listing
       // IMPORTANT: Exclude static files (.png, .jpg, .webp, .svg, .ico, .json)
       // so that images in /public/products/ are served correctly
+      //
+      // IMPORTANTE (19 ago 2026): los redirects de Next se evaluan ANTES del
+      // enrutado por ficheros, asi que este catch-all tambien capturaba los 7
+      // productos que SI tienen su page.tsx. Verificado en produccion: los 7
+      // devolvian 307 a /products y ninguna ficha era alcanzable, con Stripe en
+      // vivo. Por eso van excluidos explicitamente. Si se anade un producto
+      // nuevo con page.tsx, HAY QUE anadir su slug a esta lista.
       {
-        source: "/products/:slug((?!.*\\.).*)",
+        source:
+          "/products/:slug((?!ai-prompt-mastery|content-creator-toolkit|freelancer-success-bundle|notion-business-system|shopify-conversion-engine|social-media-factory|startup-blueprint)(?!.*\\.).*)",
         destination: "/products",
         permanent: false,  // 302 for catch-all (flexible)
       },

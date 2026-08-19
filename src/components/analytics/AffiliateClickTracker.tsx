@@ -30,6 +30,18 @@ const AFFILIATE_PATTERNS = [
   /awin1\.com|zenaps\.com/i,            // Awin
   /prf\.hn|partnerstack/i,
   /kit\.com\/.+\?.*aff|convertkit.*aff/i,
+  // Anadidos 19 ago 2026 tras la auditoria. Estos IDs estan en AFFILIATE_IDS.md
+  // y SI cobran comision, pero faltaban aqui: 124 enlaces se registraban como
+  // outbound_click en vez de affiliate_click. Son justo los merchants de
+  // comision mas alta del catalogo (Kinsta, Cloudways, Elementor).
+  /[?&]kaid=/i,                          // Kinsta
+  /cloudways\.com.*[?&]id=\d+/i,         // Cloudways (id=2134070)
+  /be\.elementor\.com|[?&]bta=/i,        // Elementor
+  /[?&]affid=/i,                         // RoboForm
+  /aff\.trypipedrive\.com/i,             // Pipedrive (red FirstPromoter)
+  /a2hosting\.com.*[?&]aid=/i,           // A2 Hosting
+  /partner\.pcloud\.com/i,               // pCloud
+  /affiliate\.ipvanish\.com/i,           // IPVanish
 ];
 
 function isAffiliate(href: string): boolean {
