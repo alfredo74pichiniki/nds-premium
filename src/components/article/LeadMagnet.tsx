@@ -13,18 +13,26 @@ export default function LeadMagnet({
   hook = "Download our free Excel template to organize your week and save time." 
 }: LeadMagnetProps) {
   const [email, setEmail] = useState('');
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success'>('idle');
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
+  // 19 ago 2026: esto era un setTimeout que decia "Check your inbox!" y tiraba
+  // el correo. La audiencia de Resend tenia 0 contactos. Ahora se guarda de
+  // verdad, y si falla se dice, en vez de mentirle al visitante.
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email) return;
-    
+
     setStatus('loading');
-    
-    // Simulate API call for now (will connect to Resend/Database later)
-    setTimeout(() => {
-      setStatus('success');
-    }, 1500);
+    try {
+      const res = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, source: `lead-magnet:${productName}` }),
+      });
+      setStatus(res.ok ? 'success' : 'error');
+    } catch {
+      setStatus('error');
+    }
   };
 
   if (status === 'success') {

@@ -14,11 +14,23 @@ export function Newsletter() {
 
         setStatus("loading");
 
-        // Simulate API call (replace with real endpoint)
-        await new Promise((resolve) => setTimeout(resolve, 1500));
-
-        // In production, this would call your newsletter API
-        // await fetch('/api/newsletter', { method: 'POST', body: JSON.stringify({ email }) });
+        // 19 ago 2026: la llamada de abajo estaba COMENTADA. El formulario
+        // esperaba 1,5 s, decia "success" y tiraba el correo. Comprobado contra
+        // la API de Resend: la audiencia tenia 0 contactos. Ya se guarda.
+        try {
+            const res = await fetch("/api/newsletter", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ email, source: "home-newsletter" }),
+            });
+            if (!res.ok) {
+                setStatus("error");
+                return;
+            }
+        } catch {
+            setStatus("error");
+            return;
+        }
 
         setStatus("success");
         setEmail("");

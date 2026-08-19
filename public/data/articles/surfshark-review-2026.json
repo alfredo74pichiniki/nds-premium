@@ -21,11 +21,11 @@
   "affiliateLinks": [
     {
       "name": "Surfshark",
-      "url": "https://surfshark.com/"
+      "url": "https://get.surfshark.net/aff_c?offer_id=926&aff_id=45353"
     },
     {
       "name": "NordVPN",
-      "url": "https://nordvpn.com/"
+      "url": "https://go.nordvpn.net/aff_c?offer_id=15&aff_id=142918"
     },
     {
       "name": "ExpressVPN",
@@ -33,7 +33,7 @@
     },
     {
       "name": "ProtonVPN",
-      "url": "https://protonvpn.com/"
+      "url": "https://go.getproton.me/aff_c?offer_id=7&aff_id=17015"
     }
   ],
   "schema": {

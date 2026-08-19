@@ -7,8 +7,22 @@ const BASE_URL = 'https://nestdigitalstudio.com'
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date().toISOString()
 
+  // Hubs de categoria. Faltaban en el sitemap el 19 ago 2026 pese a devolver
+  // 200 y a sumar ya 231 impresiones en 90 dias en Search Console. Son las
+  // paginas que reparten autoridad interna hacia los articulos.
+  const CATEGORY_HUBS = [
+    'software', 'reviews', 'guides', 'gaming',
+    'home', 'audio', 'outdoor', 'deals',
+  ]
+
   // Static pages
   const staticPages: MetadataRoute.Sitemap = [
+    ...CATEGORY_HUBS.map((cat) => ({
+      url: `${BASE_URL}/${cat}`,
+      lastModified: now,
+      changeFrequency: 'daily' as const,
+      priority: 0.8,
+    })),
     { url: BASE_URL, lastModified: now, changeFrequency: 'daily', priority: 1.0 },
     { url: `${BASE_URL}/about`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
     { url: `${BASE_URL}/contact`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
